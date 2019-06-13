@@ -18,6 +18,8 @@ either:
    * A specific problem that they wanted to solve with a web-of-trust solution, and why current solutions (PGP or CA-based PKI) can't address the problem?
    * A specific solution related to the web-of-trust that you'd like others to use or contribute to?
 
+Please see the [Topics & Advance Readings directory](topics-and-advance-readings) for all the current papers (and how to upload yours).
+
 ## Primers
 
 These primers overview major topics which are likely to be discussed at the design workshop. If you read nothing else, read these. (But really, read as much as you can!)
