@@ -1,33 +1,310 @@
-#+TITLE: Why the world needs Datashards
+#+TITLE: Datashards: secure storage primitives for the web
 #+AUTHOR: Christopher Lemmer Webber, Serge Wroclawski, and Tom Marble
+
+# - Introduction
 
 * Introduction
 
-# - Introduction
+Over the last year we have been working on a general mechanism for
+URIs representing private, encrypted storage that can live in a
+variety of locations.
+We call this system "Datashards".
+This document is an attempt to lay out its rationale and a very high
+level overview of its design.
+
+** The problem
+
 #   - The problem
-#   - What are datashards?
+
+The world wide web has brought an unprecedented level of connectivity
+and information sharing to the world.
+Sadly, very little of this information survives.
+Websites go down often, and frequently it is only the portion of
+content that is accessible via the Internet Archive that lives on (and
+this too is limited to only public content).
+This leaves the web reliant on a single steward to preserve its history,
+and such content cannot even be reliably viewed via its original URI.
+
+One way to improve this situation is to use content-addressed storage.
+Instead of distributing an HTTP url linking to a picture of a cat, we
+could distribute a hash of the picture of a cat, for example by using
+=urn:sha1:ea15e456ba5138a20be341718d306e1529a5149a= as the identifier.
+Now any server or client can store this picture of a cat.
+Any node can ask other nodes if they have this cat picture, and we will
+know if the cat picture they provide really is the same picture based
+on whether the hashes match.
+This is the basis of many peer-to-peer file storage systems.
+
+Unfortunately, there are several problems with moving forward with such
+a simple content-addressed system:
+
+ - Any data store can inspect and observe all contents, so privacy does
+   not exist on this layer.
+ - This is even worse in a peer to peer system, because then the
+   network cannot help spread content without being able to see all
+   content.  If Carlos wants to send Bob a sappy love letter, how can
+   he do so without the entire network being able to peek into their
+   private life?
+ - This ability to see the content you are helping to distribute is also
+   a liability; a node wishing to be a good citizen and helping distribute
+   content along the network may find that it is storing undesirable
+   material in the clear.
+
+** Introducing Datashards
+
+Datashard capabilities (or Datashard ocaps) are very similar to the
+forementioned hash-based URNs and do, in fact, use content addressing
+under the hood.
+Datashard capabilities are valid URIs, and thus are valid link targets
+for usage with the world wide web.
+
+The heart of Datashard ocaps comes from chopping up and symmetrically
+encrypting content into uniform-sized chunks/shards are content-addressed
+"shard URNs".
+The shards may be distributed amongst storage and distribution providers
+without knowledge by those parties as to what the contents contain.
+Only participants who have been explicitly delivered a Datashard
+capability can assemble and transform these shards into meaningful
+content.
+
+Datashard capabilities come in two flavors (and two new URI schemes):
+
+ - *idsc*: (Immutable DataShard Capability) for fixed/immutable content.
+   Builds on shard URNs.
+ - *mdsc*: (Mutable DataShard Capability) for mutable/updateable content.
+   Builds on Immutable Datashard Capabilities.
+
+Due to the nature of distributed updates, =mdsc:= capabilities have
+some synchronization challenges that =idsc:= capabilities do not.
+Nonetheless, updates are desirable and are thus provided in the system.
+
+** History
+
+Datashards has been in development for the last year as part of the
+[[https://gitlab.com/spritely/][Spritely]] project, and prototype implementations exist and function.
+The original implementations come from the [[https://gitlab.com/dustyweb/magenc/blob/master/magenc/scribblings/intro.org][Spritely Magenc]] and
+[[https://gitlab.com/spritely/crystal/blob/master/crystal/scribblings/intro.org][Spritely Crystal]] demos (for the immutable and mutable storage concepts
+respectively), and were shown in application towards the
+federated social web in the [[https://gitlab.com/spritely/golem/blob/master/README.org][Spritely Golem]] demo.
+Magenc was in fact [[https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/topics-and-advance-readings/magenc.md][originally a RWoT submission]] and has been iterated
+on since that time.
+
+However, the ideas in Datashards are not original.
+Most ideas come from [[https://tahoe-lafs.org/trac/tahoe-lafs][Tahoe LAFS]], [[https://freenetproject.org/][Freenet]], and [[https://nongnu.org/libchop/][libchop]].
+The main contribution of Datashards is distilling and simplifying
+these designs into new URI schemes which can be used on the general
+world wide web.
+
+We believe Datashards is very easy to implement, and a
+specification/implementation guide is forthcoming.
+
+#   - What are Datashards?
 #     - The core idea
 #     - They have been in development for the last year as part
 #       of the Spritely project
 #     - Derivative of existing designs
 #     - Simple and easy to implement
 
+* Datashard URIs
 
-** IDSC: Immutable datashards capabilities
-
-** MDSC: Mutable datashards capabilities
-
-
-# - The two primary flavors of datashards
+# - The two primary flavors of Datashards
 #   - IDSC
 #   - MDSC
+
+The below explainations are high level summaries; for details
+see the [[https://gitlab.com/dustyweb/magenc/blob/master/magenc/scribblings/intro.org][Spritely Magenc]] and [[https://gitlab.com/spritely/crystal/blob/master/crystal/scribblings/intro.org][Spritely Crystal]] writeups.
+
+TODO: Those repositories are out of date/sync with the below
+explainations.  Convert those documents to a shared datashards
+repository which follows the new URI patterns explained below.
+
+** Shard URNs
+
+Shard URNs follow the familiar notation of:
+
+: urn:<hash-type>:<hash>
+
+For example:
+
+: urn:sha256d:X74UbU3NoLTA_Nupi8DhaJ_oQpQ95KFukMAkJJotKgo
+
+These are for the encrypted fixed-size shards.
+All shards are restriced to a fixed size of 32 kilobytes.
+Thus, stores and delivery relays may be set up to accept and deliver
+32 kilobyte shards corresponding to these hashes.
+
+TODO: Do we want to use the hashlink spec instead?  CBOR seems like
+overhead but convergence might be good.
+
+
+** IDSC: Immutable Datashard Capabilities
+
+Immutable content is represented by the following URI convention:
+
+: idsc:<suite-id>.<manifest-hash>.<encryption-key>
+
+Here is an example IDSC URI:
+
+: idsc:0p.X74UbU3NoLTA_Nupi8DhaJ_oQpQ95KFukMAkJJotKgo.eekxqfiZIcEnc8cpR-sD_3X3qLaTzQW-KnovArMkGP0
+
+The components of such a URI can be broken down as follows:
+
+ - *suite-id*: A string of characters representing the "suite" of
+   encryption protocols used by this IDSC.
+   In the above example, the value is =0p=, for the prototype 0th
+   suite, which uses =sha256d= hashes (double application of sha256
+   to prevent length extension attacks) for content and =aes-ctr= for
+   encryption.
+ - *manifest-hash*: The base64 encoded (sans padding) hash of the
+   initial/manifest shard.
+   Converted to a Shard URN before retrieval; in the example
+   above this would be converted to
+   =urn:sha256d:X74UbU3NoLTA_Nupi8DhaJ_oQpQ95KFukMAkJJotKgo=
+ - *encryption-key*: The base64 encoded (sans padding) symmetric key
+   used to decrypt the retrieved shards, including the manifest.
+   A unique key is generated for every IDSC upload.
+
+Once the initial shard is decrypted upon being retrieved.
+The initial shard is typed as either:
+
+ - *raw* if small enough (less than ~32kb), in which case the entire
+   file's contents are contained
+ - *manifest* otherwise, in which case the actual shards to be
+   retrieved is listed (if the manifest is too large, this object may
+   itself chain to another manifest object until all shards are
+   conveyed).
+ 
+Each object retrieved is decrypted by the symmetric key.
+(An initialization vector is also procedurally generated for each
+chunk retrieved; however, we are glossing over those details for
+the sake of this writeup.)
+Thus, while entities may request nodes to store and distribute shards,
+only the entities that have been explicitly given an IDSC capability
+may read its contents.
+
+** MDSC: Mutable Datashard Capabilities
+
+MDSC URIs technically point to immutable IDSC revisions under the
+hood, but may be incrementally updated, with no conflict prevention
+guarantee.
+(Approximation of such guarantees may be modeled via eventual
+consistency systems if desired, however.)
+Each MDSC is generated from a unique verification/signature (aka
+public/private) asymmetric keypair, and in fact the verification
+component of the identifier /is/ the location of the verification key.
+In addition to the content-addressed shard store described previously,
+a new source of information is added for mutable capabilities:
+registries, which track authorized revisions.
+When generating a new version of an MDSC referenced object, writers
+generate and sign a new certificate, then deliver to registries who
+may then verify and further distribute that certificate to requesting
+parties.
+
+There are three access levels of MDSC capabilities:
+
+ - *verify-only caps* (aka /verify/ caps): Can verify that the
+   metadata describing a revision is an authorized revision, even
+   though it can't read the revision's contents or write new
+   authorized revisions.
+   This is the only crystal capability that the registries know about;
+   we never share read or write capabilities with registries.
+ - *read caps* (aka /verify-read/ caps): Can verify that a revision is
+   valid, and can read the associated contents, but can't write out
+   new authorized revisions.  Can be transformed into a verify-only
+   cap.
+ - *read-write caps* (aka /verify-read-write/ caps): Can verify
+   revisions, read the contents described by revisions, and can even
+   write new authorized revisions.  Can be transformed into a read cap
+   or verify-only cap.  Users holding a read-write cap should be very
+   careful about handing these out and coordinating writes.
+
+Each revision is a canonicalized document which signs off on an
+incrementing revision number, an encrypted =idsc:= URI representing
+the revision, and an initialization vector used to encrypt the
+location.
+Since the location is encrypted, registries can verify that the
+document represents a new revision, but being only in possession of
+the verify capability, cannot actually discover the contents without
+access to the read capability.
+
+The structure of a MDSC capability URI is:
+
+: mdsc:<access-level>.<suite-id>.<keydata-hash>.<keydata-enckey>[.<read-key>|.<write-decryption-key>][/<version-num>[/<version-hash>]].
+
+(TODO: This might be simplified if we move to elliptic curve keys;
+then we don't need to put both the verify-key-hash and the
+verify-key-enckey in the URI, we can just put the entire public key.)
+
+The components of MDSC URIs are:
+
+ - *access-level*: Either =v= for verify, =r= for read-verify, or =w=
+   for read-write-verify.
+ - *suite-id*: A string of characters representing the "suite" of
+   encryption protocols used by this IDSC.  In the above examples, the
+   value is =0p=, for the prototype 0th suite, which uses a
+   combination of RSA public/private keypairs for the verify/write
+   keys, the =0p= IDSC suite for looking up the verification key, and
+   =sha256= to convert a write key to a read key.
+ - *keydata-hash* and *keydata-enckey*: Used to look up the
+   keydata for this MDSC object, which when retrieved contains
+   the verification key. (TODO: If we switch to elliptic
+   curve cryptography, we can simplify this to one component which
+   is just the public key directly.)
+ - *read-key*: If this is a read-verify ocap, provides the symmetric
+   key used to decrypt the location of the object.
+ - *write-decryption-key*: If this is a read-write-verify ocap, this
+   is used to retrieve the write key from the keydata mentioned above.
+   (TODO: Can also be simplified by embedding directly if using
+   elliptic curve cryptography.)  Can be hashed to generate the read
+   key.
+ - *version-num*: Incrementing base-10 encoded integer used to
+   sequentially order revisions, or identify one or a range of
+   revisions matching that number.
+ - *version-hash*: Since it is technically possible to issue multiple
+   version numbers matching a revision, this allows specifying a
+   precise version (the hash of the certificate).
+
+Some examples of MDSC capability URIs:
+
+#+BEGIN_SRC text
+  # verify ocap
+  mdsc:v.0p.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g
+  # verify-read ocap
+  mdsc:r.0p.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.wtNehlhYRxooG1un7cLBDMvjs2S-uEz1jLFgfDEH3Cs
+  # verify-read ocap for revision 1
+  mdsc:r.0p.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.wtNehlhYRxooG1un7cLBDMvjs2S-uEz1jLFgfDEH3Cs/1/
+  # verify-read ocap for revision 1, specific hash
+  mdsc:r.0p.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.wtNehlhYRxooG1un7cLBDMvjs2S-uEz1jLFgfDEH3Cs/1/bNIYWl3VtH5e3m0Znp80fU5qtH6IvqpGl3GlyXmNoD0
+  # verify-read-write ocap
+  mdsc:w.0p.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.MeMgmy_j0CI8jwT0EUX01bF7N0UAVSYwHhNQ67h2WAE
+#+END_SRC
+
+As stated before, there is no guarantee that multiple conflicting
+revisions won't be issued, or that a user requesting the latest
+revision will get the absolutely latest version.
+However, a specific revision can be more explicitly marked by
+specifying the =version-num= and =version-hash=.
+
+* Distribution mechanisms
+
 # - Datashards distribution mechanisms
 #   - Local
 #   - Targeted delivery
 #   - Global storage
+#   - Advisement against mixing decrypted and encrypted storage systems
+
+** IDSC content stores
+
+** MDSC revision registries
+
+* In contrast to existing systems
+
 # - In contrast to existing systems
 # - Where to from here?
 #   - Security audit
 #   - Applications
 #   - Multiple implementations
+#   - Parity?
+#   - "Known bad shards"
+#   - elliptic curve support?
 #   - Eventual standardization?
