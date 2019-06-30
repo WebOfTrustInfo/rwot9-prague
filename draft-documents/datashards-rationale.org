@@ -176,7 +176,7 @@ The initial shard is typed as either:
  
 Each object retrieved is decrypted by the symmetric key.
 (An initialization vector is also procedurally generated for each
-chunk retrieved; however, we are glossing over those details for
+shard retrieved; however, we are glossing over those details for
 the sake of this writeup.)
 Thus, while entities may request nodes to store and distribute shards,
 only the entities that have been explicitly given an IDSC capability
@@ -285,7 +285,7 @@ revision will get the absolutely latest version.
 However, a specific revision can be more explicitly marked by
 specifying the =version-num= and =version-hash=.
 
-* Distribution mechanisms
+* Distribution and storage mechanisms
 
 # - Datashards distribution mechanisms
 #   - Local
@@ -293,9 +293,83 @@ specifying the =version-num= and =version-hash=.
 #   - Global storage
 #   - Advisement against mixing decrypted and encrypted storage systems
 
+Datashards does not itself specify storage or distribution mechanisms.
+However, a variety of approaches are possible.
+
 ** IDSC content stores
 
+*** Foundational operations
+
+The foundational operations for a content store endpoint is:
+
+ - POST/PUT operation: Accepts as its body a shard of no more and no
+   less than 32 kilobytes.
+   It returns the Shard URN that it thinks this data is represented
+   by that data.
+ - GET operation: Is queried for a Shard URN and in its response body
+   returns what should be the data representing that data.
+   Raises the appropriate "Not Found" error if it can't find it
+   (though the store may itself recursively search the network for
+   that content if appropriate).
+
+In both cases the client MUST verify that the hash and the contents
+match what the server claim they are.
+
+*** Directed storage systems
+
+ - Local storage: a local, on-disk or in-memory key-value store may be
+   used to store hashes.  May be read-only, write-only, or read-write.
+ - Remote storage: an endpoint may be provided (whether it be via HTTP
+   or whatever else) using a key-value lookup and storage mechanism.
+   May be read-only, write-only, or read-write.  
+   Variations:
+    - A user's read-write storage endpoint for just their own data.
+    - A cluster of read-write storage endpoints, perhaps facilitated
+      by a local abstract endpoint that pushes and pulls content from
+      the cluster.
+    - Alice stores content on her server via her read-write endpoint,
+      Alice's server sends an update to Bob's server providing an IDSC
+      URI and a read-only endpoint for retrieving that content, and
+      now Bob's server retrieves that content.
+
+*** Global storage systems
+
+Multiple paths to global storage systems are possible:
+
+ - A DHT such as Kademlia
+ - Gossip protocols
+ - Etc.
+
+**** Advisement against mixing with decrypted CAS nodes.
+
+For a global storage system, it is strongly advised to NOT reuse an
+existing content-addressed system such as IPFS.
+While this is absolutely possible, the liability considerations for
+being a node operator are dramatically more complicated if unencrypted
+content is conventionally stored alongside encrypted content.
+While it is also not possible to consistently programmatically detect
+which content is decrypted and which content is not, setting up new
+networks intentionally built for the purpose of never having such
+content on them should reduce the amount of relevant overlap.
+
+**** "Malicious content" lists
+
+It is possible that in building such a global system, a known list of
+"malicious content shards" becomes available or strongly encouraged to
+subscribe to, in which case such nodes might choose to not distribute
+or accept these shards.
+Since referring to shards is possible without revealing their
+contents, it is possible to do so without constructing an effective
+"shopping list" for data which is encrypted.
+However, following any such list will have to be based on a trust (or
+coercive) relationship between that node and the list-supplying-party.
+
 ** MDSC revision registries
+
+*** Foundational operations
+
+
+
 
 * In contrast to existing systems
 
