@@ -1,0 +1,33 @@
+#+TITLE: Why the world needs Datashards
+#+AUTHOR: Christopher Lemmer Webber, Serge Wroclawski, and Tom Marble
+
+* Introduction
+
+# - Introduction
+#   - The problem
+#   - What are datashards?
+#     - The core idea
+#     - They have been in development for the last year as part
+#       of the Spritely project
+#     - Derivative of existing designs
+#     - Simple and easy to implement
+
+
+** IDSC: Immutable datashards capabilities
+
+** MDSC: Mutable datashards capabilities
+
+
+# - The two primary flavors of datashards
+#   - IDSC
+#   - MDSC
+# - Datashards distribution mechanisms
+#   - Local
+#   - Targeted delivery
+#   - Global storage
+# - In contrast to existing systems
+# - Where to from here?
+#   - Security audit
+#   - Applications
+#   - Multiple implementations
+#   - Eventual standardization?
