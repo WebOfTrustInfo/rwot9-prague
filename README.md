@@ -1,11 +1,12 @@
 # Rebooting the Web of Trust IX: Prague (September 2019)
 
 This repository contains documents related to RWOT9, the ninth
-Rebooting the Web of Trust design workshop, which ran in Barcelona,
-Spain on September 3rd to 6th, 2019. The goal of the workshop is to
-generate five technical white papers and/or proposals on topics
-decided by the group that would have the greatest impact on the
-future.
+Rebooting the Web of Trust design workshop, which will be held
+in Prague, the Czech Republic, September 3rd to 6th, 2019. 
+
+The goal of the workshop is to generate five technical white papers 
+and/or proposals on topics decided by the group that would have the 
+greatest impact on the future.
 
 Visit [Eventbrite](http://rwot9.eventbrite.com) for more information and to purchase tickets.
 
