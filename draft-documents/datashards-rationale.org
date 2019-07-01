@@ -407,12 +407,32 @@ the case of multiple writers).
 
 *** Global registries
 
-Global registries, such as using a gossip protocol...
-
-TODO: Continue here
+Globally-facing registries may exist and cooperate with other
+registries by sharing information, for example by using a gossip
+protocol.
+Again, there are no guarantees that a registry has or is conveying
+the absolutely latest revisions of an MDSC object.
 
 *** Cooperatively avoiding write conflicts
 
+Malicious write conflicts are difficult to deal with and structurally
+avoid.
+However, it is feasible to /cooperatively/ reduce the amount that
+write conflicts occur in case of multiple writers.
+
+Let's say that Alice and Bob are both stewards of an MDSC object.
+If both of them push an update 3 before seeing each others' updates,
+there will be a conflict as to which is the official update number 3.
+However, Alice and Bob could voluntarily choose to always first push
+updates to a special cooperative registry specifically built for this
+task.
+In most systems, registries should record and propagate any conflicts
+they discover.
+However, in this coordination registry, if either Alice or Bob tries
+pushing an update for a revision number that the coordination registry
+has already seen, the server will reject the update with an error message
+that allows Alice or Bob to be informed so that they can resolve the
+conflict before pushing it out to the wider network.
 
 * In contrast to existing systems
 
