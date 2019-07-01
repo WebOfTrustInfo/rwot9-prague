@@ -436,7 +436,61 @@ conflict before pushing it out to the wider network.
 
 * In contrast to existing systems
 
-# - In contrast to existing systems
+** IPFS
+
+[[https://ipfs.io/][IPFS]] is a popular content addressed store.
+IPFS's default mode is to store unencrypted content.
+
+In contrast, Datashards provides support for private distribution.
+Datashards shards are opaque not only to make disclosure of contents
+an intentional act but also to reduce the burden of participants hoping
+to help the network.
+Node operators should be able to help distribute content without being
+liable for their contents.
+
+For this reason, while a global Datashards store could be bootstrapped
+very quickly by using IPFS as the backend, it is better to start out with
+a global distribution network that simply does not have unencrypted content
+as its default.
+
+** Tahoe-LAFS
+
+[[https://tahoe-lafs.org][Tahoe-LAFS]] is an incredible project and by far the greatest source of
+inspiration for Datashards' content-addressed-but-private design.
+The primary differences between Tahoe and Datashards are:
+
+ - Tahoe is more mature and established than Datashards and has probably
+   accounted for many rough edges we have yet to encounter.
+ - Tahoe is currently mostly built for deployment to an intentionally
+   constructed cluster of nodes (akin to the "directed" stores/registries
+   described above) and as of yet does not support the option for global
+   storage and distribution of content.
+   In contrast, Datashards does not specify and is not tied to any
+   specific storage or distribution mechanism.
+ - Tahoe's URIs aren't constructed to be of "general use" on the web
+   the same way that http or hash-based urn schemes are.
+ - Tahoe provides some support for diff-based updates, which do not yet
+   exist in MDSC (but could).
+ - Tahoe supports pairwise redundancy in case of the loss of some
+   chunks/shards, at some additional storage cost.
+
+** Freenet
+
+[[https://freenetproject.org/][Freenet]] pioneered many of the ideas used by both Tahoe and Datashards.
+The primary differences between Tahoe and Datashards are:
+
+ - Freenet does not have and is not presently aiming for a variety of
+   implementations or an effort to standardize its architecture.
+ - Freenet supports one "global" storage and routing architecture
+   (though rooted in small world networks) and is very tied to that
+   design.
+   In contrast, Datashards does not specify and is not tied to any
+   specific storage or distribution mechanism.
+ - Freenet supports pairwise redundancy in case of the loss of some
+   chunks/shards, at some additional storage cost.
+
+* Where to from here?
+
 # - Where to from here?
 #   - Security audit
 #   - Applications
@@ -445,3 +499,33 @@ conflict before pushing it out to the wider network.
 #   - "Known bad shards"
 #   - elliptic curve support?
 #   - Eventual standardization?
+
+ - Datashards has not yet undergone a security audit; we would like to
+   have one if possible.
+ - While some prototype applications utilizing Datashards have been
+   built, we would like more user-facing applications, including:
+   - Real-world usage by distributed social networks
+   - Game asset storage
+   - Free Libre and Open Source software and cultural distbution
+ - Currently the only implementation is in Racket, but another
+   implementation is currently underway in Python.
+   We would love to see implementations in as many languages as possible.
+ - We do not yet have any global mechanisms built yet for the
+   Datashards content addressed stores and registries.
+   We are considering building prototypes of these based on Kademlia and
+   gossip protocols.
+ - Currently the IDSC structure does not support shard parity, but we have
+   ideas on how to accomplish this if desired.
+ - Metadata is not supported yet and objects follow the basic "bag of bytes"
+   metaphor.
+   Would it be better or worse to add support for metadata?
+   We don't know.
+ - The initial implementation of MDSC was built on RSA.  However, many
+   components of it (and their explaination) would be greatly
+   simplified by using elliptic curve cryptography, because the
+   smaller keysize could mean that directly embedding the keys is feasible.
+ - A step-by-step writeup of the algorithms used by Datashards needs
+   to be written.
+ - A test suite would be useful.
+ - We would like to submit Datashards for standardization, pending enough
+   implementations.
