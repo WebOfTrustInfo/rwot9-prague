@@ -133,9 +133,12 @@ All shards are restriced to a fixed size of 32 kilobytes.
 Thus, stores and delivery relays may be set up to accept and deliver
 32 kilobyte shards corresponding to these hashes.
 
+The convention of having objects be assembled from uniform-sized
+shards prevents a length-of-file attack, where the specific content
+stored is inferred from the file length.
+
 TODO: Do we want to use the hashlink spec instead?  CBOR seems like
 overhead but convergence might be good.
-
 
 ** IDSC: Immutable Datashard Capabilities
 
@@ -302,11 +305,11 @@ However, a variety of approaches are possible.
 
 The foundational operations for a content store endpoint is:
 
- - POST/PUT operation: Accepts as its body a shard of no more and no
-   less than 32 kilobytes.
+ - *store-shard*: Accepts as its body a shard of no more and no less
+   than 32 kilobytes.
    It returns the Shard URN that it thinks this data is represented
    by that data.
- - GET operation: Is queried for a Shard URN and in its response body
+ - *get-shard*: Is queried for a Shard URN and in its response body
    returns what should be the data representing that data.
    Raises the appropriate "Not Found" error if it can't find it
    (though the store may itself recursively search the network for
@@ -368,7 +371,47 @@ coercive) relationship between that node and the list-supplying-party.
 
 *** Foundational operations
 
+A registry consists of two foundational operation, and one optional
+operation.
 
+ - *add-revision*: Submits a signed revision certificate in union with
+   the verification capability to be updated.
+   The submitting client MUST NOT submit a capability with read or
+   write access; only verification-only capabilities are allowed.
+   The server MUST then dereference the keydata and verify that it is
+   a valid revision.
+   The server may then update its table of known revisions with this
+   revision.
+ - *get-known-revisions*: Given a verification capability, returns
+   an ordered set of all known good revisions, sorted first by revision
+   number and then the specific revision hash.
+   Specifying a more precise verification capability narrows the set
+   returned; specifying a =version-num= returns only revisions
+   matching that =version-num= whereas specifying both a =version-num=
+   and =version-hash= specifies an exact commit.
+   The client MUST verify that all revisions have authorized signatures
+   and that revision numbers and version hashes match appropriately.
+
+Optionally, registries may also support:
+
+ - *get-store*: Suggests a content store by which one may retrieve IDSC
+   objects (including the keydata in the present design).
+
+*** Directed registries
+
+As with IDSC stores, registries can be local or remote.
+
+The general patterns are the same as with IDSC stores, with the
+additional complexity of potential conflicting updates (especially in
+the case of multiple writers).
+
+*** Global registries
+
+Global registries, such as using a gossip protocol...
+
+TODO: Continue here
+
+*** Cooperatively avoiding write conflicts
 
 
 * In contrast to existing systems
