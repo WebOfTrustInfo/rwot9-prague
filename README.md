@@ -12,7 +12,7 @@ Visit [Eventbrite](http://rwot9.eventbrite.com) for more information and to purc
 
 ## Topics & Advance Readings
 
-In advance of the design workshop, all participants produced a
+In advance of the design workshop, all participants are invited to contribute a
 one-or-two page topic paper to be shared with the other attendees on
 either:
 
