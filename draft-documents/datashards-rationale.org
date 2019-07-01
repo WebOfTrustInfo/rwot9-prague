@@ -49,6 +49,7 @@ a simple content-addressed system:
    a liability; a node wishing to be a good citizen and helping distribute
    content along the network may find that it is storing undesirable
    material in the clear.
+   Sometimes it is best to know less.
 
 ** Introducing Datashards
 
