@@ -28,6 +28,9 @@ really, read as much as you can!)
 
 ## Topical Listing
 
-[list of topics and papers goes here.]
+### Security
+[Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) - Kyle Den Hartog
 
 ## Alphabetical Listing
+
+[Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) - Kyle Den Hartog
