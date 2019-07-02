@@ -384,6 +384,21 @@ Multiple paths to global storage systems are possible:
     However, following any such list will have to be based on a trust (or
     coercive) relationship between that node and the list-supplying-party.
 
+3.  Eventual weakening of encryption
+
+    One thing we cannot fully prevent is the possibility that today's
+    robust encryption algorithms will weaken over time.
+    While any transmitted content may be retained and eventually decoded,
+    intentionally storing in a system designed to keep content around for
+    a long time means that eventually, should weaknesses in the underlying
+    cryptography be found, such secrets will be easier to access.
+    As such, it may often be more desirable to use directed storage and
+    transmission than global storage and transmission.
+    
+    That said, it may be possible to take steps such as mixing encryption
+    mechanisms that might provide a possibility that secrets will remain
+    secrets from prying eyes for longer.
+    See the Tahoe-LAFS [One Hundred Year Cryptography](https://tahoe-lafs.org/trac/tahoe-lafs/wiki/OneHundredYearCryptography) for ideas.
 
 <a id="org3afe81f"></a>
 
