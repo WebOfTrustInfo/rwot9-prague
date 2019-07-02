@@ -52,6 +52,12 @@ a simple content-addressed system:
     content along the network may find that it is storing undesirable
     material in the clear.
     Sometimes it is best to know less.
+-   Universal names, but a variety of distribution/storage systems.
+    Datashards may be distributed over a variety of mediums, from a
+    local filesystem to a global distributed hashtable to sneakernet to
+    one-off REST endpoints, all depending on need and threat analysis.
+    The names representing both shards and access capabilities remain
+    the same regardless of storage and distribution protocol.
 
 
 <a id="orgf655caf"></a>
