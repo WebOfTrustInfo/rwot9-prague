@@ -1,5 +1,6 @@
 #+TITLE: Datashards: secure storage primitives for the web
-#+AUTHOR: Christopher Lemmer Webber, Serge Wroclawski, and Tom Marble
+
+By [[https://dustycloud.org/][Christopher Lemmer Webber]], with help from [[https://emacsen.net/@emacsen][Serge Wroclawski]] and [[http://info9.net/wiki/tmarble/][Tom Marble]]
 
 # - Introduction
 
