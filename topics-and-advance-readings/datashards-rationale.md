@@ -2,32 +2,6 @@
 
 By [Christopher Lemmer Webber](https://dustycloud.org/), with help from [Serge Wroclawski](https://emacsen.net/@emacsen) and [Tom Marble](http://info9.net/wiki/tmarble/)
 
-## Table of Contents
-
-1.  [Introduction](#orgbf3c6dc)
-    1.  [The problem](#org14afde2)
-    2.  [Introducing Datashards](#orgf655caf)
-    3.  [History](#org4ca8a77)
-2.  [Datashard URIs](#org62f35da)
-    1.  [Shard URNs](#org50a5367)
-    2.  [IDSC: Immutable Datashard Capabilities](#org4c913ac)
-    3.  [MDSC: Mutable Datashard Capabilities](#org7c0b3c7)
-3.  [Distribution and storage mechanisms](#orgb2b174d)
-    1.  [IDSC content stores](#org1252f84)
-        1.  [Foundational operations](#org33621f1)
-        2.  [Directed storage systems](#org09f3599)
-        3.  [Global storage systems](#orge8818f1)
-    2.  [MDSC revision registries](#org3afe81f)
-        1.  [Foundational operations](#orgaa345b2)
-        2.  [Directed registries](#orgbd57793)
-        3.  [Global registries](#org37246c4)
-        4.  [Cooperatively avoiding write conflicts](#org290d51b)
-4.  [In contrast to existing systems](#orgc64115b)
-    1.  [IPFS](#org2ac9464)
-    2.  [Tahoe-LAFS](#orgdd445fc)
-    3.  [Freenet](#orgf2795e3)
-5.  [Where to from here?](#orgd117ada)
-
 <a id="orgbf3c6dc"></a>
 
 ## Introduction
