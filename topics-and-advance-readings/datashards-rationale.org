@@ -29,7 +29,7 @@ and such content cannot even be reliably viewed via its original URI.
 One way to improve this situation is to use content-addressed storage.
 Instead of distributing an HTTP url linking to a picture of a cat, we
 could distribute a hash of the picture of a cat, for example by using
-=urn:sha1:ea15e456ba5138a20be341718d306e1529a5149a= as the identifier.
+=urn:sha256d:6nUldx59H40YLAS0ajkVJfx9k0pEX6fT-5HRDsMI8QA= as the identifier.
 Now any server or client can store this picture of a cat.
 Any node can ask other nodes if they have this cat picture, and we will
 know if the cat picture they provide really is the same picture based
