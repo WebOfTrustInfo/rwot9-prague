@@ -142,7 +142,7 @@ This act of the sender handing out capabilities may be done in a number of
  "type": "Inbox",
  "to": ["https://chatty.example/ben/"],
  "attributedTo": "https://social.example/alyssa/",
- "inboxes": ["https://social.example/dbgxpggrez", "https://social.example/ptmihemlzj"]
+ "alternativeInbox ["https://social.example/dbgxpggrez", "https://social.example/ptmihemlzj"]
 #+END_SRC
 
 In our example, we show multiple inboxes being delivered. As part of the Object
