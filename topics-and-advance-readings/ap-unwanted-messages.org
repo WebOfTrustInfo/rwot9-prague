@@ -127,7 +127,7 @@ Without delving too far into the theory of object capabilities, we can imagine
 that the ability to send a message from one Actor to another is an action that
 we can grant explicit access to similarly to the way that access is granted to
 an API in a computer system. In order to be able to send a message to the
-receipient, the recipient must first provide the sender with a /capability/ to
+recipient, the recipient must first provide the sender with a /capability/ to
 do so. This capability can be represented as a long randomly generated string.
 Its length and randomness make it impractical to guess and thus (in OCAP
 parlance) unforgeable.
@@ -142,7 +142,7 @@ This act of the sender handing out capabilities may be done in a number of
  "type": "Inbox",
  "to": ["https://chatty.example/ben/"],
  "attributedTo": "https://social.example/alyssa/",
- "inboxes": ["https://social.example/dbgxpggrez", "https://social.example/ptmihemlzj]
+ "inboxes": ["https://social.example/dbgxpggrez", "https://social.example/ptmihemlzj"]
 #+END_SRC
 
 In our example, we show multiple inboxes being delivered. As part of the Object
@@ -234,7 +234,7 @@ literature as either /Joe Jobbing/ or /Phishing/.
 
 In Email, verification is largely achieved by verifying that the email server
 is trusted for the domain which it purports to deliver email, often through an
-out of band technique, often involving DNS, such as SPF[fn:1] or DMIM[fn:2].
+out of band technique, often involving DNS, such as SPF[fn:1] or DKIM[fn:2].
 
 In ActivityPub, sender identification is performed at the Actor level using the
 HTTP Signatures.[fn:3] With this extension, each Actor has a public and private
