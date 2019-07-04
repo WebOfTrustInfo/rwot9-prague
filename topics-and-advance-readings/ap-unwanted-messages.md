@@ -1,32 +1,30 @@
 
 # Table of Contents
 
-1.  [Introduction](#org5add05a)
-2.  [ActivityPub Overview](#org1929d17)
-3.  [Proposed Solutions](#org62c38c0)
-    1.  [Enhanced Privacy of Followers/Following Collection](#org088cba8)
-    2.  [Strict Protocol Adherence](#orge014dfd)
-    3.  [Object-Capabilities Based Inboxes](#org2e21bea)
-    4.  [MultiBox](#org01e5593)
-    5.  [Multiple Inboxes/Message Sorting](#org5e8e38a)
-    6.  [Sender Identification and Pet Names](#org6ab3d8a)
-    7.  [Blacklists](#orgff8373c)
-        1.  [Caution and Conclusions](#org5e44ee7)
-    8.  [Closing the Relay Hole](#orga9aeacc)
-    9.  [Content Based Filtering](#org912102f)
-    10. [Whitelists](#org21c8b9f)
-    11. [Message Flagging/Sorting](#org1920bd4)
-    12. [Postage](#orgdd78757)
-    13. [Bounce Messages](#org8fee336)
-    14. [Promises](#org6d9b938)
-4.  [Combining Techniques](#org559f6a7)
-5.  [A Note for ActivityPub Node Operators](#org0f0532f)
-6.  [Conclusion](#orgcb16a86)
-7.  [Endnotes](#org00aa5bc)
+1.  [Introduction](#orged105b0)
+2.  [ActivityPub Overview](#org0afa829)
+3.  [Proposed Suggestions](#orgda828b1)
+    1.  [Enhanced Privacy of Followers/Following Collection](#org3c24fd4)
+    2.  [Strict Protocol Adherence](#orgaed1764)
+    3.  [Object-Capabilities Based Inboxes](#orga30d83f)
+    4.  [MultiBox](#orgce9d54a)
+    5.  [Multiple Inboxes/Message Sorting](#org16f16a6)
+    6.  [Sender Identification and Pet Names](#org8370e97)
+    7.  [Blacklists](#org6560321)
+    8.  [Closing the Relay Hole](#org8998be3)
+    9.  [Content Based Filtering](#org4f3df99)
+    10. [Whitelists](#org62e755c)
+    11. [Message Flagging/Sorting](#org942dfbd)
+    12. [Postage](#orgc19ec55)
+    13. [Bounce Messages](#org6794f06)
+    14. [Promises](#orga78d9a1)
+4.  [Combining Techniques](#org8919757)
+5.  [A Note for ActivityPub Node Operators](#org341a92e)
+6.  [Conclusion](#org18eb43c)
 
 
 
-<a id="org5add05a"></a>
+<a id="orged105b0"></a>
 
 # Introduction
 
@@ -42,7 +40,7 @@ user accounts on the Fediverse spread across approximately 5,400 nodes.<sup><a i
 Despite this large number, unwanted messages have not yet become a widespread
 problem. It seems inevitable that given the size and breath of the Fediverse,
 along with its decentralized architecture that the introduction of unwanted
-messages is possibly inevitable.
+messages is inevitable.
 
 What exactly constitutes unwanted messages will vary from person and community
 but we generally feel these messages fall into one or more of the following
@@ -61,7 +59,7 @@ multiple domains of messages, regardless of content or whether the messages are
 meant for a public or private audience.
 
 
-<a id="org1929d17"></a>
+<a id="org0afa829"></a>
 
 # ActivityPub Overview
 
@@ -95,12 +93,12 @@ Actor Object. Requests made on behalf of that actor are then signed using the
 Actor's private key and may be verified against its public key.
 
 
-<a id="org62c38c0"></a>
+<a id="orgda828b1"></a>
 
-# Proposed Solutions
+# Proposed Suggestions
 
 
-<a id="org088cba8"></a>
+<a id="org3c24fd4"></a>
 
 ## Enhanced Privacy of Followers/Following Collection
 
@@ -114,7 +112,7 @@ be disclosed to a third party or only be disclosed insofar as it related to the
 actor making the request.
 
 
-<a id="orge014dfd"></a>
+<a id="orgaed1764"></a>
 
 ## Strict Protocol Adherence
 
@@ -146,7 +144,7 @@ Nonetheless, we mention this method because it has been so effective in email,
 and thus may be something to evaluate again in the future.
 
 
-<a id="org2e21bea"></a>
+<a id="orga30d83f"></a>
 
 ## Object-Capabilities Based Inboxes
 
@@ -195,7 +193,7 @@ endpoint as discussed previously. In such cases, a server would need to
 retrieve a new Inbox for an Actor as needed.
 
 
-<a id="org01e5593"></a>
+<a id="orgce9d54a"></a>
 
 ## MultiBox
 
@@ -218,9 +216,11 @@ separated values<sup><a id="fnr.11" class="footref" href="#fn.11">11</a></sup>.
 
 This has two advantages over Shared Inbox. Used on its own, it eliminates the
 vulnerability mentioned previously whereby recipients to a message do not need
-to be listed. If this proposal is adopted alongside the [3.3](#org2e21bea) proposal, the advantages multiply as we also gain the ability to
-appropriately filter incoming messages according to the criteria set out by the
-specific Inboxes, as well as letting us know the origin of each Inbox. 
+to be listed. If this proposal is adopted alongside the Object-Capabilities
+Based Inbox proposal ([3.3](#orga30d83f)), the
+advantages multiply as we also gain the ability to appropriately filter
+incoming messages according to the criteria set out by the specific Inboxes, as
+well as letting us know the origin of each Inbox.
 
 For the sender, the additional computing resources required to send a MultiBox
 request are minimal, but doing so would make mass-messages expensive for
@@ -236,7 +236,7 @@ This would limit the number of per message recipients, though this limitation
  `MultiBox` object encapsulating the `Audience` field and the ~Activity.
 
 
-<a id="org5e8e38a"></a>
+<a id="org16f16a6"></a>
 
 ## Multiple Inboxes/Message Sorting
 
@@ -254,11 +254,13 @@ communication) but only through the Client to Server (C2S) communication
 protocol dictated in the ActivityPub standard.<sup><a id="fnr.13" class="footref" href="#fn.13">13</a></sup>
 
 A variety of techniques could be employed when sorting messages, including but
-not limited to the content based filtering techniques described in [3.9](#org912102f) or using [3.3](#org2e21bea) mechanisms described
-in this whitepaper.
+not limited to the content based filtering techniques described in previous
+sections about filtering based on message content ([3.9](#org4f3df99)) or
+using OCAP Inboxes ([3.3](#orga30d83f)) described in this
+whitepaper.
 
 
-<a id="org6ab3d8a"></a>
+<a id="org8370e97"></a>
 
 ## Sender Identification and Pet Names
 
@@ -291,7 +293,8 @@ then we know that there is some level of communication between them, thereby
 indicating that the communication is more likely to be useful.
 
 We recognize that this proposal may seem in contrast to the previous proposal
-of not disclosing connections to third parties as described in [3.1](#org088cba8), but the two can operate in tandem by making
+of not disclosing connections to third parties as described in the section on
+improving privacy of Follower/Following Collections ([3.1](#org3c24fd4)), but the two can operate in tandem by making
 the ability to find a connection to your followers be a query, rather than a
 publicly available list. We could further enhance the security of this by
 adding additional restrictions onto the query functionality such as rate
@@ -303,7 +306,7 @@ believe that this would require further examination in order to be done in a
 way that protects a user's social graph.
 
 
-<a id="orgff8373c"></a>
+<a id="org6560321"></a>
 
 ## Blacklists
 
@@ -317,7 +320,7 @@ In ActivityPub an individual Actor or server administrator may choose to create
 a custom blocklist, but there is currently no standardized way to distribute or
 share blocklists. We propose that this be explored further, though cautiously
 by allowing Actors to query each other's either mute or block lists through a
-mechanism similar to the proposal described in [3.6](#org6ab3d8a).
+mechanism similar to the proposal described in the section on Pet Names ([3.6](#org8370e97)).
 
 Actors who have agreed to peer with each other in regards to shared mute or
 block lists will be given an additional property in their actor object
@@ -325,11 +328,6 @@ corresponding to a query endpoint for their blocklists, thus creating
 functionality where these lists can be shared between actors. These blocklists
 may contain either actor level or server level bans, and could additionally be
 shared between server administrators.
-
-
-<a id="org5e44ee7"></a>
-
-### Caution and Conclusions
 
 We believe that while blocklists may be effective in addressing some types of
 unwanted messages, particularly offensive speech, that they carry with them a
@@ -349,8 +347,7 @@ miss out on messages that they might wish to recieve. The analogy of adblocking
 software is often used by those supporting this type of proposal, but in
 ad-blocking, it is possible to disable the software selectively when the
 functionality of a website does not work. With blocklists, unless they are
-paired with another proposal, such as [3.5](#org5e8e38a), they
-may have the consequence of breaking federation.
+paired with another proposal, such as the one about multiple inboxes ([3.5](#org16f16a6)), they may have the consequence of breaking federation.
 
 Thirdly, the mechanism described precludes the ability to easily remove a
 block. If a block is removed, there is no mechanism that allows those who have
@@ -365,7 +362,7 @@ unwanted messages, unless we can address the concerns raised above, we cannot
 endorse their deployment.
 
 
-<a id="orga9aeacc"></a>
+<a id="org8998be3"></a>
 
 ## Closing the Relay Hole
 
@@ -384,9 +381,9 @@ because the replier does not send the message to everyone that the original
 sender did. Unfortunately this also opens up replies as a vector of abuse in
 that a malicious sender may simply reply to an existing message, at which point
 the sender of the original message will relay the reply to all their Followers
-and any other audience of message.We suggest two solutions to this problem, one
-using traditional Access Control Lists and the other using the Object
-Capabilities Inbox proposal.
+and any other audience of message. We suggest two methods to address this
+problem, one using traditional Access Control Lists and the other using the
+Object Capabilities Inbox proposal.
 
 An Access Control Method solution would allow for the recipient of a
 `inReplyTo` activity to be presented with a moderator queue of Activities in
@@ -403,7 +400,7 @@ reply without moderation is given a new Inbox corresponding to this added
 capability.
 
 
-<a id="org912102f"></a>
+<a id="org4f3df99"></a>
 
 ## Content Based Filtering
 
@@ -429,7 +426,7 @@ in creating training models that work well based on community standards of
 interest and behavior.
 
 
-<a id="org21c8b9f"></a>
+<a id="org62e755c"></a>
 
 ## Whitelists
 
@@ -450,7 +447,7 @@ Such whitelists are difficult to curate and more importantly, break the spirit
 of communication that as at the heart of the protocol.
 
 
-<a id="org1920bd4"></a>
+<a id="org942dfbd"></a>
 
 ## Message Flagging/Sorting
 
@@ -471,7 +468,7 @@ that it could be handled more easily, or possibly allowing those messages to be
 screened further.
 
 
-<a id="orgdd78757"></a>
+<a id="orgc19ec55"></a>
 
 ## Postage
 
@@ -507,7 +504,7 @@ encourage any implementation of this technique to be used sparingly and only on
 the first message of a new sender, rather than on all messages.
 
 
-<a id="org8fee336"></a>
+<a id="org6794f06"></a>
 
 ## Bounce Messages
 
@@ -523,7 +520,7 @@ client, allowing an ActivityPub server administrator the opportunity to see why
 messages are failing and take appropriate action.
 
 
-<a id="org6d9b938"></a>
+<a id="orga78d9a1"></a>
 
 ## Promises
 
@@ -533,11 +530,12 @@ processing of the message asynchronously and return a Promise representing the
 status of message delivery which could then be queried at a later time to
 determine if the message was delivered successfully or rejected.
 
-These Promise statuses could use the same error codes as discussed in [3.13](#org8fee336) but not be required to keep the HTTP connection open during the
-determination of message suitability.
+These Promise statuses could use the same error codes as discussed in the
+section on Bounce Messages ([3.13](#org6794f06)) but not be required to keep the
+HTTP connection open during the determination of message suitability.
 
 
-<a id="org559f6a7"></a>
+<a id="org8919757"></a>
 
 # Combining Techniques
 
@@ -547,11 +545,11 @@ MultiBox used in conjunction with Object Capabilities Inboxes allows for
 per-Actor filtering to be performed more easily. OCAP Inboxes may also be
 granted which allow a sender to bypass other filters, acting effectively as an
 Actor Whitelist, whereas a "Default Inbox" may require a postage fee. We
-explored ACL vs OCAP inReplyTo functionality in [3.8](#orga9aeacc), and
+explored ACL vs OCAP inReplyTo functionality in [3.8](#org8998be3), and
 either of these techniques could be combined with content analysis.
 
 
-<a id="org0f0532f"></a>
+<a id="org341a92e"></a>
 
 # A Note for ActivityPub Node Operators
 
@@ -572,7 +570,7 @@ We have not addressed this issue in this paper but believe that the topic
 deserves further research.
 
 
-<a id="orgcb16a86"></a>
+<a id="org18eb43c"></a>
 
 # Conclusion
 
@@ -584,16 +582,11 @@ Capabilities Inboxes allows for per-Actor filtering to be performed more
 easily. OCAP Inboxes may also be granted which allow a sender to bypass other
 filters, acting effectively as an Actor Whitelist, whereas a "Default Inbox"
 may require a postage fee. We explored ACL vs OCAP inReplyTo functionality in
-[3.8](#orga9aeacc), and either of these techniques could be combined with
+[3.8](#org8998be3), and either of these techniques could be combined with
 content analysis.
 
 We believe that the problem of unwanted messages is addressable and we look
 forward to participating in building solutions.
-
-
-<a id="org00aa5bc"></a>
-
-# Endnotes
 
 
 # Footnotes
