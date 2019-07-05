@@ -142,13 +142,13 @@ This act of the sender handing out capabilities may be done in a number of
  "type": "Inbox",
  "to": ["https://chatty.example/ben/"],
  "attributedTo": "https://social.example/alyssa/",
- "alternativeInbox ["https://social.example/dbgxpggrez", "https://social.example/ptmihemlzj"]
+ "preferredInbox ["https://social.example/dbgxpggrez", "https://social.example/ptmihemlzj"]
 #+END_SRC
 
-In our example, we show multiple inboxes being delivered. As part of the Object
+In our example, we show multiple inboxes being offered. As part of the Object
 Capabilities model, these capabilities are transferable, which would allow one
 actor to send an inbox capability to another actor, for example in a situation
-where the recipient is a trusted party. 
+where the recipient is a trusted party.
 
 If one Inbox becomes abused, we are able to trace back to exactly when and for
 who the Inbox was generated. We are also able to revoke the Inbox, stopping any
@@ -158,10 +158,9 @@ of the inbox and prompting it to request a new one if it wishes to resume
 communication.
 
 The OCAP Inbox model as described in this proposal would require little or no
-changes to existing deployed ActivityPub servers except where such servers are
-not prepared to accept a non-success (200) result when posting to an HTTP
-endpoint as discussed previously. In such cases, a server would need to
-retrieve a new Inbox for an Actor as needed.
+changes to existing deployed ActivityPub servers. In the case where an
+implementation does not understand the new Inbox being offered, they would
+continue to go through a "Default Inbox" route.
 
 ** MultiBox
 
@@ -441,12 +440,17 @@ messages, we would encourage that implementers of this idea be focused on
 like Hashcash are easy to implement, without adding a direct benefit to the
 receiver, they require the sender to expend resources. If extrapolated to a
 large scale, this could have a negative environmental impact due to wasted
-computing resources. It should also be noted that due to currency and cost of
-living differences, any form of fee whether paid directly or indirectly, will
+computing resources.
+
+The issues around "real currency" are far more complex. Issuing a postage fee
+based in actual currency more accurately reflects the cost of handling incoming
+spam and by virtue of requiring actual money, makes sending out mass
+solicitation or scambait email more costly. At the same time, by virtue of cost
+of living differences any form of fee whether paid directly or indirectly, will
 have a correspondingly different financial impact with greater proportional
 cost born by those in poorer countries.
 
-Because of these issues and the spirit of free communication, we would
+Because of these concerns and the spirit of free communication, we would
 encourage any implementation of this technique to be used sparingly and only on
 the first message of a new sender, rather than on all messages.
 
