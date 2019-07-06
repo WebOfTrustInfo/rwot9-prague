@@ -28,6 +28,10 @@ really, read as much as you can!)
 
 ## Topical Listing
 
-[list of topics and papers goes here.]
+### Object capabilities
+
+* [Bearcap URIs](./bearcaps.md)
+  * By [Christopher Lemmer Webber](https://dustycloud.org/)
+  * "Capability URLs are powerful ways to share access without involving a check against identity, but unfortunately tend to leak authority through contemporary implementations.  This document suggests a new URI scheme that composes an http(s) URI with an OAuth 2.0 bearer token as a solution to this problem."
 
 ## Alphabetical Listing
