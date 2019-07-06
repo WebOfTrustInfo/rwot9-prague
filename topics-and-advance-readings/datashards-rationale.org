@@ -164,8 +164,8 @@ The components of such a URI can be broken down as follows:
  - *suite-id*: A string of characters representing the "suite" of
    encryption protocols used by this IDSC.
    In the above example, the value is =0p=, for the prototype 0th
-   suite, which uses =sha256d= hashes (double application of sha256
-   to prevent length extension attacks) for content and =aes-ctr= for
+   suite, which uses [[https://en.bitcoinwiki.org/wiki/SHA-256d][sha256d]] hashes (double application of sha256
+   to prevent [[https://en.wikipedia.org/wiki/Length_extension_attack][length extension attacks]]) for content and =aes-ctr= for
    encryption.
  - *manifest-hash*: The base64 encoded (sans padding) hash of the
    initial/manifest shard.
