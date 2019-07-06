@@ -545,7 +545,7 @@ The primary differences between Tahoe and Datashards are:
 ### Freenet
 
 [Freenet](https://freenetproject.org/) pioneered many of the ideas used by both Tahoe and Datashards.
-The primary differences between Tahoe and Datashards are:
+The primary differences between Freenet and Datashards are:
 
 -   Freenet does not have and is not presently aiming for a variety of
     implementations or an effort to standardize its architecture.
