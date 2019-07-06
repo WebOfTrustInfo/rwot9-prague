@@ -118,11 +118,11 @@ specification/implementation guide is forthcoming.
 
 ## Datashard URIs
 
-The below explainations are high level summaries; for details
+The below explanations are high level summaries; for details
 see the [Spritely Magenc](https://gitlab.com/dustyweb/magenc/blob/master/magenc/scribblings/intro.org) and [Spritely Crystal](https://gitlab.com/spritely/crystal/blob/master/crystal/scribblings/intro.org) writeups.
 
 TODO: Those repositories are out of date/sync with the below
-explainations.  Convert those documents to a shared datashards
+explanations.  Convert those documents to a shared Datashards
 repository which follows the new URI patterns explained below.
 
 
@@ -139,7 +139,7 @@ For example:
     urn:sha256d:X74UbU3NoLTA_Nupi8DhaJ_oQpQ95KFukMAkJJotKgo
 
 These are for the encrypted fixed-size shards.
-All shards are restriced to a fixed size of 32 kilobytes.
+All shards are restricted to a fixed size of 32 kilobytes.
 Thus, stores and delivery relays may be set up to accept and deliver
 32 kilobyte shards corresponding to these hashes.
 
@@ -565,7 +565,7 @@ The primary differences between Tahoe and Datashards are:
     built, we would like more user-facing applications, including:
     -   Real-world usage by distributed social networks
     -   Game asset storage
-    -   Free Libre and Open Source software and cultural distbution
+    -   Free Libre and Open Source software and cultural distribution
 -   Currently the only implementation is in Racket, but another
     implementation is currently underway in Python.
     We would love to see implementations in as many languages as possible.
@@ -580,7 +580,7 @@ The primary differences between Tahoe and Datashards are:
     Would it be better or worse to add support for metadata?
     We don't know.
 -   The initial implementation of MDSC was built on RSA.  However, many
-    components of it (and their explaination) would be greatly
+    components of it (and their explanation) would be greatly
     simplified by using elliptic curve cryptography, because the
     smaller keysize could mean that directly embedding the keys is feasible.
 -   A step-by-step writeup of the algorithms used by Datashards needs
