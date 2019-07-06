@@ -1,0 +1,69 @@
+#+TITLE: Bearcap URIs
+
+[[https://www.w3.org/TR/capability-urls/][Capability URLs]] are powerful ways to share access without involving a
+check against identity, but unfortunately tend to leak authority
+through contemporary implementations.
+This document suggests a new URI scheme that composes an http(s) URI
+with an OAuth 2.0 bearer token as a solution to this problem.
+
+* The problem
+
+One popular example of contemporary capability URLs is Google Docs,
+where selecting to share a document gives a link with enough random
+characters in it to make it unguessable.
+It is easy to share access with a friend simply by copying and pasting
+this URL, but it is not feasible to brute force access to it.
+
+Unfortunately, contemporary http(s) based URLs tend to "leak" authority
+through other implementation details of modern web clients, such as
+[[https://www.w3.org/TR/capability-urls/#risk-of-exposure][through the Referer header]], and web servers tend to write out such
+URLs to unsafe locations such as unsecured access logs.
+
+One workaround to this can be seen in both [[http://waterken.sourceforge.net/][Waterken]] and [[https://sebsauvage.net/wiki/doku.php?id=php:zerobin][Zerobin]].
+In both systems, the URI fragment is used to store the
+"secret/unguessable information", since the fragment is not supposed
+to be leaked to the server or via the browser's Referer header; it is
+just for the client to see.
+Not all clients follow this rule, unfortunately, but there is a bigger
+problem: the systems require the execution of server-supplied
+javascript to make sense of how to use the fragment.
+This excludes the fragment kludge from being an acceptable workaround for
+REST or other such web API endpoints.
+
+OAuth 2.0 provides a way to include a bearer token that does not have
+such leakage problems by separating the bearer token into an opaque
+value provided to the =Authorization= http header.
+
+: Authorization: Bearer d5c0dd81afa7a71a3b67893412fdd48ebf3ab59e9d233ecfc8
+
+However, we can't copy around a link to this as easily as we could to the
+Google Docs link.
+Or can we?
+
+* Introducing the bear: URI scheme
+
+The =bear:= URI scheme creates a union of designation (the http(s) url
+to access) and the bearer token to use, structured like so:
+
+: bear:?u=<url>&t=<token>
+
+This allows us to "bundle designation with authority", ie have reference-based
+access... a capability.
+
+For example, if seeing the following URL:
+
+: bear:?u=https://social.example/obj&t=a611a55e9352f117abeef0361643e31141b10712032d2a0f34
+
+This example composes together the URL of =https://social.example/obj= with
+the bearer token of =a611a55e9352f117abeef0361643e31141b10712032d2a0f34=.
+So our client would interpret a GET request against this URL would like:
+
+#+BEGIN_SRC text
+  GET /obj HTTP/1.1
+  Host: social.example
+  Authorization: Bearer a611a55e9352f117abeef0361643e31141b10712032d2a0f34
+#+END_SRC
+
+Clients MUST NOT leak this object via Referer headers.
+Servers probably won't leak this object anyway, since headers tend not to
+be unintentionally logged in insecure logs.
