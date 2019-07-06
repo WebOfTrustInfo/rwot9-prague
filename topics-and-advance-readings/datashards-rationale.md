@@ -171,6 +171,9 @@ The components of such a URI can be broken down as follows:
     suite, which uses [sha256d](https://en.bitcoinwiki.org/wiki/SHA-256d) hashes (double application of sha256
     to prevent [length extension attacks](https://en.wikipedia.org/wiki/Length_extension_attack)) for content and `aes-ctr` for
     encryption.
+    In the future there will be other cryptographic suites available
+    which combine specific cryptographic algorithms in a way believed
+    to be safe.
 -   **manifest-hash**: The base64 encoded (sans padding) hash of the
     initial/manifest shard.
     Converted to a Shard URN before retrieval; in the example
