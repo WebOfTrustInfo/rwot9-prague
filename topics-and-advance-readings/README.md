@@ -30,4 +30,8 @@ really, read as much as you can!)
 
 [list of topics and papers goes here.]
 
+[KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
+
 ## Alphabetical Listing
+
+[KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
