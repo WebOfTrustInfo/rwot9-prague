@@ -1,6 +1,6 @@
 ---
-tags: RWOT, KERI,
-phone: 1-801-592-8230
+tags: RWOT, KERI
+linkedin: www.linkedin.com/in/samuel-m-smith
 email: sam@samuelsmith.org
 ---
 
@@ -8,7 +8,7 @@ email: sam@samuelsmith.org
  
 [Samuel M. Smith Ph.D.](mailto:sam@samuelsmith.org)
 
-version 0.2
+version 0.3
 
 ## Abstract
 
