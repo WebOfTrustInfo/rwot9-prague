@@ -1,10 +1,14 @@
 ---
 tags: RWOT, KERI,
+phone: 1-801-592-8230
+email: sam@samuelsmith.org
 ---
 
 # KERI for a Universal DKMI
  
-[Samuel M. Smith](mailto:sam@samuelsmith.org) 
+[Samuel M. Smith Ph.D.](mailto:sam@samuelsmith.org)
+
+version 0.2
 
 ## Abstract
 
