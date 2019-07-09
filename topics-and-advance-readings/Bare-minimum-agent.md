@@ -15,12 +15,15 @@ Phones are getting faster. I don’t think anyone will disagree with that. Stron
 
 However, that’s just one edge of the distribution. **_Slow_  phones are stuck in 2014.** The process to create the chips from half a decade ago has gotten so cheap that phones can now be sold for around $20, and cheaper phone will reach a wider audience. ~50% of the world are online, meaning that the other ~50% are not. However, these offliners are _coming_ online and are predominantly located in emerging markets such as many of the African countries, where people simply can’t afford any of the [Wealthy Western Web](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/) flagship phones.
 
-We want to discuss how to tackle this properly and how to enable them to represent themselves online with a proper ID, DID.
+We want to discuss how to tackle this properly and how to enable them to represent themselves online with a proper ID and DID.
 
 ## No devices
+As mentioned above, there are still a lot of people who are offline, and they are slowly getting online. But to save them some time from having to understand what this identity thing is and get a feel, we want to understand what can be done for the no devicers/offliners.
+
+Last year, ID pass presented a really 
 ## What is bare minimum specifications
 ## How to enable the ecosystem
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjk5Njk5NSwtNjU3NDQ0MDY5LDgzND
+eyJoaXN0b3J5IjpbLTI0OTY2MTkxNywtNjU3NDQ0MDY5LDgzND
 E1NzkyOSwxMTg5MDE4MTA2XX0=
 -->
