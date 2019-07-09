@@ -12,11 +12,13 @@ The second issue is to discuss how to enable an ecosystem, what is needed to get
 
 ## Slow devices
 Phones are getting faster. I don’t think anyone will disagree with that. Stronger GPUs, faster and more CPUs, more RAM. Phones are going through the same rapid development desktop machines did in the early 2000s.
-Working from the very industerialized countries, it is sometimes difficult to remember that some phones are really slow
+
+However, that’s just one edge of the distribution. **_Slow_  phones are stuck in 2014.** The process to create the chips from half a decade ago has gotten so cheap that phones can now be sold for around $20, and cheaper phone will reach a wider audience. ~50% of the world are online, meaning that the other ~50% are not. However, these offliners are _coming_ online and are predominantly located in emerging markets, where people simply can’t afford any of the [Wealthy Western Web](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/) flagship phones.
+
 ## No devices
 ## What is bare minimum specifications
 ## How to enable the ecosystem
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMjUwNTk3NiwtNjU3NDQ0MDY5LDgzND
-E1NzkyOSwxMTg5MDE4MTA2XX0=
+eyJoaXN0b3J5IjpbLTIxMTQ1NzUwMjgsLTY1NzQ0NDA2OSw4Mz
+QxNTc5MjksMTE4OTAxODEwNl19
 -->
