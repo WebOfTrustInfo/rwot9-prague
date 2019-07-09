@@ -28,8 +28,8 @@ This area needs to be discussed, in terms of what are the needs for such a physi
 Mentioning the two main issues of bringing decentralized identity into a market with quite a lot of offliners it would be very interessting to spur up the discussion on what is the bare minimum to be able to represent an identity. Are we even able to put together a representation of this kind of application, or an architecture map that will increase the speed of development for beginners
 
 # Goal
-With this paper I want to create the dicsussions on how to approach a market with a 
+With this paper I want to create the dicsussions on how to approach a market with a clear split of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum of an identity, that will enable these people to take back control of their digital selves.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNzc1MzkzMSwtNjU3NDQ0MDY5LDgzND
+eyJoaXN0b3J5IjpbMTgxOTc4NDg0MSwtNjU3NDQ0MDY5LDgzND
 E1NzkyOSwxMTg5MDE4MTA2XX0=
 -->
