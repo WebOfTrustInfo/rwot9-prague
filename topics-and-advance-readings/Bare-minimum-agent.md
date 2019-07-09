@@ -22,10 +22,12 @@ As mentioned above, there are still a lot of people who are offline, and they ar
 
 Last year, ID pass presented a really cool solution and I want to continue that talk. ID pass solution can work well and is perfect for closed ecosystems like a refugee camp, but will have a problem of working well in an open ecosystem like the city of Kampala.
 
-This area needs to be discussed, in terms of what are the needs for such a physical identity. What libs need to be made to enable eas
+This area needs to be discussed, in terms of what are the needs for such a physical identity. What libs need to be created to enable easy device to card communication. What are the best way for an interaction to happen, recieving a VC, backing up a VC and so on.
+
 ## What is bare minimum specifications
+Mentioning the two main issues of bringing identity into a market with quite a lot of o
 ## How to enable the ecosystem
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjYzNjk5NCwtNjU3NDQ0MDY5LDgzND
-E1NzkyOSwxMTg5MDE4MTA2XX0=
+eyJoaXN0b3J5IjpbNjE0ODkxMzU2LC02NTc0NDQwNjksODM0MT
+U3OTI5LDExODkwMTgxMDZdfQ==
 -->
