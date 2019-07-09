@@ -1,7 +1,7 @@
 # Bare minimum agent for identity
 
 ## Abstract
-Want to contribute to enable the current ["offliners"] (https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/)  to take back control of their digital selves. This paper goes through some problem areas of the current emergin markets and their ability to run decentralize identity solutions, based on their device penetration. We want to come out of RWoT with a clear
+Want to contribute to enable the current ["offliners"](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/)  to take back control of their digital selves. This paper goes through some problem areas of the current emergin markets and their ability to run decentralize identity solutions, based on their device penetration. We want to come out of RWoT with a clear information letter, from a collection of experts, how to get started on delivering such a solution.
 
 ## Background
 Working with devices in the African continent, we time after time experience device problems with the current existing identity solutions we work with. Also we experience that the current device penetration today, in Uganda, is not 100%, meaning that it is difficult to provide value for everybody.
@@ -25,11 +25,11 @@ Last year, ID pass presented a really cool solution and I want to continue that 
 This area needs to be discussed, in terms of what are the needs for such a physical identity. What libs need to be created to enable easy device to card communication. What are the best way for an interaction to happen, recieving a VC, backing up a VC and so on.
 
 ## What is bare minimum specifications
-Mentioning the two main issues of bringing decentralized identity into a market with quite a lot of offliners it would be very interessting to spur up the discussion on what is the bare minimum to be able to represent an identity. Are we even able to put together a representation of this kind of application, or an architecture map that will increase the speed of development for beginners
+Mentioning the two main issues of bringing decentralized identity into a market with quite a lot of offliners it would be very interessting to spur up the discussion on what is the bare minimum to be able to represent an identity. Are we even able to put together a representation of an application, or an architecture map that will increase the speed of development for beginners
 
 # Goal
 With this paper I want to create the dicsussions on how to approach a market with a clear split of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum for an decentralized identity solution, that will enable these people to take back control of their digital selves.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDk5MDkxMjIsLTY1NzQ0NDA2OSw4Mz
+eyJoaXN0b3J5IjpbLTIxMzA3NjI3ODYsLTY1NzQ0NDA2OSw4Mz
 QxNTc5MjksMTE4OTAxODEwNl19
 -->
