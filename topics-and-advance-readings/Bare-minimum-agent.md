@@ -20,10 +20,10 @@ We want to discuss how to tackle this properly and how to enable them to represe
 ## No devices
 As mentioned above, there are still a lot of people who are offline, and they are slowly getting online. But to save them some time from having to understand what this identity thing is and get a feel, we want to understand what can be done for the no devicers/offliners.
 
-Last year, ID pass presented a really 
+Last year, ID pass presented a really cool solution and I want to continue that talk. ID pass solution can work well, but will have the problem of working well in an open ecosystem.
 ## What is bare minimum specifications
 ## How to enable the ecosystem
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0OTY2MTkxNywtNjU3NDQ0MDY5LDgzND
+eyJoaXN0b3J5IjpbMTA5NjU4Mjc0NSwtNjU3NDQ0MDY5LDgzND
 E1NzkyOSwxMTg5MDE4MTA2XX0=
 -->
