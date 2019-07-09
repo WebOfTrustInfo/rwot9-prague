@@ -25,9 +25,11 @@ Last year, ID pass presented a really cool solution and I want to continue that 
 This area needs to be discussed, in terms of what are the needs for such a physical identity. What libs need to be created to enable easy device to card communication. What are the best way for an interaction to happen, recieving a VC, backing up a VC and so on.
 
 ## What is bare minimum specifications
-Mentioning the two main issues of bringing decentralized identity into a market with quite a lot of offliners it would be very interessting to spur up the discussion on what is the bare minimum to be able to represent an identity. Are we even able to put together a representation of this kind of application, or a architecture map that wi
-## How to enable the ecosystem
+Mentioning the two main issues of bringing decentralized identity into a market with quite a lot of offliners it would be very interessting to spur up the discussion on what is the bare minimum to be able to represent an identity. Are we even able to put together a representation of this kind of application, or an architecture map that will increase the speed of development for beginners
+
+# Goal
+This paper is for creating the dicsussions on ho
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIyOTE4MDI0LC02NTc0NDQwNjksODM0MT
-U3OTI5LDExODkwMTgxMDZdfQ==
+eyJoaXN0b3J5IjpbLTE3NTgzODc1MzcsLTY1NzQ0NDA2OSw4Mz
+QxNTc5MjksMTE4OTAxODEwNl19
 -->
