@@ -18,14 +18,14 @@ However, that’s just one edge of the distribution. **_Slow_  phones are stuck 
 We want to discuss how to tackle this properly and how to enable them to represent themselves online with a proper ID and DID.
 
 ## No devices
-As mentioned above, there are still a lot of people who are offline, and they are slowly getting online. But to save them some time, when getting online, from having to understand what this identity thing is and get a feel, we want to understand what can be done for the no devicers/offliners.
+As mentioned above, there are still a lot of people who are offline, and they are slowly getting online. But to save them some time, when getting online, from having to understand what this identity thing is and get a feel of how to properly represent yourself online.  We want to understand what can be done for the no devicers/offliners.
 
 Last year, ID pass presented a really cool solution and I want to continue that talk. ID pass solution can work well and is perfect for closed ecosystems like a refugee camp, but will have a problem of working well in an open ecosystem like the city of Kampala.
 
-I believe this is something that can be discussed, in terms of what are the needs for such a physical identity.
+This area needs to be discussed, in terms of what are the needs for such a physical identity. What libs need to be made to enable eas
 ## What is bare minimum specifications
 ## How to enable the ecosystem
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0OTQwNDIzOCwtNjU3NDQ0MDY5LDgzND
+eyJoaXN0b3J5IjpbLTg2MjYzNjk5NCwtNjU3NDQ0MDY5LDgzND
 E1NzkyOSwxMTg5MDE4MTA2XX0=
 -->
