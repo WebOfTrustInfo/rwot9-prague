@@ -1,6 +1,7 @@
 # Bare minimum agent for identity
 
 ## Abstract
+Want to contribute to enable the current ["offliners"] (https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/)  to to take back control of their digital selves.
 Create a short abstract of background, problem and possible solutions
 
 ## Background
@@ -30,6 +31,6 @@ Mentioning the two main issues of bringing decentralized identity into a market 
 # Goal
 With this paper I want to create the dicsussions on how to approach a market with a clear split of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum for an decentralized identity solution, that will enable these people to take back control of their digital selves.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM2Mzc0MjQ0LC02NTc0NDQwNjksODM0MT
-U3OTI5LDExODkwMTgxMDZdfQ==
+eyJoaXN0b3J5IjpbLTU3MTk0MTY0NywtNjU3NDQ0MDY5LDgzND
+E1NzkyOSwxMTg5MDE4MTA2XX0=
 -->
