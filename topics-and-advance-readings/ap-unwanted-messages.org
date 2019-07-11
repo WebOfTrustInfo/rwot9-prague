@@ -72,7 +72,29 @@ generated keypair and their public keys are displayed on the aforementioned
 Actor Object. Requests made on behalf of that actor are then signed using the
 Actor's private key and may be verified against its public key.
 
+* The Fediverse Today and Unwanted Messages
+
 * Proposed Suggestions
+
+** Mandatory Activity and Object Validation
+
+The ActivityPub standard itself provides only basic guidelines into validation
+of messages but does recommend verifying external objects and activities as a
+base minimum mechanism against spoofed messages.[fn:21] Based on anecdotes from
+operators on the Fediverse, this technique alone has been effective in either
+the case of spoofed messages or the case where an account has been created,
+sends messages and is then shut down for abuse. In either case, we recommend
+that all ActivityPub implementations validate Activities and Objects in order
+to eliminate this unwanted message vector.
+
+** HTTP Signature Validation
+
+The HTTP Signatures extension, while not officially part of the ActivityPub
+standard has been acting as a de-facto standard for authentication on the
+Fediverse. We recommend that unless and until another authentication mechanism
+offering the same benefits as HTTP Signatures becomes available and generally
+adopted that HTTP Signatures be implemented in ActivityPub software and HTTP
+Signature validation of messages should then be assumed.
 
 ** Enhanced Privacy of Followers/Following Collection
 
@@ -527,6 +549,8 @@ We believe that the problem of unwanted messages is addressable and we look
 forward to participating in building solutions.
 
 * Footnotes
+
+[fn:21] https://www.w3.org/TR/activitypub/#obj
 
 [fn:20] https://www.w3.org/TR/activitystreams-core/
 
