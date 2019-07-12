@@ -1,7 +1,9 @@
 # Bare minimum agent for identity
 
 ## Abstract
-Want to contribute to enable the current ["offliners"](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/)  to take back control of their digital selves. This paper goes through some problem areas of the current emergin markets and their ability to run decentralize identity solutions, based on their device penetration. We want to come out of RWoT with a clear information letter, from a collection of experts, how to get started on delivering such a solution.
+Diwala want to contribute to enable the current ["offliners"](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/)  to take back control of their digital selves. This paper goes through some problem areas of the current emerging markets and their ability to run the existing decentralize identity solutions, based on their device penetration. 
+
+We want to come out of RWoT with a clear information letter, from a collection of experts, how to get started to deliver a bare minimum decentralized identity solution.
 
 ## Background
 Working with devices in the African continent, we time after time experience device problems with the current existing identity solutions we work with. Also we experience that the current device penetration today, in Uganda, is not 100%, meaning that it is difficult to provide value for everybody.
@@ -30,6 +32,6 @@ Mentioning the two main issues of bringing decentralized identity into a market 
 # Goal
 With this paper I want to create the dicsussions on how to approach a market with a clear split of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum for an decentralized identity solution, that will enable these people to take back control of their digital selves.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzA3NjI3ODYsLTY1NzQ0NDA2OSw4Mz
-QxNTc5MjksMTE4OTAxODEwNl19
+eyJoaXN0b3J5IjpbMTc3MDcyNzM4OCwtMjEzMDc2Mjc4NiwtNj
+U3NDQ0MDY5LDgzNDE1NzkyOSwxMTg5MDE4MTA2XX0=
 -->
