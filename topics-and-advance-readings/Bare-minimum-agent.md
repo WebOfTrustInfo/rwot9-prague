@@ -22,9 +22,9 @@ However, that’s just one edge of the distribution. **_Slow_  phones are stuck 
 We want to discuss how to tackle this properly and how to enable them to represent themselves online with a proper ID and DID.
 
 ## No devices
-As mentioned above, there are still a lot of people who are offline, and they are slowly getting online. But to save them some time from having to understand what this identity thing is, when getting online,  and get a feel of how to properly represent yourself online.  We want to understand what can be done for the no devicers/offliners.
+As mentioned above, there are still a lot of people who are offline, and they are slowly getting online. But to save them some time from having to understand what this digital identity thing is and get a feel of how to properly represent yourself online.  We want to understand what can be done for the no devicers/offliners now.
 
-Last year, ID pass presented a really cool solution and I want to continue that talk. ID pass solution can work well and is perfect for closed ecosystems like a refugee camp, but will have a problem of working well in an open ecosystem like the city of Kampala.
+Last year, ID pass presented a really cool solution, and I want to continue that talk. ID pass solution can work well and is perfect for closed ecosystems like a refugee camp, but will have a problem of working well in an open ecosystem like the city of Kampala.
 
 This area needs to be discussed, in terms of what are the needs for such a physical identity. What libs need to be created to enable easy device to card communication. What are the best way for an interaction to happen, recieving a VC, backing up a VC and so on.
 
@@ -34,7 +34,7 @@ Mentioning the two main issues of bringing decentralized identity into a market 
 # Goal
 With this paper I want to create the dicsussions on how to approach a market with a clear split of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum for an decentralized identity solution, that will enable these people to take back control of their digital selves.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODQzNjYxMjgsLTIwNzIyMDEyOTIsMT
-c3MDcyNzM4OCwtMjEzMDc2Mjc4NiwtNjU3NDQ0MDY5LDgzNDE1
-NzkyOSwxMTg5MDE4MTA2XX0=
+eyJoaXN0b3J5IjpbLTQ1NTUxNDI0NSwtMjA3MjIwMTI5MiwxNz
+cwNzI3Mzg4LC0yMTMwNzYyNzg2LC02NTc0NDQwNjksODM0MTU3
+OTI5LDExODkwMTgxMDZdfQ==
 -->
