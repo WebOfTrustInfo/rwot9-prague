@@ -29,11 +29,11 @@ Last year, ID pass presented a really cool solution, and I want to continue that
 We feel this area needs more discussion. What are the needs for such a physical identity? How can easy device to card communication be enabled? What are the best way for an interaction to happen in an open ecosystem? That be receiving and sharing a VC, backing up a VC and so on.
 
 ## Enabling the ecosystem
-In an area that has leapfrogged in certain digital areas, but are still living with a thight connection to the physical world, the have not properly started the core digitalization. 
+In an area that has leapfrogged in certain digital areas, but are still living with a thight connection to the physical world, the core digitalization has not yet started. It is very fragmented and do not have a 
 # Goal
 With this paper we want to create the dicsussions on how to approach a market that is in a clear need of a good digital infrastructure that have not made the same mistakes as the west. With a clear divergence of device penetration, and types of devices that are in the market. Is it possible to put up a strategy for a bare minimum decentralized identity solution, that will enable these people to take control of their digital selves and set a base layer for a proper digital infrastructure.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDA4NzQyNCwtMjA3MjIwMTI5MiwxNz
-cwNzI3Mzg4LC0yMTMwNzYyNzg2LC02NTc0NDQwNjksODM0MTU3
-OTI5LDExODkwMTgxMDZdfQ==
+eyJoaXN0b3J5IjpbLTIwNjU0NjA1MjAsLTIwNzIyMDEyOTIsMT
+c3MDcyNzM4OCwtMjEzMDc2Mjc4NiwtNjU3NDQ0MDY5LDgzNDE1
+NzkyOSwxMTg5MDE4MTA2XX0=
 -->
