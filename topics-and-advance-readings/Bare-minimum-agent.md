@@ -34,10 +34,10 @@ In an area that has leapfrogged in certain digital areas, but are still living w
 But, with a fragmented digitilization it is hard to understand where to start. Its even more difficult to start where there is still a need for a bridge between physical and digital. These are areas we want to discuss and be able to declear some pointers and steps to move forward with, to be able to kick start the ecosystem of self sovreign identities in a digital space.
 
 # Goal
-With this paper we want to create the dicsussions on how to approach a market that is in a clear need of a good digital infrastructure that have not taken all the steps as the west. With a clear divergence of device penetration, and types of devices that are in the market, is it possible to put up a strategy for a bare minimum decentralized identity solution? Which will enable these people to take control of their digital selves and set a base layer for a proper digital infrastructure. Can we come up with some guidelines, an example architecture, or even an app to showcase what we want to achieve.
+With this paper we want to create the dicsussions on how to approach a market that is in a clear need of a good digital infrastructure that have not taken all the steps as the west. With a clear divergence of device penetration, and types of devices that are in the market, is it possible to put up a strategy for a bare minimum decentralized identity solution? Which will enable these people to take control of their digital selves and set a base layer for a proper digital infrastructure. Can we come up with some guidelines for the ecosystem, an example architecture, or even an app to showcase to the community how one can get started?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkxOTI0MDMsMTAwNDI1OTkzMiwtMTgzOT
-YxODkzMywtMjA3MjIwMTI5MiwxNzcwNzI3Mzg4LC0yMTMwNzYy
-Nzg2LC02NTc0NDQwNjksODM0MTU3OTI5LDExODkwMTgxMDZdfQ
-==
+eyJoaXN0b3J5IjpbLTE3MTU0MzQyMzQsMTAwNDI1OTkzMiwtMT
+gzOTYxODkzMywtMjA3MjIwMTI5MiwxNzcwNzI3Mzg4LC0yMTMw
+NzYyNzg2LC02NTc0NDQwNjksODM0MTU3OTI5LDExODkwMTgxMD
+ZdfQ==
 -->
