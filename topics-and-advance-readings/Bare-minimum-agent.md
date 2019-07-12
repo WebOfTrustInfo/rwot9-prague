@@ -31,15 +31,13 @@ We feel this area needs more discussion. What are the needs for such a physical 
 ## Enabling the ecosystem
 In an area that has leapfrogged in certain digital areas, but are still living with a thight connection to the physical world, the core digitalization has not yet started. It is very fragmented and is not a very good hotbed for a digital ecosystem. That is where decentralized identity can come in.
 
-But, with a fragmented digitilization it is hard to understand where to start. Its even more difficult to start where there is still a need for a bridge between physical and digital
-
-
+But, with a fragmented digitilization it is hard to understand where to start. Its even more difficult to start where there is still a need for a bridge between physical and digital. These are areas we want to discuss and be able to declear some pointers and steps to move forward with, to be able to kick start the ecosystem of self sovreign identities in a digital space.
 
 # Goal
 With this paper we want to create the dicsussions on how to approach a market that is in a clear need of a good digital infrastructure that have not made the same mistakes as the west. With a clear divergence of device penetration, and types of devices that are in the market. Is it possible to put up a strategy for a bare minimum decentralized identity solution, that will enable these people to take control of their digital selves and set a base layer for a proper digital infrastructure.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY4OTEwMDU4LDEwMDQyNTk5MzIsLTE4Mz
-k2MTg5MzMsLTIwNzIyMDEyOTIsMTc3MDcyNzM4OCwtMjEzMDc2
-Mjc4NiwtNjU3NDQ0MDY5LDgzNDE1NzkyOSwxMTg5MDE4MTA2XX
-0=
+eyJoaXN0b3J5IjpbLTU3NzUyNzMxMCwxMDA0MjU5OTMyLC0xOD
+M5NjE4OTMzLC0yMDcyMjAxMjkyLDE3NzA3MjczODgsLTIxMzA3
+NjI3ODYsLTY1NzQ0NDA2OSw4MzQxNTc5MjksMTE4OTAxODEwNl
+19
 -->
