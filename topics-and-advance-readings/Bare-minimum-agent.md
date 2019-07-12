@@ -29,9 +29,9 @@ Last year, ID pass presented a really cool solution, and I want to continue that
 We feel this area needs more discussion. What are the needs for such a physical identity? How can easy device to card communication be enabled? What are the best way for an interaction to happen in an open ecosystem? That be receiving and sharing a VC, backing up a VC and so on.
 
 # Goal
-With this paper we want to create the dicsussions on how to approach a market that clearly needswith a clear difference of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum for an decentralized identity solution, that will enable these people to take back control of their digital selves.
+With this paper we want to create the dicsussions on how to approach a market that is in a clear need of a good digital infrastructure that have not made the same mi needswith a clear difference of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum for an decentralized identity solution, that will enable these people to take back control of their digital selves.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzExODEwNzgsLTIwNzIyMDEyOTIsMT
-c3MDcyNzM4OCwtMjEzMDc2Mjc4NiwtNjU3NDQ0MDY5LDgzNDE1
-NzkyOSwxMTg5MDE4MTA2XX0=
+eyJoaXN0b3J5IjpbMzY3MTc1NTQ5LC0yMDcyMjAxMjkyLDE3Nz
+A3MjczODgsLTIxMzA3NjI3ODYsLTY1NzQ0NDA2OSw4MzQxNTc5
+MjksMTE4OTAxODEwNl19
 -->
