@@ -12,6 +12,8 @@ First we want to discuss what the bare minimum specifications that an identity a
 
 The second issue is to discuss how to enable an ecosystem, what is needed to get other startups with their own non did solutions in play. Is it SDKs, libraries, proxys, some kind of shared infrastructure? 
 
+These are questions we want to raise and discuss in this paper, from a collection of experts, for anyone wanting to charge into this space.
+
 ## Slow devices
 Phones are getting faster. I don’t think anyone will disagree with that. Stronger GPUs, faster and more CPUs, more RAM. Phones are going through the same rapid development desktop machines did in the early 2000s.
 
@@ -20,7 +22,7 @@ However, that’s just one edge of the distribution. **_Slow_  phones are stuck 
 We want to discuss how to tackle this properly and how to enable them to represent themselves online with a proper ID and DID.
 
 ## No devices
-As mentioned above, there are still a lot of people who are offline, and they are slowly getting online. But to save them some time, when getting online, from having to understand what this identity thing is and get a feel of how to properly represent yourself online.  We want to understand what can be done for the no devicers/offliners.
+As mentioned above, there are still a lot of people who are offline, and they are slowly getting online. But to save them some time from having to understand what this identity thing is, when getting online,  and get a feel of how to properly represent yourself online.  We want to understand what can be done for the no devicers/offliners.
 
 Last year, ID pass presented a really cool solution and I want to continue that talk. ID pass solution can work well and is perfect for closed ecosystems like a refugee camp, but will have a problem of working well in an open ecosystem like the city of Kampala.
 
@@ -32,7 +34,7 @@ Mentioning the two main issues of bringing decentralized identity into a market 
 # Goal
 With this paper I want to create the dicsussions on how to approach a market with a clear split of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum for an decentralized identity solution, that will enable these people to take back control of their digital selves.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ1NjQ3ODAwLC0yMDcyMjAxMjkyLDE3Nz
-A3MjczODgsLTIxMzA3NjI3ODYsLTY1NzQ0NDA2OSw4MzQxNTc5
-MjksMTE4OTAxODEwNl19
+eyJoaXN0b3J5IjpbLTIwODQzNjYxMjgsLTIwNzIyMDEyOTIsMT
+c3MDcyNzM4OCwtMjEzMDc2Mjc4NiwtNjU3NDQ0MDY5LDgzNDE1
+NzkyOSwxMTg5MDE4MTA2XX0=
 -->
