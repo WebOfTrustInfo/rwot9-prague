@@ -6,7 +6,7 @@ Diwala want to contribute to enable the current ["offliners"](https://www.smashi
 We want to come out of RWoT with a clear information letter, from a collection of experts, how to get started to deliver a bare minimum decentralized identity solution.
 
 ## Background
-Working with devices in the African continent, we time after time experience device problems with the current existing identity solutions we work with. Also we experience that the current device penetration today, in Uganda, is not 100%, meaning that it is difficult to provide value for everybody.
+Working with devices in the African continent, we time after time experience device problems with the current existing identity solutions we work with. Also we experience that the current device penetration today, in Uganda particularly, is not 100%, meaning that it is difficult to provide value for everybody.
 
 We want to discuss what the bare minimum specifications that an identity app needs, to provide value, and how can an identity be represented physically? What are the pros and cons of of a combination identity.
 
@@ -32,6 +32,7 @@ Mentioning the two main issues of bringing decentralized identity into a market 
 # Goal
 With this paper I want to create the dicsussions on how to approach a market with a clear split of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum for an decentralized identity solution, that will enable these people to take back control of their digital selves.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MDcyNzM4OCwtMjEzMDc2Mjc4NiwtNj
-U3NDQ0MDY5LDgzNDE1NzkyOSwxMTg5MDE4MTA2XX0=
+eyJoaXN0b3J5IjpbMjAwNDg1MzAxNiwxNzcwNzI3Mzg4LC0yMT
+MwNzYyNzg2LC02NTc0NDQwNjksODM0MTU3OTI5LDExODkwMTgx
+MDZdfQ==
 -->
