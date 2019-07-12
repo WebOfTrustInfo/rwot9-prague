@@ -10,7 +10,7 @@ Working with devices in the African continent for about a year now, we time afte
 
 First we want to discuss what the bare minimum specifications that an identity app needs to provide value? How can an identity be represented physically? What are the pros and cons of a combination of these situations.
 
-The second issue is to discuss how to enable an ecosystem, what is needed to get other startups with their own non did solutions in play. Is it SDKs, libraries, proxys, some kind of shared infrastructure? That is questions I would love to raise and discuss to create an information letter, from a collection of experts, for anyone wanting to charge into this space.
+The second issue is to discuss how to enable an ecosystem, what is needed to get other startups with their own non did solutions in play. Is it SDKs, libraries, proxys, some kind of shared infrastructure? 
 
 ## Slow devices
 Phones are getting faster. I don’t think anyone will disagree with that. Stronger GPUs, faster and more CPUs, more RAM. Phones are going through the same rapid development desktop machines did in the early 2000s.
@@ -32,7 +32,7 @@ Mentioning the two main issues of bringing decentralized identity into a market 
 # Goal
 With this paper I want to create the dicsussions on how to approach a market with a clear split of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum for an decentralized identity solution, that will enable these people to take back control of their digital selves.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMTcyMDIzLC0yMDcyMjAxMjkyLDE3Nz
+eyJoaXN0b3J5IjpbOTQ1NjQ3ODAwLC0yMDcyMjAxMjkyLDE3Nz
 A3MjczODgsLTIxMzA3NjI3ODYsLTY1NzQ0NDA2OSw4MzQxNTc5
 MjksMTE4OTAxODEwNl19
 -->
