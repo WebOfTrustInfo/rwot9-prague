@@ -24,9 +24,9 @@ We want to discuss how to tackle this properly and how to enable them to represe
 ## No devices
 As mentioned above, there are still a lot of people who are offline, and they are slowly getting online. But to save them some time from having to understand what this digital identity thing is and get a feel of how to properly represent yourself online.  We want to understand what can be done for the no devicers/offliners now.
 
-Last year, ID pass presented a really cool solution, and I want to continue that talk. ID pass solution can work well and is perfect for closed ecosystems like a refugee camp, but will have a problem of working well in an open ecosystem like the city of Kampala. Because how do you enable people to share credentials and their DID properly. Solutions like this are not far away
+Last year, ID pass presented a really cool solution, and I want to continue that talk. ID pass solution can work well and is perfect for closed ecosystems like a refugee camp, but will have a problem of working well in an open ecosystem like the city of Kampala. Because how do you enable people to share credentials and their DID properly. Solutions with cards and phones are not far away [according to this tweet]([https://twitter.com/gravityblast/status/1145865341903474688](https://twitter.com/gravityblast/status/1145865341903474688)). But it again depends on a pretty new devices.
 
-This area needs to be discussed, in terms of what are the needs for such a physical identity. What libs need to be created to enable easy device to card communication. What are the best way for an interaction to happen, recieving a VC, backing up a VC and so on.
+W needs to be discussed, in terms of what are the needs for such a physical identity. What libs need to be created to enable easy device to card communication. What are the best way for an interaction to happen, recieving a VC, backing up a VC and so on.
 
 ## What is bare minimum specifications
 Mentioning the two main issues of bringing decentralized identity into a market with quite a lot of offliners it would be very interessting to spur up the discussion on what is the bare minimum to be able to represent an identity. Are we even able to put together a representation of an application, or an architecture map that will increase the speed of development for beginners
@@ -34,7 +34,7 @@ Mentioning the two main issues of bringing decentralized identity into a market 
 # Goal
 With this paper I want to create the dicsussions on how to approach a market with a clear split of device possession and not, and what types of devices that are in the market. Can we come together and define something bare minimum for an decentralized identity solution, that will enable these people to take back control of their digital selves.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NzIyMjc0MywtMjA3MjIwMTI5MiwxNz
-cwNzI3Mzg4LC0yMTMwNzYyNzg2LC02NTc0NDQwNjksODM0MTU3
-OTI5LDExODkwMTgxMDZdfQ==
+eyJoaXN0b3J5IjpbNTY1MTI5NDU1LC0yMDcyMjAxMjkyLDE3Nz
+A3MjczODgsLTIxMzA3NjI3ODYsLTY1NzQ0NDA2OSw4MzQxNTc5
+MjksMTE4OTAxODEwNl19
 -->
