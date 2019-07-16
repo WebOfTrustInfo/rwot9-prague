@@ -28,7 +28,13 @@ really, read as much as you can!)
 
 ## Topical Listing
 
-[list of topics and papers goes here.]
+### Datashards / secure storage
+
+* [Datashards: secure storage primitives for the web](./datashards-rationale.md)
+  * By [Christopher Lemmer Webber](https://dustycloud.org/), with help from [Serge Wroclawski](https://emacsen.net/@emacsen) and [Tom Marble](http://info9.net/wiki/tmarble/)
+  * "Over the last year we have been working on a general mechanism for URIs representing private, encrypted storage that can live in a variety of locations.  We call this system 'Datashards'."
+  * #storage #datashards #cas
+
 
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
