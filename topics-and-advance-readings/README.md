@@ -51,9 +51,11 @@ really, read as much as you can!)
 
 ### Web of trust alternatives
 
+* [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
 * [Firefly Trust Sync](./firefly-trust-sync.md)
 
 ## Alphabetical Listing
+
 
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
