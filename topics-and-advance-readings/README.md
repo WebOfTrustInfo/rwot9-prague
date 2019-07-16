@@ -30,8 +30,7 @@ really, read as much as you can!)
 
 [list of topics and papers goes here.]
 
-[KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
-[Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
+* [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
   * by Bill Claxton and Wong Wai Chung
   * "In March 2018, Singapore's can-do government introduced the OpenCerts solution for issuing academic certificates linked to the Ethereum public blockchain.  We believe that the code and schema provided by OpenCerts can be the foundation of a verifiable digital credentials issuance mechanism.  But several changes have to be made in the implementation, to make it more decentralised and reach adoption at scale."
@@ -39,5 +38,5 @@ really, read as much as you can!)
 
 ## Alphabetical Listing
 
-[Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
-[KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
+* [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
+* [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
