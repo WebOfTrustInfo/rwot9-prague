@@ -28,6 +28,13 @@ really, read as much as you can!)
 
 ## Topical Listing
 
+### DIDs
+
+* [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
+  * By [Markus Sabadello](https://danubetech.com/)
+  * "This is a collection of the diagrams that have been used so far to illustrate various key topics of DID Resolution."
+  * #did
+
 ### Datashards / secure storage
 
 * [Datashards: secure storage primitives for the web](./datashards-rationale.md)
@@ -56,7 +63,7 @@ really, read as much as you can!)
 
 ## Alphabetical Listing
 
-
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
+* [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
