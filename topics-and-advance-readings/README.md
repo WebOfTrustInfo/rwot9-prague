@@ -28,6 +28,13 @@ really, read as much as you can!)
 
 ## Topical Listing
 
+### Mandates and Delegation
+
+* [Mandates and Delegation](./mandates-and-delegation.md) (Rieks Joosten)
+  * The paper aims to inventory how mandates and delegations are used in practice. From that, we want to derive a conceptual, generic (mental) model that we can use to discuss any issues and ultimately transform that in useful, standardizable artefacts that allow embedding and using mandates in VCs.
+  * #mandates #delegation #law #VC
+
+
 ### DIDs
 
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
@@ -36,13 +43,10 @@ really, read as much as you can!)
   * #did
 
 ### Secure Storage
-
 * [Datashards: secure storage primitives for the web](./datashards-rationale.md)
   * By [Christopher Lemmer Webber](https://dustycloud.org/), with help from [Serge Wroclawski](https://emacsen.net/@emacsen) and [Tom Marble](http://info9.net/wiki/tmarble/)
   * "Over the last year we have been working on a general mechanism for URIs representing private, encrypted storage that can live in a variety of locations.  We call this system 'Datashards'."
   * #storage #datashards #cas
-
-
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
   * by Yancy Ribbens
   * Anonymous credentials enable a holder (prover) to reveal select information to a verifier during the verification process.  In order to build anonymous credential systems, ZKPs can be combined with Verifiable Credentials to enhance user privacy.  This is a proposal to develop library support for Verifiable Credentials and recommend ZKP formats for different use cases and credential attributes.
@@ -74,4 +78,5 @@ really, read as much as you can!)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
+* [Mandates and Delegation](./mandates-and-delegation.md) 
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
