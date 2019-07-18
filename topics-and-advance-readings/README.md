@@ -31,6 +31,3 @@ really, read as much as you can!)
 [list of topics and papers goes here.]
 
 ## Alphabetical Listing
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4OTY4ODI0OF19
--->
