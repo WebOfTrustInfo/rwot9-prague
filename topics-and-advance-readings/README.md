@@ -60,3 +60,6 @@ really, read as much as you can!)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY5MDg5ODk4N119
+-->
