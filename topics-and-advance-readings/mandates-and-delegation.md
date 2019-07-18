@@ -1,5 +1,7 @@
 #  Mandates and Delegation
 
+Author: Rieks Joosten (rieks.joosten@tno.nl)
+
 'Mandates' and 'Delegation' are important topics that need to be adequately addressed in any interoperable SSI infrastructure that supports the electronic exchange of verified (personal) data, using e.g. Verifiable Credentials (VCs). Before we can do this, we need a good understanding of what these terms actually mean, and more importantly perhaps: what they are to be used for in the context of an SSI infrastructure.
 
 This paper aims

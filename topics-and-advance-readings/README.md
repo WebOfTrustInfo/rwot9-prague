@@ -28,6 +28,13 @@ really, read as much as you can!)
 
 ## Topical Listing
 
+### Mandates and Delegation
+
+* [Mandates and Delegation](./mandates-and-delegation.md) (Rieks Joosten)
+  * The paper aims to inventory how mandates and delegations are used in practice. From that, we want to derive a conceptual, generic (mental) model that we can use to discuss any issues and ultimately transform that in useful, standardizable artefacts that allow embedding and using mandates in VCs.
+  * #mandates #delegation #law #VC
+
+
 ### Datashards / secure storage
 
 * [Datashards: secure storage primitives for the web](./datashards-rationale.md)
@@ -60,3 +67,4 @@ really, read as much as you can!)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
+* [Mandates and Delegation](./mandates-and-delegation.md) 
