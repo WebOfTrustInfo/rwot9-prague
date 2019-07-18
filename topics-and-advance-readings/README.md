@@ -54,7 +54,7 @@ really, read as much as you can!)
 
 ### ActivityPub / Spam
 
-* [Keeping Unwanted Messages off the Fediverse)(./ap-unwanted-messages.md)
+* [Keeping Unwanted Messages off the Fediverse](./ap-unwanted-messages.md)
   * By [Serge Wroclawski](http://blog.emacsen.net) with advice and ideas by [Christopher Lemmer Webber](https://dustycloud.org)
   * "A collection of techniques to keep unwanted messages (spam, phishing, hate speech) off the Fediverse, with a focus on OCAP and WoT.
   * #activitypub #spam #wot #ocap
