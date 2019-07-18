@@ -1,5 +1,7 @@
 # Bare minimum agent for identity
 
+Author: [Snorre Lothar von Gohren Edwin](https://vongohren.me/)
+
 ## Abstract
 Diwala want to contribute to enable the current ["offliners"](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/)  to take back control of their digital selves. This paper goes through some problem areas of the current emerging markets and their ability to run the existing decentralize identity solutions, based on their device penetration. 
 
@@ -36,8 +38,8 @@ But, with a fragmented digitilization it is hard to understand where to start. I
 # Goal
 With this paper we want to create the dicsussions on how to approach a market that is in a clear need of a good digital infrastructure that have not taken all the steps as the west. With a clear divergence of device penetration, and types of devices that are in the market, is it possible to put up a strategy for a bare minimum decentralized identity solution? Which will enable these people to take control of their digital selves and set a base layer for a proper digital infrastructure. Can we come up with some guidelines for the ecosystem, an example architecture, or even an app to showcase to the community how one can get started?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU0MzQyMzQsMTAwNDI1OTkzMiwtMT
-gzOTYxODkzMywtMjA3MjIwMTI5MiwxNzcwNzI3Mzg4LC0yMTMw
-NzYyNzg2LC02NTc0NDQwNjksODM0MTU3OTI5LDExODkwMTgxMD
-ZdfQ==
+eyJoaXN0b3J5IjpbLTEwOTUzMTQ4ODgsLTE3MTU0MzQyMzQsMT
+AwNDI1OTkzMiwtMTgzOTYxODkzMywtMjA3MjIwMTI5MiwxNzcw
+NzI3Mzg4LC0yMTMwNzYyNzg2LC02NTc0NDQwNjksODM0MTU3OT
+I5LDExODkwMTgxMDZdfQ==
 -->
