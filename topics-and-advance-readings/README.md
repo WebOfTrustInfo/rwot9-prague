@@ -52,7 +52,7 @@ really, read as much as you can!)
   * "In March 2018, Singapore's can-do government introduced the OpenCerts solution for issuing academic certificates linked to the Ethereum public blockchain.  We believe that the code and schema provided by OpenCerts can be the foundation of a verifiable digital credentials issuance mechanism.  But several changes have to be made in the implementation, to make it more decentralised and reach adoption at scale."
   * #privacy #identity #verifiability #centralisation #singapore
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
-  * by Manu Sporny, Dave Longley, and Amy Guy
+  * by Manu Sporny, Dave Longley, Amy Guy, and Dmitri Zagidulin
   * "The Secure Data Hubs specification describes a privacy-respecting mechanism for storing, mirroring, indexing, sharing, and retrieving encrypted data at a storage provider."
 
 ### ActivityPub / Spam

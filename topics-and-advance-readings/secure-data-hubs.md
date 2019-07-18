@@ -1,8 +1,9 @@
 # Secure Data Hubs
 
 By [Manu Sporny](https://www.linkedin.com/in/manusporny/),
-   [Dave Longley](https://github.com/dlongley), and
-   [Amy Guy](https://rhiaro.co.uk/)
+   [Dave Longley](https://github.com/dlongley),
+   [Amy Guy](https://rhiaro.co.uk/), and
+   [Dmitri Zagidulin](https://www.linkedin.com/in/dzagidulin)
 
 # Introduction
 
