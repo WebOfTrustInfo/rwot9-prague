@@ -77,6 +77,10 @@ really, read as much as you can!)
   * #mandates #delegation #law #VC
 
 
+### Verifiable Data Chains / Decentralised Autonomic Data (DADs)
+
+* [A DID based solution for verifiable data streaming & processing in cyber-physical systems] (./A_DID_based_solution_for_data_processing.md)
+
 ### Web of trust alternatives
 
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
