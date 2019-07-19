@@ -82,6 +82,10 @@ really, read as much as you can!)
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
 * [Firefly Trust Sync](./firefly-trust-sync.md)
 
+### Security
+
+[Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
+
 ## Alphabetical Listing
 
 * [Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) - Kyle Den Hartog
@@ -90,10 +94,9 @@ really, read as much as you can!)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
+* [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md) 
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
-
-
 
