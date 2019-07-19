@@ -39,6 +39,10 @@ really, read as much as you can!)
   * By [Joe Andrieu](mailto:joe@legreq.com), [Amy G](mailto:amy@rhiaro.co.uk), [Joachim Lohkamp](mailto:joachim@jolocom.com), [=Drummond Reed](mailto:drummond.reed@evernym.com), [Markus Sabadello](mailto:markus@danubetech.com), [Oliver Terbu](mailto:oliver.terbu@consensys.net), [Kai Wagner](mailto:kai@jolocom.com)
   * "The Rubrics for Decentralization of DID Methods document (the Document) will help people evaluate real or potential DID Methods. This document outlines the collaborative aspirations of the Document’s editors."
   * #did #rubrics #decentralization
+* [A "Supreme Court" for Decentralization and Interoperability?](./topics-and-advance-readings/Supreme%20Court%20for%20decent%20and%20interop.md)
+  * by [Juan Caballero](mailto:juan@sourcecheck.org)
+  * "Should someone be rating interoperability?  Maybe that same set of people (ideally, paid for this service) would be in a good position to apply the rubric above to all dues-paying members?"
+  * #did #rubrics #interoperability #decentralization
 
 ### Secure Storage
 
@@ -66,6 +70,10 @@ really, read as much as you can!)
   * By [Serge Wroclawski](http://blog.emacsen.net) with advice and ideas by [Christopher Lemmer Webber](https://dustycloud.org)
   * "A collection of techniques to keep unwanted messages (spam, phishing, hate speech) off the Fediverse, with a focus on OCAP and WoT.
   * #activitypub #spam #wot #ocap
+* [Data Hub big-picture questions](./Data-Hub-big-picture-questions.md)
+  * by [Juan Caballero](mailto:juan@sourcecheck.org)
+  * "Just some loose thoughts trying to bridge the ActivityPub/Fediverse experiences detailed above to the Data Hub standard, in layman's terms."
+  * #spam #wot #gdpr #architecture
 
 ### Mandates and Delegation
 
@@ -82,6 +90,7 @@ really, read as much as you can!)
 ## Alphabetical Listing
 
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
+* [Data Hub big-picture questions](./Data-Hub-big-picture-questions.md)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
@@ -89,6 +98,7 @@ really, read as much as you can!)
 * [Mandates and Delegation](./mandates-and-delegation.md) 
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
+* [A "Supreme Court" for Decentralization and Interoperability?](./topics-and-advance-readings/Supreme%20Court%20for%20decent%20and%20interop.md)
 
 
 
