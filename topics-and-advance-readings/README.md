@@ -43,6 +43,11 @@ really, read as much as you can!)
   * "The Rubrics for Decentralization of DID Methods document (the Document) will help people evaluate real or potential DID Methods. This document outlines the collaborative aspirations of the Document’s editors."
   * #did #rubrics #decentralization
 
+* [A "Supreme Court" for Decentralization and Interoperability?](./topics-and-advance-readings/Supreme%20Court%20for%20decent%20and%20interop.md)
+  * by [Juan Caballero](mailto:juan@sourcecheck.org)
+  * "Should someone be rating or coordinating the testing of interoperability between resolvers and platforms? Maybe that same set of people (ideally, paid for this service) would be in a good position to "apply" the rubric for eco-system internal guidance until/unless a more definitive certification forms?"
+  * #did #rubrics #interoperability #decentralization
+
 ### Secure Storage
 
 * [Datashards: secure storage primitives for the web](./datashards-rationale.md)
@@ -104,4 +109,4 @@ really, read as much as you can!)
 * [Mandates and Delegation](./mandates-and-delegation.md) 
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
-
+* [A "Supreme Court" for Decentralization and Interoperability?](./topics-and-advance-readings/Supreme%20Court%20for%20decent%20and%20interop.md)
