@@ -1,4 +1,4 @@
-﻿﻿#  Topics & Advance Readings
+#  Topics & Advance Readings
 
 In advance of the design workshop, all participants produced a one-or-two page topic paper to be shared with the other attendees on either:
 
