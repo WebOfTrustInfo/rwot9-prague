@@ -16,6 +16,8 @@ iss -right-> hol : "issue credential"
 hol -right-> ver : "send presentation"
 @enduml
 ```
+![alt text](./vc_protocols_issuer/vc_protocols_issuer.png)
+
 *Traditional role and imformation flow directions in Verifiable Credential Model*
 
 Functionally, the process of presenting a defined Verifiable Credential to a Verifier is often not initialized by the Holder of the Credential, but rather requested by the verifier to fulfill a specific need. Therefore, the process is often triggered by a Verifier requesting a specific Credential (therefore in the Civic Ecosystem they are called Requesters) and Holder of a matching Credential to present the result back to the verifier. In the community several request implementation exists, but they can generally referred to as a "Presentation Request".
@@ -32,6 +34,8 @@ hol -left-> iss : "(2) request credential"
 iss -> hol : "(3) request validation"
 @enduml
 ```
+![alt text](./vc_protocols_issuer/vc_protocols_issuer-1.png)
+
 *Inverted Credential Model. Presentation Request, Credential Request and optional (interactive) Validation Protocol. Note that in this model "Holder" is presented as "Subject" since it is the responsibility of the Subject to execute the Validation for the credential.*
 
 ## Status Quo
@@ -66,7 +70,6 @@ It's the responsibility of the issuer to collect enough information from the sub
 Example 1: Come to the DMV and present `Credential Request Identifier` and other information in person.
 
 Example 2: An external (technical) service is responsible of executing the validation. The issuer passes an `processId` to the external service in order to allow it to map the result back to the original Verification Request. 
-- From a technical point of view it is non-interactive, since the 
 
 
 ## Example Interactive Validation Use Case
@@ -98,6 +101,8 @@ Subject <- Issuer : Issue "E-Mail" Credential
 
 @enduml
 ```
+![alt text](./vc_protocols_issuer/vc_protocols_issuer-2.png)
+
 *Example of an Interactive Validation Process*
 
 
