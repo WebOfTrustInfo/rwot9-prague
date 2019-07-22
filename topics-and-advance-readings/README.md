@@ -72,7 +72,7 @@ really, read as much as you can!)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
    * by Samuel Smith
    * "The Key Event Receipt Infrastructure (KERI) provides a minimally sufficient means for managing signing authority and tracking events for a crypto-graphic key-pair based decentralized identifier such as a W3C DID. This includes inception, rotation, interaction, and delegation. It includes single and multi-signature schemes. ... A more in depth technical description of KERI is provided here."
-   # #KERI #DKMI #did #dad
+   * #KERI #DKMI #did #dad
 
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
    * by Manu Sporny, Dave Longley, and Amy Guy
@@ -92,7 +92,7 @@ really, read as much as you can!)
    
 ### Verifiable Data Chains / Decentralised Autonomic Data (DADs)
 
-* [A DID based solution for verifiable data streaming & processing in cyber-physical systems] (./A_DID_based_solution_for_data_processing.md)
+* [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md)
    * "In this paper we will introduce the concept verifiable data chains and data provenance for industrial applications such as driving event processing, manufacturing value chains in regulated industries and insure AI propositions. We do a deep dive discussion for driving event processing in mobility systems while highlighting the benefits of using DIDs for data provenance in order to increase safety in the mobility system."
    *  by Dr. Carsten Stöcker (Spherity GmbH), Dr. Michael Rüther (Spherity GmbH), Alexander Yenkalow (Spherity GmbH), Juan Caballero (The Purple Tornado)
    * #verifiableclaims #dad #did #provenance
