@@ -35,7 +35,7 @@ So when we observe such behavior, such as people who tend to repeat themselves a
 
 Again, in the context of NVC, needs refer to what is most alive in us: our core values and human desires. Understanding, naming, and connecting with those needs is vital. So with the person who repeatedly pitches their ICO, we can see how worried they are about the success of their business, or that they are from an economically disadvantaged part of the world without access to venture capital, or that they’ve invested their last penny on this venture and are actually in a state of fear. By acknowledging what is really happening for them, we can use awareness to dissolve the fear and have them express - in a more emotionally compelling manner - their request for others to support that venture or share the URL. 
 
-*How DIDs and VCs could empower NVC/CBT *
+*How DIDs and VCs could empower NVC/CBT*
 
 Finally, this working group could return the favor, by helping to drive the adoption of NVC through the design and development of decentralized technologies to support the usage and viral promotion of NVC. The concept is simple: by creating a verifiable claim/credential for moderation and facilitation training, using NVC as a pilot training system, users could be verified for facilitation and moderation roles in online communities. This would also provide the CCG community with a vested interest in making NVC work with the CCG and RWOT working groups. The PR advantages of this type of partnership would be significant.
 
