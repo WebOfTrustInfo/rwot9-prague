@@ -66,9 +66,9 @@ __Holder:__ Someone who possesses credentials, usually (but not always) the subj
 
 __Hub:__ A datastore where objects are signed by a digital identity and accessible through unique global identifiers. See also ["Hubs"](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/final-documents/hubs.pdf) and ["Identity Hub Attestation Flows and Components"](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rebooting-the-web-of-trust-spring2018/blob/master/final-documents/identity-hub-attestations.pdf).
 
-__Identifier:__ A proxy for identity that's used as a label to refer to the identity that represents an entity. For example, a name or UID.
+__Identifier:__ A proxy for identity that is used as a label to refer to the entity being represented. For example, a name or UID.
 
-__Identity:__ Identity is a conceptual construct that enables the differentiation between distinct entities and are considered to be unique. An identity is not the entity that it represents.
+__Identity:__ Identity is a conceptual construct that enables the differentiation between distinct entities that are individually considered to be unique. An identity is not the entity that it represents.
 
 __Identity, Digital:__ A digital representation of identity.
 
