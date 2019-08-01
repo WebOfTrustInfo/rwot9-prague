@@ -47,7 +47,7 @@ Some topics need deeper discussion to ensure common understanding amongst the CG
 
 Issues are labeled '[discuss](https://github.com/w3c-ccg/did-spec/issues?q=is%3Aissue+is%3Aopen+label%3Adiscuss)' and include:
 
-* 
+* Matrix parameters: [PR#196](https://github.com/w3c-ccg/did-spec/pull/196), [PR#195](https://github.com/w3c-ccg/did-spec/pull/195), [PR#194](https://github.com/w3c-ccg/did-spec/pull/194), [PR#193](https://github.com/w3c-ccg/did-spec/pull/193), [PR#192](https://github.com/w3c-ccg/did-spec/pull/192), [PR#191](https://github.com/w3c-ccg/did-spec/pull/191)
 
 Action: discuss at RWOT and on CCG calls, resolve misunderstandings, and where applicable break issues down into manageable changes that can be made to the spec.
 
@@ -62,6 +62,9 @@ PRs which should be straightforward to review and merge, potentially with confli
 * [PR#237 Markup](https://github.com/w3c-ccg/did-spec/pull/237)
 * [PR#208 Adds reference](https://github.com/w3c-ccg/did-spec/pull/208)
 * [PR#206 Fixes example](https://github.com/w3c-ccg/did-spec/pull/206)
+* [PR#209 Uppercase normative reqs](https://github.com/w3c-ccg/did-spec/pull/209)
+* [PR#210 Rephrase non-normative text](https://github.com/w3c-ccg/did-spec/pull/210)
+* [PR#240 Security considerations on Immutability](https://github.com/w3c-ccg/did-spec/pull/240)
 
 Action: PRs please!
 
