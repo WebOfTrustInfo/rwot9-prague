@@ -90,6 +90,11 @@ really, read as much as you can!)
    * "Protocol verification models different agents and the messages they can send over a network. In particular, symbolic protocol verification in the Dolev-Yao network attacker model assumes that the attacker controls the network, i.e., the attacker can read, send, block, and modify messages, but cannot break cryptography (i.e., cryptography is assumed to be perfect). The goal is to detect logical errors in the protocol design that can lead to attacks on desired security properties (such as the secrecy and integrity of messages)."
    * #protocol #verification #did
    
+* [Preventing Transferrability with ZKP-based Credentials](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md)
+    * By Daniel Hardman and Lovesh Harchandani
+    * "Some in the digital credential movement have claimed that ZKP-based credentials are inherently unsafe because they can be shared by a malicious holder. The reasoning is that ZKPs guarantee perfect anonymity, and are therefore transferable by simply sharing the link secret. This is a misunderstanding of how ZKP-based credentials work. In fact, ZKPs can provide the same sorts of transfer protections as any other type of credential."
+    * #fraud #credentials #zkp #privacy
+   
 ### Standards Working Groups
 
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) 
@@ -129,6 +134,7 @@ really, read as much as you can!)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md) 
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) by Claire Rumore & Moses Ma
+* [Preventing Transferrability with ZKP-based Credentials](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 
