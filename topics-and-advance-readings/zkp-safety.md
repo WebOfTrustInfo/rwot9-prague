@@ -35,7 +35,7 @@ containing field C,
 where C contains a numeric value > 18,
 and the credential contains a cryptographic commitment to a link secret D that I know,
 and the credential has an revocation index, E, which I know,
- in revocation registry F,
+  in revocation registry F,
 and the credential’s status in F is unrevoked
 and I know a signature G,
 from issuer H,
@@ -68,7 +68,7 @@ Notice how the credit card makes the prover vulnerable in a way that human trust
 
 It is possible for a verifier to detect that a link secret has been reused, and to reject a ZKP because of it, without knowing what the link secret value is. This could be used to preserve privacy while making it impossible to vote twice with the same ZKP credential--or to prevent a single driver’s license from admitting multiple teens to a restricted venue, for example.
 
-A very sophisticated implementation of the technique is discussed in the “Clone Wars” paper mentioned in the [References section](#appendix-references). Among other things, it allows detection after n reuses in a given time period, where n is an arbitrary number > 1. A simpler variation of the technique is described here.
+A very sophisticated implementation of the technique is discussed in the “Clone Wars” paper mentioned in the [Further Reading section below](#appendix-further-reading). Among other things, it allows detection after n reuses in a given time period, where n is an arbitrary number > 1. A simpler variation of the technique is described here.
 
 The normal way to prove possession of a link secret is to use a technique called Pedersen Commitments. PCs depend on the arithmetic expression <var>g</var><sup>x</sup><var>h</var><sup>r</sup>, where <var>g</var> and <var>h</var> are generators, <sup>x</sup> is the link secret, and <sup>r</sup> is a blinding factor randomly chosen by the verifier. All these values are 256-bit integers, and all arithmetic takes place in a 256-bit modular field. When <var>g</var> is raised to the <sup>x</sup> power and multiplied by <var>h</var> raised to the <sup>r</sup> power, a new 256-bit number is produced; it can’t be reversed, but it can be tested for correctness, and the prover’s ability to produce it shows that they know <sup>x</sup>.
 
@@ -146,7 +146,9 @@ ZKP-based approaches to credentials are undoubtedly imperfect, because they are 
 
 The best way to serve community interests with respect to ZKPs and credentials is not to fear them. It’s to embrace them, and get on with the business of making them better and using them well.
 
-## Appendix: References
+<hr>
+
+## Appendix: Further Reading
 
 This topic has been explored in great detail by cryptologists in the expert literature over the past 30 years. A few highlights include:
 
