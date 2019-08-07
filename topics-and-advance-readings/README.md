@@ -96,6 +96,12 @@ really, read as much as you can!)
    * "We propose to facilitate the collaborative drafting of a paper that discusses the possible use of non-violent communications (NVC) and cognitive behavioral (CBT) methodologies, to create a collaboration toolkit for Internet standards working groups."
    * by Claire Rumore & Moses Ma
    * #cooperation #communication #standards
+
+### Verfiable Credentials
+* [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
+  * "The paper will focus on the intersection between verifiable credentials and decision making ... We start by giving an overview of the problem in the context of mortgage lending and then describe a general model of decision making which is reconciled with the verifiable credentials data model. Then discuss the properties of our proposed approach as well as possible implementations." 
+  * by Edward Curran, Paul Ezhilchelvan, Aad Van Moorsel & Simon Brown (AB)
+  * #verifiablecredentials, #decisionmaking, #DMN, #financialservices
    
 ### Verifiable Data Chains / Decentralised Autonomic Data (DADs)
 
@@ -123,6 +129,7 @@ really, read as much as you can!)
 * [Bare minimum agent for identity](./Bare-minimum-agent.md)
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
+* [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
