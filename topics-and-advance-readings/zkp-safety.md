@@ -4,7 +4,7 @@ Daniel Hardman and Lovesh Harchandani
 
 ## Abstract
 
-Some in the digital credential movement have claimed that ZKP-based credentials are inherently unsafe because they can be shared by a malicious holder. The reasoning is that ZKPs guarantee perfect anonymity, and are therefore transferable by simply sharing the link secret. This is a misunderstanding of how ZKP-based credentials work. In fact, ZKPs can provide the same sorts of protections on transfer as any other type of credential.
+Some in the digital credential movement have claimed that ZKP-based credentials are inherently unsafe because they can be shared by a malicious holder. The reasoning is that ZKPs guarantee perfect anonymity, and are therefore transferable by simply sharing the link secret. This is a misunderstanding of how ZKP-based credentials work. In fact, ZKPs can provide the same sorts of transfer protections as any other type of credential.
 
 ## What is a ZKP?
 
@@ -48,9 +48,9 @@ The remainder of this paper explores how the rich--not trivial--embodiment of ZK
 
 ## Anonymity != Transferability
 
-ZKP-based credential solutions have many options to add constraints to a proving interaction to adjust anonymity, vulnerability, and transferability. These techniques can be used together, as circumstances demand. The following list is only a sampling.
+ZKP-based credential solutions have many options to add constraints to a proving interaction to adjust anonymity, vulnerability, and transferability. These techniques can be used together, as circumstances demand. The following list of 8 is only a sample.
 
-#### Richly contextualized presentation requests
+#### Technique 1: Richly contextualized presentation requests
 
 This technique appears first, not because it’s the most powerful in our arsenal, but because it’s so easy to implement, so frictionless for innocent actors, and so understandable for the non-technical.
 
@@ -62,19 +62,23 @@ Note that this richly contextualized presentation request doesn’t ask the user
 
 By itself, this technique is not a panacea. If a voter registration is transferable, then other credentials could be, too. However, a richly contextualized presentation request increases the amount of material that must be shared to collude, and therefore the cost and friction of fraud. It also requires all the transferred information to be coherent and coordinated. A malicious Alice can’t buy 3 independent credentials to satisfy this request; she has to get all 3 from the same holder (same link secret). And such a request increases the stakes for transferring; now whoever shares credentials fraudulently with Alice must also be willing to let Alice spend their money by giving her control of their credit card.
 
-Notice how the credit card satisfies the “no trust without vulnerability” paradox, but not in a way that erodes privacy. It makes colluders vulnerable--but vulnerable to each other rather than to the verifier. And notice that the vulnerability must only be potential, not actual, to satisfy the paradox. There is potential vulnerability here, but the verifier and the prover both know that it is only real if the prover is colluding. An innocent Alice is not vulnerable in any way--but the fact that she would be vulnerable if she were malicious is enough to justify the verifier’s trust. 
+Notice how the credit card makes the prover vulnerable in a way that human trust demands, but does so in a way that doesn't erode privacy. Colluders become vulnerable to each other rather than to the verifier. And notice that the vulnerability must only be potential, not actual, to enable trust. The verifier and the prover both know that it is only real if the prover is colluding. An innocent Alice is not vulnerable in any way--but the fact that she _would be vulnerable if she were malicious_ is enough to justify the verifier’s trust. 
 
-#### Prevent link secret reuse
+#### Technique 2: Prevent Link Secret Reuse
 
 It is possible for a verifier to detect that a link secret has been reused, and to reject a ZKP because of it, without knowing what the link secret value is. This could be used to preserve privacy while making it impossible to vote twice with the same ZKP credential--or to prevent a single driver’s license from admitting multiple teens to a restricted venue, for example.
 
-A very sophisticated implementation of the technique is discussed in the “Clone Wars” paper mentioned in the [References section](#references). Among other things, it allows detection after n reuses in a given time period, where n is an arbitrary number > 1. A simpler variation of the technique is described here.
+A very sophisticated implementation of the technique is discussed in the “Clone Wars” paper mentioned in the [References section](#appendix-references). Among other things, it allows detection after n reuses in a given time period, where n is an arbitrary number > 1. A simpler variation of the technique is described here.
+
+The normal way to prove possession of a link secret is to use a technique called Pedersen Commitments. PCs depend on the arithmetic expression <var>g</var><sup>x</sup><var>h</var><sup>r</sup>, where <var>g</var> and <var>h</var> are generators, <sup>x</sup> is the link secret, and <sup>r</sup> is a blinding factor randomly chosen by the verifier. All these values are 256-bit integers, and all arithmetic takes place in a 256-bit modular field. When <var>g</var> is raised to the <sup>x</sup> power and multiplied by <var>h</var> raised to the <sup>r</sup> power, a new 256-bit number is produced; it can’t be reversed, but it can be tested for correctness, and the prover’s ability to produce it shows that they know <sup>x</sup>.
+
+If a verifier stipulates that <sup>r</sup> must be 0, then <var>h</var><sup>r</sup> drops out of the expression, since any number raised to the 0 power is 1. This gives a degenerate numeric value for proving link secret knowledge: <var>g</var><sup>x</sup>. A prover can disclose <var>g</var><sup>x</sup> and still prove link secret possession. But if they do it multiple times, the verifier will be able to recognize that they have seen it before, without being able to reverse <var>g</var><sup>x</sup> into <sup>x</sup>. (This non-reversability is given by the fact that in modular arithmetic, finding a discrete logarithm is computationally “hard.”)
 
 Verifiers can set arbitrary bounds to the context in which they detect link secret reuse. If they want to see whether the link secret is reused twice in an hour, then that’s trivial. If they want to detect reuse twice in an election, that’s trivial as well. Provers see that verifiers are doing this, and can choose not to prove anything if they are unwilling to be vulnerable to the verifier in this way.
 
 This technique should not be overused, because it allows a limited form of correlation (though it is correlation where provers opt in). Nevertheless, it is a useful tool for specific circumstances.
 
-#### Require link secret continuity
+#### Technique 3: Require Link Secret Continuity
 
 A verifier can require a given holder to demonstrate that they’re using the same link secret in all their proving interactions. Without fancy crypto, this is done by simply asking Alice to re-prove a minor fact that she proved before, using the same credential she used before, as part of a later request for proof. Alice can’t do this if she’s buying credentials on the black market, because the link secrets will differ.
 
@@ -84,9 +88,9 @@ It might be tempting for Alice to prequalify for a minimal interest rate using f
 
 There is a cryptographic mechanism to do this more simply than by requiring re-proof. The same mathematical properties that allow a verifier to detect reuse of a particular link secret value can be used to prove consistent link secret on a per-holder basis. However, because this mechanism for proof-of-same-link-secret is correlating, the simple reproving is generally preferred. 
 
-Whichever mechanism is used, forcing consistent link secret use is yet another way of creating the vulnerability that the trust paradox asserts, because it makes Alice vulnerable to future context controlled by the verifier. This vulnerability does not require that the future context be strongly identifying. It could also be a richly contextualized presentation that still preserves Alice’s privacy. A verifier can ask at any time for any amount or subset of context connected to credentials Alice has already used; this is a serious problem for a malicious Alice in ongoing relationships, but it doesn’t inconvenience innocent Alice in the slightest. 
+Whichever mechanism is used, forcing consistent link secret use is yet another way of creating the vulnerability to foster trust. It makes Alice vulnerable to future context controlled by the verifier. This vulnerability does not require that the future context be strongly identifying. It could also be a richly contextualized presentation that still preserves Alice’s privacy. A verifier can ask at any time for any amount or subset of context connected to credentials Alice has already used; this is a serious problem for a malicious Alice in ongoing relationships, but it doesn’t inconvenience innocent Alice in the slightest. 
 
-#### Commit a DID to a link secret
+#### Technique 4: Commit a DID to a Link Secret
 
 A Pedersen Commitment to a link secret can be shared by the owner of a DID at the inception of a relationship. This forces the owner of a DID to use the same link secret from that point forward. They cannot go out on the black market and acquire credentials at their pleasure to prove whatever they like, because the credentials won’t be bound to the same link secret they already committed to. This is another manifestation of the same vulnerability to future context that was discussed in C above.
 
@@ -94,18 +98,19 @@ A variation on this technique actually allows the keys for a DID to be provably 
 
 Both variations prevent unpremeditated maliciousness from Alice. However, they do not prevent narrow maliciousness that’s planned ahead of time. Alice could choose a particular fraudulent credential, establish a relationship, commit to the link secret used by that fraudulent credential, use the credential, and then abandon the DID. Therefore, this technique should not be used by itself.
 
-#### Biometrics
+#### Technique 5: Biometrics
 
 Biometrics can be used in conjunction with ZKP credentials in at least 3 different ways to prevent fraud.
 
-##### Strong disclosure
+##### 5.1 Strong disclosure
+
 This is the most obvious biometrics usage pattern: A photo or fingerprint is embedded in (or referenced by) a credential. On credential use, the prover shows that they are the legitimate holder by disclosing the biometric and matching it.
 
-This pattern of usage has obvious problems for privacy, because the biometric in the credential is a strong identifier for the holder. However, its privacy can be improved by introducing the role of a biometric service provider (BSP). Unlike the trusted third party witness advocated by the TP paper, the BSP doesn’t need to know the context of the interaction; their role is limited to attesting the relationship between prover and biometric. This separation of responsibilities isn’t perfect; a BSP and verifiers could collude. Nonetheless, it embodies the principle of diffuse trust and may be worth doing in some cases. This technique is described in another paper submitted to the IEEE Spectrum special issue.
+This pattern of usage has obvious problems for privacy, because the biometric in the credential is a strong identifier for the holder. However, its privacy can be improved by introducing the role of a biometric service provider (BSP). The BSP doesn’t need to know the context of the interaction; their role is limited to attesting the relationship between prover and biometric. This separation of responsibilities isn’t perfect; a BSP and verifiers could collude. Nonetheless, it embodies the principle of diffuse trust and may be worth doing in some cases. This technique is described in a paper submitted to the upcoming <cite>IEEE Spectrum</cite> special issue scheduled for December 2019.
 
 Even without a BSP, using biometrics in full disclosure mode can be helpful when combined with deferred identification, as in the earlier example of loan prequalification followed by an actual loan application. If a fraudster knows that they will eventually have to disclose strong identifiers, and that one of them is a biometric, they are disincented from engaging in fraud during the earlier, anonymous stage of the interaction.
 
-#### Weak disclosure
+##### 5.2 Weak disclosure
 
 In this approach, a biometric is embedded in a credential, but its precision is deliberately made quite low, such that it matches a larger-than-normal target cohort. For example, a biometric might be made to match 1 out of 100 people in the general population, instead of 1 out of a billion. On credential use, the prover shows that they are probably the legitimate holder by disclosing the biometric and matching it.
 
@@ -113,39 +118,35 @@ In some cases, this technique is usable without sophisticated crypto. Embedding 
 
 Of course, the assurance is much weaker here than in the strong disclosure example. By itself, this may not block fraud enough for full trust, and it may not seem interesting. However, remember that this can be combined with other techniques. Notice how this changes casual collusion: Alice is far less able to share her driver’s license with any of her college roommates. It also changes the economics of professional, premeditated collusion: the addressable market for every credential is now 1/100th the size that it was before. (That’s a shrinking of both supply and demand, not just supply; it doesn’t drive up price.). And it preserves a greater cushion for privacy than strong disclosure does.
 
-##### Permuted disclosure
+##### 5.3 Permuted disclosure
 
 With permuted disclosure, a biometric is embedded in the credential, and is tested and matched in the same way as the strong disclosure technique. The difference is that each time the biometric is disclosed, it is different. Thus, there is no correlator, but there is still strong assurance based on a biometric.
 
 There are various ways to do permuted disclosure. The most sophisticated involves the holder permuting the embedded biometric using verifiable computation (e.g., ZKSNARKs or similar)--the verifier knows that the matched biometric differs from the embedded and signed one in some insignificant way that they can’t reverse-engineer (e.g., a handful of randomly chosen pixels in a photo). It can also be done far more simply, by having an issuer capture dozens of copies of the biometric data, signing all of them, and letting the prover select a different one each time they use the credential.
 
-#### Provisional Anonymity
+#### Technique 6: Provisional Anonymity
 
 Using a technique called verifiable encryption, a prover can put strong identifiers in escrow as security against their good behavior, and can prove to a verifier that they’ve done so. This creates vulnerability without disclosure. The keys to unlock the verifiably encrypted data can be sharded and given to peers, sent to a third party that will adjudicate claims of bad behavior, or similar. The escrowed identifiers can provably derive from a verifiable credential.
 
 For example, an online forum can offer anonymity as long as members respect a code of conduct; if someone engages in trolling, the mailing address, phone number, and full name on their driver’s license can be revealed.
 
-#### Link Secret Bond
+#### Technique 7: Link Secret Bond
 
-It is possible to publicly post a bond against a link secret, such that anyone who knows the link secret can confiscate the bond. This is direct proof that the link secret is not publicly known, as it creates an incentive for anyone who knows it to confiscate the money and compromise the link secret. It is exactly the sort of vulnerability demanded by the trust paradox, and can be delivered without compromising anonymity.
+It is possible to publicly post a bond against a link secret, such that anyone who knows the link secret can confiscate the bond. This is direct proof that the link secret is not publicly known, as it creates an incentive for anyone who knows it to confiscate the money and compromise the link secret. It can be delivered without compromising the zeroness of zero knowledge.
 
-#### Financial Escrow as Vulnerability
+#### Technique 8: Financial Escrow as Vulnerability
 
-A simpler form of vulnerability can be used to resolve the trust paradox: the prover can put money in escrow as a security against their good behavior. This is really a variation of F--but what is confiscated is money rather than strong identifiers.
+A simpler form of vulnerability can be used: the prover can put money in escrow as a security against their good behavior. This is really a variation of Technique 6--but what is confiscated is money rather than strong identifiers.
 
 ## Conclusion
-Credential fraud has been with us as long as we’ve had credentials, and will no doubt continue to manifest in new ways as technology evolves. A holder lying about credential ownership at proving time is only one of the hundreds of fraud variations in the taxonomy enumerated so far by the credential fraud discussion group. Sovrin’s ZKP-based approach to credentials is undoubtedly imperfect, because it is young. The same applies to other verifiable credential approaches. However, there is not evidence, either anecdotal or rigorous, to suppose that ZKPs are inherently, uniquely vulnerable to trust problems. In Sovrin implementation work, each time scrutiny focuses on a particular fraud scenario, concrete examples of how to solve it are quickly found. This matches the arc of academic literature, which has a long and rich history of solutions to the trust paradox.
 
-The trust paradox does say something insightful about credential use. However, the TP paper’s application of the paradox to ZKPs is overly narrow. It makes false assumptions about what is possible and useful in a ZKP context. And the TP paper doesn’t consider how the paradox might apply to non-ZKP proofs at all (a mistake which I’ll write about separately). The best way to serve community interests with respect to ZKPs and credentials is not to fear them. It’s to embrace them, and get on with the business of making them better and using them well.
+Credential fraud has been with us as long as we’ve had credentials, and will no doubt continue to manifest in new ways as technology evolves. A holder lying about credential ownership at proving time--the specific scenario that motivates a lot of ZKP FUD--is only one of the hundreds of fraud variations in the [taxonomy enumerated so far by the credential fraud discussion group](https://docs.google.com/document/d/1yX2-wKPxKPUTGEyxIQKK_Z-azT2A_AykIfPEB1cW-d0/edit). Thus, we must think carefully about whether credentials of all types--not just ones based on ZKPs--are susceptible to fraud. A serious effort by the digital credential community to tackle this issue in a formal way, and we will be proposing more efforts in this vein at RWOT.
+ 
+ZKP-based approaches to credentials are undoubtedly imperfect, because they are young. However, there is no evidence, either anecdotal or rigorous, to suppose that ZKPs are inherently, uniquely vulnerable to trust problems. Expert literature has a long and rich history of clever solutions. This paper only mentions a handful.
 
+The best way to serve community interests with respect to ZKPs and credentials is not to fear them. It’s to embrace them, and get on with the business of making them better and using them well.
 
-
-How to Detect Link Secret Reuse While Retaining Privacy
-The normal way to prove possession of a link secret is to use a technique called Pedersen Commitments, which you can study online. PCs depend on the arithmetic expression gxhr, where g and h are generators, x is the link secret, and r is a blinding factor randomly chosen by the verifier. All these values are 256-bit integers, and all arithmetic takes place in a 256-bit modular field. When g is raised to the x power and multiplied by h raised to the r power, a new 256-bit number is produced; it can’t be reversed, but it can be tested for correctness, and the prover’s ability to produce it shows that they know x.
-
-If a verifier stipulates that r must be 0, then hr drops out of the expression, since any number raised to the 0 power is 1. This gives a degenerate numeric value for proving link secret knowledge: gx. A prover can disclose gx and still prove link secret possession. But if they do it multiple times, the verifier will be able to recognize that they have seen it before, without being able to reverse gx into x. (This non-reversability is given by the fact that in modular arithmetic, finding a discrete logarithm is computationally “hard.”)
-
-## References
+## Appendix: References
 
 This topic has been explored in great detail by cryptologists in the expert literature over the past 30 years. A few highlights include:
 
