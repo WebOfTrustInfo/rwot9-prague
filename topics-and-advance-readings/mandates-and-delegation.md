@@ -107,6 +107,10 @@ I also suggest to specify Action(s) to have the following attributes:
 * **`note`** [0..n]: other texts that are considered to have some relevance;
 * **`IsSpecializationOf`** [0..n]: `actSpec`s whose every `condition`, `direction` and `note` is (also) applicable to this `actSpec`, unless it is inconsistent with the set of `condition`s, `direction`s and `note`s of this `actSpec`.
 
-### Can We Do Guardianship With Mandates?
+### Does Guardianship Link With Mandates (and if so: how)?
 
-Not having given this a great deal of thought yet, I was pondering whether or not guardianship can be modelled using mandates. [***Further discussions/thoughts needed***]
+From the information I have (mostly rooted in legal stuff), it seems that Guardianship is in order when someone is incapable of taking sufficient care for him/herself. Examples include small children, and people with certain mental and/or physical disabilities. Under such conditions, a judge may be asked to install guardianship, which, if awarded, results in a set of obligations and the appointment of a natural person or a legal person (called the 'guardian') that will be held accountable for their realization. 
+
+Administrative law as I have seen it is pretty much does the same thing: it states obligations and appoints governmental bodies that are accountable for their realization. Then, these bodies have mandate registers that provide the criteria to determine which individuals may (not), should (not), or must (not) do things related to these obligations. 
+
+[***Further discussions/thoughts needed***]
