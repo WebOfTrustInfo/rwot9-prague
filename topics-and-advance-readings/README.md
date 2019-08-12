@@ -34,7 +34,7 @@ really, read as much as you can!)
   * By [Serge Wroclawski](http://blog.emacsen.net) with advice and ideas by [Christopher Lemmer Webber](https://dustycloud.org)
   * "A collection of techniques to keep unwanted messages (spam, phishing, hate speech) off the Fediverse, with a focus on OCAP and WoT.
   * #activitypub #spam #wot #ocap
-  
+
 ### DIDs
 
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
@@ -46,6 +46,11 @@ really, read as much as you can!)
   * By [Joe Andrieu](mailto:joe@legreq.com), [Amy G](mailto:amy@rhiaro.co.uk), [Joachim Lohkamp](mailto:joachim@jolocom.com), [=Drummond Reed](mailto:drummond.reed@evernym.com), [Markus Sabadello](mailto:markus@danubetech.com), [Oliver Terbu](mailto:oliver.terbu@consensys.net), [Kai Wagner](mailto:kai@jolocom.com)
   * "The Rubrics for Decentralization of DID Methods document (the Document) will help people evaluate real or potential DID Methods. This document outlines the collaborative aspirations of the Document’s editors."
   * #did #rubrics #decentralization
+
+* [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
+  * By [Bas Kaptijn - discipl.org](https://discipl.org), [Steven Gort - discipl.org](https://discipl.org), [Dr. Carsten Stöcker - spherity.com](https://spherity.com)
+  * This paper proposes a X.509 DID (sub)method
+  * #did #decentralization #pki #X.509
 
 ### Mandates and Delegation
 
@@ -80,23 +85,23 @@ really, read as much as you can!)
 
 ### Security
 
-* [Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) 
+* [Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md)
    * By Kyle Den Hartog
    * "There's two options for addressing Man-in-the-middle (MITM) that are created by the Trust On First Use (TOFU) problem: Passing a hash of a key or DID Document through a trusted out of band channel. This is also called fingerprinting; or Adding a key as a self-attested attribute to a credential."
    * #TOFU
-   
+
 * [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
    * by hammanns
    * "Protocol verification models different agents and the messages they can send over a network. In particular, symbolic protocol verification in the Dolev-Yao network attacker model assumes that the attacker controls the network, i.e., the attacker can read, send, block, and modify messages, but cannot break cryptography (i.e., cryptography is assumed to be perfect). The goal is to detect logical errors in the protocol design that can lead to attacks on desired security properties (such as the secrecy and integrity of messages)."
    * #protocol #verification #did
-   
+
 ### Standards Working Groups
 
-* [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) 
+* [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md)
    * "We propose to facilitate the collaborative drafting of a paper that discusses the possible use of non-violent communications (NVC) and cognitive behavioral (CBT) methodologies, to create a collaboration toolkit for Internet standards working groups."
    * by Claire Rumore & Moses Ma
    * #cooperation #communication #standards
-   
+
 ### Verifiable Data Chains / Decentralised Autonomic Data (DADs)
 
 * [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md)
@@ -110,12 +115,12 @@ really, read as much as you can!)
    * by Samuel Smith
    * "The purpose of this paper is to foster awareness of the economic benefits of cooperation and the crucial role decentralized identity may play in unleashing historic new sources of value creation and transfer."
    * #cooperation #did
-   
+
 * [Firefly Trust Sync](./firefly-trust-sync.md)
    * by Tom Marble
    * "Introducing the Firefly Trust Sync (Firefly) architecture as a decentralized, web-of-trust alternative to address the shortcomings of the Certificate Authority (CA) based Public Key Infrastructure (CA-based PKI) and the Pretty Good Privacy (PGP) web-of-trust. Self sovereign identity is a cornerstone of this architecture and yet it does not rely whatsoever on distributed ledger technology. Essential design elements are presented with initial thoughts on both advantages and disadvantages of this approach as well as some next steps."
    * #firefly #web-of-trust
-   
+
 ## Alphabetical Listing
 
 * [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md) - Carsten Stöcker, Alexander Yenkalow, Juan Caballero
@@ -127,8 +132,8 @@ really, read as much as you can!)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
-* [Mandates and Delegation](./mandates-and-delegation.md) 
+* [Mandates and Delegation](./mandates-and-delegation.md)
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) by Claire Rumore & Moses Ma
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
-
+* [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
