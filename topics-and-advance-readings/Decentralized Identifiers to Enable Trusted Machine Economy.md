@@ -1,4 +1,13 @@
-# Decentralized Identifiers to Enable Trusted Machine Economy
+name: Decentralized Identifiers to Enable Trusted Machine Economy
+about: Data Marketplace, Trusted Machine Economy  
+title: Decentralized Identifiers to Enable Trusted Machine Economy
+labels: ''
+assignees: 'N/A'
+
+### Decentralized Identifiers to Enable Trusted Machine Economy
+### Spin Yuan
+### spin.yuan0530@gmail.com
+### Content
 
 ## Abstract
 
