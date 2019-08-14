@@ -47,6 +47,11 @@ really, read as much as you can!)
   * "The Rubrics for Decentralization of DID Methods document (the Document) will help people evaluate real or potential DID Methods. This document outlines the collaborative aspirations of the Document’s editors."
   * #did #rubrics #decentralization
 
+* [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
+  * By [Daniel Bluhm](mailto:daniel.bluhm@sovrin.org)
+  * An overview of the need to achieve interoperability between SSI Stacks and how DID Communication can help.
+  * #did #didcomm
+
 ### Mandates and Delegation
 
 * [Mandates and Delegation](./mandates-and-delegation.md) (Rieks Joosten)
@@ -141,6 +146,7 @@ really, read as much as you can!)
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
+* [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
