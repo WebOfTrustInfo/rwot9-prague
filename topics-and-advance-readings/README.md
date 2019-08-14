@@ -121,6 +121,11 @@ really, read as much as you can!)
    * by Stepan Gershuni (credentia.me)
    * #competency-based-assessment #ssi #decentralized-identifiers #verifiable-credentials #digital-certificates
 
+* [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
+   * "This paper explains how we integrated zero knowledge proofs in our issuing and verifying flow of the universal ledger agent. We will this for a pilot this year covering the income test required in social housing."
+   * by David Lamers (Rabobank)
+   * #zeroknowledgeproofs #verifiablecredentials #socialhousing #usecases
+   
 ### Web of Trust Alternatives
 
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
@@ -150,4 +155,5 @@ really, read as much as you can!)
 * [Preventing Transferability with ZKP-based Credentials](https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
+* [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
 
