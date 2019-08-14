@@ -20,4 +20,3 @@ instead (and select the Demo template).
 3. In the same file, add a link to your paper to the 
   [Alphabetical Listing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/README.md#alphabetical-listing)
   section.
- 
