@@ -54,6 +54,13 @@ really, read as much as you can!)
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
 * [Firefly Trust Sync](./firefly-trust-sync.md)
 
+### Social Key Recovery
+
+* [Zion Key Management SDK Sets and SLIP-39 for Social Key Recovery](./zion-sdks-skr.md)
+  * by Hank Chiu, Hankuan Yu, David Chen and Jon Tsai
+  * Zion Key Management SDK Sets provide rich sets of APIs to help developer to develop wallet applications with keys being protected by the Secure Enclave.
+  * #shamirsecretsharing #sss #keymanagement #keyrecovery #skr #slip39
+
 ## Alphabetical Listing
 
 
