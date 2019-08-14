@@ -146,6 +146,11 @@ really, read as much as you can!)
    * by Tom Marble
    * "Introducing the Firefly Trust Sync (Firefly) architecture as a decentralized, web-of-trust alternative to address the shortcomings of the Certificate Authority (CA) based Public Key Infrastructure (CA-based PKI) and the Pretty Good Privacy (PGP) web-of-trust. Self sovereign identity is a cornerstone of this architecture and yet it does not rely whatsoever on distributed ledger technology. Essential design elements are presented with initial thoughts on both advantages and disadvantages of this approach as well as some next steps."
    * #firefly #web-of-trust
+
+* [Decentralized unique anonymous identity](./decentralized-unique-anonymous-identity.md)
+   * by Andrew Edi
+   * "The talk presents a novel way to create decentralized anonymous identity, that does not require any personally identifying information to be verified. The humanness and uniqueness is proven by running a collective simultaneous online Turing test."
+   * #DID #anonymity
    
 ## Alphabetical Listing
 
