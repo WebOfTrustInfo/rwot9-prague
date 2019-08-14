@@ -116,6 +116,10 @@ really, read as much as you can!)
    * #verifiableclaims #dad #did #provenance
    
 ### Verifiable Credentials Use Cases
+
+* [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
+   * "Transacting IoT data must be different in many respects in order to build much-needed trust in IoT-enabled Data Marketplaces, trust that will be key to their sustainability. Data generated internally to an organization is usually not enough to remain competitive, improve customer experience, and optimize strategic decision-making. However, there is still no transparent and reliable marketplace for data trading with fair price. Furthermore, the verification of the machines (e.g. sensors) for data collection becomes another crutial issue. As a result, an innovative type of platform with the introduction of distributed legder technology (DLT) has emerged, in order to transform data into profits with better trust basic."
+   
 * [Verifiable Credentials in Incentivized Competency Assessment](./vc-in-incentivized-competency-assessment.md)
    * "We leverage web of trust concept in order to create a network of competencies where Experts (Examiners) act as verifiers to assess user's competency on a given subject. We propose using decentralized staking and slashing mechanism similar to Augur's dispute model in order to create financial incentives for users to minimize fraud in the network. Finally, we propose a design for mechanism that produces verifiable credentials of skills and competencies which do not require centralized assessor or an institution."
    * by Stepan Gershuni (credentia.me)
@@ -139,6 +143,7 @@ really, read as much as you can!)
 * [Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) - Kyle Den Hartog
 * [Bare minimum agent for identity](./Bare-minimum-agent.md)
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
+* [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
