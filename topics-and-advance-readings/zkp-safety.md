@@ -8,7 +8,7 @@ Some in the digital credential movement have claimed that ZKP-based credentials 
 
 ## What is a ZKP?
 
-"ZKP" is often used in digital credential circles without careful definition, and this leads to confusion. Here is how the concept of zero-knowledge proofs was defined by its inventors:
+"ZKP" is often used in digital credential circles without careful definition, and this leads to confusion. Here is how the concept of zero-knowledge proofs (ZKPs) was defined by its inventors:
 
 >Zero-knowledge proofs are defined as those proofs that convey no additional knowledge other than the correctness of the proposition in question. (Goldwasser, Micali, Rackoff, "The knowledge complexity of interactive proof-systems", SIAM J. Comput., 18, 1989, pp. 186-208)
 
@@ -92,7 +92,7 @@ Whichever mechanism is used, forcing consistent link secret use is yet another w
 
 #### Technique 4: Commit a DID to a Link Secret
 
-A Pedersen Commitment to a link secret can be shared by the owner of a DID at the inception of a relationship. This forces the owner of a DID to use the same link secret from that point forward. They cannot go out on the black market and acquire credentials at their pleasure to prove whatever they like, because the credentials won’t be bound to the same link secret they already committed to. This is another manifestation of the same vulnerability to future context that was discussed in C above.
+A Pedersen Commitment to a link secret can be shared by the owner of a DID at the inception of a relationship. This forces the owner of a DID to use the same link secret from that point forward. They cannot go out on the black market and acquire credentials at their pleasure to prove whatever they like, because the credentials won’t be bound to the same link secret they already committed to. This is another manifestation of the same vulnerability to future context that was discussed in Technique 3 above.
 
 A variation on this technique actually allows the keys for a DID to be provably derived from a link secret, still without disclosing the link secret itself. This may further raise the bar for would-be fraudsters, in certain circumstances.
 
@@ -140,7 +140,7 @@ A simpler form of vulnerability can be used: the prover can put money in escrow 
 
 ## Conclusion
 
-Credential fraud has been with us as long as we’ve had credentials, and will no doubt continue to manifest in new ways as technology evolves. A holder lying about credential ownership at proving time--the specific scenario that motivates a lot of ZKP FUD--is only one of the hundreds of fraud variations in the [taxonomy enumerated so far by the credential fraud discussion group](https://docs.google.com/document/d/1yX2-wKPxKPUTGEyxIQKK_Z-azT2A_AykIfPEB1cW-d0/edit). Thus, we must think carefully about whether credentials of all types--not just ones based on ZKPs--are susceptible to fraud. A serious effort by the digital credential community to tackle this issue in a formal way, and we will be proposing more efforts in this vein at RWOT.
+Credential fraud has been with us as long as we’ve had credentials, and will no doubt continue to manifest in new ways as technology evolves. A holder lying about credential ownership at proving time--the specific scenario that motivates a lot of ZKP FUD--is only one of the hundreds of fraud variations in the [taxonomy enumerated so far by the credential fraud discussion group](https://docs.google.com/document/d/1yX2-wKPxKPUTGEyxIQKK_Z-azT2A_AykIfPEB1cW-d0/edit). Thus, we must think carefully about whether credentials of all types--not just ones based on ZKPs--are susceptible to fraud. We recommend a serious effort by the digital credential community to tackle this issue in a formal way. We will be proposing more efforts in this vein at RWOT.
  
 ZKP-based approaches to credentials are undoubtedly imperfect, because they are young. However, there is no evidence, either anecdotal or rigorous, to suppose that ZKPs are inherently, uniquely vulnerable to trust problems. Expert literature has a long and rich history of clever solutions. This paper only mentions a handful.
 
