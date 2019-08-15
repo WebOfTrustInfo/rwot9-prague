@@ -142,6 +142,11 @@ really, read as much as you can!)
    * "The purpose of this paper is to foster awareness of the economic benefits of cooperation and the crucial role decentralized identity may play in unleashing historic new sources of value creation and transfer."
    * #cooperation #did
    
+* [Heresay: A Fuzzy Prediction Market for Distributed Reputation](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/heresay.md)
+  * by AJ Adams, Matt Condon
+  * We propose a pattern for distributed, emergent reputation rendered via a fuzzy prediction market. In order to promote scale with resilience, legibility with ephemerality, and transitivity with context, we begin by investigating how identity, trust, and reputation function at intimate scale and under organic constraints.
+  * #reputation #web-of-trust #privacy
+   
 * [Firefly Trust Sync](./firefly-trust-sync.md)
    * by Tom Marble
    * "Introducing the Firefly Trust Sync (Firefly) architecture as a decentralized, web-of-trust alternative to address the shortcomings of the Certificate Authority (CA) based Public Key Infrastructure (CA-based PKI) and the Pretty Good Privacy (PGP) web-of-trust. Self sovereign identity is a cornerstone of this architecture and yet it does not rely whatsoever on distributed ledger technology. Essential design elements are presented with initial thoughts on both advantages and disadvantages of this approach as well as some next steps."
@@ -160,6 +165,7 @@ really, read as much as you can!)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
+* [Heresay: A Fuzzy Prediction Market for Distributed Reputation](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/heresay.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md) 
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) by Claire Rumore & Moses Ma
