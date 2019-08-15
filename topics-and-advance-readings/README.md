@@ -152,7 +152,7 @@ really, read as much as you can!)
    * "The talk presents a novel way to create decentralized anonymous identity, that does not require any personally identifying information to be verified. The humanness and uniqueness is proven by running a collective simultaneous online Turing test."
    * #DID #anonymity
 
-* [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
+* [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/robisoniv/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
   * by [John R Hoopes IV](https://github.com/robisoniv/)
   * "Ideas for a new conception of global governance. Opt-in mechanisms of incentivization based on the conditional provision or restriction of access to financial or informational assets could provide individuals with an enforceable mechanism of self-regulation, to encourage intentional behavior."
 
