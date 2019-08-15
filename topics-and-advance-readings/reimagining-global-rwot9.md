@@ -10,7 +10,7 @@ sovereign: one that exercises supreme authority within a limited sphere ([Merria
 
 ## Abstract
 
-Self-sovereign identities put the user in control of their data and financial assets. If governing can be thought of decision-making regarding the aggregation and allocation of resources, how could self-sovereign identities and smart contracts offer new opportunities for personal self-governance? Opt-in mechanisms of incentivization based on the conditional provision or restriction of access to financial or informational assets could provide individuals with an enforceable mechanism of self-regulation, to encourage intentional behavior. As long as individuals are interacting with the cyber domain through their self sovereign identity, such mechanisms could apply globally, regardless of the person's physical location.
+Self-sovereign identities put the user in control of their data and financial assets. If governing can be thought of decision-making regarding the aggregation and allocation of resources, how could self-sovereign identities and smart contracts offer new opportunities for personal self-governance? Opt-in mechanisms of incentivization based on the conditional provision or restriction of access to financial or informational assets could provide individuals with an enforceable mechanism of self-regulation, to encourage intentional behavior. As long as individuals are interacting with the cyber domain "through" their self sovereign identity, such mechanisms could apply globally, regardless of the person's physical location.
 
 ## Governance changing
 
@@ -64,6 +64,6 @@ Blockchains, smart contracts and the self-sovereign identities emerging within t
 
 ## References
 
-Bevir, Mark. (2013). *Governance: A Very Short Introduction*. Oxford: Oxford University Press.
+Bevir, Mark. (2012). *Governance: A Very Short Introduction*. Oxford: Oxford University Press.
 
 Dictionary by Merriam-Webster. (2019). Merriam-Webster. [ONLINE] Available at: https://www.merriam-webster.com/. [Accessed 12 August 2019].

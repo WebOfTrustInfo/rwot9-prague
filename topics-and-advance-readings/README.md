@@ -174,6 +174,6 @@ really, read as much as you can!)
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) by Claire Rumore & Moses Ma
 * [Preventing Transferability with ZKP-based Credentials](https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
-* [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
+* [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/robisoniv/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
