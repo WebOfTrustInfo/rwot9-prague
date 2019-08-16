@@ -155,7 +155,14 @@ really, read as much as you can!)
 * [A Web of Credit Framework](./web-of-credit.md)
    * by Yonatan Sompolinsky and Alexandra Tran
    * "This document is a high-level discussion on using webs of trust for decentralized credit systems."
-   
+
+### Key Management
+	
+* [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
+  * by Hank Chiu, Hankuan Yu, David Chen and Jon Tsai
+  * Zion Key Management SDK Sets provide rich sets of APIs to help developers to use keys which is protected in Secure Enclave.
+  * #shamirsecretsharing #sss #keymanagement #keyrecovery
+
 ## Alphabetical Listing
 
 * [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md) - Carsten Stöcker, Alexander Yenkalow, Juan Caballero
@@ -177,4 +184,4 @@ really, read as much as you can!)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
 * [A Web of Credit Framework](./web-of-credit.md)
-
+* [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
