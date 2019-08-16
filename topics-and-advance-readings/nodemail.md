@@ -143,6 +143,7 @@ In the case of Nodemail, this construct is adopted because it enables several fe
 - Simplifies address generation and key management
 
 ![BIP32](media/bip32.png)
+> From https://raw.githubusercontent.com/bitcoin/bips/master/bip-0032/derivation.png
 
 # Two party communication (1-to-1)
 
