@@ -161,6 +161,10 @@ really, read as much as you can!)
    * by Andrew Edi
    * "The talk presents a novel way to create decentralized anonymous identity, that does not require any personally identifying information to be verified. The humanness and uniqueness is proven by running a collective simultaneous online Turing test."
    * #DID #anonymity
+   
+* [A Web of Credit Framework](./web-of-credit.md)
+   * by Yonatan Sompolinsky and Alexandra Tran
+   * "This document is a high-level discussion on using webs of trust for decentralized credit systems."
 
 ### Key Management
 	
@@ -191,4 +195,5 @@ really, read as much as you can!)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 * [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
+* [A Web of Credit Framework](./web-of-credit.md)
 * [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
