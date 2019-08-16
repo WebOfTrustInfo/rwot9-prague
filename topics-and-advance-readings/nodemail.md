@@ -142,6 +142,8 @@ In the case of Nodemail, this construct is adopted because it enables several fe
 - Greater flexibility in proving ownership of associated addresses 
 - Simplifies address generation and key management
 
+![BIP32](media/bip32.png)
+
 # Two party communication (1-to-1)
 
 ## Two party Nodemail-to-Email
