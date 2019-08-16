@@ -1,4 +1,4 @@
-# SolidVC: Decentralized Verifiable Credentials Management System
+# SolidVC: A Decentralized Verifiable Credentials Management System
 By [Kayode Ezike](https://www.linkedin.com/in/kayodeezike)
 
 ## Introduction
@@ -16,10 +16,10 @@ With time, the credentials community evolved, identifying and avoiding some of t
 ## SolidVC
 In this section, I present [SolidVC](https://github.com/kezike/solid-vc), a decentralized implementation of the Verifiable Credentials specification that leverages various ontologies, protocols, and specifications of the Web to deliver a robust and extensible credentialing system. By the end of this section, the hope is that the reader understands the various entity roles, procedures, and use cases that are spanned by the SolidVC ecosystem.
 
-#### Stakeholders
+### Stakeholders
 There are three primary stakeholders in the SolidVC ecosystem: _Subject_<sup>1</sup>, _Issuer_, and _Verifier_. These roles are no different than those specified in the Verifiable Credentials specification. In a later section, I will specify the behavior of each of these user types.
 
-#### Ontology
+### Ontology
 In SolidVC, I represent credentials with a custom ontology called [_svc_](http://dig.csail.mit.edu/2018/svc)<sup>2</sup>. The _svc_ ontology defines terms that represent the credential type (i.e., Education, Health, Finance, etc.), the embedded claims, the Subject, the Issuer, and the proof.
 
 ![](media/svc-cred.png)
@@ -27,10 +27,10 @@ _Figure 1: Sample Credential_
 
 The primary resource types in _svc_ are _Credential_ and _CredentialStatusList_. Credential represents the self-sufficient credentials that are requested, issued, shared, and verified in SolidVC. Some of the key properties of this resource are _id_, _domain_, _issuerId_, and _subjectId_. Meanwhile, the _CredentialStatusList_ resource type represents the evolving status of a credential and includes properties such as _credentialStatus_, _credentialId_, _revocationReason_, and _revocationDate_.
 
-#### Protocols
+### Protocols
 SolidVC consists of a number of well-defined protocols for handling credentials. In this section, I will outline these protocols in detail.
 
-###### Setup
+#### Setup
 Prior to using SolidVC, there are a number of dependencies that the user must install in their local environment (henceforth, _svcLocal_) and in a public SolidVC-provisioned folder that resides in the user's Solid pod (henceforth, _svcRemote_). The software package includes a script (henceforth, _svcSetup_) that checks and establishes that mission-critical prerequisites and constraints are maintained in _svcLocal_ and _svcRemote_. Some of the functionalities of _svcSetup_ are the following:
 - Authentication of the user to their Solid account in order to enable privileged access to resources
 - Generation of a cryptographic key pair for signing and verifying credentials on the platform
@@ -39,16 +39,16 @@ Prior to using SolidVC, there are a number of dependencies that the user must in
 - Configuration of a credential status folder in a user-defined folder that resides within _svcRemote_
 - Persistence of the user's relevant information to a configuration file
 
-###### Request
+#### Request
 Although the Verifiable Credentials specification imposes no requirement for credential request, SolidVC includes it as a convenience nevertheless. In the Subject app interface, the user can explicitly request a credential from the Issuer via Linked Data Notifications ([LDN](https://www.w3.org/TR/ldn/)). Because a credential requires the verifiable completion of a set of achievements, the Subject is encouraged to provide minimally sufficient data for the sake of efficient authentication and capability determination.
 
-![](media/svc-cred-delivery.png)
+![](media/svc-cred-delivery.png)<br/>
 _Figure 2: Request and Issuance Protocols_
 
 The structure of a credential request is a lot like that of a credential proper. Not only does it include much of the same metadata, such as the domain, title, description, and Issuer ID, but it is also signed by the creator. The latter condition enables the detection of the scenario in which a malicious user sends a request for a credential on behalf of another unsuspecting user. Without this provision, users might be prone to a form of Denial of Service (DoS) attack that involves launching credential
 requests from multiple different Issuers, who might respond to the victim in quick succession.
 
-###### Issuance
+#### Issuance
 In the Issuer app interface, the user can directly create, sign, and issue a credential to a knowingly deserving Subject. This interface is useful if the Issuer already has the proof and user information that they need to reward a Subject with a credential and, consequently, a credential request would be superfluous.
 
 ![](media/svc-issue.png)
@@ -67,7 +67,7 @@ quad store.
 9. Serialize credential status quad store into N3.
 10. Submit new credential status document to credential status folder in _svcRemote_.
 
-###### Sharing
+#### Sharing
 Sharing credentials in SolidVC is rather simple.
 
 ![](media/svc-share.png)
@@ -77,10 +77,10 @@ There are two ways to share credentials with other stakeholders:
 1. File Upload: In this mode, the Subject wielding control over the credential can upload a local credential-bearing  file that was previously downloaded from SolidVC to their computer.
 2. URI Provision: In this mode, the Subject wielding control over the credential provides the URI of the credential and the ID of the stakeholder, often a Verifier. This triggers a fetch of the credential from the URI and an LDN-supported communication of the content.
 
-###### Verification
+#### Verification
 In order to verify the provenance and integrity of a credential, the user simply needs to enter its URL.
 
-![](media/svc-cred-verify.png)
+![](media/svc-cred-verify.png)<br/>
 _Figure 5: Verification Protocol_
 
 The Verification protocol involves a number of key steps:
@@ -95,7 +95,7 @@ The Verification protocol involves a number of key steps:
 ![](media/svc-verify-success.png)
 _Figure 6: Verification Interface Upon Success_
 
-###### Revocation
+#### Revocation
 The Verifiable Credentials specification prescribes the use of the _credentialStatus_ property to augment the credential with useful metadata. This field references a special type of credential that describes the state of the original credential of interest. In SolidVC, there is provision for this notion in the _svc_ ontology. For the user's perspective, the revocation interface simply prompts them to enter the ID of the credential and the reason for revocation. The following is a comprehensive outline of the technical steps involved in the Revocation protocol:
 1. Fetch local credential status folder into local _rdflib_ quad store.
 2. Search for credential status document with credential ID provided by the user.
@@ -105,21 +105,21 @@ The Verifiable Credentials specification prescribes the use of the _credentialSt
 6. Report whether credential status update was successfully recorded.
 
 
-#### Use Case: Driving License
+### Use Case: Driving License
 In this section, I provide a discussion of a typical use case of SolidVC in the context of driving certification. The point of the featured scenario is to give readers insight into the kind of credentialing activity that SolidVC supports.<sup>3</sup>
 
-###### Setup
+#### Setup
 Alice is interested in receiving a driving license in the state of Massachusetts. In order to begin this process with the Massachusetts Registry of Motor Vehicles (RMV), she first needs to download SolidVC and execute _svcSetup_. Fortunately for Alice, she only needs to run _svcSetup_ once in order to gain long-term access to the SolidVC ecosystem with a single Solid account.
 
-###### Request
+#### Request
 Alice visits the SolidVC Subject interface; enters the [WebID](https://www.w3.org/wiki/WebID) of the RMV, a SolidVC-compliant Issuer; and selects the Transportation option. She proceeds to enter the relevant request metadata, including the WebID of an RMV employee named Chris, and an optional title and description for the request.
 
-###### Issuance
+#### Issuance
 During a cursory review of his SolidVC inbox, Chris notices Alice's recent request. Upon reviewing the request and the attached information, he immediately returns a rejection notice, explaining that Alice must complete a month-long driving course and take an hour-long driving test in person. Alice uses the linked resources in the rejection notice to apply for the driving course and prepare for the driving test.
 
 After a month, Alice has completed the course and taken the test. She reaches out to Chris again, who confirms that she is now certified to drive in the State of Massachusetts. Chris proceeds to the _Issue_ panel of the Issuer interface to create, sign, and deliver a new driving license to Alice.
 
-###### Verification/Revocation
+#### Verification/Revocation
 On her way home from an evening outing with her friends, Alice is stopped by Victor, an officer of the Boston Police Department. The officer suspected and confirmed that she was driving under the influence ([DUI](https://en.wikipedia.org/wiki/Driving_under_the_influence)). After ascertaining the validity of her license via the SolidVC Verifier interface, Victor reported Alice’s poor behavior to Chris from the RMV, who subsequently revoked the new license using SolidVC’s revocation function. The result is a status of __REVOKED__, which would appear in the credential status document associated with Alice’s license
 
 ![](media/svc-verify-error.png)
