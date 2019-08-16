@@ -135,12 +135,27 @@ really, read as much as you can!)
    * by David Lamers (Rabobank)
    * #zeroknowledgeproofs #verifiablecredentials #socialhousing #usecases
 
+* [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
+   * by Anthony Ronning, Chris Winczewski, Dan Hughes
+   * "The proposed method outlined in this paper would be able to use a Verifiable Credential from a recipient to prove ownership of a Blockcert needing verification."
+   * #verifiable-credentials #digitial-certificiates #ssi
+
+ * [Ecosystem Bootstrapping via Notary Credentials](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ecosystem-bootstrapping-via-notary-vcs.md)
+   * Credentials do not yet factor into any significant public process such as requesting a Schengen visa for the purposes of attending RWoT IX.  The governments and businesses involved can not update their existing processes until there is an existing credential ecosystem resting on the proven ability of the general population to engage digital trust technology.  This paper explores the use of credentials which attest the observation of a primary document by an authority and the non-intrusive pairing of these credentials with existing processes.  This approach establishes the infrastructure required for a strong credential ecosystem without first requiring a global re-engineering of identity management.
+   * by Eric Welton
+   * #bootstrapping, #verifiablecredentials, #notary
+
 ### Web of Trust Alternatives
 
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
    * by Samuel Smith
    * "The purpose of this paper is to foster awareness of the economic benefits of cooperation and the crucial role decentralized identity may play in unleashing historic new sources of value creation and transfer."
    * #cooperation #did
+
+* [Heresay: A Fuzzy Prediction Market for Distributed Reputation](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/heresay.md)
+  * by AJ Adams, Matt Condon
+  * We propose a pattern for distributed, emergent reputation rendered via a fuzzy prediction market. In order to promote scale with resilience, legibility with ephemerality, and transitivity with context, we begin by investigating how identity, trust, and reputation function at intimate scale and under organic constraints.
+  * #reputation #web-of-trust #privacy
 
 * [Firefly Trust Sync](./firefly-trust-sync.md)
    * by Tom Marble
@@ -156,6 +171,17 @@ really, read as much as you can!)
   * by [John R Hoopes IV](https://github.com/robisoniv/)
   * "Ideas for a new conception of global governance. Opt-in mechanisms of incentivization based on the conditional provision or restriction of access to financial or informational assets could provide individuals with an enforceable mechanism of self-regulation, to encourage intentional behavior."
 
+* [A Web of Credit Framework](./web-of-credit.md)
+   * by Yonatan Sompolinsky and Alexandra Tran
+   * "This document is a high-level discussion on using webs of trust for decentralized credit systems."
+
+### Key Management
+
+* [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
+  * by Hank Chiu, Hankuan Yu, David Chen and Jon Tsai
+  * Zion Key Management SDK Sets provide rich sets of APIs to help developers to use keys which is protected in Secure Enclave.
+  * #shamirsecretsharing #sss #keymanagement #keyrecovery
+
 ## Alphabetical Listing
 
 * [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md) - Carsten Stöcker, Alexander Yenkalow, Juan Caballero
@@ -167,8 +193,10 @@ really, read as much as you can!)
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
 * [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
+* [Ecosystem Bootstrapping via Notary Credentials](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ecosystem-bootstrapping-via-notary-vcs.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
+* [Heresay: A Fuzzy Prediction Market for Distributed Reputation](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/heresay.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md)
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) by Claire Rumore & Moses Ma
@@ -176,4 +204,7 @@ really, read as much as you can!)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/robisoniv/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
+* [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
+* [A Web of Credit Framework](./web-of-credit.md)
+* [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
