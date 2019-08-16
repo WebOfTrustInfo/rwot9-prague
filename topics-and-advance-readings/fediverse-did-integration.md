@@ -1,10 +1,10 @@
 # Gently introducing DIDs to the Mastodon/ActivityPub Fediverse
 
-by [Markus Sabadello](https://danubetech.com/about.html), [Michael Pimmer](http://michael.pimmer.info/about/), [Paul Fuxjaeger](https://twitter.com/fuxjaeger) 
+by [Paul Fuxjaeger](https://twitter.com/fuxjaeger), [Michael Pimmer](http://michael.pimmer.info/about/) and [Markus Sabadello](https://danubetech.com/about.html) 
 
 Our goal is to bring self sovereign identity concepts to the current ActivityPub fediverse as soon and as securely as possible.
 
-The hypothesis behind that goal is that long term stability of the fediverse crucially depends on persistent trust relations across all participants (developers, admins, users) that are not *distorted* by the implicit hierarchical structure of a centralized reference system, such as DNS.
+The hypothesis behind that goal is that long term stability of a federated service crucially depends on persistent trust relations across all participants (developers, admins, users) that are not *distorted* by the implicit hierarchical structure of a centralized reference system, such as DNS.
 
 
 ## Context:
@@ -15,21 +15,19 @@ The application of DIDs within ActivityPub based services has already been sketc
 
 > https://github.com/WebOfTrustInfo/rwot5-boston/blob/master/topics-and-advance-readings/activitypub-decentralized-distributed.md
 
-It demonstrates the feasiblity and power of this new combination. 
+It demonstrated the feasiblity and power of this new combination. 
 
-But it left us wondering how to turn this into reality as soon as possible - how can an existing federated network swap out it's base reference?
+But it left us wondering how to turn this into reality - how to change the base reference system of a large federated network, e.g. within the current mastodon fediverse?
 
-Our current view is that it's best to adopt a gradual approach.
+## Augmenting The Fediverse
 
-## Federated Augmentation
+Instead of a radical approach we would like to propose to gradually introduce DIDs to Mastodon/ActivityPub in a backwards compatible manner:
 
-Instead of this radical approach we would like to propose to gradually introduce DIDs to Mastodon/ActivityPub in a completely backwards way:
+1) **DNS-based actorIDs are kept as primary reference**
+2) **Users are enbabled to attach DIDs to their actor object and exchange them in a structured way**
+3) **Conflicts between DID/DNS reference are resolved at the receiving end, based on a generic decision logic that minimizes attack surface**
 
-1) **DNS-based actorIDs are kept as primary reference.**
-2) **Actors are enbabled to exchange their DIDs in a meaningful way**
-3) **Resolve conflicts based on a generic decision logic that is configurable locally**
-
-So, we could just start by allowing actors to attach DIDs to the actor object:
+So, we start by allowing actors to attach DIDs to the actor object:
 
 ```
 {"@context": "https://www.w3.org/ns/activitystreams",
