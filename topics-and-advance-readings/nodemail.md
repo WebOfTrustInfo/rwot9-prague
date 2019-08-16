@@ -215,7 +215,9 @@ Bob will become aware of Alice's address for Dan, and Dan vice versa. Ideally, m
 
 Further, it presentes challenges in verification. Imagine a sensitive conversation taking place between two colleagues, Alice and Dan. Alice is using Nodemail, but Dan is not -- he simply treats Alice's node A(D) for him as an address. Dan would like to bring Bob into the conversation, so he sends Dan the address he has for Alice. Unbeknownst to Dan, Bob already has contacted Alice, and is using A(B) as her address. Bob now sees A(D), Alice's Dan, and is longer sure that he actually knows Alice after all, since his address for her is A(D).
 
-In general, these are problems which can be solved easily in the context 
+In general, for the context of Nodemail interaction, these are issues which can be resolved by using the public keys present in each node. Either the client signs each message with the relevant keypair, or in the case of trusted thir parties, can sign a message with the parent used to create each node.
+
+In the case of hybrid multiparty communication via email/nodemail, I am working on user interaction methods that expose these proofs as a clickable link in the footer. Of course, this runs into the problem of trusted domains, but that is common enough that I am relying on it as a workaround until I find something more elegant. 
 
 ![1-to-1](media/ndml-2.jpg)
 
