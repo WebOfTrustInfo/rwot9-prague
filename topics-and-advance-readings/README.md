@@ -134,7 +134,12 @@ really, read as much as you can!)
    * "This paper explains how we integrated zero knowledge proofs in our issuing and verifying flow of the universal ledger agent. We will this for a pilot this year covering the income test required in social housing."
    * by David Lamers (Rabobank)
    * #zeroknowledgeproofs #verifiablecredentials #socialhousing #usecases
-   
+
+* [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
+   * by Anthony Ronning, Chris Winczewski, Dan Hughes
+   * "The proposed method outlined in this paper would be able to use a Verifiable Credential from a recipient to prove ownership of a Blockcert needing verification."
+   * #verifiable-credentials #digitial-certificiates #ssi
+
 ### Web of Trust Alternatives
 
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
@@ -184,5 +189,6 @@ really, read as much as you can!)
 * [Preventing Transferability with ZKP-based Credentials](https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
+* [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
 * [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
