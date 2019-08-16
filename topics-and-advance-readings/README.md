@@ -151,7 +151,14 @@ really, read as much as you can!)
    * by Andrew Edi
    * "The talk presents a novel way to create decentralized anonymous identity, that does not require any personally identifying information to be verified. The humanness and uniqueness is proven by running a collective simultaneous online Turing test."
    * #DID #anonymity
-   
+
+### Key Management
+	
+* [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
+  * by Hank Chiu, Hankuan Yu, David Chen and Jon Tsai
+  * Zion Key Management SDK Sets provide rich sets of APIs to help developers to use keys which is protected in Secure Enclave.
+  * #shamirsecretsharing #sss #keymanagement #keyrecovery
+
 ## Alphabetical Listing
 
 * [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md) - Carsten Stöcker, Alexander Yenkalow, Juan Caballero
@@ -172,4 +179,4 @@ really, read as much as you can!)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
-
+* [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
