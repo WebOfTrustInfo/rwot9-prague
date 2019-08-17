@@ -49,7 +49,7 @@ Nodemail, then, is a system which seeks to create a robust and secure framework 
 
 # Overview
 
-Nodemail is a protocol which describes a system of communication in which each participant generates a unique hierarchical node for each connection they make, through which they make ongoing structures of communication, shifting the locus from static, publicly available identities/addresses to unique addresses/identites born through connection with others. Further, users maintain the ability to grant and revoke the access others have to communication with them through management of the address which corresponds with each connection. By using such as system, individuals are granted greater control over the correlations others may make about their social networks.  
+Nodemail is a protocol which describes a system of communication in which each participant generates a unique hierarchical node for each connection they make, through which they make ongoing structures of communication, shifting the locus from static, publicly available identities/addresses to unique addresses/identities born through connection with others. Further, users maintain the ability to grant and revoke the access others have to communication with them through management of the address which corresponds with each connection. By using such as system, individuals are granted greater control over the correlations others may make about their social networks.  
 
 There are several clear benefits to generating a new address for each connection based on hierarchical key structures:
 
@@ -159,7 +159,7 @@ I meet Alice. I use Nodemail, and she uses Email. In order to establish communic
 - I email her address from my node
 - She saves my node as my address
 
-Most modern email clients display "pet names" i.e. Alice C. in additoon to AliceC@domain.com, so the actual node address is not necessary for Alice to remember, thank goodness. 
+Most modern email clients display "pet names" i.e. Alice C. in addition to AliceC@domain.com, so the actual node address is not necessary for Alice to remember, thank goodness. 
 
 ### Scenario 2a
 - I pre-generate an address
@@ -213,13 +213,14 @@ Consider the instance where Alice, Bob and Dan are communicating in an email thr
 
 Bob will become aware of Alice's address for Dan, and Dan vice versa. Ideally, my Nodemail client will make a note of this by analyzing headers, and track the fact that Bob and Dan now know the addresses I use for each of them. In most cases, this is trivial, but it does collide with the ideal 1-to-1 relationship of nodes. 
 
-Further, it presentes challenges in verification. Imagine a sensitive conversation taking place between two colleagues, Alice and Dan. Alice is using Nodemail, but Dan is not -- he simply treats Alice's node A(D) for him as an address. Dan would like to bring Bob into the conversation, so he sends Dan the address he has for Alice. Unbeknownst to Dan, Bob already has contacted Alice, and is using A(B) as her address. Bob now sees A(D), Alice's Dan, and is longer sure that he actually knows Alice after all, since his address for her is A(D).
+Further, it presentes challenges in verification. Imagine a sensitive conversation taking place between two colleagues, Alice and Dan. Alice is using Nodemail, but Dan is not -- he simply treats Alice's node A(D) for him as an address. Dan would like to bring Bob into the conversation, so he sends Dan the address he has for Alice. Unbeknownst to Dan, Bob already has contacted Alice, and is using A(B) as her address. Bob now sees A(D), Alice's Dan, and is longer sure that he actually knows Alice after all, since his address for her is A(B).
+
+![1-to-1](media/ndml-2.jpg)
 
 In general, for the context of Nodemail interaction, these are issues which can be resolved by using the public keys present in each node. Either the client signs each message with the relevant keypair, or in the case of trusted thir parties, can sign a message with the parent used to create each node.
 
 In the case of hybrid multiparty communication via email/nodemail, I am working on user interaction methods that expose these proofs as a clickable link in the footer. Of course, this runs into the problem of trusted domains, but that is common enough that I am relying on it as a workaround until I find something more elegant. 
 
-![1-to-1](media/ndml-2.jpg)
 
 # Goals
 
