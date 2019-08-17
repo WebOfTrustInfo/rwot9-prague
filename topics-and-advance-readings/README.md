@@ -186,10 +186,13 @@ really, read as much as you can!)
    * by Yonatan Sompolinsky and Alexandra Tran
    * "This document is a high-level discussion on using webs of trust for decentralized credit systems."
 
-
 * [Exploring Interpersonal Data](./exploring-interpersonal-data.md)
    * by Kaliya Young
    * I recently wrote a series with Glen Weyl about Decentralized Social Identity and it got me thinking about interpersonal data and what it looks like relative to decentralized idetnity standards since so much of the focus in our work is centered on getting existing "centralized" institutions to issue decentralized verifiable credentials.
+
+* [Nodemail Protocol](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nodemail.md)
+   * by Ethan Brown
+   * Document describing the Nodemail Protocol.
 
 ### Key Management
 
@@ -218,6 +221,7 @@ really, read as much as you can!)
 * [Heresay: A Fuzzy Prediction Market for Distributed Reputation](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/heresay.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md)
+* [Nodemail Protocol](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nodemail.md)
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) by Claire Rumore & Moses Ma
 * [Preventing Transferability with ZKP-based Credentials](https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
