@@ -34,6 +34,11 @@ really, read as much as you can!)
   * By [Serge Wroclawski](http://blog.emacsen.net) with advice and ideas by [Christopher Lemmer Webber](https://dustycloud.org)
   * "A collection of techniques to keep unwanted messages (spam, phishing, hate speech) off the Fediverse, with a focus on OCAP and WoT.
   * #activitypub #spam #wot #ocap
+  
+* [Gently introducing DIDs to the Mastodon/ActivityPub Fediverse](./fediverse-did-integration.md)
+  * by [Markus Sabadello](https://danubetech.com/about.html), [Michael Pimmer](http://michael.pimmer.info/about/), [Paul Fuxjaeger](https://twitter.com/fuxjaeger)
+  * "Our goal is to bring self sovereign identity concepts to the current ActivityPub fediverse as soon and as securely as possible."
+  * #did #activitypub #fediverse #wot
 
 ### DIDs
 
@@ -218,6 +223,7 @@ really, read as much as you can!)
 * [Exploring Interpersonal Data](./exloring-interpersonal-data.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
+* [Gently introducing DIDs to the Mastodon/ActivityPub Fediverse](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/fediverse-did-integration.md)
 * [Heresay: A Fuzzy Prediction Market for Distributed Reputation](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/heresay.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md)
