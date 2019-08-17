@@ -57,6 +57,11 @@ really, read as much as you can!)
   * Mapping DID-related concepts onto offline scenarios as an educational tool OR a silly waste of time for all involved: you decide.
   * #did #methods #education #inclusivity #outreach
 
+* [DID Spec Current Status](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-spec-current-status.md)
+  * By [Amy Guy](https://rhiaro.co.uk/)
+  * Summary of current issues and ongoing discussions on the DID Specification.
+  * #did
+
 ### Mandates and Delegation
 
 * [Mandates and Delegation](./mandates-and-delegation.md) (Rieks Joosten)
@@ -149,7 +154,7 @@ really, read as much as you can!)
    * Credentials do not yet factor into any significant public process such as requesting a Schengen visa for the purposes of attending RWoT IX.  The governments and businesses involved can not update their existing processes until there is an existing credential ecosystem resting on the proven ability of the general population to engage digital trust technology.  This paper explores the use of credentials which attest the observation of a primary document by an authority and the non-intrusive pairing of these credentials with existing processes.  This approach establishes the infrastructure required for a strong credential ecosystem without first requiring a global re-engineering of identity management.
    * by Eric Welton
    * #bootstrapping, #verifiablecredentials, #notary
-   
+
 * [SolidVC: A Decentralized Verifiable Credentials Management System](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/solid-vc.md)
    * [SolidVC](https://github.com/kezike/solid-vc) is a decentralized Verifiable Credentials platform built with the open protocols of the Web and for the open community that the Web was intended to serve. It enables the unilateral issuance and presentation of credentials by anyone running the software locally, as well as verification of these credentials against an open credential status document. SolidVC is implemented in the context of [Solid](https://solid.inrupt.com), a Web technology developed at MIT in 2016 that allows decentralized applications to interact with personal data on behalf of users in an access controlled environment. In this paper, I discuss the motivation of SolidVC, provide sufficient background of supporting technologies, present my contribution, outline a real use case, and discuss future improvements to the platform.
    * by Kayode Ezike
@@ -205,6 +210,7 @@ really, read as much as you can!)
 * [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
 * [DID Snail Method Specification](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/didm-snail.md)
+* [DID Spec Current Status](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-spec-current-status.md)
 * [Ecosystem Bootstrapping via Notary Credentials](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ecosystem-bootstrapping-via-notary-vcs.md)
 * [Exploring Interpersonal Data](./exloring-interpersonal-data.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
