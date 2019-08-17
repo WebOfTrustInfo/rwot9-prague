@@ -1,5 +1,9 @@
 #Reputation Loops
 Matthew Schutte
+matthew.schutte@holo.host
+
+Abstract
+Identity is a process of perception that is part of how organisms (such as individuals) and social organisms (such families, companies, communities or governments) sense, interpret, decide and act. Useful information requires differences that can be perceived by the receiver of information. Meaning making (and consequently identification processes) is a result of correlations that reach the recipient in some form. An agent-centric framework for thinking about identity is presented and a general theory for how collections of participants are able to come into contextually useful alignment as part of the functioning of complex, living systems. An application of this pattern is then made to the functioning of reputation in a community and an outline is articulated for how people may be able to make use of digital tools such as holochain to augment existing human coordiation patterns and enable generative, socio-technical sense making systems.
 
 “It pays to understand identity, so the systems we build intentionally enable human dignity instead of accidentally destroy it."
 Joe Andrieu, Functional Identity Primer
