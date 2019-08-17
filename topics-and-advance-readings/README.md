@@ -137,7 +137,7 @@ really, read as much as you can!)
 
 ### Verifiable Credentials Use Cases
 
-* [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
+* [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
    * "Transacting IoT data must be different in many respects in order to build much-needed trust in IoT-enabled Data Marketplaces, trust that will be key to their sustainability. Data generated internally to an organization is usually not enough to remain competitive, improve customer experience, and optimize strategic decision-making. However, there is still no transparent and reliable marketplace for data trading with fair price. Furthermore, the verification of the machines (e.g. sensors) for data collection becomes another crutial issue. As a result, an innovative type of platform with the introduction of distributed legder technology (DLT) has emerged, in order to transform data into profits with better trust basic."
 
 * [Verifiable Credentials in Incentivized Competency Assessment](./vc-in-incentivized-competency-assessment.md)
