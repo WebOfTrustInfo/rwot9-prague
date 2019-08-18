@@ -78,6 +78,10 @@ really, read as much as you can!)
 
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
 * [Firefly Trust Sync](./firefly-trust-sync.md)
+* [Why we must ask the Why of Identity](./ask-why.md)
+  * By [Ian Grigg](https://iang.org/)
+  * The engineering focus on WHAT to build is leading us away from a critical analysis of WHY - why are we looking at identity, why do we want things out of it, and why doesn't it work? The past has ample lessons of what didn't work, and we need to recognise these mistakes else be doomed to repeat. By asking WHY there are 4 (contradictory?) schools of identity, we can exclude the ones that don't work, and reach the conclusion that only the school of 'relationships' between people is a suitable starting point for a human identity experience. (We still to ask WHY trust, WHY identity, and WHY trust <--> Identity before building...)
+  * #IdentityIsAnEdgeProtocol #webofTrust #identity #relationships
 
 ## Alphabetical Listing
 
@@ -89,6 +93,7 @@ really, read as much as you can!)
 * [Mandates and Delegation](./mandates-and-delegation.md) 
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
+* [Why we must ask the Why of Identity](./ask-why.md)
 
 
 
