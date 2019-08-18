@@ -34,6 +34,11 @@ really, read as much as you can!)
   * By [Serge Wroclawski](http://blog.emacsen.net) with advice and ideas by [Christopher Lemmer Webber](https://dustycloud.org)
   * "A collection of techniques to keep unwanted messages (spam, phishing, hate speech) off the Fediverse, with a focus on OCAP and WoT.
   * #activitypub #spam #wot #ocap
+  
+* [Gently introducing DIDs to the Mastodon/ActivityPub Fediverse](./fediverse-did-integration.md)
+  * by [Markus Sabadello](https://danubetech.com/about.html), [Michael Pimmer](http://michael.pimmer.info/about/), [Paul Fuxjaeger](https://twitter.com/fuxjaeger)
+  * "Our goal is to bring self sovereign identity concepts to the current ActivityPub fediverse as soon and as securely as possible."
+  * #did #activitypub #fediverse #wot
 
 ### DIDs
 
@@ -56,6 +61,16 @@ really, read as much as you can!)
   * By [Daniel Bluhm](mailto:daniel.bluhm@sovrin.org)
   * An overview of the need to achieve interoperability between SSI Stacks and how DID Communication can help.
   * #did #didcomm
+
+* [DID Snail Method Specification](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/didm-snail.md)
+  * By [Amy Guy](https://rhiaro.co.uk/), Yancy Ribbens, Dmitri Zagidulin
+  * Mapping DID-related concepts onto offline scenarios as an educational tool OR a silly waste of time for all involved: you decide.
+  * #did #methods #education #inclusivity #outreach
+
+* [DID Spec Current Status](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-spec-current-status.md)
+  * By [Amy Guy](https://rhiaro.co.uk/)
+  * Summary of current issues and ongoing discussions on the DID Specification.
+  * #did
 
 ### Mandates and Delegation
 
@@ -150,6 +165,11 @@ really, read as much as you can!)
    * by Eric Welton
    * #bootstrapping, #verifiablecredentials, #notary
 
+* [SolidVC: A Decentralized Verifiable Credentials Management System](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/solid-vc.md)
+   * [SolidVC](https://github.com/kezike/solid-vc) is a decentralized Verifiable Credentials platform built with the open protocols of the Web and for the open community that the Web was intended to serve. It enables the unilateral issuance and presentation of credentials by anyone running the software locally, as well as verification of these credentials against an open credential status document. SolidVC is implemented in the context of [Solid](https://solid.inrupt.com), a Web technology developed at MIT in 2016 that allows decentralized applications to interact with personal data on behalf of users in an access controlled environment. In this paper, I discuss the motivation of SolidVC, provide sufficient background of supporting technologies, present my contribution, outline a real use case, and discuss future improvements to the platform.
+   * by Kayode Ezike
+   * #verifiablecredentials #solid #linkeddata
+
 ### Web of Trust Alternatives
 
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
@@ -176,10 +196,13 @@ really, read as much as you can!)
    * by Yonatan Sompolinsky and Alexandra Tran
    * "This document is a high-level discussion on using webs of trust for decentralized credit systems."
 
-
 * [Exploring Interpersonal Data](./exploring-interpersonal-data.md)
    * by Kaliya Young
-   * I recently wrote a series with Glen Weyl about Decentralized Social Identity and it got me thinking about interpersonal data and what it looks like relative to decentralized idetnity standards since so much of the focus in our work is centered on getting existing "centralized" institutions to issue decentralized verifiable credentials. 
+   * I recently wrote a series with Glen Weyl about Decentralized Social Identity and it got me thinking about interpersonal data and what it looks like relative to decentralized idetnity standards since so much of the focus in our work is centered on getting existing "centralized" institutions to issue decentralized verifiable credentials.
+
+* [Nodemail Protocol](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nodemail.md)
+   * by Ethan Brown
+   * Document describing the Nodemail Protocol.
 
 ### Key Management
 
@@ -199,18 +222,23 @@ really, read as much as you can!)
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
 * [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
+* [DID Snail Method Specification](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/didm-snail.md)
+* [DID Spec Current Status](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-spec-current-status.md)
 * [Ecosystem Bootstrapping via Notary Credentials](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ecosystem-bootstrapping-via-notary-vcs.md)
 * [Exploring Interpersonal Data](./exloring-interpersonal-data.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
+* [Gently introducing DIDs to the Mastodon/ActivityPub Fediverse](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/fediverse-did-integration.md)
 * [Heresay: A Fuzzy Prediction Market for Distributed Reputation](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/heresay.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md)
+* [Nodemail Protocol](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nodemail.md)
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) by Claire Rumore & Moses Ma
 * [Preventing Transferability with ZKP-based Credentials](https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 * [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
+* [SolidVC: A Decentralized Verifiable Credentials Management System](./solid-vc.md)
 * [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
 * [A Web of Credit Framework](./web-of-credit.md)
