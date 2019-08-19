@@ -201,6 +201,12 @@ really, read as much as you can!)
   * "In short, the answer is yes."
   * #verifiable-credentials #interoperability
 
+* [Verifiable Credential Authentication via OpenID Connect (vc-authn-oidc)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vc-authn-oidc.md)
+  * by Tobias Looker
+  * "The aim of this document is to describe how a standard OpenID provider (OP) can be extended to support verifiable credential authentication. With this support, a relying party (RP) is able to request this method of authentication to harness the power of verifiable credentials."
+  * #verifiable-credentials #authentication #openid-connect
+
+
 ### Verifiable Credentials Use Cases
 
 * [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
@@ -328,6 +334,7 @@ really, read as much as you can!)
 * [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
 * [Using Verifiable Credentials for German Government Grants](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vcs-for-german-grants.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
+* [Verifiable Credential Authentication via OpenID Connect (vc-authn-oidc)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vc-authn-oidc.md)
 * [A Web of Credit Framework](./web-of-credit.md)
 * [Why we must ask the Why of Identity](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ask-why.md)
 * [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
