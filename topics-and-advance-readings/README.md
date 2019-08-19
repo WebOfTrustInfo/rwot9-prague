@@ -62,6 +62,12 @@ really, read as much as you can!)
   * "Should someone be rating or coordinating the testing of interoperability between resolvers and platforms? Maybe that same set of people (ideally, paid for this service) would be in a good position to "apply" the rubric for eco-system internal guidance until/unless a more definitive certification forms?"
   * #did #rubrics #interoperability #decentralization
 
+### Identity
+* [Bare minimum agent for identity](./Bare-minimum-agent.md)
+  * by Snorre Lothar von Gohren Edwin
+  * "First we want to discuss what the bare minimum specifications that an identity app needs to provide value? How can an identity be represented physically? What are the pros and cons of a combination of these situations. The second issue is to discuss how to enable an ecosystem, what is needed to get other startups with their own non did solutions in play. Is it SDKs, libraries, proxys, some kind of shared infrastructure?"
+  * #identity #ecosystem #minimization
+  
 ### Secure Storage
 * [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
   * By [Bas Kaptijn - discipl.org](https://discipl.org), [Steven Gort - discipl.org](https://discipl.org), [Dr. Carsten Stöcker - spherity.com](https://spherity.com)
