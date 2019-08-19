@@ -193,6 +193,13 @@ really, read as much as you can!)
   * "In this paper we would like to explore the idea of establishing levels of assurance, which will no longer be tied to single issuance processes, but also to a multi-source verification processes."
   * by Bentley Farrington , Bart Suichies and Víctor Martínez Jurado
   * #verifiable-credentials #assurance #humancentric
+  
+* [Islands, Tigers, and Bears, Oh My!](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/islands.md)
+  * by Daniel C. Burnett
+  * "Many of the properties in VCs are optional, and of the ones that are mandatory there is often flexibility in how they can be used. It is very likely that credentials written assuming use of JSON-LD for vocabularies and semantics will have semantics that basic JSON processors will ignore. It is likely that VCs using zero knowledge proofs will be unverifiable by processors that do not understand zero knowledge proofs. In short, the syntax is generic enough to support all these options, but it is NOT the case that every VC in existence will be verifiable, or even understandable without verification, by every processor."
+  * "This leads to a question that has frequently arisen in the VCWG: what level of interoperability can we expect, and is there a risk of the VC ecosystem devolving into islands of incompatible VCs?"
+  * "In short, the answer is yes."
+  * #verifiable-credentials #interoperability
 
 ### Verifiable Credentials Use Cases
 
@@ -305,6 +312,7 @@ really, read as much as you can!)
 * [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
 * [Gently introducing DIDs to the Mastodon/ActivityPub Fediverse](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/fediverse-did-integration.md)
 * [Heresay: A Fuzzy Prediction Market for Distributed Reputation](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/heresay.md)
+* [Islands, Tigers, and Bears, Oh My!](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/islands.md)
 * [Keeping Unwanted Messages off the Fediverse](./ap-unwanted-messages.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md)
