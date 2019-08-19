@@ -201,6 +201,10 @@ really, read as much as you can!)
    * "The talk presents a novel way to create decentralized anonymous identity, that does not require any personally identifying information to be verified. The humanness and uniqueness is proven by running a collective simultaneous online Turing test."
    * #DID #anonymity
 
+* [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/robisoniv/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
+  * by [John R Hoopes IV](https://github.com/robisoniv/)
+  * "Ideas for a new conception of global governance. Opt-in mechanisms of incentivization based on the conditional provision or restriction of access to financial or informational assets could provide individuals with an enforceable mechanism of self-regulation, to encourage intentional behavior."
+
 * [A Web of Credit Framework](./web-of-credit.md)
    * by Yonatan Sompolinsky and Alexandra Tran
    * "This document is a high-level discussion on using webs of trust for decentralized credit systems."
@@ -261,6 +265,7 @@ really, read as much as you can!)
 * [Reputation Loops]
 (https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/reputation-loops.md)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
+* [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/robisoniv/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 * [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
 * [SolidVC: A Decentralized Verifiable Credentials Management System](./solid-vc.md)
