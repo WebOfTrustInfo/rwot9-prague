@@ -246,11 +246,21 @@ really, read as much as you can!)
   * An approach to identify and surface the business needs and concerns to create a business case to support addition of SSI to IoT devices.
   * #ssiniot #businessofssi #iot #ssi
 
+### Verifiable Credentials
+
+* [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
+  * by Yancy Ribbens
+  * Anonymous credentials enable a holder (prover) to reveal select information to a verifier during the verification process.  In order to build anonymous credential systems, ZKPs can be combined with Verifiable Credentials to enhance user privacy.  This is a proposal to develop library support for Verifiable Credentials and recommend ZKP formats for different use cases and credential attributes.
+
+* [Analysis of Verifiable Credential Protocols for Issuer Interactions](./vc_protocols_issuer.md)
+  * by Martin Riedel, Daniel Kelleher
+
 ## Alphabetical Listing
 
+* [A Business Framework for SSI in IoT](business-framework-for-ssi-in-iot.md) - Michael Shea & Michael Corning
 * [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md) - Carsten Stöcker, Alexander Yenkalow, Juan Caballero
 * [Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) - Kyle Den Hartog
-* [A Business Framework for SSI in IoT](business-framework-for-ssi-in-iot.md) - Michael Shea & Michael Corning
+* [Analysis of Verifiable Credential Protocols for Issuer Interactions](./vc_protocols_issuer.md)
 * [Bare minimum agent for identity](./Bare-minimum-agent.md)
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
 * [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
