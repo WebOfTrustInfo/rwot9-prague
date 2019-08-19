@@ -73,6 +73,11 @@ really, read as much as you can!)
   * "We present a collection of tools designed to perform as a complete foundation for distributed applications enable a fully distributed, peer-to-peer identity. These tools are integrated into an open-source, cryptographic, data integrity framework called Holochain, without promoting the Holochain Foundation into any elevated status of authority as an identity provider. Instead, the tools are specifically designed to enable the emergence of an ecosystem of providers leveraging the tools as a foundation for their services."
   * #identity #p2p #holochain
   
+* [Why we must ask the Why of Identity](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ask-why.md)
+  * by Ian Grigg 
+  * "When I formulated the 4 schools or types of identity (state, self, corporate, community), I was not thinking of inclusion, I was expressly intending to exclude"
+  * #identity #definitions
+ 
 ### Secure Storage
 * [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
   * By [Bas Kaptijn - discipl.org](https://discipl.org), [Steven Gort - discipl.org](https://discipl.org), [Dr. Carsten Stöcker - spherity.com](https://spherity.com)
@@ -274,18 +279,18 @@ really, read as much as you can!)
 
 ## Alphabetical Listing
 
-* [A Business Framework for SSI in IoT](business-framework-for-ssi-in-iot.md) - Michael Shea & Michael Corning
-* [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md) - Carsten Stöcker, Alexander Yenkalow, Juan Caballero
 * [Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) - Kyle Den Hartog
 * [Analysis of Verifiable Credential Protocols for Issuer Interactions](./vc_protocols_issuer.md)
 * [Bare minimum agent for identity](./Bare-minimum-agent.md)
 * [Building Blocks for Sovereign P2P Identity](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/building-blocks-sovereign-p2p-identity.md)
+* [A Business Framework for SSI in IoT](business-framework-for-ssi-in-iot.md) - Michael Shea & Michael Corning
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
 * [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
 * [Decentralizing Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
 * [Decentralizing Reputation with DID](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralizing-Reputation-with-DID.md)
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
+* [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md) - Carsten Stöcker, Alexander Yenkalow, Juan Caballero
 * [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
 * [DID_for_ROSCAS](https://github.com/vinsing09/rwot9-prague/blob/master/topics-and-advance-readings/DID_for_ROSCAS.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
@@ -310,10 +315,11 @@ really, read as much as you can!)
 * [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/robisoniv/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 * [A "Supreme Court" for Decentralization and Interoperability?](./topics-and-advance-readings/Supreme%20Court%20for%20decent%20and%20interop.md)
-* [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
 * [SolidVC: A Decentralized Verifiable Credentials Management System](./solid-vc.md)
 * [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
 * [Using Verifiable Credentials for German Government Grants](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vcs-for-german-grants.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
 * [A Web of Credit Framework](./web-of-credit.md)
+* [Why we must ask the Why of Identity](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ask-why.md)
+* [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
 * [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
