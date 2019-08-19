@@ -208,6 +208,10 @@ really, read as much as you can!)
 * [Nodemail Protocol](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nodemail.md)
    * by Ethan Brown
    * Document describing the Nodemail Protocol.
+   
+* [Reputation Loops](./topics-and-advance-readings/reputation-loops.md)
+   * by Matthew Schutte
+   * An alternative way to think about generating good enough sense-making and social coordination through agent-centric combinings of correlated information from multiple sources. This is somewhat distinct from the transitive trust model that Web of Trust relies upon, but has similarities as well.
 
 ### Key Management
 
@@ -241,6 +245,8 @@ really, read as much as you can!)
 * [Nodemail Protocol](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nodemail.md)
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) by Claire Rumore & Moses Ma
 * [Preventing Transferability with ZKP-based Credentials](https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md)
+* [Reputation Loops]
+(https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/reputation-loops.md)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 * [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
