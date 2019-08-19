@@ -45,6 +45,13 @@ really, read as much as you can!)
   * "To scale decentralized commerce based on self-sovereign identity and decentralized identifiers we will need to provide a practical alternative to centralized reputation managers. Decentralization is a complex topic and the rubrics that will help formalize our community's approach to decentralization is work that’s just beginning. One way to evaluate decentralization is the absence of essential intermediaries in an otherwise peer-to-peer transaction by self-sovereign peers. A decentralized reputation solution must provide context, a negligible increase in transaction costs, and high resistance to gaming by either the peers to a transaction or their competitors."
   * #did #activitypub #fediverse #wot
   
+### Business, SSI & IoT
+
+* [A Business Framework for SSI in IoT](./business-framework-for-ssi-in-iot.md)
+  * by Michael Shea and Michael Corning
+  * An approach to identify and surface the business needs and concerns to create a business case to support addition of SSI to IoT devices.
+  * #ssiniot #businessofssi #iot #ssi
+  
 ### DIDs
 
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
@@ -63,6 +70,7 @@ really, read as much as you can!)
   * #did #rubrics #interoperability #decentralization
 
 ### Identity
+
 * [Bare minimum agent for identity](./Bare-minimum-agent.md)
   * by Snorre Lothar von Gohren Edwin
   * "First we want to discuss what the bare minimum specifications that an identity app needs to provide value? How can an identity be represented physically? What are the pros and cons of a combination of these situations. The second issue is to discuss how to enable an ecosystem, what is needed to get other startups with their own non did solutions in play. Is it SDKs, libraries, proxys, some kind of shared infrastructure?"
@@ -72,12 +80,24 @@ really, read as much as you can!)
   * by Arthur Brock, Joel Ulahanna, and Philip Beadle
   * "We present a collection of tools designed to perform as a complete foundation for distributed applications enable a fully distributed, peer-to-peer identity. These tools are integrated into an open-source, cryptographic, data integrity framework called Holochain, without promoting the Holochain Foundation into any elevated status of authority as an identity provider. Instead, the tools are specifically designed to enable the emergence of an ecosystem of providers leveraging the tools as a foundation for their services."
   * #identity #p2p #holochain
-  
+
+* [Decentralized unique anonymous identity](./decentralized-unique-anonymous-identity.md)
+   * by Andrew Edi
+   * "The talk presents a novel way to create decentralized anonymous identity, that does not require any personally identifying information to be verified. The humanness and uniqueness is proven by running a collective simultaneous online Turing test."
+   * #identity #DID #anonymity
+   
 * [Why we must ask the Why of Identity](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ask-why.md)
   * by Ian Grigg 
   * "When I formulated the 4 schools or types of identity (state, self, corporate, community), I was not thinking of inclusion, I was expressly intending to exclude"
   * #identity #definitions
  
+### Key Management
+
+* [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
+  * by Hank Chiu, Hankuan Yu, David Chen and Jon Tsai
+  * Zion Key Management SDK Sets provide rich sets of APIs to help developers to use keys which is protected in Secure Enclave.
+  * #shamirsecretsharing #sss #keymanagement #keyrecovery
+  
 ### Secure Storage
 
 * [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
@@ -157,6 +177,13 @@ really, read as much as you can!)
 
 ### Verfiable Credentials
 
+* [Analysis of Verifiable Credential Protocols for Issuer Interactions](./vc_protocols_issuer.md)
+  * by Martin Riedel, Daniel Kelleher
+  
+* [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
+  * by Yancy Ribbens
+  * Anonymous credentials enable a holder (prover) to reveal select information to a verifier during the verification process.  In order to build anonymous credential systems, ZKPs can be combined with Verifiable Credentials to enhance user privacy.  This is a proposal to develop library support for Verifiable Credentials and recommend ZKP formats for different use cases and credential attributes.
+  
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
   * "The paper will focus on the intersection between verifiable credentials and decision making ... We start by giving an overview of the problem in the context of mortgage lending and then describe a general model of decision making which is reconciled with the verifiable credentials data model. Then discuss the properties of our proposed approach as well as possible implementations."
   * by Edward Curran, Paul Ezhilchelvan, Aad Van Moorsel & Simon Brown (AB)
@@ -230,11 +257,6 @@ really, read as much as you can!)
    * "Introducing the Firefly Trust Sync (Firefly) architecture as a decentralized, web-of-trust alternative to address the shortcomings of the Certificate Authority (CA) based Public Key Infrastructure (CA-based PKI) and the Pretty Good Privacy (PGP) web-of-trust. Self sovereign identity is a cornerstone of this architecture and yet it does not rely whatsoever on distributed ledger technology. Essential design elements are presented with initial thoughts on both advantages and disadvantages of this approach as well as some next steps."
    * #firefly #web-of-trust
 
-* [Decentralized unique anonymous identity](./decentralized-unique-anonymous-identity.md)
-   * by Andrew Edi
-   * "The talk presents a novel way to create decentralized anonymous identity, that does not require any personally identifying information to be verified. The humanness and uniqueness is proven by running a collective simultaneous online Turing test."
-   * #DID #anonymity
-
 * [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/robisoniv/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
   * by [John R Hoopes IV](https://github.com/robisoniv/)
   * "Ideas for a new conception of global governance. Opt-in mechanisms of incentivization based on the conditional provision or restriction of access to financial or informational assets could provide individuals with an enforceable mechanism of self-regulation, to encourage intentional behavior."
@@ -255,29 +277,6 @@ really, read as much as you can!)
    * by Matthew Schutte
    * An alternative way to think about generating good enough sense-making and social coordination through agent-centric combinings of correlated information from multiple sources. This is somewhat distinct from the transitive trust model that Web of Trust relies upon, but has similarities as well.
 
-### Key Management
-
-* [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
-  * by Hank Chiu, Hankuan Yu, David Chen and Jon Tsai
-  * Zion Key Management SDK Sets provide rich sets of APIs to help developers to use keys which is protected in Secure Enclave.
-  * #shamirsecretsharing #sss #keymanagement #keyrecovery
-
-### Business, SSI & IoT
-
-* [A Business Framework for SSI in IoT](./business-framework-for-ssi-in-iot.md)
-  * by Michael Shea and Michael Corning
-  * An approach to identify and surface the business needs and concerns to create a business case to support addition of SSI to IoT devices.
-  * #ssiniot #businessofssi #iot #ssi
-
-### Verifiable Credentials
-
-* [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
-  * by Yancy Ribbens
-  * Anonymous credentials enable a holder (prover) to reveal select information to a verifier during the verification process.  In order to build anonymous credential systems, ZKPs can be combined with Verifiable Credentials to enhance user privacy.  This is a proposal to develop library support for Verifiable Credentials and recommend ZKP formats for different use cases and credential attributes.
-
-* [Analysis of Verifiable Credential Protocols for Issuer Interactions](./vc_protocols_issuer.md)
-  * by Martin Riedel, Daniel Kelleher
-
 ## Alphabetical Listing
 
 * [Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) - Kyle Den Hartog
@@ -289,6 +288,7 @@ really, read as much as you can!)
 * [Datashards: secure storage primitives for the web](./datashards-rationale.md)
 * [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
+* [Decentralized unique anonymous identity](./decentralized-unique-anonymous-identity.md)
 * [Decentralizing Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
 * [Decentralizing Reputation with DID](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralizing-Reputation-with-DID.md)
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
