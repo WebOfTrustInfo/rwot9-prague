@@ -174,6 +174,10 @@ really, read as much as you can!)
    * [SolidVC](https://github.com/kezike/solid-vc) is a decentralized Verifiable Credentials platform built with the open protocols of the Web and for the open community that the Web was intended to serve. It enables the unilateral issuance and presentation of credentials by anyone running the software locally, as well as verification of these credentials against an open credential status document. SolidVC is implemented in the context of [Solid](https://solid.inrupt.com), a Web technology developed at MIT in 2016 that allows decentralized applications to interact with personal data on behalf of users in an access controlled environment. In this paper, I discuss the motivation of SolidVC, provide sufficient background of supporting technologies, present my contribution, outline a real use case, and discuss future improvements to the platform.
    * by Kayode Ezike
    * #verifiablecredentials #solid #linkeddata
+ 
+ * [DID for ROSCAS](https://github.com/vinsing09/rwot9-prague/blob/master/topics-and-advance-readings/DID_for_ROSCAS.md)
+   * Rotating Savings and Credits Association are a type of Micro finance option. They have played an important role for lower income level group in the developing/emerging economies. While the legislation to regulate them and a formal study of the economic value they add is fairly recent, these have been around for more than 1000 years. Some researchers have also called ROSCAS as poor man’s banker. They provide a win-win situation for both borrowers and people who want to save without intervention of a central authorities like banks. However, the quick good return has often been used as bait for unsuspecting and gullible investors, resulting in very high value financial scandals that has often have political repercussions. In this paper we present the kind of scandals that take place in these schemes and how scaling them up digitally is extremely risky. How Decentralized Identifiers and Verifiable claims along with biometrics on mobile phone can be used to create a trust framework.
+   * by Vineet Singh
 
 ### Web of Trust Alternatives
 
@@ -239,6 +243,7 @@ really, read as much as you can!)
 * [Decentralizing Reputation with DID](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralizing-Reputation-with-DID.md)
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
 * [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
+* [DID_for_ROSCAS](https://github.com/vinsing09/rwot9-prague/blob/master/topics-and-advance-readings/DID_for_ROSCAS.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
 * [DID Snail Method Specification](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/didm-snail.md)
 * [DID Spec Current Status](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-spec-current-status.md)
