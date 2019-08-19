@@ -34,7 +34,17 @@ really, read as much as you can!)
   * By [Serge Wroclawski](http://blog.emacsen.net) with advice and ideas by [Christopher Lemmer Webber](https://dustycloud.org)
   * "A collection of techniques to keep unwanted messages (spam, phishing, hate speech) off the Fediverse, with a focus on OCAP and WoT.
   * #activitypub #spam #wot #ocap
+  
+* [Gently introducing DIDs to the Mastodon/ActivityPub Fediverse](./fediverse-did-integration.md)
+  * by [Markus Sabadello](https://danubetech.com/about.html), [Michael Pimmer](http://michael.pimmer.info/about/), [Paul Fuxjaeger](https://twitter.com/fuxjaeger)
+  * "Our goal is to bring self sovereign identity concepts to the current ActivityPub fediverse as soon and as securely as possible."
+  * #did #activitypub #fediverse #wot
 
+* [Decentralizing Reputation with DID](./Decentralizing-Reputation-with-DID.md)
+  * by [Adrian Gropper](http://healthurl.com)
+  * "To scale decentralized commerce based on self-sovereign identity and decentralized identifiers we will need to provide a practical alternative to centralized reputation managers. Decentralization is a complex topic and the rubrics that will help formalize our community's approach to decentralization is work that’s just beginning. One way to evaluate decentralization is the absence of essential intermediaries in an otherwise peer-to-peer transaction by self-sovereign peers. A decentralized reputation solution must provide context, a negligible increase in transaction costs, and high resistance to gaming by either the peers to a transaction or their competitors."
+  * #did #activitypub #fediverse #wot
+  
 ### DIDs
 
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
@@ -47,10 +57,25 @@ really, read as much as you can!)
   * "The Rubrics for Decentralization of DID Methods document (the Document) will help people evaluate real or potential DID Methods. This document outlines the collaborative aspirations of the Document’s editors."
   * #did #rubrics #decentralization
 
+* [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
+  * By [Bas Kaptijn - discipl.org](https://discipl.org), [Steven Gort - discipl.org](https://discipl.org), [Dr. Carsten Stöcker - spherity.com](https://spherity.com)
+  * This paper proposes a X.509 DID (sub)method
+  * #did #decentralization #pki #X.509
+
 * [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
   * By [Daniel Bluhm](mailto:daniel.bluhm@sovrin.org)
   * An overview of the need to achieve interoperability between SSI Stacks and how DID Communication can help.
   * #did #didcomm
+
+* [DID Snail Method Specification](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/didm-snail.md)
+  * By [Amy Guy](https://rhiaro.co.uk/), Yancy Ribbens, Dmitri Zagidulin
+  * Mapping DID-related concepts onto offline scenarios as an educational tool OR a silly waste of time for all involved: you decide.
+  * #did #methods #education #inclusivity #outreach
+
+* [DID Spec Current Status](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-spec-current-status.md)
+  * By [Amy Guy](https://rhiaro.co.uk/)
+  * Summary of current issues and ongoing discussions on the DID Specification.
+  * #did
 
 ### Mandates and Delegation
 
@@ -122,7 +147,7 @@ really, read as much as you can!)
 
 ### Verifiable Credentials Use Cases
 
-* [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
+* [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
    * "Transacting IoT data must be different in many respects in order to build much-needed trust in IoT-enabled Data Marketplaces, trust that will be key to their sustainability. Data generated internally to an organization is usually not enough to remain competitive, improve customer experience, and optimize strategic decision-making. However, there is still no transparent and reliable marketplace for data trading with fair price. Furthermore, the verification of the machines (e.g. sensors) for data collection becomes another crutial issue. As a result, an innovative type of platform with the introduction of distributed legder technology (DLT) has emerged, in order to transform data into profits with better trust basic."
 
 * [Verifiable Credentials in Incentivized Competency Assessment](./vc-in-incentivized-competency-assessment.md)
@@ -144,6 +169,15 @@ really, read as much as you can!)
    * Credentials do not yet factor into any significant public process such as requesting a Schengen visa for the purposes of attending RWoT IX.  The governments and businesses involved can not update their existing processes until there is an existing credential ecosystem resting on the proven ability of the general population to engage digital trust technology.  This paper explores the use of credentials which attest the observation of a primary document by an authority and the non-intrusive pairing of these credentials with existing processes.  This approach establishes the infrastructure required for a strong credential ecosystem without first requiring a global re-engineering of identity management.
    * by Eric Welton
    * #bootstrapping, #verifiablecredentials, #notary
+
+* [SolidVC: A Decentralized Verifiable Credentials Management System](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/solid-vc.md)
+   * [SolidVC](https://github.com/kezike/solid-vc) is a decentralized Verifiable Credentials platform built with the open protocols of the Web and for the open community that the Web was intended to serve. It enables the unilateral issuance and presentation of credentials by anyone running the software locally, as well as verification of these credentials against an open credential status document. SolidVC is implemented in the context of [Solid](https://solid.inrupt.com), a Web technology developed at MIT in 2016 that allows decentralized applications to interact with personal data on behalf of users in an access controlled environment. In this paper, I discuss the motivation of SolidVC, provide sufficient background of supporting technologies, present my contribution, outline a real use case, and discuss future improvements to the platform.
+   * by Kayode Ezike
+   * #verifiablecredentials #solid #linkeddata
+ 
+ * [DID for ROSCAS](https://github.com/vinsing09/rwot9-prague/blob/master/topics-and-advance-readings/DID_for_ROSCAS.md)
+   * Rotating Savings and Credits Association are a type of Micro finance option. They have played an important role for lower income level group in the developing/emerging economies. While the legislation to regulate them and a formal study of the economic value they add is fairly recent, these have been around for more than 1000 years. Some researchers have also called ROSCAS as poor man’s banker. They provide a win-win situation for both borrowers and people who want to save without intervention of a central authorities like banks. However, the quick good return has often been used as bait for unsuspecting and gullible investors, resulting in very high value financial scandals that has often have political repercussions. In this paper we present the kind of scandals that take place in these schemes and how scaling them up digitally is extremely risky. How Decentralized Identifiers and Verifiable claims along with biometrics on mobile phone can be used to create a trust framework.
+   * by Vineet Singh
 
 ### Web of Trust Alternatives
 
@@ -175,6 +209,18 @@ really, read as much as you can!)
    * by Yonatan Sompolinsky and Alexandra Tran
    * "This document is a high-level discussion on using webs of trust for decentralized credit systems."
 
+* [Exploring Interpersonal Data](./exploring-interpersonal-data.md)
+   * by Kaliya Young
+   * I recently wrote a series with Glen Weyl about Decentralized Social Identity and it got me thinking about interpersonal data and what it looks like relative to decentralized idetnity standards since so much of the focus in our work is centered on getting existing "centralized" institutions to issue decentralized verifiable credentials.
+
+* [Nodemail Protocol](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nodemail.md)
+   * by Ethan Brown
+   * Document describing the Nodemail Protocol.
+   
+* [Reputation Loops](./topics-and-advance-readings/reputation-loops.md)
+   * by Matthew Schutte
+   * An alternative way to think about generating good enough sense-making and social coordination through agent-centric combinings of correlated information from multiple sources. This is somewhat distinct from the transitive trust model that Web of Trust relies upon, but has similarities as well.
+
 ### Key Management
 
 * [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
@@ -182,28 +228,47 @@ really, read as much as you can!)
   * Zion Key Management SDK Sets provide rich sets of APIs to help developers to use keys which is protected in Secure Enclave.
   * #shamirsecretsharing #sss #keymanagement #keyrecovery
 
+### Business, SSI & IoT
+
+* [A Business Framework for SSI in IoT](./business-framework-for-ssi-in-iot.md)
+  * by Michael Shea and Michael Corning
+  * An approach to identify and surface the business needs and concerns to create a business case to support addition of SSI to IoT devices.
+  * #ssiniot #businessofssi #iot #ssi
+
 ## Alphabetical Listing
 
 * [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md) - Carsten Stöcker, Alexander Yenkalow, Juan Caballero
 * [Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) - Kyle Den Hartog
+* [A Business Framework for SSI in IoT](business-framework-for-ssi-in-iot.md) - Michael Shea & Michael Corning
 * [Bare minimum agent for identity](./Bare-minimum-agent.md)
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
 * [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
+* [Decentralizing Reputation with DID](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralizing-Reputation-with-DID.md)
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
 * [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
+* [DID_for_ROSCAS](https://github.com/vinsing09/rwot9-prague/blob/master/topics-and-advance-readings/DID_for_ROSCAS.md)
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
+* [DID Snail Method Specification](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/didm-snail.md)
+* [DID Spec Current Status](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-spec-current-status.md)
 * [Ecosystem Bootstrapping via Notary Credentials](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ecosystem-bootstrapping-via-notary-vcs.md)
+* [Exploring Interpersonal Data](./exloring-interpersonal-data.md)
 * [Firefly Trust Sync](https://github.com/tmarble/rwot9-prague/blob/master/topics-and-advance-readings//firefly-trust-sync.md)
 * [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
+* [Gently introducing DIDs to the Mastodon/ActivityPub Fediverse](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/fediverse-did-integration.md)
 * [Heresay: A Fuzzy Prediction Market for Distributed Reputation](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/heresay.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md)
+* [Nodemail Protocol](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nodemail.md)
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) by Claire Rumore & Moses Ma
 * [Preventing Transferability with ZKP-based Credentials](https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md)
+* [Reputation Loops]
+(https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/reputation-loops.md)
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/robisoniv/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
+* [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
+* [SolidVC: A Decentralized Verifiable Credentials Management System](./solid-vc.md)
 * [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
 * [A Web of Credit Framework](./web-of-credit.md)
