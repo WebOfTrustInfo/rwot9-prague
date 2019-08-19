@@ -68,6 +68,11 @@ really, read as much as you can!)
   * "First we want to discuss what the bare minimum specifications that an identity app needs to provide value? How can an identity be represented physically? What are the pros and cons of a combination of these situations. The second issue is to discuss how to enable an ecosystem, what is needed to get other startups with their own non did solutions in play. Is it SDKs, libraries, proxys, some kind of shared infrastructure?"
   * #identity #ecosystem #minimization
   
+* [Building Blocks for Sovereign P2P Identity](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/building-blocks-sovereign-p2p-identity.md)
+  * by Arthur Brock, Joel Ulahanna, and Philip Beadle
+  * "We present a collection of tools designed to perform as a complete foundation for distributed applications enable a fully distributed, peer-to-peer identity. These tools are integrated into an open-source, cryptographic, data integrity framework called Holochain, without promoting the Holochain Foundation into any elevated status of authority as an identity provider. Instead, the tools are specifically designed to enable the emergence of an ecosystem of providers leveraging the tools as a foundation for their services."
+  * #identity #p2p #holochain
+  
 ### Secure Storage
 * [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
   * By [Bas Kaptijn - discipl.org](https://discipl.org), [Steven Gort - discipl.org](https://discipl.org), [Dr. Carsten Stöcker - spherity.com](https://spherity.com)
@@ -274,6 +279,7 @@ really, read as much as you can!)
 * [Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) - Kyle Den Hartog
 * [Analysis of Verifiable Credential Protocols for Issuer Interactions](./vc_protocols_issuer.md)
 * [Bare minimum agent for identity](./Bare-minimum-agent.md)
+* [Building Blocks for Sovereign P2P Identity](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/building-blocks-sovereign-p2p-identity.md)
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
 * [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
