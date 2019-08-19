@@ -139,17 +139,16 @@ really, read as much as you can!)
    * #cooperation #communication #standards
 
 ### Verfiable Credentials
+
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
   * "The paper will focus on the intersection between verifiable credentials and decision making ... We start by giving an overview of the problem in the context of mortgage lending and then describe a general model of decision making which is reconciled with the verifiable credentials data model. Then discuss the properties of our proposed approach as well as possible implementations."
   * by Edward Curran, Paul Ezhilchelvan, Aad Van Moorsel & Simon Brown (AB)
   * #verifiablecredentials, #decisionmaking, #DMN, #financialservices
-
-### Verifiable Data Chains / Decentralised Autonomic Data (DADs)
-
-* [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md)
-   * "In this paper we will introduce the concept verifiable data chains and data provenance for industrial applications such as driving event processing, manufacturing value chains in regulated industries and insure AI propositions. We do a deep dive discussion for driving event processing in mobility systems while highlighting the benefits of using DIDs for data provenance in order to increase safety in the mobility system."
-   *  by Dr. Carsten Stöcker (Spherity GmbH), Dr. Michael Rüther (Spherity GmbH), Alexander Yenkalow (Spherity GmbH), Juan Caballero (The Purple Tornado)
-   * #verifiableclaims #dad #did #provenance
+  
+* [Establishing level of assurance with verifiable credentials and the need for a human centered design exploration](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/level-of-assurance-crendtials.md)
+  * "In this paper we would like to explore the idea of establishing levels of assurance, which will no longer be tied to single issuance processes, but also to a multi-source verification processes."
+  * by Bentley Farrington , Bart Suichies and Víctor Martínez Jurado
+  * #verifiable-credentials #assurance #humancentric
 
 ### Verifiable Credentials Use Cases
 
@@ -190,6 +189,13 @@ really, read as much as you can!)
    * Rotating Savings and Credits Association are a type of Micro finance option. They have played an important role for lower income level group in the developing/emerging economies. While the legislation to regulate them and a formal study of the economic value they add is fairly recent, these have been around for more than 1000 years. Some researchers have also called ROSCAS as poor man’s banker. They provide a win-win situation for both borrowers and people who want to save without intervention of a central authorities like banks. However, the quick good return has often been used as bait for unsuspecting and gullible investors, resulting in very high value financial scandals that has often have political repercussions. In this paper we present the kind of scandals that take place in these schemes and how scaling them up digitally is extremely risky. How Decentralized Identifiers and Verifiable claims along with biometrics on mobile phone can be used to create a trust framework.
    * by Vineet Singh
 
+### Verifiable Data Chains / Decentralised Autonomic Data (DADs)
+
+* [A DID based solution for verifiable data streaming & processing in cyber-physical systems](./A_DID_based_solution_for_data_processing.md)
+   * "In this paper we will introduce the concept verifiable data chains and data provenance for industrial applications such as driving event processing, manufacturing value chains in regulated industries and insure AI propositions. We do a deep dive discussion for driving event processing in mobility systems while highlighting the benefits of using DIDs for data provenance in order to increase safety in the mobility system."
+   *  by Dr. Carsten Stöcker (Spherity GmbH), Dr. Michael Rüther (Spherity GmbH), Alexander Yenkalow (Spherity GmbH), Juan Caballero (The Purple Tornado)
+   * #verifiableclaims #dad #did #provenance
+   
 ### Web of Trust Alternatives
 
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
