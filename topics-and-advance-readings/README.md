@@ -45,20 +45,28 @@ really, read as much as you can!)
   * "A collection of techniques to keep unwanted messages (spam, phishing, hate speech) off the Fediverse, with a focus on OCAP and WoT.
   * #activitypub #spam #wot #ocap
   
-### Business, SSI & IoT
-
-* [A Business Framework for SSI in IoT](./business-framework-for-ssi-in-iot.md)
-  * by Michael Shea and Michael Corning
-  * An approach to identify and surface the business needs and concerns to create a business case to support addition of SSI to IoT devices.
-  * #ssiniot #businessofssi #iot #ssi
-  
 ### DIDs
+
+* [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
+  * By [Daniel Bluhm](mailto:daniel.bluhm@sovrin.org)
+  * An overview of the need to achieve interoperability between SSI Stacks and how DID Communication can help.
+  * #did #didcomm
 
 * [DID Resolution collected diagrams](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-resolution-collected-diagrams.md)
   * By [Markus Sabadello](https://danubetech.com/)
   * "This is a collection of the diagrams that have been used so far to illustrate various key topics of DID Resolution."
   * #did
 
+* [DID Snail Method Specification](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/didm-snail.md)
+  * By [Amy Guy](https://rhiaro.co.uk/), Yancy Ribbens, Dmitri Zagidulin
+  * Mapping DID-related concepts onto offline scenarios as an educational tool OR a silly waste of time for all involved: you decide.
+  * #did #methods #education #inclusivity #outreach
+  
+* [DID Spec Current Status](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-spec-current-status.md)
+  * By [Amy Guy](https://rhiaro.co.uk/)
+  * Summary of current issues and ongoing discussions on the DID Specification.
+  * #did
+  
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
   * By [Joe Andrieu](mailto:joe@legreq.com), [Amy G](mailto:amy@rhiaro.co.uk), [Joachim Lohkamp](mailto:joachim@jolocom.com), [=Drummond Reed](mailto:drummond.reed@evernym.com), [Markus Sabadello](mailto:markus@danubetech.com), [Oliver Terbu](mailto:oliver.terbu@consensys.net), [Kai Wagner](mailto:kai@jolocom.com)
   * "The Rubrics for Decentralization of DID Methods document (the Document) will help people evaluate real or potential DID Methods. This document outlines the collaborative aspirations of the Document’s editors."
@@ -68,6 +76,13 @@ really, read as much as you can!)
   * by [Juan Caballero](mailto:juan@sourcecheck.org)
   * "Should someone be rating or coordinating the testing of interoperability between resolvers and platforms? Maybe that same set of people (ideally, paid for this service) would be in a good position to "apply" the rubric for eco-system internal guidance until/unless a more definitive certification forms?"
   * #did #rubrics #interoperability #decentralization
+
+* [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
+  * By [Bas Kaptijn - discipl.org](https://discipl.org), [Steven Gort - discipl.org](https://discipl.org), [Dr. Carsten Stöcker - spherity.com](https://spherity.com)
+  * This paper proposes a X.509 DID (sub)method
+  * #did #decentralization #pki #X.509
+  
+_See also Identity, Self-sovereign_
 
 ### Identity
 
@@ -81,6 +96,11 @@ really, read as much as you can!)
   * "We present a collection of tools designed to perform as a complete foundation for distributed applications enable a fully distributed, peer-to-peer identity. These tools are integrated into an open-source, cryptographic, data integrity framework called Holochain, without promoting the Holochain Foundation into any elevated status of authority as an identity provider. Instead, the tools are specifically designed to enable the emergence of an ecosystem of providers leveraging the tools as a foundation for their services."
   * #identity #p2p #holochain
 
+* [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
+   * by Samuel Smith
+   * "The purpose of this paper is to foster awareness of the economic benefits of cooperation and the crucial role decentralized identity may play in unleashing historic new sources of value creation and transfer."
+   * #cooperation #did
+
 * [Decentralized unique anonymous identity](./decentralized-unique-anonymous-identity.md)
    * by Andrew Edi
    * "The talk presents a novel way to create decentralized anonymous identity, that does not require any personally identifying information to be verified. The humanness and uniqueness is proven by running a collective simultaneous online Turing test."
@@ -91,34 +111,30 @@ really, read as much as you can!)
   * "When I formulated the 4 schools or types of identity (state, self, corporate, community), I was not thinking of inclusion, I was expressly intending to exclude"
   * #identity #definitions
  
+### Identity, Self-sovereign
+
+* [A Business Framework for SSI in IoT](./business-framework-for-ssi-in-iot.md)
+  * by Michael Shea and Michael Corning
+  * An approach to identify and surface the business needs and concerns to create a business case to support addition of SSI to IoT devices.
+  * #ssiniot #businessofssi #iot #ssi
+  
+* [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
+   * by hammanns
+   * "Protocol verification models different agents and the messages they can send over a network. In particular, symbolic protocol verification in the Dolev-Yao network attacker model assumes that the attacker controls the network, i.e., the attacker can read, send, block, and modify messages, but cannot break cryptography (i.e., cryptography is assumed to be perfect). The goal is to detect logical errors in the protocol design that can lead to attacks on desired security properties (such as the secrecy and integrity of messages)."
+   * #protocol #verification #did
+_See also DIDs_
+
 ### Key Management
 
+* [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
+   * by Samuel Smith
+   * "The Key Event Receipt Infrastructure (KERI) provides a minimally sufficient means for managing signing authority and tracking events for a crypto-graphic key-pair based decentralized identifier such as a W3C DID. This includes inception, rotation, interaction, and delegation. It includes single and multi-signature schemes. ... A more in depth technical description of KERI is provided here."
+   * #KERI #DKMI #did #dad
+   
 * [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
   * by Hank Chiu, Hankuan Yu, David Chen and Jon Tsai
   * Zion Key Management SDK Sets provide rich sets of APIs to help developers to use keys which is protected in Secure Enclave.
   * #shamirsecretsharing #sss #keymanagement #keyrecovery
-  
-### Secure Storage
-
-* [DID Communication and Interoperability](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-communication-and-interop.md)
-  * By [Daniel Bluhm](mailto:daniel.bluhm@sovrin.org)
-  * An overview of the need to achieve interoperability between SSI Stacks and how DID Communication can help.
-  * #did #didcomm
-
-* [DID Snail Method Specification](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/didm-snail.md)
-  * By [Amy Guy](https://rhiaro.co.uk/), Yancy Ribbens, Dmitri Zagidulin
-  * Mapping DID-related concepts onto offline scenarios as an educational tool OR a silly waste of time for all involved: you decide.
-  * #did #methods #education #inclusivity #outreach
-
-* [DID Spec Current Status](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-spec-current-status.md)
-  * By [Amy Guy](https://rhiaro.co.uk/)
-  * Summary of current issues and ongoing discussions on the DID Specification.
-  * #did
-
-* [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
-  * By [Bas Kaptijn - discipl.org](https://discipl.org), [Steven Gort - discipl.org](https://discipl.org), [Dr. Carsten Stöcker - spherity.com](https://spherity.com)
-  * This paper proposes a X.509 DID (sub)method
-  * #did #decentralization #pki #X.509
   
 ### Mandates and Delegation
 
@@ -126,26 +142,19 @@ really, read as much as you can!)
   * The paper aims to inventory how mandates and delegations are used in practice. From that, we want to derive a conceptual, generic (mental) model that we can use to discuss any issues and ultimately transform that in useful, standardizable artefacts that allow embedding and using mandates in VCs.
   * #mandates #delegation #law #VC
 
-### Secure Storage
-
-* [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
-  * by Yancy Ribbens
-  * Anonymous credentials enable a holder (prover) to reveal select information to a verifier during the verification process.  In order to build anonymous credential systems, ZKPs can be combined with Verifiable Credentials to enhance user privacy.  This is a proposal to develop library support for Verifiable Credentials and recommend ZKP formats for different use cases and credential attributes.
-
-* [Datashards: secure storage primitives for the web](./datashards-rationale.md)
-   * By [Christopher Lemmer Webber](https://dustycloud.org/), with help from [Serge Wroclawski](https://emacsen.net/@emacsen) and [Tom Marble](http://info9.net/wiki/tmarble/)
-   * "Over the last year we have been working on a general mechanism for URIs representing private, encrypted storage that can live in a variety of locations.  We call this system 'Datashards'."
-   * #storage #datashards #cas
+### OpenCerts
 
 * [Decentralising Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
    * by Bill Claxton and Wong Wai Chung
    * "In March 2018, Singapore's can-do government introduced the OpenCerts solution for issuing academic certificates linked to the Ethereum public blockchain.  We believe that the code and schema provided by OpenCerts can be the foundation of a verifiable digital credentials issuance mechanism.  But several changes have to be made in the implementation, to make it more decentralised and reach adoption at scale."
-   * #privacy #identity #verifiability #centralisation #singapore
-
-* [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
-   * by Samuel Smith
-   * "The Key Event Receipt Infrastructure (KERI) provides a minimally sufficient means for managing signing authority and tracking events for a crypto-graphic key-pair based decentralized identifier such as a W3C DID. This includes inception, rotation, interaction, and delegation. It includes single and multi-signature schemes. ... A more in depth technical description of KERI is provided here."
-   * #KERI #DKMI #did #dad
+   * #privacy #identity #verifiability #centralisation #singapore #opencerts
+   
+### Secure Storage
+  
+* [Datashards: secure storage primitives for the web](./datashards-rationale.md)
+   * By [Christopher Lemmer Webber](https://dustycloud.org/), with help from [Serge Wroclawski](https://emacsen.net/@emacsen) and [Tom Marble](http://info9.net/wiki/tmarble/)
+   * "Over the last year we have been working on a general mechanism for URIs representing private, encrypted storage that can live in a variety of locations.  We call this system 'Datashards'."
+   * #storage #datashards #cas
 
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
    * by Manu Sporny, Dave Longley, and Amy Guy
@@ -158,15 +167,10 @@ really, read as much as you can!)
    * "There's two options for addressing Man-in-the-middle (MITM) that are created by the Trust On First Use (TOFU) problem: Passing a hash of a key or DID Document through a trusted out of band channel. This is also called fingerprinting; or Adding a key as a self-attested attribute to a credential."
    * #TOFU
 
-* [Formal protocol verification for SSI](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/formal_verification_for_ssi.md)
-   * by hammanns
-   * "Protocol verification models different agents and the messages they can send over a network. In particular, symbolic protocol verification in the Dolev-Yao network attacker model assumes that the attacker controls the network, i.e., the attacker can read, send, block, and modify messages, but cannot break cryptography (i.e., cryptography is assumed to be perfect). The goal is to detect logical errors in the protocol design that can lead to attacks on desired security properties (such as the secrecy and integrity of messages)."
-   * #protocol #verification #did
-
 * [Preventing Transferrability with ZKP-based Credentials](https://github.com/dhh1128/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md)
     * By Daniel Hardman and Lovesh Harchandani
     * "Some in the digital credential movement have claimed that ZKP-based credentials are inherently unsafe because they can be shared by a malicious holder. The reasoning is that ZKPs guarantee perfect anonymity, and are therefore transferable by simply sharing the link secret. This is a misunderstanding of how ZKP-based credentials work. In fact, ZKPs can provide the same sorts of transfer protections as any other type of credential."
-    * #fraud #credentials #zkp #privacy
+    * #fraud #credentials #ZKP #zeroknowledgeproofs #privacy
 
 ### Standards Working Groups
 
@@ -179,11 +183,12 @@ really, read as much as you can!)
 
 * [Analysis of Verifiable Credential Protocols for Issuer Interactions](./vc_protocols_issuer.md)
   * by Martin Riedel, Daniel Kelleher
-  
+
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
   * by Yancy Ribbens
   * Anonymous credentials enable a holder (prover) to reveal select information to a verifier during the verification process.  In order to build anonymous credential systems, ZKPs can be combined with Verifiable Credentials to enhance user privacy.  This is a proposal to develop library support for Verifiable Credentials and recommend ZKP formats for different use cases and credential attributes.
-  
+  * #verifiable-credentials #ZKP #zeroknowledgeproofs
+ 
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
   * "The paper will focus on the intersection between verifiable credentials and decision making ... We start by giving an overview of the problem in the context of mortgage lending and then describe a general model of decision making which is reconciled with the verifiable credentials data model. Then discuss the properties of our proposed approach as well as possible implementations."
   * by Edward Curran, Paul Ezhilchelvan, Aad Van Moorsel & Simon Brown (AB)
@@ -240,7 +245,7 @@ really, read as much as you can!)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
    * "This paper explains how we integrated zero knowledge proofs in our issuing and verifying flow of the universal ledger agent. We will this for a pilot this year covering the income test required in social housing."
    * by David Lamers (Rabobank)
-   * #zeroknowledgeproofs #verifiablecredentials #socialhousing #usecases
+   * #ZKP #zeroknowledgeproofs #verifiablecredentials #socialhousing #usecases
    
 * [Verifiable Credentials in Incentivized Competency Assessment](./vc-in-incentivized-competency-assessment.md)
    * "We leverage web of trust concept in order to create a network of competencies where Experts (Examiners) act as verifiers to assess user's competency on a given subject. We propose using decentralized staking and slashing mechanism similar to Augur's dispute model in order to create financial incentives for users to minimize fraud in the network. Finally, we propose a design for mechanism that produces verifiable credentials of skills and competencies which do not require centralized assessor or an institution."
@@ -255,11 +260,6 @@ really, read as much as you can!)
    * #verifiableclaims #dad #did #provenance
    
 ### Web of Trust Alternatives
-
-* [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
-   * by Samuel Smith
-   * "The purpose of this paper is to foster awareness of the economic benefits of cooperation and the crucial role decentralized identity may play in unleashing historic new sources of value creation and transfer."
-   * #cooperation #did
 
 * [Exploring Interpersonal Data](./exploring-interpersonal-data.md)
    * by Kaliya Young
