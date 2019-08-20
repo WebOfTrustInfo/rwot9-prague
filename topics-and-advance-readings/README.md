@@ -238,9 +238,9 @@ _See also DIDs_
    * #verifiable-credentials #digitial-certificiates #ssi
    
 * [Using Verifiable Credentials for German Government Grants](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vcs-for-german-grants.md)
-- This paper describes the potential usage of the SSI framework for the application of government grants. It takes into consideration the current developments from the German government with their "Bundes-chain" initiative. 
-- by Adrian Doerk
-- #verifiable-credentials #ssi #government  
+  * This paper describes the potential usage of the SSI framework for the application of government grants. It takes into consideration the current developments from the German government with their "Bundes-chain" initiative. 
+  * by Adrian Doerk
+  * #verifiable-credentials #ssi #government  
 
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
    * "This paper explains how we integrated zero knowledge proofs in our issuing and verifying flow of the universal ledger agent. We will this for a pilot this year covering the income test required in social housing."
