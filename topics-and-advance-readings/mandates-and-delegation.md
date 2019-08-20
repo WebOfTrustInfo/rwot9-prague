@@ -1,4 +1,4 @@
-#  Mandates and Delegation
+# Mandates and Delegation
 
 Author: Rieks Joosten (rieks.joosten@tno.nl)
 
@@ -32,6 +32,7 @@ In discussions to pin down the terminology and semantics for mandates and delega
 * Several articles impose all sorts of different restrictions, regarding e.g. the kinds of decisions that can be mandated, approvals needed for issuing mandates, the NLPersons that can(not) be mandated, etc. Observing that these restrictions are highly domain-specific, we might want to ponder on what we would need in an SSI infrastructure to support domain-specific mandate constraints. 
 
 ### Mandate Registers Of Dutch Governmental Bodies
+
 On the Internet, we can find many documents of governmental bodies named 'Mandate Register' or something similar. These documents usually contain specifications of mandates, i.e. texts structures in the form of 'articles' that one may find in laws, and/or rows in 'mandate tables' that do not tell us who can do what, but rather give rules from which 'who can do what' can be inferred. Each specification usually specifies:
 
 * an **identifier** (number, text) so as to be able to refer to the mandate specification;
@@ -49,6 +50,7 @@ On the Internet, we can find many documents of governmental bodies named 'Mandat
 There are very many different ways in which mandates can be created, used, updated, disputed end deleted/revoked. We cannot list them all, not even in the limited scope of e.g. Dutch law.
 
 However, one might say that mandates only matter in the following cases:
+
 1. after an actor (a person or computer) has received a request to execute some activity, he must decide whether or not to service or deny that request. A clear, unambiguous mandate that allows the actor to infer whether or not (a) the requester is eligible to make such a request, and/or (b) the actor itself is eligible to service that request, will help it to decide this.
 2. when someone needs to face consequences as a result of an action having been executed (i.e. this someone is responsible, for that execution). A clear, unambiguous mandate from which it can be inferred who is responsible for that action, will help to solve any disputes regarding who is responsible (and make that someone face the consequences).
 3. ... [***more, anyone?***]
@@ -58,10 +60,10 @@ However, one might say that mandates only matter in the following cases:
 ad 1.: People that find themselves in a situation like this will have informal ways of dealing with this situation, or formal ways (e.g. in regulated contexts). Formal ways usually means: legal ways, and that's a cesspit: there are many laws, by-laws, policies etc. that may all apply to a single mandate. In fact, we can find various discussions for specific cases on the Internet that all refer to different laws and regulations as they attempt to construct arguments for deciding whether or not a mandate (judicially) exists, and if so, whether or not it is valid.
 One reason  for this is that real Mandates rarely seem to exist (e.g. in terms of a document that provides all clarity that we need). Rather, Mandate Registers exist that collect the activities and related laws, policies etc - sometimes even specifying more rules themselves - from which Mandates need to be inferred. This means that to decide about the existence and validity of a Mandate, arguments for deciding this are required, and there's the problem: such arguments may be disputable.
 
-Computers that find themselves in a situation like this, however, cannot resort to informal ways for dealing with this. Also, they cannot deal with situations where the existence and validity of a Mandate needs to be inferred from laws, business policies such as mandate registers, etc. Computers require that 
+Computers that find themselves in a situation like this, however, cannot resort to informal ways for dealing with this. Also, they cannot deal with situations where the existence and validity of a Mandate needs to be inferred from laws, business policies such as mandate registers, etc. Computers require that:
 
-- it is easy to digitally determine whether or not a mandate exists, and if so: obtain it. Much of what in the physical world is called a mandate, doesn't cut it.
-- it is easy to digitally determine whether or not an obtained mandate is valid. Basically, this means that it should be attested to by the mandator, and in certain cases also by a third party that is trusted by the verifier.
+* it is easy to digitally determine whether or not a mandate exists, and if so: obtain it. Much of what in the physical world is called a mandate, doesn't cut it.
+* it is easy to digitally determine whether or not an obtained mandate is valid. Basically, this means that it should be attested to by the mandator, and in certain cases also by a third party that is trusted by the verifier.
 
 #### Ad 2.: Determining The Responsibility For An Executed Action
 
@@ -75,14 +77,14 @@ These determinations are to be made by 'the business', i.e. people (that usually
 
 Computers, however, do need 
 
-- access to the results of such determinations so as to digitally determine whether or not a mandate is valid and applicable to their decision whether or not to service some request (re Ad 1 above);
-- to accumulate (digital) artefacts by which it can later be proved which mandate was used to service requests, which (together with other proofs, such as who the requestor was) can be used to identify the mandatee and establish that the action was executed in compliance with the constraints set by the mandate.
+* access to the results of such determinations so as to digitally determine whether or not a mandate is valid and applicable to their decision whether or not to service some request (re Ad 1 above);
+* to accumulate (digital) artefacts by which it can later be proved which mandate was used to service requests, which (together with other proofs, such as who the requestor was) can be used to identify the mandatee and establish that the action was executed in compliance with the constraints set by the mandate.
 
 ### What Do We Need To Create And Use Mandates?
 
-- creation of mandate specifications
-- derivation (creation/revocation) of actual mandates from mandate specifications
-- creation/revocation of specific/incidental mandates
+* creation of mandate specifications
+* derivation (creation/revocation) of actual mandates from mandate specifications
+* creation/revocation of specific/incidental mandates
 
 ## Ideas
 
