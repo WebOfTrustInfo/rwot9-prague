@@ -36,7 +36,7 @@ really, read as much as you can!)
   * #did #activitypub #fediverse #wot
   
 * [Gently introducing DIDs to the Mastodon/ActivityPub Fediverse](./fediverse-did-integration.md)
-  * by [Markus Sabadello](https://danubetech.com/about.html), [Michael Pimmer](http://michael.pimmer.info/about/), [Paul Fuxjaeger](https://twitter.com/fuxjaeger)
+  * by [Michael Pimmer](http://michael.pimmer.info/about/), [Paul Fuxjaeger](https://twitter.com/fuxjaeger), [Markus Sabadello](https://danubetech.com/about.html)
   * "Our goal is to bring self sovereign identity concepts to the current ActivityPub fediverse as soon and as securely as possible."
   * #did #activitypub #fediverse #wot
   
