@@ -28,6 +28,11 @@ really, read as much as you can!)
 
 ## Topical Listing
 
+### Terminology Process
+
+* [Terminology Process](./terminology.md) (Rieks Joosten)
+  * Many problems exist as we try to 'fix' terminology. At RWoT-9, I propose to have (perhaps hackathon-like) sessions, the purpose of which is to establish a generally useable process for creating and maintaining terminologies, building on earlier experiences in this area at TNO. In order to validate this process, one (perhaps two) actual terminologies should be established. The paper "[Terminology for Agent-Hub-Related Identity Concepts](./Terminology for Agent_Hub-Related Identity Concepts.pdf)" might serve as a starting point for that. 
+
 ### Mandates and Delegation
 
 * [Mandates and Delegation](./mandates-and-delegation.md) (Rieks Joosten)
@@ -80,3 +85,4 @@ really, read as much as you can!)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md) 
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
+* [Terminology Process](./terminology.md)
