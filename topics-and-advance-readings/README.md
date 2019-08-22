@@ -336,7 +336,7 @@ _See also DIDs_
 * [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/robisoniv/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 * [A "Supreme Court" for Decentralization and Interoperability?](./topics-and-advance-readings/Supreme%20Court%20for%20decent%20and%20interop.md)
-* [SolidVC: A Decentralized Verifiable Credentials Management System](./solid-vc.md)
+* [SolidVC: A Decentralized Verifiable Credentials Management System](./solid-vc.md
 * [Terminology Process](./terminology.md)
 * [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
 * [Using Verifiable Credentials for German Government Grants](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vcs-for-german-grants.md)

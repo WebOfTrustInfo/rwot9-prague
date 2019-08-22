@@ -1,5 +1,7 @@
 
-# Table of Contents
+# Keeping Unwanted Messages off the Fediverse
+
+## Table of Contents
 
 1.  [Introduction](#orga7bd774)
 2.  [ActivityPub Overview](#orgb21f688)
