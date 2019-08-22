@@ -182,7 +182,7 @@ _See also DIDs_
 ### Terminology
 
 * [Terminology Process](./terminology.md) (Rieks Joosten)
-  * Many problems exist as we try to 'fix' terminology. At RWoT-9, I propose to have (perhaps hackathon-like) sessions, the purpose of which is to establish a generally useable process for creating and maintaining terminologies, building on earlier experiences in this area at TNO. In order to validate this process, one (perhaps two) actual terminologies should be established. The paper "[Terminology for Agent-Hub-Related Identity Concepts](./Terminology for Agent_Hub-Related Identity Concepts.pdf)" might serve as a starting point for that. 
+  * Many problems exist as we try to 'fix' terminology. At RWoT-9, I propose to have (perhaps hackathon-like) sessions, the purpose of which is to establish a generally useable process for creating and maintaining terminologies, building on earlier experiences in this area at TNO. In order to validate this process, one (perhaps two) actual terminologies should be established. The paper [Terminology for Agent-Hub-Related Identity Concepts](./Terminology for Agent_Hub-Related Identity Concepts.pdf) might serve as a starting point for that. 
 
 ### Verfiable Credentials
 
