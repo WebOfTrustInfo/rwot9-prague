@@ -6,7 +6,7 @@ Everyone has its own terminology (i.e.: terminology is subjective). This is easi
 
 This is a widely recognized, and ancient problem when working together. This is exemplified by the story of the Tower of Babel and many similar stories that are being told in various cultures.
 
-A recent example, is in the area of "Identity Hubs and Agents", as demonstrated by a thread with that title in the W3C Credentials Community Group. A [document](./Terminology for Agent_Hub-Related Identity Concepts.pdf) contributed by Daniel Hardman postulates the need for "*a space to explore an aligned mental model and terminology that will let us begin to tell a coherent and consistent story about hubs and agents. We need this alignment and terminology for a global reference architecture for decentralized identity, and to help resolve confusion about the hub~agent distinction in identity circles*", and a first draft of what this is all about.
+A recent example, is in the area of "Identity Hubs and Agents", as demonstrated by a thread with that title in the W3C Credentials Community Group. [Terminology for Agent_Hub-Related Identity Concepts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Terminology%20for%20Agent_Hub-Related%20Identity%20Concepts.pdf) contributed by Daniel Hardman postulates the need for "*a space to explore an aligned mental model and terminology that will let us begin to tell a coherent and consistent story about hubs and agents. We need this alignment and terminology for a global reference architecture for decentralized identity, and to help resolve confusion about the hub~agent distinction in identity circles*", and a first draft of what this is all about.
 
 And there are many more.
 
