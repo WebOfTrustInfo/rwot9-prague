@@ -179,6 +179,11 @@ _See also DIDs_
    * by Claire Rumore & Moses Ma
    * #cooperation #communication #standards
 
+### Terminology
+
+* [Terminology Process](./terminology.md) (Rieks Joosten)
+  * Many problems exist as we try to 'fix' terminology. At RWoT-9, I propose to have (perhaps hackathon-like) sessions, the purpose of which is to establish a generally useable process for creating and maintaining terminologies, building on earlier experiences in this area at TNO. In order to validate this process, one (perhaps two) actual terminologies should be established. The paper "[Terminology for Agent-Hub-Related Identity Concepts](./Terminology for Agent_Hub-Related Identity Concepts.pdf)" might serve as a starting point for that. 
+
 ### Verfiable Credentials
 
 * [Analysis of Verifiable Credential Protocols for Issuer Interactions](./vc_protocols_issuer.md)
@@ -331,7 +336,8 @@ _See also DIDs_
 * [Reimagining global: Programmable incentivization and its implications for personal governance](https://github.com/robisoniv/rwot9-prague/blob/master/topics-and-advance-readings/reimagining-global-rwot9.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
 * [A "Supreme Court" for Decentralization and Interoperability?](./topics-and-advance-readings/Supreme%20Court%20for%20decent%20and%20interop.md)
-* [SolidVC: A Decentralized Verifiable Credentials Management System](./solid-vc.md)
+* [SolidVC: A Decentralized Verifiable Credentials Management System](./solid-vc.md
+* [Terminology Process](./terminology.md)
 * [Using Verifiable Claims as a Proof of Ownership for Blockcerts](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Using%20Verifiable%20Claims%20as%20a%20Proof%20of%20Ownership%20for%20Blockcerts.md)
 * [Using Verifiable Credentials for German Government Grants](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vcs-for-german-grants.md)
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
