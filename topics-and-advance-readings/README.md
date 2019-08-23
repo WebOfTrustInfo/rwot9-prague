@@ -264,6 +264,13 @@ _See also DIDs_
    *  by Dr. Carsten Stöcker (Spherity GmbH), Dr. Michael Rüther (Spherity GmbH), Alexander Yenkalow (Spherity GmbH), Juan Caballero (The Purple Tornado)
    * #verifiableclaims #dad #did #provenance
    
+### Web of Trust
+
+* [Concerns for minorities in a Web of Trust](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/concerns-for-minorities.md)
+   * by Marie Axelsson
+   * "As we keep building a new web of trust, we need to remember that the needs of marginalized groups are often not heard. It’s easy to talk about access just in terms of disability, and while it is one aspect it’s also important to remember that there are other marginalized groups who are not heard because they are a minority, or they are oppressed in other ways."
+   * #web-of-trust #minorities
+   
 ### Web of Trust Alternatives
 
 * [Exploring Interpersonal Data](./exploring-interpersonal-data.md)
@@ -304,6 +311,7 @@ _See also DIDs_
 * [Building Blocks for Sovereign P2P Identity](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/building-blocks-sovereign-p2p-identity.md)
 * [A Business Framework for SSI in IoT](business-framework-for-ssi-in-iot.md) - Michael Shea & Michael Corning
 * [Combining Verifiable Credentials and Zero Knowledge Proof Systems](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-and-zero-knowledge-proof-systems.md)
+* [Concerns for minorities in a Web of Trust](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/concerns-for-minorities.md)
 * [Datashards: secure storage primitives for the web](./datashards-rationale.md)
 * [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
