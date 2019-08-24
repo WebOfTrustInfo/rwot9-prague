@@ -16,7 +16,7 @@ Self-sovereign identities put the user in control of their data and financial as
 
 As the world globalizes, long-held understandings about the nature and role of government and the individual are being challenged. The concept of governance has been expanding to include the processes of decision-making of private and third sector actors, regional. international governments, and even individuals, working in coordination in hierarchical, market- and network-based organizational structures (Bevir 2012). Increasingly, our traditional systems of government and governance seem to be showing their limits in their ability to respond to the demands of this dynamic and evolving period of human activity. As the limits of traditional governance become apparent, new and more nuanced mechanisms are emerging, creating an opportunity for a more capable form of governance. Notable amongst these are public blockchains, which allow users to store and transfer financial assets and deploy and execute software without requiring permission from any authority.
 
-To govern is to make decisions, to aggregate and allocation resources in accordance with the needs of the governed. Mechanisms of governance often use the granting and revocation of access to resources - goods, services, information or access - to incentivize the subjects governed to behave in accordance with the laws, rules and norms deemed right and just by those establishing the system of governance.
+To govern is to make decisions, to aggregate and allocate resources in accordance with the needs of the governed. Mechanisms of governance often use the granting and revocation of access to resources - goods, services, information or access - to incentivize the subjects governed to behave in accordance with the laws, rules and norms deemed right and just by those establishing the system of governance.
 
 ## Personal self-governance
 
@@ -24,11 +24,11 @@ By this definition, each individual person engages in self-governance in some fo
 
 We set these goals and boundaries because we believe achieving or adhering to them will improve our chances of achieving or acquiring something we want, whether it is a material thing, recognition from another, good health, a sense of virtue and so on. In other words, we each pursue our goals and ideals through personal self-governance.
 
-## Enter web3
+## Enter Web 3.0
 
- It is at this level - the private, individual level - that blockchains may offer an opportunity to formalize those personal processes of governance into a personal structure of government. Self-sovereign identities put the user in control of their informational resources - personal data and financial assets, by decentralizing responsibility of maintaining custody of the private keys required to prove identity and access personal information. Using smart contracts, individuals could self-incentivize desirable behavior by programming incentives or actions that are conditional upon that behavior. In this way, these emerging technologies could help its users live their lives more in line with their ideals and values.
+ It is at this level - the private, individual level - that blockchains may offer an opportunity to formalize those personal processes of governance into a personal structure of government. Self-sovereign identities put the user in control of their informational resources - personal data and financial assets - by decentralizing responsibility of maintaining custody of the private keys required to prove identity and access personal information. Using smart contracts, individuals could self-incentivize desirable behavior by programming incentives or actions that are conditional upon that behavior. In this way, these emerging technologies could help its users live their lives more in line with their ideals and values.
 
-Deep ethical questions concerning such a system and its configuration deserve thoughtful consideration. First, a few examples help to illustrate the idea, built on conceptions of various levels of web3 penetration into our information and communications technology systems.
+Deep ethical questions concerning such a system and its configuration deserve thoughtful consideration. First, a few examples help to illustrate the idea, built on conceptions of various levels of Web3 penetration into our information and communications technology systems.
 
 ## Alice's goals
 
