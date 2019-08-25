@@ -84,6 +84,14 @@ really, read as much as you can!)
   
 _See also Identity, Self-sovereign_
 
+### DID/Verifiable Claim Infrastructure
+
+* [Infrastructure for persistently live DIDs & Claims](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/infrastructure-for-persistently-live-dids.md)
+  * By [James Foley](https://github.com/realisation)
+  * This paper considers limitations and liabilities of DID infrastructure and suggests a protocol as a solution
+  * #did #decentralization 
+
+
 ### Identity
 
 * [Bare minimum agent for identity](./Bare-minimum-agent.md)
@@ -333,6 +341,7 @@ _See also DIDs_
 * [Gently introducing DIDs to the Mastodon/ActivityPub Fediverse](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/fediverse-did-integration.md)
 * [Heresay: A Fuzzy Prediction Market for Distributed Reputation](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/heresay.md)
 * [Islands, Tigers, and Bears, Oh My!](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/islands.md)
+* [Infrastructure for persistently live DIDs & Claims](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/infrastructure-for-persistently-live-dids.md)
 * [Keeping Unwanted Messages off the Fediverse](./ap-unwanted-messages.md)
 * [KERI for a Universal DKMI](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/KERI-Universal-DKMI.md)
 * [Mandates and Delegation](./mandates-and-delegation.md)
