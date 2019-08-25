@@ -115,6 +115,13 @@ really, read as much as you can!)
    * by Tom Marble
    * "Introducing the Firefly Trust Sync (Firefly) architecture as a decentralized, web-of-trust alternative to address the shortcomings of the Certificate Authority (CA) based Public Key Infrastructure (CA-based PKI) and the Pretty Good Privacy (PGP) web-of-trust. Self sovereign identity is a cornerstone of this architecture and yet it does not rely whatsoever on distributed ledger technology. Essential design elements are presented with initial thoughts on both advantages and disadvantages of this approach as well as some next steps."
    * #firefly #web-of-trust
+
+### Verifiable Credentials
+
+* [Verifiable Credential Authentication via OpenID Connect](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vc-authn-oidc.md)
+   * by Tobias Looker
+   * "An approach to authentication using verifiable credentials over OpenID Connect"
+   * #verifiablecredentials #authentication #oidc
    
 ## Alphabetical Listing
 
@@ -131,4 +138,4 @@ really, read as much as you can!)
 * [NVC for Standards Working Groups](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/nvc.md) by Claire Rumore & Moses Ma
 * [Rubrics for Decentralization of DID Methods Creative Brief](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rubrics.md)
 * [Secure Data Hubs: Encrypted Storage for the Web](./secure-data-hubs.md)
-
+* [Verifiable Credential Authentication via OpenID Connect](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vc-authn-oidc.md)
