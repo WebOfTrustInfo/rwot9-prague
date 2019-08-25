@@ -91,7 +91,7 @@ _See also Identity, Self-sovereign_
   * This paper considers limitations and liabilities of DID infrastructure and suggests a protocol as a solution
   * #did #decentralization 
 
-
+  
 ### Identity
 
 * [Bare minimum agent for identity](./Bare-minimum-agent.md)
@@ -224,6 +224,11 @@ _See also DIDs_
   * "The aim of this document is to describe how a standard OpenID provider (OP) can be extended to support verifiable credential authentication. With this support, a relying party (RP) is able to request this method of authentication to harness the power of verifiable credentials."
   * #verifiable-credentials #authentication #openid-connect
 
+* [Addition of Proof Request/Response to a formal Verifiable Credentials specification](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-proof-request.md)
+  * by Jonathan Reynolds, Daniel McGrogan
+  * "The W3C Verifiable Credentials specification does not currently outline how credential data should be requested by a Verifier. Our document outlines the approach taken at Workday and proposes it as an addition or companion to the VC spec. At RWoT we wish to present our approach in order to get community feedback and consensus. Workday recently announced our credentialing platform and will shortly begin to issue credentials within our market verticals. We fully intend to support the community standards around credentialing and therefore wish to drive consensus in the community on a simple, standard approach for requesting and sharing VCs between a holder and verifier."
+  * #verifiable-credentials #proof-request
+
 ### Verifiable Credentials Use Cases
 
 * [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
@@ -313,6 +318,7 @@ _See also DIDs_
 
 ## Alphabetical Listing
 
+* [Addition of Proof Request/Response to a formal Verifiable Credentials specification](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-proof-request.md)
 * [Addressing DID Connection Man in the Middle Attacks](addressing-MITM-attacks.md) - Kyle Den Hartog
 * [Analysis of Verifiable Credential Protocols for Issuer Interactions](./vc_protocols_issuer.md)
 * [Bare minimum agent for identity](./Bare-minimum-agent.md)
