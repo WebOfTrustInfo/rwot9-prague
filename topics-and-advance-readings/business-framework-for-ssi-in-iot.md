@@ -10,12 +10,45 @@ What is not so clear is how.  This is not a technical problem (though there are 
 
 ## The Approach
 
-1. Outlining current top security concerns within the IoT sector
-2. Create a reference IoT system
+1. Define reference IoT system for analysis.
+2. Outline current top security concerns within the IoT sector
 3. Identify questions to be answered
 4. Reframe reference IoT system in the context of SSI, identify SSI touch/integration points, identify area of potential cost increases/decreases, identify whether each cost is an attractor or detractor to the overall appeal of the system.
 5. Summary
 
+## Reference System
+
+<a href="./media/business-ssi-iot-1.png"><img src="./media/business-ssi-iot-1.png" width="800" style="margin:20px"></a>
+
+### System Components
+* SSA - Smart Smoke Alarm, this device has additional capabilities to generate alerts to external services.
+* Scout - a small tracking device that is GPS and/or Bluetooth enabled.
+* Bridge - an interface device for the Sentinel’s that is connected to an external hosting service.
+* Wireless Router - Access point for the household to ISP
+
+###
+
+### User Story
+
+#### Consumer Perspective
+
+John has a mother with dementia. He buys a Smart Smoke Alarm for $30 (dumb alarms cost $25, the $5 Scout cost accrues to TrackerCo). Both the alarm and the Scout use the same battery, so there will be a periodic cost to replace the batteries, but they don’t have to replace two of them). John has equipped mother’s home with internet connectivity. The SSA uses WIFI to connect to the TrackerCo Bridge John set up and placed next to the WIFI router.  All this cost John $200. WIFI connects the Scout in the SSA to the TrackerCo Bridge, and the TrackerCo Bridge has registered to the their network to collect data from the SSA and from Mother’s Scout.
+
+People come and go in the home and interact with the SSA. John bought an TrackerCo Scout for $8 to put in mother’s purse. This Scout in her purse will interact with the SSA and data from the interaction between her Scout and the SSA are stored in the TrackerCo Network without cost. This data has no reference to John or mother; only to the location of the Scout. If somebody knows the digital identity of mother’s Scout, they can pay for a query the TrackerCo Network for her location. Not good.
+
+For the moment, XYO is acting like a guardian, so if John grants a guardianship credential to mother’s sentinel…,
+ 
+John is a Secours member, and this comes with a dementia monitoring member benefit. This benefit is like a webhook on the TrackerCo network, so when the purse leaves the range of the SSA, John gets notified and pays a $5 fee for each query. After a month, John has paid for too many false positives, so he further restricts the notification threshold. [This calibration could be implemented in the guardianship credential]
+
+#### Vendor Perspective
+
+TrackerCo has created the Scout and Bridge products as a general purpose geo-location solution collecting geolocation data from the Scout.  Scout's can be either Bluetooth and/or GPS enabled. The consumer will select the appropriate configuration based on usage and/or integrated products. The Scout only records current location and does not otherwise identify directly back to an individual.  However, if the device id becomes known, it is possible to reverse engineer the location history of the individual.
+
+TrackerCo provides software/firmware updates to their devices.  The devices are shipped from the factory with a default user/password that the customer is encouraged to update.  Updates to the Scouts are provided through the Bridge by the device owner.  TrackerCo would like to have the ability to push over the wire updates to both the Bridge and Scouts, but costs of infrastructure, security concerns, and negative customer perceptions have prevented forward motion on this effort.
+
+TrackerCo has development partners who are leveraging TrackerCo's data to create products and services.  Secours is a development partner of TrackerCo.
+ 
+All these devices have firmware. Today, firmware updates have minimal access controls. Vendors can push updates without the owner knowing.  This means that each of these devices has some level of user based authentication and access controls.
 
 ## Current Concerns
 
@@ -36,39 +69,12 @@ Even with IoT exploding across all sectors of society it is surprising that the 
 
 As part of this effort, the concerns that can be addressed by SSI will be identified.
 
-
-## Reference System
-
-<a href="./media/business-ssi-iot-1.png"><img src="./media/business-ssi-iot-1.png" width="800" style="margin:20px"></a>
-
-### System Components
-* SSA - Smart Smoke Alarm, this device has additional capabilities to generate alerts to external services.
-* Sentinel - a small tracking device that is GPS and Bluetooth enabled.
-* Bridge - an interface device for the Sentinel’s that is connected to an external hosting service.
-* Wireless Router - Access point for the household to ISP
-
-###
-
-### User Story
-
-John has a mother with dementia. He buys a Smart Smoke Alarm for $30 (dumb alarms cost $25, the $5 sentinel cost accrues to XYO). Both the alarm and the sentinel use the same battery, so there will be a periodic cost to replace the batteries, but they don’t have to replace two of them). John has equipped mother’s home with internet connectivity. The SSA uses WIFI to connect to the XYO Bridge John set up and placed next to the WIFI router.  All this cost John $200. WIFI connects the sentinel in the SSA to the XYO Bridge, and the XYO Bridge has registered to the XYO network to collect data from the SSA and from Mother’s sentinel.
-
-So far, no SSI necessary.
-
-People come and go in the home and interact with the SSA. John bought an XYO sentinel for $8 to put in mother’s purse. This sentinel in her purse will interact with the SSA and bounded-witness data from the interaction between her sentinel and the SSA are stored in the XYO ledger without cost. This data has no reference to John or mother; only to the location of the sentinel. If somebody knows the digital identity of mother’s sentinel, they can pay for a query the XYO ledger for her location. Not good.
-
-For the moment, XYO is acting like a guardian, so if John grants a guardianship credential to mother’s sentinel…,
- 
-John is a Secours member, and this comes with a dementia monitoring member benefit. This benefit is like a webhook on the XYO ledger, so when the purse leaves the range of the SSA, John gets notified and pays a $5 fee for each query. After a month, John has paid for too many false positives, so he further restricts the notification threshold. [This calibration could be implemented in the guardianship credential]
- 
-All these devices have firmware. Today, firmware updates have minimal access controls. Vendors can push updates without the owner knowing.  This means that each of these devices has some level of user based authentication and access controls.
-
-
 ## Framework Questions
 
-The below systems model below represents the attractors and detractors of opportunity regarding security and adoption of IoT.
+A market is a summation of positive (or reinforcing) forces that are countered by balancing (or detracting) forces.  In the IoT space the array of security concerns are a strong counter-valing force that have the ability to destroy brand reputation or significantly limit growth due to fear and lack of trust in the technology.  The figure below is a reasonable illustration of the sector the dynamics.  
 
-... image goes here ...
+<a href="./media/business-ssi-iot-2.png"><img src="./media/business-ssi-iot-2.png" width="600" style="margin:20px"></a>
+(Source: The IoT Promises New Benefits and Risks: A Systematic Analysis of Adoption Dynamics of IoT Products - SSRN-id3022111.pdf)
 
 * Map out the following system processes : 
     * 1. data flow - how does data move within/around the system?
