@@ -12,7 +12,7 @@ So how does it work? What should you expect in your four days at Rebooting the W
 
 You should _not_ expect to write a paper on the first day of RWOT. Instead, that's the day where we lay the foundation for our work. We'll spend much of the day engaging in group exercises that will get you talking with your colleagues about the topics that interest you. 
 
-We feel this day is very important because it establishes everything that follows. More precisely, it serves several purposes:
+This day establishes everything that follows. It serves several purposes:
 
 1. _It introduces you to your fellows._ You'll meet people that you may be working with later in the workshop, and you'll learn what interests them. This helps to put you into a cooperative and collaborative mindset.
 
@@ -98,7 +98,7 @@ This is also the day you finish your papers.
 
 ### Finishing Your Paper
 
-For many first-time participants, this is the intimidating part: you produce a final paper and upload it to the GitHub archive. And, we definitely want you to upload the final state of your paper to GitHub, whatever it might be. To do so, upload an MD version of your paper using a Pull Request (PR). If you've been using Google Docs, you can convert your file to MD using [pandoc](https://pandoc.org/) or certain programs that you can link into your Google Docs files. Please do this even if you are planning to continue work in Google Docs later; the object is to upload your paper's status at the end of the workshop.
+For many first-time participants, this is the intimidating part: you produce a final draft of your paper and upload it to the GitHub archive. And, we definitely want you to upload the final state of your paper to GitHub, whatever it might be. To do so, upload an MD version of your paper using a Pull Request (PR). If you've been using Google Docs, you can convert your file to MD using [pandoc](https://pandoc.org/) or certain programs that you can link into your Google Docs files. Please do this even if you are planning to continue work in Google Docs later; the object is to upload your paper's status at the end of the workshop.
 
 We don't expect your final-day commit to be a fully polished paper, and it may not even be fully written. (In fact, as much as we talk about finalizing papers at the workshop, the truth is that a minority have had complete text by the final day of our workshop, and almost none have had complete and polished text.) Think of your paper as being "feature-complete" by the end of the workshop, but not necessarily even an "alpha" release. You definitely should know what the paper is going to say and how it's going to say it. You should have a complete outline of the paper. Most importantly, you should have everyone's collaborative contributions in place, recording all the creativity and inspiration from the workshop. That's the _minimum_ state that we suggest for your paper by "pencils down" on Day Four.
 
@@ -108,13 +108,13 @@ Obviously, the more actual words you've got, the better: because that's much of 
 
 ### Choosing Your Lead Author
 
-By the end of the third day or so you should have picked a Lead Author as well; definitely you have to know before submitting your paper on day four. The Lead Author is the responsible party after the workshop, organizing any final work needed to bring the paper to completion. They're one part editor, one part cat-herder, and one part nose-to-the-grindstone author, filling in whatever needs to be done.
+By the end of the third day or so you should have picked a Lead Author as well; definitely you have to know before submitting your paper on day four. The Lead Author is the responsible party **after** the workshop, organizing any final work needed to bring the paper to completion. They're one part editor, one part cat-herder, and one part nose-to-the-grindstone author, filling in whatever needs to be done.
 
-Our Editor-in-Chief will keep in touch with the Lead Author, to see how the project is going, while hopefully the Lead Author will stay in touch with the team, coordinating final work and filling in the gaps as needed.
+The Rebooting Web of Trust Editor-in-Chief will keep in touch with the Lead Author, to see how the project is going, while hopefully the Lead Author will stay in touch with the team, coordinating final work and filling in the gaps as needed.
 
 ### Thanking the Teams
 
-At the end of Day Four of RWOT, we've done weeks worth of work in four short days. Everyone should take a moment to congratulate themselves and their colleagues on their investment in time and effort to improve our community!
+At the end of Day Four of RWOT, we've done weeks' worth of work in four short days. Everyone should take a moment to congratulate themselves and their colleagues on their investment in time and effort to improve our community!
 
 ## After the Workshop: Really Finishing Your Paper
 
@@ -138,7 +138,16 @@ If you decide not to finish your project, don't feel bad about it. It's happens 
 
 If you have a completed paper, the Lead Author has one final duty: to make sure that the paper has the consensus of the team members. The Lead will make the final decision about what's in the paper, but they also need to provide that paper to the other members, to give them a final opportunity to either remain a listed author or (if they disagree with the paper) to remove their name.
 
-At this stage, the Lead Author also needs to decide how to list each member: as an author (if they contributed notably to the paper) or as a contributor (if they were less active in the group). The majority of our papers tend to just list authors, but if you feel there is a meaningful split among contributions in your group, please address it in the credits.
+At this stage, the Lead Author also needs to decide how to list each member: as an author (if they contributed notably to the paper) or as a contributor (if they were less active in the group). The majority of our papers tend to just list authors, but if you feel there is a meaningful split among contributions in your group, please address it in the credits. 
+
+### Authorship 
+Rebooting the Web of Trust uses the AMA guidelines for determining authorship: https://www.amamanualofstyle.com/view/10.1093/jama/9780195176339.001.0001/med-9780195176339-div2-120
+
+> All authors should have participated sufficiently in the work to take public responsibility for the content, either all of the work or an important part of it. To take public responsibility, an author must be able to defend the content (all or an important part) and conclusions of the article if publicly challenged. Sufficient participation means that substantial contributions have been made in each of the following areas:
+> 1. Conception and design of the work; or acquisition, analysis, or interpretation of the data for the work; and
+> 2. Drafting the work or revising it critically for important intellectual content; and
+> 3. Approval of the version to be published; and
+> 4. Agreement to be accountable for all aspects of the work in ensuring that questions related to the accuracy or integrity of any part of the work are appropriately investigated and resolved.
 
 ### Publishing the Paper
 
