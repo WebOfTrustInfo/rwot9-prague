@@ -36,7 +36,7 @@ John has a mother with dementia. He buys a Smart Smoke Alarm for $30 (dumb alarm
 
 People come and go in the home and interact with the SSA. John bought an TrackerCo Scout for $8 to put in mother’s purse. This Scout in her purse will interact with the SSA and data from the interaction between her Scout and the SSA are stored in the TrackerCo Network without cost. This data has no reference to John or mother; only to the location of the Scout. If somebody knows the digital identity of mother’s Scout, they can pay for a query the TrackerCo Network for her location. Not good.
 
-For the moment, XYO is acting like a guardian, so if John grants a guardianship credential to mother’s sentinel…,
+For the moment, TrackerCo is acting like a guardian, so if John grants a guardianship credential to mother’s sentinel…,
  
 John is a Secours member, and this comes with a dementia monitoring member benefit. This benefit is like a webhook on the TrackerCo network, so when the purse leaves the range of the SSA, John gets notified and pays a $5 fee for each query. After a month, John has paid for too many false positives, so he further restricts the notification threshold. [This calibration could be implemented in the guardianship credential]
 
