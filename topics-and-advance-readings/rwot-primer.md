@@ -4,7 +4,7 @@
 
 #### by Shannon Appelcline
 
-Rebooting the Web of Trust (RWOT) is a design workshop whose goal is the production of five or more outputs related to the decentralized digital identity space known as the Web of Trust. Traditionally, the majority of our output has taken the form of white papers that are 5-15 pages long and which discuss rubrics, use cases, specifications, or thought exercises related to the Web of Trust. However, we have also produced commentary on existing specification and even proof-of-concept code.
+Rebooting the Web of Trust (RWOT) is a design workshop whose goal is the production of five or more outputs related to the decentralized digital identity space known as the Web of Trust. Traditionally, the majority of our output has taken the form of white papers that are 5-15 pages long and which discuss rubrics, use cases, specifications, or thought exercises related to the Web of Trust. However, we have also produced commentary on existing specifications and even proof-of-concept code.
 
 So how does it work? What should you expect in your four days at Rebooting the Web of Trust, and how will you get to a paper at the end?
 
