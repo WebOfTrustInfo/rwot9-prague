@@ -146,4 +146,4 @@ After you've got a paper ready to go, the Leader Author should upload it as an M
 
 At that point, we'll announce it through our social media, and suggest you do the same.
 
-Congratulations, you've complete an RWOT paper!
+Congratulations, you've completed an RWOT paper!
