@@ -23,7 +23,7 @@ What is not so clear is how.  This is not a technical problem (though there are 
 ### System Components
 * SSA - Smart Smoke Alarm, this device has additional capabilities to generate alerts to external services.
 * Scout - a small tracking device that is GPS and/or Bluetooth enabled.
-* Bridge - an interface device for the Sentinel’s that is connected to an external hosting service.
+* Bridge - an interface device for the Scout that is connected to an TrackerCo's network.
 * Wireless Router - Access point for the household to ISP
 
 ###
@@ -44,9 +44,11 @@ John is a Secours member, and this comes with a dementia monitoring member benef
 
 TrackerCo has created the Scout and Bridge products as a general purpose geo-location solution collecting geolocation data from the Scout.  Scout's can be either Bluetooth and/or GPS enabled. The consumer will select the appropriate configuration based on usage and/or integrated products. The Scout only records current location and does not otherwise identify directly back to an individual.  However, if the device id becomes known, it is possible to reverse engineer the location history of the individual.
 
+Scout's connect to the TrackerCo Bridge using Bluetooth.  Once data is aggregated in the Bridge it packages the data, digitally signs the data and writes it to the Network.  
+
 TrackerCo provides software/firmware updates to their devices.  The devices are shipped from the factory with a default user/password that the customer is encouraged to update.  Updates to the Scouts are provided through the Bridge by the device owner.  TrackerCo would like to have the ability to push over the wire updates to both the Bridge and Scouts, but costs of infrastructure, security concerns, and negative customer perceptions have prevented forward motion on this effort.
 
-TrackerCo has development partners who are leveraging TrackerCo's data to create products and services.  Secours is a development partner of TrackerCo.
+TrackerCo sells the Scout and Bridge hardware and has developed a partner network who are leveraging TrackerCo's data to create products and services.  Secours is a development partner of TrackerCo.  Each of these development partners pay to access the data stored on the TrackerCo network.
  
 All these devices have firmware. Today, firmware updates have minimal access controls. Vendors can push updates without the owner knowing.  This means that each of these devices has some level of user based authentication and access controls.
 
