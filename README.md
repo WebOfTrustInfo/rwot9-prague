@@ -25,6 +25,7 @@ Please see the [Topics & Advance Readings directory](topics-and-advance-readings
 
 These primers overview major topics which are likely to be discussed at the design workshop. If you read nothing else, read these. (But really, read as much as you can!)
 
+* [RWOT Primer](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rwot-primer.md) — How the design workshop works
 * [DID Primer](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-primer.md) — Decentralized Identifiers ([extended version](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-primer-extended.md) also available)
 * [Functional Identity Primer](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/functional-identity-primer.md) — A different way to look at identity
 * [Verifiable Credentials Primer](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-primer.md) — the project formerly known as Verifiable Claims
