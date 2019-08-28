@@ -4,9 +4,9 @@ Authors: Michael Shea (The Dingle Group) & Michael Corning (Secours)
 
 ## Abstract
 
-The IDC recently forecasted that by 2025 there will be 41 Billion connected IoT devices generating more that 79 Zettabytes of data. For all these glorious forecasts, it should be a little troubling that in 2019, there is still a consensus of opinion that the Internet of Things ecosystem continues to have significant challenges around the realms of security, data access, and control.  Conversely, within the SSI community there is a sense that SSI provides the 'silver bullet' to solve these challenges.  
+The IDC recently forecasted that by 2025 there will be 41 Billion connected IoT devices generating more that 79 Zettabytes of data. Now it should be noted, that while not all these devices will be generating personal or person related data, they all will have issues around access, control and validation/verification of data being produced/transmitted. It is concerning that in 2019, a consensus of opinion exists that the Internet of Things ecosystem continues to have significant challenges around the realms of security, data access, and control.  Conversely, within the SSI community there is a sense that Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs) can provide the 'silver bullets' to solve these challenges.  
 
-What is not so clear is how.  This is not a technical problem (though there are challenges in this realm), but a business problem; in the hard reality of tight margins and production costs, it is unclear how to build a financial model that demonstrates the financial returns necessary to justify the investment and additional operating costs of adding SSI into new or existing product lines.  This paper attempts to map out a typical IoT system, identify potential SSI deployment points and develop a framework of questions that once answered will provide the information necessary to develop the business case to support the necessary investment.
+What is not so clear is how.  This is not a technical problem (though there are challenges in this realm), but a business problem; in the hard reality of tight margins and production costs, it is unclear how to build a financial model that demonstrates the financial returns necessary to justify the investment and additional operating costs and potential loss of revenue by adding SSI into new or existing product lines.  This paper attempts to map out a typical IoT system, identify potential SSI deployment points and develop a framework of questions that once answered will provide the information necessary to develop the business case to support the necessary investment.
 
 ## The Approach
 
@@ -30,15 +30,15 @@ What is not so clear is how.  This is not a technical problem (though there are 
 
 ### User Story
 
+Note: This story is purposely focused on the technical operating characteristics of the story.  Is should be assumed around proper Power of Attorney, and Authorization for use of tracking elements for safety and guardianship controls have been properly executed.
+
 #### Consumer Perspective
 
-John has a mother with dementia. He buys a Smart Smoke Alarm for $30 (dumb alarms cost $25, the $5 Scout cost accrues to TrackerCo). Both the alarm and the Scout use the same battery, so there will be a periodic cost to replace the batteries, but they don’t have to replace two of them). John has equipped mother’s home with internet connectivity. The SSA uses WIFI to connect to the TrackerCo Bridge John set up and placed next to the WIFI router.  All this cost John $200. WIFI connects the Scout in the SSA to the TrackerCo Bridge, and the TrackerCo Bridge has registered to the their network to collect data from the SSA and from Mother’s Scout.
+John has a mother with dementia. While John's mother is still capable of living in her own home, John is worried about the safety of his mother.  To provide a degree of surety, John has installed a combined solution from TrackerCo and Secours in his mother's home.  The solution is contains the three following components: Smart Smoke Alarm with integrated Scout ($40), 5 separate TrackerCo Scout modules ($40 = (5*$8)), and a TrackerCo Bridge ($125).  The TrackerCo Bridge aggregates location data from all the Scouts and connects to the TrackerCo Network through the home's WiFi Router.  As part of the setup TrackerCo setup process each of the Scout's are regarding with the Bridge. 
 
-People come and go in the home and interact with the SSA. John bought an TrackerCo Scout for $8 to put in mother’s purse. This Scout in her purse will interact with the SSA and data from the interaction between her Scout and the SSA are stored in the TrackerCo Network without cost. This data has no reference to John or mother; only to the location of the Scout. If somebody knows the digital identity of mother’s Scout, they can pay for a query the TrackerCo Network for her location. Not good.
-
-For the moment, TrackerCo is acting like a guardian, so if John grants a guardianship credential to mother’s sentinel…,
+People come and go in the home and interact with the SSA. John knows that his mother never leaves the house without her purse, so he has put one Scout in his mother’s purse. This Scout in her purse will interact with the SSA and data from the interaction between her Scout and the SSA are stored in the TrackerCo Network without cost. This data has no reference to John or mother; only to the location of the Scout. If somebody knows the digital identity of mother’s Scout, they can pay for a query the TrackerCo Network for her location. Not good.
  
-John is a Secours member, and this comes with a dementia monitoring member benefit. This benefit is like a webhook on the TrackerCo network, so when the purse leaves the range of the SSA, John gets notified and pays a $5 fee for each query. After a month, John has paid for too many false positives, so he further restricts the notification threshold. [This calibration could be implemented in the guardianship credential]
+John is a Secours member, and this comes with a dementia monitoring member benefit. This benefit is like a webhook on the TrackerCo network, so when the purse leaves the range of the SSA, John gets notified and pays a $2 fee for each query. After a month, John has paid for too many false positives, so he further restricts the notification threshold. 
 
 #### Vendor Perspective
 
@@ -68,6 +68,8 @@ Even with IoT exploding across all sectors of society it is surprising that the 
 10. Predict and preempt security issues
 
 < Additional definition information on security challenges in source: https://developer.ibm.com/articles/iot-top-10-iot-security-challenges/ (viewed August 16, 2019) >
+
+In addition to these is the major security threat due to the lack of user knowledge of cyber-security fundamentals, such as trigger updates/auto-updates, change default passwords and so on. 
 
 As part of this effort, the concerns that can be addressed by SSI will be identified.
 
