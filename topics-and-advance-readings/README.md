@@ -119,7 +119,12 @@ _See also Identity, Self-sovereign_
   * by Ian Grigg 
   * "When I formulated the 4 schools or types of identity (state, self, corporate, community), I was not thinking of inclusion, I was expressly intending to exclude"
   * #identity #definitions
- 
+  
+* [Decentralized unique identity via graph-based Sybil-detection on a peer-to-peer credit network](./Decentralized-unique-identity-via-graph-based-Sybil-detection-on-a-peer-to-peer-credit-network.md)
+  * by Aleeza Howitt 
+  * "It should be possible to analyze the connectivity of members in a p2p credit network, and from this to determine which members are real and which are Sybils (fake or duplicate accounts)."
+  * #identity #p2p #credit
+  
 ### Identity, Self-sovereign
 
 * [A Business Framework for SSI in IoT](./business-framework-for-ssi-in-iot.md)
