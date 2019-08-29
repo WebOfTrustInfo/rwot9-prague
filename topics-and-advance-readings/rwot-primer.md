@@ -140,7 +140,8 @@ If you have a completed paper, the Lead Author has one final duty: to make sure 
 
 At this stage, the Lead Author also needs to decide how to list each member: as an author (if they contributed notably to the paper) or as a contributor (if they were less active in the group). The majority of our papers tend to just list authors, but if you feel there is a meaningful split among contributions in your group, please address it in the credits. 
 
-### Authorship 
+#### Crediting Authorship 
+
 Rebooting the Web of Trust uses the AMA guidelines for determining authorship: https://www.amamanualofstyle.com/view/10.1093/jama/9780195176339.001.0001/med-9780195176339-div2-120
 
 > All authors should have participated sufficiently in the work to take public responsibility for the content, either all of the work or an important part of it. To take public responsibility, an author must be able to defend the content (all or an important part) and conclusions of the article if publicly challenged. Sufficient participation means that substantial contributions have been made in each of the following areas:
