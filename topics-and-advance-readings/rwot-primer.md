@@ -154,6 +154,8 @@ Rebooting the Web of Trust uses the AMA guidelines for determining authorship: h
 
 After you've got a paper ready to go, the Leader Author should upload it as an MD file to our Drafts directory in the event's GitHub (using a PR if you don't have commit permissions) and contact our Editor-in-Chief. He'll do a line edit and submit it back to you as a PR with any comments for more extensive revisions. (We'll usually only offer more extensive thoughts on organization and content if you ask us, but feel free to do so!) After getting your OK, or any revisions, our Editor-in-Chief will then lay your paper out as a PDF, and we'll publish it to the "Final" directory.
 
+All outputs are officially released under open licenses. All papers are released under a [CC-BY](https://github.com/WebOfTrustInfo/rwot1-sf/blob/master/final-documents/LICENSE-CC-BY-4.0.md) license, while code is released under an appropriate open source license.
+
 At that point, we'll announce it through our social media, and suggest you do the same.
 
 Congratulations, you've completed an RWOT paper!
