@@ -283,6 +283,13 @@ _See also DIDs_
    *  by Dr. Carsten Stöcker (Spherity GmbH), Dr. Michael Rüther (Spherity GmbH), Alexander Yenkalow (Spherity GmbH), Juan Caballero (The Purple Tornado)
    * #verifiableclaims #dad #did #provenance
    
+### Wallets
+
+* [What's In Your Wallet](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/whats-wallet.md)
+  * by Christopher Allen and Joe Andrieu
+  * "A Universal Identity Wallet (UIW) for digital credentials promises seamless interoperability across issuers and verifiers, and would be usable by people, organizations, and things, for digital transactions both online and off."
+  * #wallet #universal-identity
+  
 ### Web of Trust
 
 * [Concerns for minorities in a Web of Trust](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/concerns-for-minorities.md)
@@ -373,6 +380,7 @@ _See also DIDs_
 * [Verifiable Credential Authentication via OpenID Connect (vc-authn-oidc)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vc-authn-oidc.md)
 * [Verifiable Credentials in Incentivized Competency Assessment](./vc-in-incentivized-competency-assessment.md)
 * [A Web of Credit Framework](./web-of-credit.md)
+* [What's In Your Wallet](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/whats-wallet.md)
 * [Why we must ask the Why of Identity](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ask-why.md)
 * [X.509 DID Method - Decentralising PKI starting with a X.509 DID method](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/X.509-DID-Method.md)
 * [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
