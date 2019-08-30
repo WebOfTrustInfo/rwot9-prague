@@ -71,20 +71,11 @@ digital identity, and the continued dematerialization of securities
 These decentralized technologies share several goals that simply weren’t
 feasible previously:
 
-1.  No reliance on a central authority for verifying identity or
-    > otherwise policing transactions in the system
-
-2.  The democratization of authority, allowing any individual or firm to
-    > participate on an equal basis
-
-3.  Strong cryptographic guarantees that actions in the network were
-    > performed by the entities authorized to do so
-
-4.  Vendor-agnostic technology stacks that don’t require permission to
-    > innovate
-
-5.  Resistance to external forms of operational control such as
-    > censorship and denial of service
+1.  No reliance on a central authority for verifying identity or otherwise policing transactions in the system
+2.  The democratization of authority, allowing any individual or firm to participate on an equal basis
+3.  Strong cryptographic guarantees that actions in the network were performed by the entities authorized to do so
+4.  Vendor-agnostic technology stacks that don’t require permission to innovate
+5.  Resistance to external forms of operational control such as censorship and denial of service
 
 Despite a decade’s worth of innovation, there remain notable challenges
 that prevent these approaches from reaching their full potential, the
@@ -261,36 +252,17 @@ different capacities.
 These systems also provide means for additional capabilities, which may
 need additional components in the diagrams, for example,
 
--   Recovery -- How do individuals recover from key and credential
-    > losses?
-
--   Revocation -- How do issuers revoke or suspend credentials? How are
-    > keys revoked?
-
+-   Recovery -- How do individuals recover from key and credential losses?
+-   Revocation -- How do issuers revoke or suspend credentials? How are keys revoked?
 -   Auditing -- How do you verify operational integrity?
-
 -   Delegation -- How do parties delegate authority to others?
-
--   Reputation -- How do you systematically evaluate other parties’
-    > capabilities and trustworthiness?
-
--   Consent & Terms of Use -- How is the user involved in decisions and
-    > how is that recorded?
-
--   Rubrics -- How do you evaluate components and systems against
-    > desired criteria?
-
+-   Reputation -- How do you systematically evaluate other parties’ capabilities and trustworthiness?
+-   Consent & Terms of Use -- How is the user involved in decisions and how is that recorded?
+-   Rubrics -- How do you evaluate components and systems against desired criteria?
 -   Dynamic & interactive user control
-
-    -   Updates and refresh services -- Automated or semi automated
-        > credential updates
-
-    -   Requests management (from Verifiers) -- Asking for the minimal
-        > necessary verified data
-
-    -   Current prices/market dynamics -- Synchronization of wallet with
-        > real-world oracles
-
+    -   Updates and refresh services -- Automated or semi automated credential updates
+    -   Requests management (from Verifiers) -- Asking for the minimal necessary verified data
+    -   Current prices/market dynamics -- Synchronization of wallet with real-world oracles
     -   Alerts -- User-facing messages for pre-determined triggers
 
 It is worth noting that because wallets are control mechanisms, it
