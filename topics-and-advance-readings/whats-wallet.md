@@ -221,7 +221,7 @@ credentials and identifiers (VCs and DIDs) are managed by a wallet
 issuers and presenting them to verifiers over the network, using the
 ledger to keep track of who controls which identifiers.
 
-![](media/image2.png){width="6.020833333333333in" height="5.0625in"}
+![Simplified Decentralized Identity Network Components](media/SimplifiedDecentralizedIdentityNetworkComponents.png)
 
 Identity Components
 -------------------
@@ -229,7 +229,7 @@ Identity Components
 A more granular view adds components that includes ideas from from
 cryptocurrency wallets.
 
-![](media/image1.png){width="7.25in" height="3.6805555555555554in"}
+![Expanded Decentralized Identity Network Components](media//ExpandedDecentralizedIdentityNetworkComponents.png)
 
 Missing Pieces
 --------------
