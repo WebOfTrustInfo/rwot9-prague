@@ -145,6 +145,11 @@ _See also DIDs_
    * "The Key Event Receipt Infrastructure (KERI) provides a minimally sufficient means for managing signing authority and tracking events for a crypto-graphic key-pair based decentralized identifier such as a W3C DID. This includes inception, rotation, interaction, and delegation. It includes single and multi-signature schemes. ... A more in depth technical description of KERI is provided here."
    * #KERI #DKMI #did #dad
    
+* [Publicly verifiable split-key schemes for hybrid secret sharing and multi-sig authorization](./verifiable-secret-sharing.md)
+  * by Mark Friedenbach and Christopher Allen
+  * When using the same underlying group, Shamir secret sharing and compact threshold multi-signature schemes are two sides of the same coin. By exploiting this fact we can create publicly verifiable secret sharing schemes for social key recovery which permit dual-use as threshold multi-signature authorization schemes.
+  * #shamirsecretsharing #sss #keymanagement #keyrecovery #vss #multisig
+
 * [Zion Key Management APIs and Social Key Recovery](./zion-sdks-skr.md)
   * by Hank Chiu, Hankuan Yu, David Chen and Jon Tsai
   * Zion Key Management SDK Sets provide rich sets of APIs to help developers to use keys which is protected in Secure Enclave.
