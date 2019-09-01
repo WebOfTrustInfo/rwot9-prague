@@ -348,6 +348,7 @@ _See also DIDs_
 * [Decentralized Identifiers to Enable Trusted Machine Economy](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized%20Identifiers%20to%20Enable%20Trusted%20Machine%20Economy.md)
 * [Decentralized Identity as a Meta Platform](https://github.com/SmithSamuelM/rwot9-prague/blob/master/topics-and-advance-readings/Decentralized-Identity-Meta-platform.md)
 * [Decentralized unique anonymous identity](./decentralized-unique-anonymous-identity.md)
+* [Decentralized unique identity via graph-based Sybil-detection on a peer-to-peer credit network](./Decentralized-unique-identity-via-graph-based-Sybil-detection-on-a-peer-to-peer-credit-network.md)
 * [Decentralizing Opencerts](https://github.com/waichung/rwot9-prague/blob/master/topics-and-advance-readings/Decentralising%20OpenCerts%20v2.md)
 * [Decentralizing Reputation with DID](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/Decentralizing-Reputation-with-DID.md)
 * [Decision Making with Verifiable Credentials](./decision-making-with-verifiable-credentials.md)
