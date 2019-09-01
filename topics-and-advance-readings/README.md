@@ -385,6 +385,7 @@ _See also DIDs_
 * [Utilizing zero-knowledge proofs and verifiable credentials to provide privacy-friendly income tests for social housing](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zero-knowledge-proofs-and-vc-in-social-housing.md)
 * [Verifiable Credential Authentication via OpenID Connect (vc-authn-oidc)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/vc-authn-oidc.md)
 * [Verifiable Credentials in Incentivized Competency Assessment](./vc-in-incentivized-competency-assessment.md)
+* [Publicly verifiable split-key schemes for hybrid secret sharing and multi-sig authorization](./verifiable-secret-sharing.md)
 * [A Web of Credit Framework](./web-of-credit.md)
 * [What's In Your Wallet](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/whats-wallet.md)
 * [Why we must ask the Why of Identity](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/ask-why.md)
