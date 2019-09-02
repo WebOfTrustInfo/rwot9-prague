@@ -72,7 +72,7 @@ __Identity:__ Identity is a conceptual construct that enables the differentiatio
 
 __Identity, Digital:__ A digital representation of identity.
 
-__Identity, Functional:__ A model for identity that says, "Identity is how we keep track of people and things and, in turn, how they keep track of us." See also ["A Primer on Functional Identity"](https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/topics-and-advance-readings/functional-identity-primer.md).
+__Identity, Functional:__ A model for identity that says, "identity is how we recognize, remember, and ultimately respond to specific people and things." See also ["A Primer on Functional Identity"](https://github.com/WebOfTrustInfo/rwot9/blob/master/topics-and-advance-readings/functional-identity-primer.md).
 
 __Issuer:__ Someone who asserts claims and issues them in credentials.
 
