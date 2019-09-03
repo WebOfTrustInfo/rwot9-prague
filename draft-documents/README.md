@@ -5,6 +5,7 @@ These are all the papers that we're currrently working on for RWOT9
 | Title | Link |
 |--|--|
 | Alice Abuses Verifiable Credentials | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/alice-abuses-verifiable-credentials.md) |
+| Basic Proof Request Proof Response | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/proof_of_personhood.md) |
 | Blockcerts V3.0 | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/BlockcertsV3.md) |
 | BTCR Continued | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/btcr_contd.md) |
 | Concerns for minorities in a Web of Trust | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/wot-concerns-for-minorities.md) |
@@ -15,7 +16,6 @@ These are all the papers that we're currrently working on for RWOT9
 | Issuer-Independent Verification | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/Issuer-Independent%20Verification.md) |
 | Minimum Viable Protocol for Decentralization | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/minimun-viable-protocol-for-decentralization.md) |
 | “Not a Sybil!”: Politically Decentralized Proof of Limited Personhood | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/proof_of_personhood.md) |
-| Basic Proof Request Proof Response | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/proof_of_personhood.md)|
 | The Real Problem with Centralization | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/the-real-problem-with-centralization.md) |
 | Reputation Interpretation | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/ReputationInterpretation.md) |
 | A Rubric for Decentralization of DID Methods | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/decentralized-did-rubric.md) |
