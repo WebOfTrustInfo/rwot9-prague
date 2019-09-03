@@ -1,0 +1,8 @@
+# Reputation Spec Use Case: P2P Lending
+
+## Abstract
+
+Reputation System Spec for a specific use case: P2P Lending. A reputation system designed to support lenders (including 
+groups of individuals) in making good decisions about issuing loans on a P2P lending framework such as Kiva. The 
+reputation system should avoid the pitfalls of a single, legible credit score. Designed for one-to-one, one-to-many, 
+and many-to-many connections.
