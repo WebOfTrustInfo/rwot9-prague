@@ -20,17 +20,20 @@ We are looking forward to championing this proposal in the community, collecting
 
 Shard dealer: An individual that has a secret that is sharded using this secret sharing scheme. The user makes a number of shards that are dealt out to different users to turn each user into a shard custodian.
 
-Deck: A collection of shards that together can be combined (in at least one way) to reconstruct the original secret.
+Deck: A collection of shards that together can be combined (in at least one way) to reconstruct the sharded secret.
+
+Deck identifier: Derived from the sharded secret. It is the public key derived from the sharded secret unmodified with no derivation and no other modification. The deck iden
+tifier is a public key that uniquely identifies the deck. This key can sign each shard.
 
 Script policy: A script that specifies a policy for how the deck's secret (seed entropy) can be reconstructed from some combination of shards.
 
 Quorum: Any set shards sufficient to meet the script policy for reconstruction.
 
-Shard: A member of a deck, with both unencrypted visible information (including a shard value) and encrypted hidden information. The encrypted hidden information is encrypted by the original secret, and the dealer distributes the encrypted hidden information to each user. You want to know the unencrypted metadata, the identifier information, then there's private data which is encrypted with the key which gets derived from the secret. Then there's the y value, and then a checksum over all of this.
+Shard: A shard includes unencrypted metadata, an unencrypted Y value and checksum, and private encrypted data.
 
-Shard unencrypted metadata (public metadata): Data associated with a shard that describes the shard and the deck among other things. This includes birthdate, identifier information, and so on.
+Shard unencrypted metadata (public metadata): Data associated with a shard that describes the shard and the deck among other things. This includes birthdate, deck identifier information, and so on.
 
-Shard value: The mathematical or cryptographic value that can be used in the secret sharing scheme to reconstruct the original secret. This is the y value.
+Shard value: The mathematical or cryptographic value that can be used in the secret sharing scheme to reconstruct the sharded secret. This is the y value.
 
 Private data (encrypted) (encrypted blob or deck blob): Encrypted data transferred with each shard. The decryption key can be computed by recombining all the shards.
 
@@ -38,8 +41,6 @@ Shard custodian: A user that holds a number of shards, possibly from multiple di
 
 Shard pool: A shard custodian can use software that implements a shard pool that contains their collection of shards they are responsible for. The shard pool allows for querying over the set of shards to find particular shards to respond to a request.
 
-Seed entropy: Used to create the derived secret.
+Sharded secret: Used to create the derived secret. This is used both as symmetric key and as a private key.
 
 Derived secret: The derived secret is used to decrypt the identical private data associated with each shard.
-
-
