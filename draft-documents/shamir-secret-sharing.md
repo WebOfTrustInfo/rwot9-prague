@@ -22,8 +22,7 @@ Shard dealer: An individual that has a secret that is sharded using this secret 
 
 Deck: A collection of shards that together can be combined (in at least one way) to reconstruct the sharded secret.
 
-Deck identifier: Derived from the sharded secret. It is the public key derived from the sharded secret unmodified with no derivation and no other modification. The deck iden
-tifier is a public key that uniquely identifies the deck. This key can sign each shard.
+Deck identifier: Derived from the sharded secret. It is the public key derived from the sharded secret unmodified with no derivation and no other modification. The deck identifier is a public key that uniquely identifies the deck. This key can sign each shard.
 
 Script policy: A script that specifies a policy for how the deck's secret (seed entropy) can be reconstructed from some combination of shards.
 
@@ -41,6 +40,6 @@ Shard custodian: A user that holds a number of shards, possibly from multiple di
 
 Shard pool: A shard custodian can use software that implements a shard pool that contains their collection of shards they are responsible for. The shard pool allows for querying over the set of shards to find particular shards to respond to a request.
 
-Sharded secret: Used to create the derived secret. This is used both as symmetric key and as a private key.
+Sharded secret: Used to create the derived secret. This is used both as symmetric key and as a private key. This is a high entropy secret.
 
 Derived secret: The derived secret is used to decrypt the identical private data associated with each shard.
