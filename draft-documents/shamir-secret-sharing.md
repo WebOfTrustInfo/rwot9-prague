@@ -26,7 +26,7 @@ Script policy: A script that specifies a policy for how the deck's secret (seed 
 
 Quorum: Any set shards sufficient to meet the script policy for reconstruction.
 
-Shard: A member of a deck, with both unencrypted visible information (including a shard value) and encrypted hidden information. The encrypted hidden information is encrypted by the original secret, and the dealer distributes the encrypted hidden information toe ach user. You want to know the unencrypted metadata, the identifier information, then there's private data which is encrypted with the key which gets derived from the secret. Then there's the y value, and then a checksum over all of this.
+Shard: A member of a deck, with both unencrypted visible information (including a shard value) and encrypted hidden information. The encrypted hidden information is encrypted by the original secret, and the dealer distributes the encrypted hidden information to each user. You want to know the unencrypted metadata, the identifier information, then there's private data which is encrypted with the key which gets derived from the secret. Then there's the y value, and then a checksum over all of this.
 
 Shard unencrypted metadata (public metadata): Data associated with a shard that describes the shard and the deck among other things. This includes birthdate, identifier information, and so on.
 
