@@ -33,9 +33,9 @@ A DID that uses this method **MUST** begin with the following prefix: `did:hc`.
 
 Example `hc` DIDs:
 
- - `did:hc:Qe2B37C890824242Cb9B0FE5614fA2221B79901E`
- - `did:hc:mainnet:Qe2B37C890824242Cb9B0FE5614fA2221B79901E`
- - `did:hc:testnet:Qe2B37C890824242Cb9B0FE5614fA2221B79901E`
+ - `did:hc:b2B37C890824242Cb9B0FE5614fA2221B79901E`
+ - `did:hc:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E`
+ - `did:hc:testnet:b2B37C890824242Cb9B0FE5614fA2221B79901E`
 
 ## DID Document
 
@@ -43,21 +43,23 @@ Example `hc` DIDs:
 
 	{
 		"@context": "https://w3id.org/did/v1",
-		"id": "did:hc:mainnet:Qe2B37C890824242Cb9B0FE5614fA2221B79901E",
-		"publicKey": [{
-			"id": "did:hc:mainnet:Qe2B37C890824242Cb9B0FE5614fA2221B79901E#key-1",
-			"type": "HCSigningKey",
-			"publicKeyHex": "HcSciNw8EPFNprfjnvpoZ97hTYZPb97zdkjqiTmb8epjozf5iC8XoQmxnvdrfea"
-		}, {
-			"id": "did:hc:mainnet:Qe2B37C890824242Cb9B0FE5614fA2221B79901E#key-2",
-			"type": "HCEnctyptionKey",
-			"publicKeyHex": "HcSCIiHwBMkj54n6kmrQsnNtETucepmvyRcgefKJ6Re4ewe5KOncyQ8wkuyazrz"
-		}],
+		"id": "did:hc:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E",
 		"authentication": {
-			"type": "Secp256k1SignatureAuthentication2018",
-			"publicKey": "did:hc:mainnet:Qe2B37C890824242Cb9B0FE5614fA2221B79901E#key-2"
-		},
-		"service": []
+			"id": "did:hc:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E#key-1",
+			"type": "Ed25519SignatureAuthentication2018",
+			"publicKeyMultibase": "zHcSciNw8EPFNprfjnvpoZ97hTYZPb97zdkjqiTmb8epjozf5iC8XoQmxnvdrfea"
+                },
+		// in base DID spec (eventually, maybe)
+		"keyAgreement": {...}, // for doing key agreement (generating key agreement key)
+		"assertionMethod": {...}, // for signing verifiable credentials
+		"capabilityInvocation": {...}, // for invoking authorization capabilities
+		"capabilityDelegation": {...}, // for delegating authorization capabilities
+
+                // holochain specific (might not make sense)
+		"appStateChange": {...},
+		"keyManagementAuthorization": {...},
+		"keyManagementRevocation": {...},
+		"service": [...]
 	}
 
 ## CRUD Operation Definitions
