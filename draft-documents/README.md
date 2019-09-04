@@ -12,12 +12,11 @@ These are all the papers that we're currrently working on for RWOT9
 | Decentralized Identity as a Meta-platform: How Cooperation Beats Aggregation | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/CooperationBeatsAggregation.md) |
 | DID Resolution v2 | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/did-resolution-v2.md) |
 | did:hc method | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/did:hc-method.md) |
-| How to Design a Good Reputation System | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/how-to-design-good-reputation.md) |
 | Issuer-Independent Verification | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/Issuer-Independent%20Verification.md) |
 | Minimum Viable Protocol for Decentralization | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/minimun-viable-protocol-for-decentralization.md) |
 | “Not a Sybil!”: Politically Decentralized Proof of Limited Personhood | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/proof_of_personhood.md) |
-| The Real Problem with Centralization | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/the-real-problem-with-centralization.md) |
-| Reputation Interpretation | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/ReputationInterpretation.md) |
+| The Real Problem with Centralization | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/the-real-problem-with-centralization.md) |Reputation Interpretation
+| Reputation Interpretation _merged with_ How to Design a Good Reputation System | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/how-to-design-good-reputation.md) & [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/ReputationInterpretation.md) merged |
 | A Rubric for Decentralization of DID Methods | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/decentralized-did-rubric.md) |
 | Reputation Spec Use Case: P2P Lending | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/P2P-lending-reputation) |
 | Secure Data Storage | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/secure-data-storage.md) |
