@@ -1,4 +1,4 @@
-# did:hc method
+# did:holo method
 
 ## Author
 
@@ -28,22 +28,22 @@ We will be specing and prototyping a `DID` method for holochain.
 
 ## DID Method Name
 
-The name-string that shall identify this DID method is: `hc`.
+The name-string that shall identify this DID method is: `holo`.
 
-A DID that uses this method **MUST** begin with the following prefix: `did:hc`.
+A DID that uses this method **MUST** begin with the following prefix: `did:holo`.
 
 ## Method Specific Identifier
-    hc-did = "did:hc:" hc-specific-idstring
-    hc-specific-idstring = [ hc-network  ":" ] hc-address
-    hc-network  = "mainnet" / "testnet"
-    hc-address  = (Hex-encoded smart contract address)
+    holo-did = "did:holo:" holo-specific-idstring
+    holo-specific-idstring = [ holo-network  ":" ] holo-address
+    holo-network  = "mainnet" / "testnet"
+    holo-address  = (Hex-encoded smart contract address)
 ### Example
 
-Example `hc` DIDs:
+Example `holo` DIDs:
 
- - `did:hc:b2B37C890824242Cb9B0FE5614fA2221B79901E`
- - `did:hc:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E`
- - `did:hc:testnet:b2B37C890824242Cb9B0FE5614fA2221B79901E`
+ - `did:holo:b2B37C890824242Cb9B0FE5614fA2221B79901E`
+ - `did:holo:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E`
+ - `did:holo:testnet:b2B37C890824242Cb9B0FE5614fA2221B79901E`
 
 ## DID Document
 
@@ -51,14 +51,14 @@ Example `hc` DIDs:
 
 	{
 		"@context": ["https://w3id.org/did/v1", "https://holochain.org/did/v1"],
-		"id": "did:hc:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E",
+		"id": "did:holo:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E",
 		"authentication": {
-			"id": "did:hc:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E#key-1",
+			"id": "did:holo:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E#key-1",
 			"type": "Ed25519SignatureAuthentication2018",
 			"publicKeyMultibase": "zHcSciNw8EPFNprfjnvpoZ97hTYZPb97zdkjqiTmb8epjozf5iC8XoQmxnvdrfea"
                 },
 		// in base DID spec (eventually, maybe)
-		"keyAgreement": {...}, // for doing key agreement (generating key agreement key)
+		"keyAgreement": {...}, // for doing Encryption key agreement (generating key agreement key)
 		"assertionMethod": {...}, // for signing verifiable credentials
 		"capabilityInvocation": {...}, // for invoking authorization capabilities
 		"capabilityDelegation": {...}, // for delegating authorization capabilities
@@ -72,7 +72,7 @@ Example `hc` DIDs:
 	}
 
 ## CRUD Operation Definitions
-The crud operation for the did:h
+The crud operation for the did:holo Method
 ### Create (Register)
 instance_id: dpki_happ
 Zome: dpki
