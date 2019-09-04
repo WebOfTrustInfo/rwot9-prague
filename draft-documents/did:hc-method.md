@@ -42,7 +42,7 @@ Example `hc` DIDs:
 ### Example
 
 	{
-		"@context": "https://w3id.org/did/v1",
+		"@context": ["https://w3id.org/did/v1", "https://holochain.org/did/v1"],
 		"id": "did:hc:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E",
 		"authentication": {
 			"id": "did:hc:mainnet:b2B37C890824242Cb9B0FE5614fA2221B79901E#key-1",
@@ -59,6 +59,7 @@ Example `hc` DIDs:
 		"appStateChange": {...},
 		"keyManagementAuthorization": {...},
 		"keyManagementRevocation": {...},
+		// do not sweat services, they are still being worked out, you don't need them yet
 		"service": [...]
 	}
 
