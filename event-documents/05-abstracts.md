@@ -64,9 +64,10 @@ information.
 
 ## Shamir Secret Sharing
 
-Response to SLIP-39 code. We are uncomfortable with some decisions in
-SLIP-39, so writing a BIP that includes additional metadata and binary
-format.
+A recent proposal for Shamir secret sharing + mnemonics (SLIP 39) makes some
+choices that could be better. In response, we are drafting a BIP to replace or
+supplement SLIP 39 to include additional metadata and use a binary format,
+among other augmentations.
 
 ## The Real Problem with Centralization
 
