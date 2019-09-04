@@ -6,11 +6,19 @@
   <tr>
    <td>Joel Ulahanna
    </td>
-   <td>Kim<br/>
+   <td>Arthur Brock<br/>
    </td>
-   <td>Marcus<br/>
+   <td>Manu Sporny<br/>
+   </td>	  
+   <td>Kim Hamilton Duffy<br/>
    </td>
-  </tr>
+   <td>Marcus Sabadello<br/>
+   </td>
+   <td>Dmitri Zagidulin<br/>
+   </td>
+   <td>Dan Burnett<br/>
+   </td>	  
+</tr>
 </table>
 
 
