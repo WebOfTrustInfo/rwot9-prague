@@ -3,13 +3,9 @@ This paper explores how to take a “reputation” trust graph, with multiple ch
 We are looking to categorize the types of reputation people might have into general buckets, such as:
 
 * Knowledge
-
 * Emotional Intelligence 
-
 * Generalized Skills
-
 * Reviews from others
-
 The output that we would produce is specific to each type of community or decision. 
 For example:
 * Yes/no 

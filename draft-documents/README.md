@@ -22,4 +22,4 @@ These are all the papers that we're currrently working on for RWOT9
 | Reputation Spec Use Case: P2P Lending | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/P2P-lending-reputation) |
 | Secure Data Storage | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/secure-data-storage.md) |
 | Secure User Interfaces | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/secure-user-interfaces.md) |
-| Shamir Secret Sharing BIP | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/shamir-secret-sharing.md) |
+| Shamir Secret Sharing BIP | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/shamir-secret-sharing.mediawiki) |
