@@ -212,7 +212,7 @@ Verification (https://github.com/IMSGlobal/cert-schema/blob/master/docs/open_bad
   }
 ```
 
-In this case, Verification is an Open Badge `VerificationObject` with a `MerkleProofVerification2017` extension to allow for `publicKey`.
+In this case, Verification is an Open Badge `VerificationObject` with a `MerkleProofVerification2017` extension to allow for the `publicKey` of the issuer. It is used during the verification step of a Blockcerts to ensure that the issuer public key matches the public key creating the blockchain transaction with this credential.
 
 One of the last major differences is `Signature` with the MerkleProof2017 extension
 
@@ -256,6 +256,99 @@ Comparison between BC v2 and VC
 
 ## Blockcerts as VC Implementation
 
+TODO Badge specific claims as a VC
+
+Focusing in on the Blockcerts specific additions to Open Badges (`recipientProfile`, `verification`, and `signature`) we can make the following mappings over to a VC.
+
+### `recipientProfile`
+This part could essentially go away and be replaced with `credentialSubject.id` and `credentialSubject.name`
+
+```
+"recipientProfile": {
+    "type": [
+      "RecipientProfile",
+      "Extension"
+    ],
+    "publicKey": "ecdsa-koblitz-pubkey:mtr98kany9G1XYNU74pRnfBQmaCg2FZLmc",
+    "name": "Eularia Landroth"
+  }
+```
+
+becomes 
+
+```
+  "credentialSubject": {
+    "id": "ecdsa-koblitz-pubkey:mtr98kany9G1XYNU74pRnfBQmaCg2FZLmc", // can use DID instead too
+    "name": "Eularia Landroth"
+    // example claim
+    "alumniOf": {
+      "id": "did:example:c276e12ec21ebfeb1f712ebc6f1",
+      "name": [{
+        "value": "Example University",
+        "lang": "en"
+      }, {
+        "value": "Exemple d'Université",
+        "lang": "fr"
+      }]
+    }
+  }
+```
+
+### `verification` 
+
+As specified in "BC V2 Schema & Examples" above, `verification` is used to verify the public key of the issuer matches the public key used to issue the transaction to a blockchain. 
+
+It may seem as though we could get away with putting the `verification` public key in the issuer DID instead, but, depending on the DID method, that could be changed. For Blockcerts issued to a blockchain, we should continue to leave `verification` inside the document to verify its immutibility. 
+
+### `signature`
+
+Verifiable Credentials require a `proof` property that is used for verifying the immutibliity of a VC as well as proving that a certain issuer is the one that signed the VC. Before VC, Blockcerts used `signature` to prove immutibility. What role does `signature` provide if we are already required to implement `proof`? 
+
+One important property that `proof` does not provide alone is the aspect of time stamping. A `created` date can be applied to `proof`, but since that can be created with any date, we cannot prove it existed at a certain time. 
+
+Using a blockchain can be benefitial here, as it proves that the document existed with a high degree of certainty at the time of the transaction (collisions techically can still occur due to hashing, though highly unlikely). 
+
+I am proposing that we make `signature` optional for those that do not wish to take advantage of time stamping with a blockchain. Without `signature`, we can still verify integrity with `proof`. 
+
+
+It may be possible to create a new `proof` type that supports the structure/purpose defined in `signature` here.
+
+### Additional Fields
+
+#### `display`
+
+In Blockcerts V2, it is not part of the standard, but we've been building a lot of support for `displayHtml` unofficially. In mobile wallets, verifiers, etc. As well as 3rd party libraries building for it as well. 
+
+Proposing for V3, it would be great if we can throw in official support for displays. Extending past `displayHtml`, we should allow support for any type of display. Some may not want to use `html` but instead use `pdf`, an `image`, etc. 
+
+
+For the schema, it can simply be `type` and `data` properties.
+
+Example:
+
+```
+"display": {
+	"type": "html",
+	"data": "<p>hello world</p>"
+	}
+```
+
+#### `metadata`
+
+Similar to the above `display`/`displayHtml` section, we similarily do not have an official standard around the use of the `metadatajson` property we have. We have unofficial support in both the mobile app & verifier to display some metadata information to the viewer. 
+
+Proposing for V3, if we could add this to the standard, but allow for different types of metadata format, maybe `XSD` for example, it would allow issuers to take advantage of that more, and continue to support it officially in some of the Blockcerts ecosystem. 
+
+Could be similar to `display`, adding `type` & `data`. 
+
+```
+"metadata": {
+	"type": "json",
+	"data": "{\"test\": true"
+}
+```
+
+
 
 
 ## DID Implementations
@@ -263,6 +356,11 @@ Comparison between BC v2 and VC
  - Make DID meaningful (ties back to recipient/issuer and make use of DID for verification)
  - Possibilities for service endpoints for DIDs
 
-## VC methods may be subject
+## VC methods 
+### may be subject
  - Talk about the subjectivity w/ certain methods (such as alumniOf - what does that really mean)
  - Methods should have well defined definitions and standards
+
+### Possible to create a method that looks similar to the Blockcerts/OpenBadge BadgeClass object.
+
+### Possible Service/Tooling to parse a BC V2 to create a BC V3
