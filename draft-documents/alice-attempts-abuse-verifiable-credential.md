@@ -1,4 +1,4 @@
-# Alice Abuses a Verifiable Credential
+# Alice Attempts to Abuse a Verifiable Credential
 
 Authors:   	P. Dingle, S. Hammann, D. Hardman, C. Winczewski
 
