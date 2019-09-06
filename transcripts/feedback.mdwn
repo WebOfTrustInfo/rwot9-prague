@@ -74,7 +74,17 @@ I have a slightly out of the box suggestion. My impression is that group has gre
 
 Dmitry? I'd like to make two commitments. One is to address the request for the channel we can all use taking into considerations the privacy concerns iwth Signal which although encrypted does share phone numbers and names. I volunteer to setup a discord server, which is pseudonymous, open-source and privacy preserving. I'll make a commitment to set it up and document it for the whole board so that the cfommunity can continue to use it from year to year. In addition to the Discourse message word. Two, there's several requests for posters like at academic conferences not full-blown academic conferences but in the spirit of the choose your own adventure session-- I'm offering a commitment for a poster session jointly with choose your own adventure, like creating another github issue template for posters. People submit, and we have an area for them to be displayed, and the creators stand by the posters and invite conversation. We'll talk more about that and figure out the best way to do this. Chris and I have been thinking about maybe our pre night is a poster session in the future.
 
+I think we need a DID guidance document. I'm committing to work with you to get the framework of that document outlined and then hopefully it will take on a life of its own after that. That's great, thank you.
 
+Bill? I look forward to joining you all at the next Rebooting. Before that, I'll report on my efforts to setup the event in Singapore in the fall of the next year. We'll talk to various sponsorship agencies and private sector companies there and coordinating with the management team here if there happens to be big names because ytou might be talking to the same organization at a different level but hopefully we can green light that event before the Spring. I set a particular target of raising $25,000 USD before that time so that we can make the greenlight decision. I'm really happy to be part of this community.
+
+I have a commitment and then to Art. At the last Rebooting, I made a commitment to stay through until we got incorporated. We are currently incorporated and on track to be a 501(c)4. I'm going to commit to pushing this through and getting our bank account and hire our virtual executive assistant to deal with my discount code questions ando ther questions which don't really need me to answer.
+
+If you're one of those lovely introverts in our community and you would like to share any of these items without a microphone, you can email them, and you can give one of the leaderships your piece of paper. This might not be the best venue, but you can still give your input.
+
+I'm making a commitment to mentor at least one person to try to onboard into the community. If you're new to the community and you need some mentoring to connect in with Rebooting or W3C or any of these different organizations to be available to do so. I'd like someone to reach out to me. But we need to onboard more new people. Thank you, Chris, that's a great opportunity.
+
+Next up after coffee is we're going to do team report outs, and then when we go around and do the report out, I want to hear what is the coolest thing that your group discovered or did and then we wrap up the day. So go have some coffee.
 
 
 
