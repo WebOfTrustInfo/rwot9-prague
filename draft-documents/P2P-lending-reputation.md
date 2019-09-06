@@ -1,4 +1,4 @@
-# P2P Lending System
+# Reputation in P2P Lending
 
 ## Abstract
 
