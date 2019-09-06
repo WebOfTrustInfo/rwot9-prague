@@ -40,6 +40,7 @@ The method specific identifier is composed of an optional Holochain network iden
     holo-specific-idstring = [ holo-network  ":" ] holo-address
     holo-network  = "mainnet" / "testnet"
     holo-address  = (Hex-encoded smart contract address)
+
 ### Example
 
 `holo` DIDs:
@@ -84,41 +85,62 @@ The method specific identifier is composed of an optional Holochain network iden
 		"service": [...]
 	}
 
+## Set up your local instance of DeepKey
 
+Please refer [this link](https://hackmd.io/xp5h1bkLRy-oef45tiJ1yw) to set up your local DeepKey instance 
 
 ## CRUD Operation Definitions
 The crud operation for the did:holo
-Why do we let people create did's via your public gateway
+To run the crud operation you have to set up your local DeepKey instance, and make API calls as defined bellow.
+To understand how to make API calls to a holochain conductor please refer to the [Holochain Developer Docs](https://developer.holochain.org/guide/latest/conductor_json_rpc_api.html)
 
 ### Read (Resolve / Verify a DID)
-This will read the status of the did.
-1. make a api call to the [DeepKey DNA](https://github.com/Holo-Host/DeepKey) with zome as `dpki` and function`key_status`
-2. if `return = Live`:
-    - Return the DID Doc with an `authorization` field.
-`"authentication": "sec:authenticationMethod",`
-3. else if `return = Updated` 
-    - Return the DID Doc with an `revoke` field.
-`"revoked": {"@id": "sec:revoked", "@type": "xsd:dateTime"}`
-4. else if `return = Deleated` 
-    - Return the DID Doc with an `expired` field.
-`"expires": {"@id": "sec:expiration", "@type": "xsd:dateTime"}`
-5. else if `return = Err`(Not Found) 
-    - Return 404 Error.
+**DNA:** DeepKey
+**Zome Name:** dpki
+**Function Name:** key_status
+**params:** `{key:""}`
+
+```=curl
+curl -X POST -H "Content-Type: application/json" -d '{"id": "0", "jsonrpc": "2.0", "method": "call", "params": {"instance_id": "dpki_happ", "zome": "dpki", "function": "key_status", "args": {key:""} }}' http://127.0.0.1:8800
+```
 
 ### Create (Register)
-> **Not Supported**
 
 Holochain is a lightweight, peer-to-peer framework. If you need to create, up in order for keys to properly validated We can create a new DNA that provides the keys, but at the moment we would not be providing a create options.
 instead to create a key would require you to run a holochain source chain.
 
+**DNA:** DeepKey
+**Zome Name:** dpki
+**Function Name:** create_agent_key
+**params:** `{agent_name:""}`
+
+```=curl
+curl -X POST -H "Content-Type: application/json" -d '{"id": "0", "jsonrpc": "2.0", "method": "call", "params": {"instance_id": "dpki_happ", "zome": "dpki", "function": "create_agent_key", "args": {agent_name:""} }}' http://127.0.0.1:8800
+```
+
 
 
 ### Update
-> **Not Supported**
+
+**DNA:** DeepKey
+**Zome Name:** dpki
+**Function Name:** update_key
+**params:** `{old_key:"", signed_old_key:"", context:""}`
+
+```=curl
+curl -X POST -H "Content-Type: application/json" -d '{"id": "0", "jsonrpc": "2.0", "method": "call", "params": {"instance_id": "dpki_happ", "zome": "dpki", "function": "update_key", "args": {old_key:"", signed_old_key:"", context:""} }}' http://127.0.0.1:8800
+```
 
 ### Delete (Revoke)
-> **Not Supported**
 
+**DNA:** DeepKey
+**Zome Name:** dpki
+**Function Name:** delete_key
+**params:** `{old_key:"", signed_old_key:""}`
+
+```=curl
+curl -X POST -H "Content-Type: application/json" -d '{"id": "0", "jsonrpc": "2.0", "method": "call", "params": {"instance_id": "dpki_happ", "zome": "dpki", "function": "delete_key", "args": {old_key:"", signed_old_key:""} }}' http://127.0.0.1:8800
+```
 ## Security Considerations
 ToDo...
 
