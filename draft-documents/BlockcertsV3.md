@@ -53,7 +53,7 @@ Currently Blockcerts is an Extension to Open Badges, which is a specification an
 
 An example standard Open Badge can be seen below:
 
-```
+```json
 {
   "@context": "https://w3id.org/openbadges/v2",
   "type": "Assertion",
@@ -92,7 +92,7 @@ It can be seperated into 3 parts, the assertion, the badge, and the issuer.
 
 Assertion
 
-```
+```json
 {
   "@context": "https://w3id.org/openbadges/v2",
   "type": "Assertion",
@@ -117,7 +117,7 @@ Assertion
 
 Badge
 
-```
+```json
 {
 	"@context": "https://w3id.org/openbadges/v2",
 	"type": "BadgeClass",
@@ -135,7 +135,7 @@ Badge
 
 Issuer
 
-```
+```json
 {
 	"@context": "https://w3id.org/openbadges/v2",
 	"type": "Profile",
@@ -151,7 +151,7 @@ Issuer
 
 Blockcerts follows this model as well but with additional fields that allow it to be anchored by a blockchain. 
 
-```
+```json
 {
   "@context": [
     "https://w3id.org/openbadges/v2",
@@ -209,7 +209,7 @@ Blockcerts follows this model as well but with additional fields that allow it t
     "anchors": [
       {
         "sourceId": "d75b7a5bdb3d5244b753e6b84e987267cfa4ffa7a532a2ed49ad3848be1d82f8",
-        "type": "BTCOpReturn"
+        "type": "BTCOpReturn",
         "chain": "bitcoinMainnet"
       }
     ],
@@ -226,7 +226,7 @@ Besides some of the minor differences in layout/metadata between the example Blo
 
 RecipientProfile (https://www.blockcerts.org/schema/2.0/recipientSchema.json)
 
-```
+```json
 "recipientProfile": {
     "type": [
       "RecipientProfile",
@@ -242,7 +242,7 @@ This allows for additional recipient information that can be used to make a stri
 
 Verification (https://github.com/IMSGlobal/cert-schema/blob/master/docs/open_badge_v2_extensions.md)
 
-```
+```json
 "verification": {
     "publicKey": "ecdsa-koblitz-pubkey:msBCHdwaQ7N2ypBYupkp6uNxtr9Pg76imj",
     "type": [
@@ -258,7 +258,7 @@ One of the last major differences is `Signature` with the MerkleProof2017 extens
 
 Signature (https://www.blockcerts.org/schema/2.0/merkleProof2017Schema.json)
 
-```
+```json
 "signature": {
 	"type": [
 	  "MerkleProof2017",
@@ -301,9 +301,11 @@ TODO Badge specific claims as a VC
 Focusing in on the Blockcerts specific additions to Open Badges (`recipientProfile`, `verification`, and `signature`) we can make the following mappings over to a VC.
 
 ### `recipientProfile`
-This part could essentially go away and be replaced with `credentialSubject.id` and `credentialSubject.name`
+This part could essentially go away and be replaced with `credentialSubject.id` and `credentialSubject.name`. 
 
-```
+TODO figure out if putting `ecdsa-koblitz-pubkey:mtr98kany9G1XYNU74pRnfBQmaCg2FZLmc` in to `credentialSubject.id` is okay. Ideally this is a DID, but wondering how agnostic the `id` field is. 
+
+```json
 "recipientProfile": {
     "type": [
       "RecipientProfile",
@@ -316,9 +318,9 @@ This part could essentially go away and be replaced with `credentialSubject.id` 
 
 becomes 
 
-```
+```json
   "credentialSubject": {
-    "id": "ecdsa-koblitz-pubkey:mtr98kany9G1XYNU74pRnfBQmaCg2FZLmc", // can use DID instead too
+    "id": "ecdsa-koblitz-pubkey:mtr98kany9G1XYNU74pRnfBQmaCg2FZLmc", // can use DID
     "name": "Eularia Landroth"
     // example claim
     "alumniOf": {
@@ -351,9 +353,11 @@ Using a blockchain can be benefitial here, as it proves that the document existe
 I am proposing that we make `signature` optional for those that do not wish to take advantage of time stamping with a blockchain. Without `signature`, we can still verify integrity with `proof`. 
 
 
-It may be possible to create a new `proof` type that supports the structure/purpose defined in `signature` here.
+It may be possible to create a new `proof` type that supports the structure/purpose defined in `signature` here as an extension to `ld-proofs`. TODO research this: https://w3c-dvcg.github.io/ld-proofs/ & https://github.com/WebOfTrustInfo/rwot3-sf/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md 
 
 ### Additional Fields
+
+In addition to the existing fields specified above, there's a number of fields that has had non-standard support in the Blockcerts ecosystem that could benefit from being standardized. 
 
 #### `display`
 
@@ -366,7 +370,7 @@ For the schema, it can simply be `type` and `data` properties.
 
 Example:
 
-```
+```json
 "display": {
 	"type": "html",
 	"data": "<p>hello world</p>"
@@ -381,26 +385,143 @@ Proposing for V3, if we could add this to the standard, but allow for different 
 
 Could be similar to `display`, adding `type` & `data`. 
 
-```
+```json
 "metadata": {
 	"type": "json",
 	"data": "{\"test\": true"
 }
 ```
 
+## Badge Claim
+Going off of the paper written from a previous RWoT over open badges as a vc (https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md), an example badge claim we can create for those that want a similar badge-like experience could look like below. 
+
+```json
+"credentialSubject": {
+		"id": "https://example.com/profiles/bob",
+		"bc:holds": {
+			"id": "https://example.com/badgeclasses/123",
+			"type": "BadgeClass",
+			"name": "Certificate of Accomplishment",
+			"image": "data:image/png;base64,...",
+			"description": "A badge describing great accomplishments",
+			"criteria": {
+				"narrative": "Perform tasks of valor and wit."
+			},
+			"issuer": {
+				"type": "Profile",
+				"id": "https://example.com/profiles/alice",
+				"name": "Example Issuer",
+				"url": "http://example.com",
+				"email": "test@example.com"
+			}
+		}
+	}
+```
+
+`bc:holds` can be used instead of `obi:holds` since Open Badges has not moved to VC or created this type of claim yet. 
 
 
+This type of claim is not required as part of the Blockcerts V3 standard. Any type of claim can be made.
 
-## DID Implementations
+
+## Example Blockcerts V3
+Credential:
+
+```json
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/blockcerts/v3"
+  ],
+  "id": "urn:uuid:bbba8553-8ec1-445f-82c9-a57251dd731c",
+  "type": ["VerifiableCredential", "BlockcertsCredential"],
+  "issuer": "did:example:23adb1f712ebc6f1c276eba4dfa",
+  "issuanceDate": "2010-01-01T19:73:24Z",
+  "credentialSubject": {
+	"id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
+	"holds": {
+		"id": "https://example.com/badgeclasses/123",
+		"type": "BadgeClass",
+		"name": "Certificate of Accomplishment",
+		"image": "data:image/png;base64,...",
+		"description": "A badge describing great accomplishments",
+		"criteria": {
+			"narrative": "Perform tasks of valor and wit."
+		},
+		"issuer": {
+			"type": "Profile",
+			"id": "did:example:23adb1f712ebc6f1c276eba4dfa",
+			"name": "Example Issuer",
+			"url": "http://example.com",
+			"email": "test@example.com"
+		}
+	}
+  },
+  "metadata": {
+	"type": "json",
+	"data": "{\"class\": \"2019\""
+  },
+  "display": {
+	"type": "html",
+	"data": "<p>This subject has received this Certificate of Accomplishment</p>"
+  },
+  "verification": {
+    "type": [
+      "MerkleProofVerification2017",
+      "Extension"
+    ],
+    "publicKey": "ecdsa-koblitz-pubkey:1AwdUWQzJgfDDjeKtpPzMfYMHejFBrxZfo"
+  },
+  "signature": { // TODO put this into the proof section, as a proof array
+    "type": [
+      "MerkleProof2017",
+      "Extension"
+    ],
+    "merkleRoot": "b2ceea1d52627b6ed8d919ad1039eca32f6e099ef4a357cbb7f7361c471ea6c8",
+    "targetHash": "552f01d4fab7da1bce4315c134a1d46e9ef5968f49edf6f5de5d3a2776eea4fb",
+    "proof": [
+      {
+        "right": "776aca4dc61d70480fb05e4d95aaedc719fedd752eab7d517e04af2f481f92af"
+      },
+      {
+        "left": "6613ea6c78b0d93a45c725f3fcc9f2312181ffad0a6833299663d6aa1d7806a9"
+      },
+      {
+        "right": "e780cd2fe41df361fa7c047191533fe6252ea20bcd0fc8b226da3656d1133e56"
+      }
+    ],
+    "anchors": [
+      {
+        "sourceId": "2378076e8e140012814e98a2b2cb1af07ec760b239c1d6d93ba54d658a010ecd",
+        "type": "BTCOpReturn",
+        "chain": "bitcoinMainnet"
+      }
+    ]
+  },
+  "proof": {
+    "type": "RsaSignature2018",
+    "created": "2017-06-18T21:19:10Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:example:ebfeb1f712ebc6f1c276e12ec21#key1",
+    "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5XsITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUcX16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtjPAYuNzVBAh4vGHSrQyHUdBBPM"
+  }
+}
+```
+
+TODO issuer profile changes, if needed.
+
+## Topics to be discussed
+
+### DID Implementations
  - Issuer vs Recipient
  - Make DID meaningful (ties back to recipient/issuer and make use of DID for verification)
  - Possibilities for service endpoints for DIDs
 
-## VC methods 
-### may be subject
+### VC methods 
+#### may be subject
  - Talk about the subjectivity w/ certain methods (such as alumniOf - what does that really mean)
  - Methods should have well defined definitions and standards
 
-### Possible to create a method that looks similar to the Blockcerts/OpenBadge BadgeClass object.
+#### Possible to create a method that looks similar to the Blockcerts/OpenBadge BadgeClass object.
 
-### Possible Service/Tooling to parse a BC V2 to create a BC V3
+#### Possible Service/Tooling to parse a BC V2 to create a BC V3
