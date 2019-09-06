@@ -1,4 +1,4 @@
-[]{#_4p260dq0jbu .anchor}A Rubric for Decentralization of DID Methods
+# A Rubric for Decentralization of DID Methods
 
 By Joe Andrieu [*joe@legreq.com*](mailto:joe@legreq.com) , Shannon
 Appelcline shannona@skotos.net, Amy Guy amy@rhiaro.co.uk, Joachim
@@ -9,7 +9,7 @@ Markus Sabadello
 [*oliver.terbu@consensys.net*](mailto:oliver.terbu@consensys.net), and
 Kai Wagner [*kai@jolocom.com*](mailto:kai@jolocom.com)
 
-[]{#_s8zcykss5w8 .anchor}​Abstract
+## Abstract
 
 The communities behind Decentralized Identifiers (DIDs) bring together a
 diverse group of contributors, who have decidedly different notions of
@@ -35,9 +35,9 @@ aspects of decentralization of a DID method, but it is not exhaustive,
 and does not cover other issues that may affect selection or adoption of
 a particular method, such as privacy or efficiency.
 
-[]{#_wwl6cbeu7u9a .anchor}​Introduction
+## Introduction
 
-[]{#_1tnqvlnkot7s .anchor}​Background
+## Background
 
 What is a rubric
 
