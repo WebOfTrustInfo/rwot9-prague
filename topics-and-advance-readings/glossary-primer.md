@@ -66,13 +66,13 @@ __Holder:__ Someone who possesses credentials, usually (but not always) the subj
 
 __Hub:__ A datastore where objects are signed by a digital identity and accessible through unique global identifiers. See also ["Hubs"](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/final-documents/hubs.pdf) and ["Identity Hub Attestation Flows and Components"](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rebooting-the-web-of-trust-spring2018/blob/master/final-documents/identity-hub-attestations.pdf).
 
-__Identifier:__ A proxy for identity that's used as a label to refer to the entity. For example, a name or UID.
+__Identifier:__ A proxy for identity that is used as a label to refer to the entity being represented. For example, a name or UID.
 
-__Identity:__ A somewhat nebulous term, defined in different ways by different people. Broadly, it's who or what an entity is.
+__Identity:__ Identity is a conceptual construct that enables the differentiation between distinct entities that are individually considered to be unique. An identity is not the entity that it represents.
 
 __Identity, Digital:__ A digital representation of identity.
 
-__Identity, Functional:__ A model for identity that says, "Identity is how we keep track of people and things and, in turn, how they keep track of us." See also ["A Primer on Functional Identity"](https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/topics-and-advance-readings/functional-identity-primer.md).
+__Identity, Functional:__ A model for identity that says, "identity is how we recognize, remember, and ultimately respond to specific people and things." See also ["A Primer on Functional Identity"](https://github.com/WebOfTrustInfo/rwot9/blob/master/topics-and-advance-readings/functional-identity-primer.md).
 
 __Issuer:__ Someone who asserts claims and issues them in credentials.
 

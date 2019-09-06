@@ -1,25 +1,27 @@
-# Bare minimum agent for identity
+# Bare minimum agent architectures
 
 Author: [Snorre Lothar von Gohren Edwin](https://vongohren.me/)
 
 ## Abstract
 Diwala want to contribute to enable the current ["offliners"](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/)  to take back control of their digital selves. This paper goes through some problem areas of the current emerging markets and their ability to run the existing decentralize identity solutions, based on their device penetration. 
 
-We want to come out of RWoT with a clear information paper, from a collection of experts, how to get started to deliver a bare minimum decentralized identity solution.
+We want to provide, during RWoT, a couple of clear architectures, from a collection of experts, how to get started to deliver a bare minimum decentralized identity solution. May that be, on a smartphone, SMS, smart cards, or even [KaiOS](https://www.kaiostech.com)
 
 ## Background
-Working with devices in the African continent for about a year now, we time after time experience app and device problems with the current existing identity solutions we work with. Also we experience that the current device penetration today, in Uganda particularly, is not 100%, meaning that it is difficult to provide value for everybody with an app solution.
+Working with devices in the African continent for about a year now, we time after time experience app and device problems with the current existing identity solutions we work with. Also we experience that the current device penetration today, in Uganda particularly, is not 100%, meaning that it is difficult to provide value for everybody with only a smartphone solution.
 
-First we want to discuss what the bare minimum specifications that an identity app needs to provide value? How can an identity be represented physically? What are the pros and cons of a combination of these situations.
+First we want to discuss what the bare minimum specifications an identity app needs to provide value? How can an identity be represented physically? What are the pros and cons of a combination of these situations.
 
-The second issue is to discuss how to enable an ecosystem, what is needed to get other startups with their own non did solutions in play. Is it SDKs, libraries, proxys, some kind of shared infrastructure? 
+The second issue is to discuss how to enable an ecosystem, what is needed to get other startups with their own non did solutions in play. Is it SDKs, libraries, proxys, some kind of shared infrastructure?
+
+In short, what does a bare minimum identity architecture look like for the different infrastuctures available?
 
 These are questions we want to raise and discuss in this paper, from a collection of experts, for anyone wanting to charge into this space.
 
 ## Slow devices
 Phones are getting faster. I don’t think anyone will disagree with that. Stronger GPUs, faster and more CPUs, more RAM. Phones are going through the same rapid development desktop machines did in the early 2000s.
 
-However, that’s just one edge of the distribution. **_Slow_  phones are stuck in 2014.** The process to create the chips from half a decade ago has gotten so cheap that phones can now be sold for around $20, and cheaper phone will reach a wider audience. ~50% of the world are online, meaning that the other ~50% are not. However, these offliners are _coming_ online and are predominantly located in emerging markets such as many of the African countries, where people simply can’t afford any of the [Wealthy Western Web](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/) flagship phones.
+However, that’s just one edge of the distribution. **_Slow_  phones are stuck in 2014.** The process to create the chips from half a decade ago has gotten so cheap that phones can now be sold for around $20, and cheaper phone will reach a wider audience. ~50% of the world are online, meaning that the other ~50% are not. However, these offliners are _coming_ online and are predominantly located in emerging markets such as many of the African countries, where people simply can’t afford any of the [Wealthy Western Web](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/) flagship phones. Or even phones based on firefox OS is emerging and taking over markets: [KaiOS](https://www.kaiostech.com)
 
 We want to discuss how to tackle this properly and how to enable them to represent themselves online with a proper ID and DID.
 
@@ -36,10 +38,4 @@ In an area that has leapfrogged in certain digital areas, but are still living w
 But, with a fragmented digitilization it is hard to understand where to start. Its even more difficult to start where there is still a need for a bridge between physical and digital. These are areas we want to discuss and be able to declear some pointers and steps to move forward with, to be able to kick start the ecosystem of self sovreign identities in a digital space.
 
 # Goal
-With this paper we want to create the dicsussions on how to approach a market that is in a clear need of a good digital infrastructure that have not taken all the steps as the west. With a clear divergence of device penetration, and types of devices that are in the market, is it possible to put up a strategy for a bare minimum decentralized identity solution? Which will enable these people to take control of their digital selves and set a base layer for a proper digital infrastructure. Can we come up with some guidelines for the ecosystem, an example architecture, or even an app to showcase to the community how one can get started?
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTUzMTQ4ODgsLTE3MTU0MzQyMzQsMT
-AwNDI1OTkzMiwtMTgzOTYxODkzMywtMjA3MjIwMTI5MiwxNzcw
-NzI3Mzg4LC0yMTMwNzYyNzg2LC02NTc0NDQwNjksODM0MTU3OT
-I5LDExODkwMTgxMDZdfQ==
--->
+With this paper we want to create the dicsussions on how to approach a market that is in a clear need of a good digital infrastructure, that has not taken all the steps compared to the west. With a clear divergence of device penetration, and types of devices that are in the market. Is it possible to put up a strategy for a bare minimum decentralized identity solution? That will enable these people to take control of their digital selves and set a base layer for a proper digital infrastructure. Can we come up with some guidelines for the ecosystem, a couple of bare minimum example architectures, or even an solution to showcase to the community how one can get started?
