@@ -184,9 +184,7 @@ It is worth noting that while this paper attempts to identify many possible atta
     Examples: Sovrin Governance Framework - [https://sovrin.org/library/sovrin-governance-framework/](https://sovrin.org/library/sovrin-governance-framework/)
     Pan-Canadian Trust Framework - [https://diacc.ca/pan-canadian-trust-framework/](https://diacc.ca/pan-canadian-trust-framework/)
 
-[^2]:Remote Biometric Verification
-
-     [https://dedis.cs.yale.edu/dissent/papers/secrypt15-biometric.pdf](https://dedis.cs.yale.edu/dissent/papers/secrypt15-biometric.pdf); [https://pdfs.semanticscholar.org/666a/2d03391ecb4f568802b7d92d9db55b02e061.pdf](https://pdfs.semanticscholar.org/666a/2d03391ecb4f568802b7d92d9db55b02e061.pdf)
+[^2]:Remote Biometric Verification: [https://dedis.cs.yale.edu/dissent/papers/secrypt15-biometric.pdf](https://dedis.cs.yale.edu/dissent/papers/secrypt15-biometric.pdf) [https://pdfs.semanticscholar.org/666a/2d03391ecb4f568802b7d92d9db55b02e061.pdf](https://pdfs.semanticscholar.org/666a/2d03391ecb4f568802b7d92d9db55b02e061.pdf)
 
 [^3]:OWASP Top 10 Vulnerabilities
      [https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf)
