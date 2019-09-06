@@ -1,12 +1,50 @@
 # Blockcerts V3.0
 
-[Anthony Ronning](aronning@learningmachine.com) (Learning Machine), Wong Wai Chung (NextID)
+[Anthony Ronning](aronning@learningmachine.com) (Learning Machine), [Wong Wai Chung](waichung@nextid.com) (NextID)
 
 ## Abstract
 
-As the standards around verifiable credentials are starting to take form, different flavours of ‘verifiable credentials’ like data structures need to make necessary changes in order to leverage on the rulesets outlined and constantly reviewed by a knowledgeable community like RWOT and W3C. The purpose of this paper is to identify all of the changes needed to comply with the Verifiable Credentials & Decentralized Identifiers standards. 
+As the standards around verifiable credentials are starting to take form, different flavours of ‘verifiable credentials-like` data structures need to make necessary changes in order to leverage on the rulesets outlined and constantly reviewed by a knowledgeable community like RWOT and W3C. The purpose of this paper is to identify all of the changes needed to comply with the Verifiable Credentials & Decentralized Identifiers standards. 
 
 ## VC Schema & Examples
+The verifiable credentials is a data schema that is defined and published as a Proposed Recommendation to W3C. It seeks to represent the same information that a physical credential represents that are also tamper-evident and more trustworthy while also addressing future considerations in our societies that are becoming increasingly digitalised. Some of these concerns include but are not limited to privacy preserving goals.
+
+An example of a minimally viable Verifiable Credential can be seen below: 
+
+```
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/openbadges/v2"
+  ],
+  "id": "https://example.org/beths-robotics-badge.json",
+  "type": ["VerifiableCredential", "OpenBadgesV2"],
+  "issuer": "https://example.org/organization.json",
+  "issuanceDate": "2016-12-31T23:59:59Z",
+  "credentialSubject": {
+    "id": "https://example.org/recipient-id.json",
+    "roboticsForBeginners": {
+      "id": "https://example.org/organization.json",
+      "name": [{
+        "value": "Awesome Robotics Badge",
+        "lang": "en",
+        "description": "For doing awesome things with robots that people think is pretty great.",
+      }]
+    }
+  },
+  
+  "proof": {
+    "type": "RsaSignature2018",
+    "created": "2017-06-18T21:19:10Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "https://example.edu/issuers/keys/1",
+    "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5X
+      sITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUc
+      X16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtj
+      PAYuNzVBAh4vGHSrQyHUdBBPM"
+  }
+}
+```
 
 
 ## BC V2 Schema & Examples
