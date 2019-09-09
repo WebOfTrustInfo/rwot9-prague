@@ -1,0 +1,1 @@
+A directory for images and other media files for drafts.

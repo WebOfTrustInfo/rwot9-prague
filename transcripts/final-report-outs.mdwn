@@ -1,0 +1,97 @@
+Final report outs
+
+# Alice abuses Bob
+
+What's the coolest thing that your group did or discovered? Related to the paper. So, we already talked about how we scoped it. This led us down a good path. The coolest thing we did there was we decided to take the perspective of telling a story. Instead of writing this paper in terms of best practices that you need to do this and this this to repel attakcs, Alice is the holder of a credential and the verifier is repelling attacks from Alice. Instead of writing a dry practice of how Alice is going to do this, we told a story about how Alice receive da prescription for the drug from the Dune book-- and she of course wants more of it. So we told the story about how she is trying to use her credential for the prescription to try to get more of it, or try to sell it to get more money to buy elicit drug. She tries different attacks against the pharmacy to use her legit credential in illegitimate ways.
+
+What happens when her eyewhites turn blue? Ha, you've read it.
+
+# Blockcerts v3
+
+We did a lot of scoping. Probably the coolest part to report out is us really discussing what role blockcerts played as a verfiable credential and why it's necessar yto anchor your credentials to a blockchain. We talked about key revocation, like when your key is stolen and you still want to revoke credentials but have some issued. I think mostly it's just been discussing the importance of the blockchain in a VC world and why having a VC isn't just the end-all solution, you need to build on top of it like with a blockchain. A lot of that, we talked about today, but we will apply it going forward.
+
+# Concerns for minorities in a web of trust
+
+I am not sure if "cool" is applicable to anything we're doing. It's not like cool tech or cool ideas. We're going over what has been talked about before, figuring out what missing and seeing where to go from there.
+
+Q: Anything missing that nobody has really thought about before?
+
+A: Haven't got that far. We're just going through previous literature on this.
+
+# Decentralized identity as a metaplatform
+
+We have several pages done and submitted as a pull request.
+
+Q: What's cool?
+
+What's cool? One of the things we wanted to accomplish was to come up with more economic framers and drivers for network-to-network cooperative effects, and primarily these are focused on reducing trust transaction costs. We look at supply chain, survivable manufacturing, circularity economies. They have large portions of those ecosystems where trust in terms of validating and certifying provenance of data or products or processes is important and those are all things tha twould then be requiring cooperation and could enable some trust transaction cost reductions that could be applicable across different contexts within different supply chains, not just the same supply chain.
+
+# DID resolution v0.2
+
+Most members of this group were torn between this group and other groups. Our objective from the beginning was not to propose a new paper, but to continue working on the DID spec. We did that a little bit. We updated text on the architecture and what does it mean to have a local vs remote resolver and things like that. We have a pull request for that. We also discussed one of the big topics which is about .... and what does it mean when we have a DID and ... fragment... and how does that work? We figured it out mostly. We have a proposal for that. That's the currnet state of things. We didn't produce a next version of the spec. We made some progress recognizing that it's still hard to do some of these things. As Arthur said, it's not clear. But we did make some progress on understanding some of the open problems.
+
+# DID holochain
+
+We ran into some challenges with sort of shifting contexts and trying to implement our DID method. So the good news of that is that we're ending up kind of back where we started. It's pretty easy for us to provide a driver for universal resolver or whatever, just as a holochain node. But our other work in the shifted context is we'll probably provide a public gateway for public verification using just a URL. So we'll probably get two things out of it.
+
+# Issuer-independent verifications
+
+The really cool thing for us was the collaboration. I invited my colleagues from our team to join me on stage. The problem we're addressin gis the number of vendors developing and deploying systems which are issuing computationally verifiable credentials to help verify some set of claims like an academic award or degree. Or these protocols usually use a proprietary data schema which are not readily verifiable in a consistent manner. We propose to develop an open verification system, OpenVerifier, which can be used to verify any verifiable credential based on the W3C recommendation.
+
+Among the authors of our papers, are the implementers of opencerts and blockcerts so there's a good opportunity to collaborate and build an open-source verification. Collaboration has been great, and pollination from other groups has been really useful, including the threats on verifiable credentials group.
+
+# Minimum viable protocol for decentralization
+
+We got a lot of good discussion going on. We had a lot of good comments from others in the community. We defined terminology. The coolest thing was being able to define something that is minimum viable but raised a lot of questions that we can take further.
+
+# Proof-of-personhood
+
+I would say it's been really exciting to work on this paper because it's something that I didn't know really that there was anyone else interested in this specific topic and shedding light on it. We're producing an essential document for anyone attempting to address the problem of a potential solution for a decentralized anonymous sybil-proof system that isn't based on proof-of-work. For people who are skeptical or opposed to such a systeme, this is a great paper to reference.
+
+# Real problem with centralization
+
+I think the bigger insight had to do with the usefulness for individuals and essentially right now we have this flood of information coming in that the internet has enabled. The internet has automated publishing. Reply-all is an example. We haven't automated the processing of this flood of information. Centralized systems create one-size fits all. Interpretation, they don't enable individuals to participate and make choices and choose a filter. Distributed systems can include individuals in their context and across their contexts to participate and go "yep this is working well enough" or say it's not working well enough, and create better processes.
+
+# Reputation interpretation
+
+The biggest insight was the strength of this concept as a reputation as it is baked in right now. I think Chris Webber would have talked about interfaces like how could it be any other way after a while. Reputation has that characteristic right now. We tried to shift out of that and tried to figure out a wider ways to look at reputation and focus on actionable output and a richer profile for not just binary decisions but adjustment of terms of engagement through a more complex representation of reputation at the end of the calculations. Our paper will outline hte process that we came up with.
+
+# Rubric for decentralization of DID methods
+
+The coolest thing was that we've been working on this for a while. The last couple calls before Rebooting, we found ourselves in a sticky pretzel of a mess thinking about what are the criteria questions and answers related to governance of a methods specification. Our initial pass as a spectrum wasn't detailed enough, and when we tried to apply it to the work of Yellowcom and Yuport and BTCR and peerdid... and didpeer and didgit, it was really complicated. We untied that pretzel in a way that was delicious and salty. We coherently and simply addressed all the things in that pretzel, so that was awesome.
+
+# p2p lending
+
+What was pretty cool in our case was the shared commitment to use simplicity as the basis of our system. We wanted to use simple rulesets and push the complexity into the social connections that can be found by the users of the system. Something about defaulting on loans. We pushed a lot of the consequences of that behavior to have a negative effective on those closest to you, so they get hurt by your bad behavior. Thank you.
+
+# Encrypted data vault
+
+One of the coolest things about our team was that, we ... into the discussion at the end. I think collaboratively our team had a good grasp on a lot of the projects in this space which let us respect and let us draw the requirements and the outcomes. I think what we came up with so far, there's always work to be done on it. I pay homage to that. And we think the solution we have could really work.
+
+One of our many goals coming into this paper was that we were seeing a lot of projects trying to do the same thing. We figure, there probably needs to be a way to store encrypted data. As a result of surveying how other projects are doing it, we started to see there's a lot of stuff in common. Everything needs to be encrypted, metadata needs to be encrypted.
+
+Our paper is going well, and there's room for interop for at least the story or data part that way we can argue about wallets.
+
+# Secure user interfaces
+
+The general insight from our group was that we want to, in order for users to be secure, the application shouldn't be able to align with their intituitons about what their behavior should expect, but that there will always be insight. When people's intuitions fails, it should fail safely, and not do something more dangerous than what the user would expect to happen.
+
+Using Mastodon as an example, we built some very general principles that I think applies to anyone who is concerned about security in their application, particularly anyone building with identifiers or wallet user interfaces. I think you're find a lot of interesting lessons that come out of this system so I think that's pretty great.
+
+There's also a pet names paper. Another unexpected insight was that I actually needed to finish the paper that I started with Mark and Kate from 1.5 years ago on pet names. We had almost finished it, but we had left it in the draft section nearly finished for a year and a half. But yet it's the paper I referred people to the most at rebooting, but now that it's a dependency of this new paper, we're going to actually finish get this one done. So we'll get a paper from rwot6 and rwot9 at the same time.
+
+# Shamir secret sharing
+
+In spirit of the last one, where we had an emergence of an old topic. At Barcelona, we had a number of cryptographers, wallet engineers, protocol designers. We've been talking about this since ID2020 about social key recovery and how to actually do it. At that point last Spring, we got one of the papers out about some requirements for advanced stuff. The core paper or best practices of Shamir secret sharing didn't get finished.
+
+The cool thing is that we did get some of it finished which actually got implemented in code and is shipping as of yesterday in this wallet, which is the Trezor T does support now SLIP 39 basic Shamir plus a second layer option. So this is a direct consequence of the Spring event. It's shipping in a piece of hardware. It's cool to have received this today.
+
+Now that we have this, we have a better idea of where the larger future issues are. I think we started the event thinking that we would have to throw away SLIP 39 and they shipped too fast. But we figured out that's not the case, and we figured out how to leverage it and do some more fancy things which would be particularly useful for businesses. We're also talking with HTC and hopefully when they upgrade their social key recovery on the Exodus cell phone will be able to offer some of the new interesting features we developed at rwot9.
+
+I think there's going to be papers that we can go fishing for, from 3-4 years ago, and work on those and take it to production. Or work on things that take multiple RWOTs to finish writing those papers.
+
+# BTCR, damn it!
+
+We have been working on this for a while but we need to see it through. We have a deadline now. BTCR was selected as the DID method for the DID scenario foundation. It manifested right now in the documents as TODO items, but effectivelly we need to bring the v0.1 method spec to be finished. I think we have what we need for there. There's a few issues around signing claims and things like that. The paper is just tracking that TODO list. Most of the work will be from here some prototypes and a few things like that. The writeup will just basically be a review of what we've done. The biggest vehicle will be supporting the DID interopercom.
+
+
