@@ -12,7 +12,7 @@
    </td>	  
    <td>Kim Hamilton Duffy<br/>
    </td>
-   <td>Marcus Sabadello<br/>
+   <td>Markus Sabadello<br/>
    </td>
    <td>Dmitri Zagidulin<br/>
    </td>
@@ -142,13 +142,13 @@ curl -X POST -H "Content-Type: application/json" -d '{"id": "0", "jsonrpc": "2.0
 curl -X POST -H "Content-Type: application/json" -d '{"id": "0", "jsonrpc": "2.0", "method": "call", "params": {"instance_id": "dpki_happ", "zome": "dpki", "function": "delete_key", "args": {old_key:"", signed_old_key:""} }}' http://127.0.0.1:8800
 ```
 ## Security Considerations
-ToDo...
+Security of `holo` DIDs inherits security properties of Holochain itself. Holochain does not have global state or a classic "consensus algorithm". Instead it relies on distributed validation rules which define data integrity. It is a much simpler problem to achieve data integrity if there is no requirement to have a globally shared state or an absolute order of events. Data is replicated among a configurable number of nodes in Holochain's DHT. Theoretically, a piece of data can be compromised if an attacker can gain control of a sufficient number of DHT nodes. An attacker however is not able to predict or influence which nodes in the DHT store a copy of the data, since those nodes are chosen randomly based on the content itself.
 
 ## Privacy Considerations
-ToDo...
+All transactions on Holochain are signed by a user's key. Therefore, by learning a `holo` DID, an observer/attacker is able to link the user's Holochain activities with potential DID-based applications such as DID Auth or Verifiable Credentials. Users should be aware that he/she can publish their own data associated with their public key on a specific Holochain network.
 
 ## Performance Considerations
-ToDo...
+Since Holochain is based on a DHT as well as local data storage, it has much better performance characteristics than a "traditional" blockchain such as Bitcoin or Ethereum. A write operation to Holochain's DHT takes less than 2 seconds to be accepted. Key generation takes about 15 seconds.
 
 ## References
 1. [DID Spec](https://w3c-ccg.github.io/did-spec/)
