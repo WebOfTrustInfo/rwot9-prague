@@ -4,7 +4,7 @@
 
 ## Abstract
 
-As the standards around verifiable credentials are starting to take form, different flavours of ‘verifiable credentials-like` data structures need to make necessary changes in order to leverage on the rulesets outlined and constantly reviewed by a knowledgeable community like RWOT and W3C. The purpose of this paper is to identify all of the changes needed to comply with the Verifiable Credentials & Decentralized Identifiers standards. 
+As the standards around verifiable credentials are starting to take form, different flavours of ‘verifiable credentials-like` data structures need to make necessary changes in order to leverage on the rulesets outlined and constantly reviewed by a knowledgeable community like RWOT and W3C. The purpose of this paper is to identify all of the changes needed for Blockcerts to comply with the Verifiable Credentials (VCs) & Decentralized Identifiers standards, and the additional benefits by using a blockchain in combination with Verifiable Credentials. 
 
 ## VC Schema & Examples
 The verifiable credentials is a data schema that is defined and published as a Proposed Recommendation to W3C. It seeks to represent the same information that a physical credential represents that are also tamper-evident and more trustworthy while also addressing future considerations in our societies that are becoming increasingly digitalised. Some of these concerns include but are not limited to privacy preserving goals.
@@ -49,7 +49,7 @@ An example of a minimally viable Verifiable Credential can be seen below:
 
 ## BC V2 Schema & Examples
 
-Currently Blockcerts is an Extension to Open Badges, which is a specification and open technical standard originally developed by the Mozilla Foundation [https://openbadges.org/]. Open Badges is widely adopted by Universities and Microcredential plateforms as a way to issue acheivements and allows recipients to hold and collect into "backpacks". 
+Currently Blockcerts is an Extension to Open Badges, which is a specification and open technical standard originally developed by the Mozilla Foundation [https://openbadges.org/]. Open Badges is widely adopted by Universities and Microcredential plateforms as a way to issue acheivements and allows recipients to hold and collect into "backpacks". The benefits of using a blockchain as an extension to Open Badges is to provide immutability and proof of existance.
 
 An example standard Open Badge can be seen below:
 
@@ -294,9 +294,10 @@ More information about the exact schema being used for blockcerts can be found h
 ## Comparison
 Comparison between BC v2 and VC
 
-## Blockcerts as VC Implementation
+TODO talk about the similarities and minor differences.
 
-TODO Badge specific claims as a VC
+
+## Blockcerts as VC Implementation
 
 Focusing in on the Blockcerts specific additions to Open Badges (`recipientProfile`, `verification`, and `signature`) we can make the following mappings over to a VC.
 
@@ -346,22 +347,37 @@ It may seem as though we could get away with putting the `verification` public k
 
 Verifiable Credentials require a `proof` property that is used for verifying the immutibliity of a VC as well as proving that a certain issuer is the one that signed the VC. Before VC, Blockcerts used `signature` to prove immutibility. What role does `signature` provide if we are already required to implement `proof`? 
 
-One important property that `proof` does not provide alone is the aspect of time stamping. A `created` date can be applied to `proof`, but since that can be created with any date, we cannot prove it existed at a certain time. 
+One important property that `proof` does not provide alone with typical signing keys is the aspect of time stamping. A `created` date can be applied to `proof`, but since that can be created with any date, we cannot prove it existed at a certain time. Using a blockchain can be benefitial here, as it proves that the document existed with a high degree of certainty at the time of the transaction (collisions techically can still occur due to hashing, though highly unlikely). 
 
-Using a blockchain can be benefitial here, as it proves that the document existed with a high degree of certainty at the time of the transaction (collisions techically can still occur due to hashing, though highly unlikely). 
+#### Revocations 
 
-I am proposing that we make `signature` optional for those that do not wish to take advantage of time stamping with a blockchain. Without `signature`, we can still verify integrity with `proof`. 
+In addition to proof of existance, using a Blockchain can get additional benefits when factoring in revocational use cases. Say a non-blockchain based VC was signed with an RSA key. The Signature Proof has a `createdDate` associated with the signature, but we cannot prove that date is correct in actuality. Simply that the person/process signing the key claimed that as the time they signed. 
+
+In most cases, the issuer signing with keys they own should be signing with the correct time. However, in situations where the signing key was stolen, the theif might want to issue a credential in the past to make it appear as though they, for instance, graduated with a degree at a college when they first started issuing VC's. 
+
+The college realizes their key was stolen, compromised, or simply they practice good key rotation hygiene. In any of these cases, the true issuer now revokes that key with an expiration date set to a day before the known theft. 
+
+Due to the fact that credential dates can not be trusted, we can not determine which credentials fall within the `createdDate` & `revocationDate` (TODO or is it called the `expirationDate` still?) range for a given key. Every single credential issued with a key that was stolen NEEDS to fail (or at least warn) for signing key verification problems during the credential verification process. One bad credential can affect the status of every single recipient that recieved a credential from that issuer with that specific signing key. This is not satisfactory when it comes to life-long credentials. 
+
+Therefore, by utilizing the trusted timestamps of a blockchain, we can calculate the true issuance date and determine that if an issuer revoked/expired a signing key for a specific date, every credential that has an anchor on a blockchain before that date is unaffected by key revocations. Instead of just providing Proof of Existance, we can then coin the term Proof of Verifiable Existance with Blockchain based VCs. Not only did the document exist, but it existed and will always verify as long as the individual credential did not get revoked, or there is question as to if the signing key was stolen around the same time as a bad issuance.  
 
 
-It may be possible to create a new `proof` type that supports the structure/purpose defined in `signature` here as an extension to `ld-proofs`. TODO research this: https://w3c-dvcg.github.io/ld-proofs/ & https://github.com/WebOfTrustInfo/rwot3-sf/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md 
+#### Verification / Proof Proposal
+
+We should continue making `signature` required so that we can really provide the value of life long credentials through this Proof of Verifiable Existance method. 
+
+It may be possible to create a new `proof` extension that supports the structure/purpose defined in `signature` here as an extension to `ld-proofs`. This would allow us to add multiple proofs (such as RSA signing key AND blockchain anchoring proof) to a Blockcerts VC. `proof` can be an array that allows multiple proofs, but the main reason to have a traditional signing proof and a blockchain proof is so that VC verifiers do not have to support blockchain based verification in order for a Blockcerts VC to verify. If a recipient has a Blockcerts VC-based credential, they may take the credential to any standard wallet, but suggested to use an Open Source Blockcerts verifier to take advantage of the Proof of Verifiable Existance scheme that a traditional VC can not guarentee.  
+
+TODO research this: https://w3c-dvcg.github.io/ld-proofs/ & https://github.com/WebOfTrustInfo/rwot3-sf/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md 
+
 
 ### Additional Fields
 
-In addition to the existing fields specified above, there's a number of fields that has had non-standard support in the Blockcerts ecosystem that could benefit from being standardized. 
+In addition to the existing fields specified above, there's a number of fields in Blockcerts V2 that has had non-standard support in the ecosystem that could benefit from being standardized. 
 
 #### `display`
 
-In Blockcerts V2, it is not part of the standard, but we've been building a lot of support for `displayHtml` unofficially. In mobile wallets, verifiers, etc. As well as 3rd party libraries building for it as well. 
+In Blockcerts V2, we've been building a lot of support for `displayHtml` unofficially. In mobile wallets, verifiers, etc. As well as 3rd party libraries building for it as well. 
 
 Proposing for V3, it would be great if we can throw in official support for displays. Extending past `displayHtml`, we should allow support for any type of display. Some may not want to use `html` but instead use `pdf`, an `image`, etc. 
 
@@ -381,7 +397,7 @@ Example:
 
 Similar to the above `display`/`displayHtml` section, we similarily do not have an official standard around the use of the `metadatajson` property we have. We have unofficial support in both the mobile app & verifier to display some metadata information to the viewer. 
 
-Proposing for V3, if we could add this to the standard, but allow for different types of metadata format, maybe `XSD` for example, it would allow issuers to take advantage of that more, and continue to support it officially in some of the Blockcerts ecosystem. 
+Proposing for V3, if we could add this to the standard, but allow for different types of metadata format, maybe `XSD` for example, it would allow issuers to take advantage of that, and continue to support it officially in some of the Blockcerts ecosystem. 
 
 Could be similar to `display`, adding `type` & `data`. 
 
@@ -472,7 +488,7 @@ Credential:
     ],
     "publicKey": "ecdsa-koblitz-pubkey:1AwdUWQzJgfDDjeKtpPzMfYMHejFBrxZfo"
   },
-  "signature": { // TODO put this into the proof section, as a proof array
+  "signature": { // TODO put this into the proof section, as a proof array extension
     "type": [
       "MerkleProof2017",
       "Extension"
@@ -521,7 +537,5 @@ TODO issuer profile changes, if needed.
 #### may be subject
  - Talk about the subjectivity w/ certain methods (such as alumniOf - what does that really mean)
  - Methods should have well defined definitions and standards
-
-#### Possible to create a method that looks similar to the Blockcerts/OpenBadge BadgeClass object.
 
 #### Possible Service/Tooling to parse a BC V2 to create a BC V3
