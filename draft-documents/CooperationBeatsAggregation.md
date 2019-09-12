@@ -81,9 +81,10 @@ A identity-based metaplatform has the potential to solve this problem as it can 
 
 ## Cooperative Network of Networks Effect
 
+### Metcalfe's law: Scaling of cooperative networks 
 
-Metcalfe law scaling of cooperative networks
-The exponential increase in value due to Metcalfe’s law scaling poses the question: What happens if two competing networks combine so that the combined network has a larger N than either network on its own? This value proposition was noted by Reed.
+The exponential increase in a network's value due to Metcalfe’s law poses the question: What happens if two competing networks combine so that the combined network has a larger N than either network on its own? This value proposition was noted by Reed.
+
 Suppose for example, given Metcalfe’s law scaling, that two networks of size N₁ and N₂ respectively were to combine. One way to combine would be to make their services interoperable (cooperate) or for one network to acquire the other. After combining the average value to a participant of either network N₁ or N₂ is due to the combined size of the new network and is given by,
 
 ![](https://i.imgur.com/9NAviv4.png)
@@ -94,7 +95,7 @@ Suppose for example, given Metcalfe’s law scaling, that two networks of size N
 
 ## IoT Combinatorics – A Case for Metaplatform based on Decentralised Idenitity
 
-Today, the Internet is probably best described as a network comprised of all interconnected objects, traditionally referring to human users and computers. When you add in the so-called Internet of Things (IoT), the number of addressable elements is in the tens of billions. 
+Today, the Internet is probably best described as a network comprised of all objects using the Internet Protocol Stack [https://www.w3.org/People/Frystyk/thesis/TcpIp.html], traditionally referring to human users and computers. When you add in the so-called Internet of Things (IoT), the number of addressable elements is in the tens of billions. 
 
 The resulting combinatorics of possible connections between any given subgroup is an impossibly large number. Yet in today’s user journeys or business environments, agents (whether human, machine, or software) increasingly need to access, control or transact with a diverse group of these interconnected objects to achieve their goals in both the digital and physical worlds. This requires a straightforward and ubiquitous method to address, verify and connect these elements together.
 
@@ -114,6 +115,7 @@ Therefore, a universal addressing, trust verification system and associated inte
 ### Onboarding costs
 
 The original use of Metcalfe’s law was to show that even large upfront network connection costs would eventually be overcome by the exponential increase in value due to network size. The break-even point where the value of the network due to network effects to a participant is equal to the cost of joining the network is called the critical network size. Typically the major upfront cost of connecting to a platform is not the internet connection itself but the on-boarding cost of creating an account with login credentials and provisioning electronic payment.
+
 One of the problems with decentralized blockchain technology is that in general it has increased the on-boarding costs of participants because of the difficulty in managing keys, increased regulatory friction, and more complexity. The plethora of competing (non-cooperative) blockchain platforms only heightens confusion. The result is that critical platform size may be significantly increased with the result that many blockchain platforms may never reach their critical size (break-even point).
 A decentralized identity meta-platform allows those on-boarding costs to be amortized across every platform a participant chooses to join. This potentially lowers the critical platform size (break-even point) for the participant on each of the sub-platforms. This should accelerate network of network effects.
 
@@ -172,11 +174,11 @@ As a consequence there is no monetisation at the core of the meta platform for a
 
 It’s important to note how different this model is from current models for instance such as ride-sharing platforms such as Uber and Lyft. Autonomous vehicles eliminate the cost of human drivers, while decentrlized meta-platforms eliminate the middleman that matches customers with rides, charges a transaction fee and sets terms and conditions.
 
-Corporates will establish sucesfull business models at the edge of the metplatform by competing on
+Corporates will establish sucessfull business models at the edge of the metplatform by competing on
 - User Experience
 - Algorithms and Analytics
 - Implementation and Services
-- Harware and Infrastructure
+- Hardware and Infrastructure
 
 ![](https://i.imgur.com/3Z15EQk.png)
 
@@ -293,3 +295,6 @@ https://www.hyperledger.org/projects/aries
 [21]. W3C Verifiable Credentials Data Model. https://www.w3.org/TR/vc-data-model/
 
 [21]: https://www.w3.org/TR/vc-data-model/
+
+[22]: The Internet Protocol Stack. https://www.w3.org/People/Frystyk/thesis/TcpIp.html
+
