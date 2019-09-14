@@ -1,8 +1,8 @@
 # Reimagining "global": Programmable incentivization and implications for personal governance
 
-By *John R Hoopes IV*
+By *John IV*
 
-john.iv.18@ucl.ac.uk
+john.iv@x25bd.com
 
 govern: to exercise continuous sovereign authority over ([Merriam Webster](https://www.merriam-webster.com/dictionary/govern) 2019)
 
