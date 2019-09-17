@@ -49,7 +49,7 @@ An example of a minimally viable Verifiable Credential can be seen below:
 
 ## BC V2 Schema & Examples
 
-Currently Blockcerts is an Extension to Open Badges, which is a specification and open technical standard originally developed by the Mozilla Foundation [https://openbadges.org/]. Open Badges is widely adopted by Universities and Microcredential plateforms as a way to issue acheivements and allows recipients to hold and collect into "backpacks". The benefits of using a blockchain as an extension to Open Badges is to provide immutability and proof of existance.
+Currently Blockcerts is an Extension to Open Badges, which is a specification and open technical standard originally developed by the Mozilla Foundation [https://openbadges.org/]. Open Badges is widely adopted by Universities and Microcredential platforms as a way to issue acheivements and allows recipients to hold and collect into "backpacks". The benefits of using a blockchain as an extension to Open Badges is to provide immutability and proof of existance.
 
 An example standard Open Badge can be seen below:
 
@@ -269,7 +269,7 @@ Signature (https://www.blockcerts.org/schema/2.0/merkleProof2017Schema.json)
 	"anchors": [
 	  {
 	    "sourceId": "d75b7a5bdb3d5244b753e6b84e987267cfa4ffa7a532a2ed49ad3848be1d82f8",
-	    "type": "BTCOpReturn"
+	    "type": "BTCOpReturn",
 	    "chain": "bitcoinMainnet"
 	  }
 	],
