@@ -15,6 +15,7 @@ These are all the papers that we're currrently working on for RWOT9
 | Issuer-Independent Verification | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/Issuer-Independent%20Verification.md) |
 | Minimum Viable Protocol for Decentralization | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/minimun-viable-protocol-for-decentralization.md) | Post-IIW (10/3) |
 | “Not a Sybil!”: Politically Decentralized Proof of Limited Personhood | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/proof_of_personhood.md) |
+| Petnames | | 10/7 |
 | P2P Lending | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/P2P-lending-reputation) |
 | The Real Problem with Centralization | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/the-real-problem-with-centralization.md) |
 | Reputation Interpretation _merged with_ How to Design a Good Reputation System | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/ReputationInterpretation.md) |
