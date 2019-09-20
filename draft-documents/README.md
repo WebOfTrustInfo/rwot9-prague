@@ -8,7 +8,7 @@ These are all the papers that we're currrently working on for RWOT9
 | Basic Proof Request Proof Response / Presentation Request | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/PresentationRequest.md) |
 | Blockcerts V3.0 | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/BlockcertsV3.md) |
 | BTCR Dammit | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/btcr_contd.md) |
-| Concerns for minorities in a Web of Trust | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/wot-concerns-for-minorities.md) |
+| Concerns for minorities in a Web of Trust | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/wot-concerns-for-minorities.md) | 11/04 |
 | Decentralized Identity as a Meta-platform: How Cooperation Beats Aggregation | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/CooperationBeatsAggregation.md) | 10/21 |
 | DID Resolution v0.2 | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/did-resolution-v2.md) |[W3C CCG](https://w3c-ccg.github.io/did-resolution/)
 | did:hc method | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/did:hc-method.md) |
