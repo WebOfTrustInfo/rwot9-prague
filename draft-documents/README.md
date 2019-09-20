@@ -22,5 +22,5 @@ These are all the papers that we're currrently working on for RWOT9
 | A Rubric for Decentralization of DID Methods | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/decentralized-did-rubric.md) |
 | Secure Data Storage | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/encrypted-data-vaults.md) | 9/30
 | Secure User Interfaces | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/secure-user-interfaces.md) |
-| Shamir Secret Sharing BIP | [MediaWiki](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/shamir-secret-sharing.mediawiki) |
+| Shamir Secret Sharing BIP | [MediaWiki](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/shamir-secret-sharing.mediawiki) | 10/7
 | Using DID to solve the OpenID Connect NASCAR problem | | 
