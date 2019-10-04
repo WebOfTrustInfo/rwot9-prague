@@ -510,7 +510,7 @@ In Blockcerts V2, we've been building a lot of support for `displayHtml` unoffic
 
 Proposing for V3, it would be great if we can throw in official support for displays. Extending past `displayHtml`, we should allow support for any type of display. Some may not want to use `html` but instead use `pdf`, an `image`, etc. 
 
-
+**Option 1**
 For the schema, it can simply be `type` and `data` properties.
 
 Example:
@@ -522,6 +522,9 @@ Example:
 	}
 ```
 
+
+**Option  2**
+
 Alternatively, we can use DATA URLs (https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) instead. 
 
 ```json
@@ -532,7 +535,8 @@ Alternatively, we can use DATA URLs (https://developer.mozilla.org/en-US/docs/We
 
 Similar to the above `display`/`displayHtml` section, we similarily do not have an official standard around the use of the `metadatajson` property we have. We have unofficial support in both the mobile app & verifier to display some metadata information to the viewer. 
 
-Proposing for V3, if we could add this to the standard, but allow for different types of metadata format, maybe `XSD` for example, it would allow issuers to take advantage of that, and continue to support it officially in some of the Blockcerts ecosystem. 
+**Option 1**
+We could add this to the standard, but allow for different types of metadata format, maybe `XSD` for example, it would allow issuers to take advantage of that, and continue to support it officially in some of the Blockcerts ecosystem. 
 
 Could be similar to `display`, adding `type` & `data`. 
 
@@ -542,6 +546,10 @@ Could be similar to `display`, adding `type` & `data`.
 	"data": "{\"test\": true"
 }
 ```
+
+**Option 2**
+
+Remove completely. Metadata could be grabbed by the `credentialSubject` field. The VC spec does not have requirements over the types of information that could be mentioned `credentialSubject`, but because this is where the "holder" and "subject" properties live, it makes sense that any sort of additional  metadata live here. This will be consistent and interroptable with other verifiable credentials that are not blockcerts, and other verifiable credential wallets. 
 
 ## Badge Claim
 Going off of the paper written from a previous RWoT over open badges as a vc (https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md), an example badge claim we can create for those that want a similar badge-like experience could look like below. 
@@ -766,6 +774,11 @@ Since option 2 is pulling an entire list of revocation events, it is not reveale
 There has not be very good consensus yet on what method of revocation/status lists should be used for Verifiable Credentials, and thus no standards yet. Ideally there is a generic `RevocationServiceEndpoint` not specific to Blockcerts revocation lists, but in order to not conflict with other methods that might be created, I'm suggesting we label this as a Blockcerts-specific revocation endpoint. 
 
 Instead of the Blockcerts standard picking one of these two methods, it's possible that we support both and allow issuers to decide for themselves which makes better sense for their organization. 
+
+
+### Issuer Profile as a URL in V3
+
+TODO
 
 
 
