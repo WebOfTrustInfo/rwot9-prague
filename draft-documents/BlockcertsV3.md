@@ -488,7 +488,7 @@ Alternatively, we write both `signature` proof and and more common proof (such a
 
 There are some papers & proposals already written for going down this path. (https://github.com/WebOfTrustInfo/rwot3-sf/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md) & (https://web-payments.org/specs/source/pop2016/).
 
-#### Revocations 
+#### Issuer Key Revocations 
 
 In addition to proof of existance, using a Blockchain can get additional benefits when factoring in revocational use cases. Say a non-blockchain based VC was signed with an RSA key. The Signature Proof has a `createdDate` associated with the signature, but we cannot prove that date is correct in actuality. Simply that the person/process signing the key claimed that as the time they signed. 
 
@@ -776,10 +776,91 @@ There has not be very good consensus yet on what method of revocation/status lis
 Instead of the Blockcerts standard picking one of these two methods, it's possible that we support both and allow issuers to decide for themselves which makes better sense for their organization. 
 
 
+#### Example
+
+Here is an example of what an issuer DID might look like when resolved, picking option 2 as an example: 
+
+```json
+{
+  "@context": "https://www.w3.org/2019/did/v1",
+  "id": "did:example:123456789abcdefghi",
+  "authentication": [{
+    "id": "did:example:123456789abcdefghi#keys-1",
+    "type": "RsaVerificationKey2018",
+    "controller": "did:example:123456789abcdefghi",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+  }],
+  "service": [{
+    "id": "did:example:123456789abcdefghi#BlockcertsIssuer",
+    "type": "BlockcertsIssuerService",
+    "name": "University of Example,
+    "URL", "https://example.com", 
+    "imageURL": "https://example.com/img.png",
+    "email": "test@example.com",
+    "serviceEndpoint": "https://example.com/introductionURL"
+  }, {
+    "id": "did:example:123456789abcdefghi#BlockcertsRevocationList",
+    "type": "BlockcertsRevocationListService",
+    "serviceEndpoint": "https://example.com/revocationListEndpoint"
+  }]
+}
+```
+
+
 ### Issuer Profile as a URL in V3
 
-TODO
+Here is an example of an Issuer Profile in Blockcerts v2: 
 
+```json
+{
+  "@context": [
+    "https://w3id.org/openbadges/v2",
+    "https://w3id.org/blockcerts/v2"
+  ],
+  "type": "Profile",
+  "id": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json",
+  "name": "University of Learning",
+  "url": "https://www.issuer.org",
+  "introductionURL": "https://www.issuer.org/intro/",
+  "publicKey": [
+    {
+      "id": "ecdsa-koblitz-pubkey:msBCHdwaQ7N2ypBYupkp6uNxtr9Pg76imj",
+      "created": "2017-06-29T14:48:03.814936+00:00"
+    }
+  ],
+  "revocationList": "https://www.blockcerts.org/samples/2.0/revocation-list-testnet.json",
+  "image": "data:image/png;base64,iVBORw0KGgo...",
+  "email": "contact@issuer.org"
+}
+```
+
+Comparing that to the example issuer DID above, the only thing needed to change is mapping `publicKeys` to `authentication`. 
+
+
+```json
+{
+  "@context": [
+    "https://w3id.org/openbadges/v2",
+    "https://w3id.org/blockcerts/v2"
+  ],
+  "type": "Profile",
+  "id": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json",
+  "name": "University of Learning",
+  "url": "https://www.issuer.org",
+  "introductionURL": "https://www.issuer.org/intro/",
+  "authentication": [{
+    "id": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json#keys-1",
+    "type": "RsaVerificationKey2018",
+    "controller": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+  }],
+  "revocationList": "https://www.blockcerts.org/samples/2.0/revocation-list-testnet.json",
+  "image": "data:image/png;base64,iVBORw0KGgo...",
+  "email": "contact@issuer.org"
+}
+```
+
+This will allow us to link directly to a specific key used for signing a Verifiable Credential, which is a standard way of finding the key, instead of in  the current Blockcerts model of checking the blockchain issuing key against all public keys that an issuer has claimed ownership of.
 
 
 ## Out of scope
