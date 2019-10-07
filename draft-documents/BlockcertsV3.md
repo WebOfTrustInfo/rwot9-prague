@@ -481,6 +481,45 @@ Alternatively, we write both `signature` proof and more common proof (such as `R
 
 There are some papers & proposals already written for going down this path. (https://github.com/WebOfTrustInfo/rwot3-sf/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md) & (https://web-payments.org/specs/source/pop2016/).
 
+**Blockchain proof option 3** Only use blockchain proof
+
+The first two options allow for better interoperability with other verifiable credential verifiers/wallets as they get developed. Alternatively we only specify that a blockchain proof is required and leave it up to implementers to decide whether or not they want to add other proof types. 
+
+The following example is much like option 2, but instead of a RSA proof and a blockchain proof, it is just a blockchain proof. 
+
+```json
+...
+[Cert Data Hash]
+...
+  "proof": 
+  {
+    "type": [
+      "MerkleProof2017",
+      "Extension"
+    ],
+    "merkleRoot": "b2ceea1d52627b6ed8d919ad1039eca32f6e099ef4a357cbb7f7361c471ea6c8",
+    "targetHash": "552f01d4fab7da1bce4315c134a1d46e9ef5968f49edf6f5de5d3a2776eea4fb", // Cert Data Hash
+    "proof": [
+      {
+        "right": "776aca4dc61d70480fb05e4d95aaedc719fedd752eab7d517e04af2f481f92af"
+      },
+      {
+        "left": "6613ea6c78b0d93a45c725f3fcc9f2312181ffad0a6833299663d6aa1d7806a9"
+      },
+      {
+        "right": "e780cd2fe41df361fa7c047191533fe6252ea20bcd0fc8b226da3656d1133e56"
+      }
+    ],
+    "anchors": [
+      {
+        "sourceId": "2378076e8e140012814e98a2b2cb1af07ec760b239c1d6d93ba54d658a010ecd",
+        "type": "BTCOpReturn",
+        "chain": "bitcoinMainnet"
+      }
+    ]
+  }
+```
+
 #### Issuer Key Revocations 
 
 In addition to proof of existence, using a Blockchain can get additional benefits when factoring in revocation use cases. Say a non-blockchain based VC was signed with an RSA key. The Signature Proof has a `createdDate` associated with the signature, but we cannot prove that date is correct in actuality. Simply that the person/process signing the key claimed that as the time they signed. 
