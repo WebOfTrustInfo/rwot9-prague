@@ -970,7 +970,28 @@ Blockcerts V3 shall make no requirements that one must issue a BC that is both a
 
 In the end, it will be up to IMS Global and the Open Badges community to support Verifiable Credential-based Open Badges through the schema changes outlined in "Open Badges are Verifiable Credentials" and/or the official Open Badges verifiers. There are several options of ways to issue Open Badges this way, which may include the introduction of `holds` into the standard or extracting a full badge from a Verifiable Credential. Note, issuing a full badge inside of a Verifiable Credential is not a stadard/recommended way to use VC's, though it is technically still a VC. 
 
+### Breaking Changes Summary
 
+There's a few breaking changes that are necessary as we move to Verifiable Credentials, and a number of optional things that may be breaking changes if we wish to implement them. As mentioned, V2 will continue to behave as is, but to issue V3 credentials and to support V2 & V3 url-based issuer profiles, please review the changes below. 
+
+#### Issuer Profile
+
+Existing Issuer Profiles could continue to operate but an additional field needs to be implemented. As mentioned above, `authentication` in place of `publicKeys` to allow for directly linking to a specific key. If one wanted to support both V2 Blockcerts & V3 Blockcerts using the same URL-based Issuer Profile, one could add `authentication` in addition to `publicKeys`. 
+
+For DID based Issuer Profiles, it's understood that you'd be creating a new issuer profile and will need to continue to maintain your URL based profile for every credential you've issued (unless you reactively issue V3 for every V2 credential you've ever issued). DID issuer profiles will act similar in nature to URL-based Issuer Profiles but under the DID-document schema model. See [#issuer profile as a did](#issuer-profile-as-a-did) for a summary of these changes and options.
+
+#### Data Model
+
+The data model will change for V3, so if you've previously created a template using the open source "cert-tools" project, you'd need to create a new one that is a valid Verifiable Credential. Please review [blockcerts as vc implementation](#blockcerts-as-vc-implementation) to see how V2 will map to V3 and some of the proposed options that Blockcerts V3 could take. 
+
+If you wish, you could continue issuing a badge-like credential by utilizing `hold` & `evidence` as described [here](#badge-claim) to minimize the data changes required. Otherwise, you're free to create a new Verifiable Credential type. 
+
+There's a few optional changes that may break your existing templates as well. Please click the in-page links to jump to the summaries above: 
+
+- [display](#display)
+- [metadata](#metadata)
+
+These fields have not been standardized before, but we do have the opportunity to make these improvements while moving to a new major version number. If it interests you, please give any feedback you might have. 
 
 ## Summary
 
