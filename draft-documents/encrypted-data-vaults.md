@@ -444,7 +444,7 @@ the personal data store ecosystem. These projects aim to give end users control
 over their data without requiring centralized authorities or proprietary
 technologies.
 
-Requiring client-side (edge) encryption for all data and metadata — enabling the
+Requiring client-side (edge) encryption for all data and metadata at the same time as enabling the
 user to store data on multiple devices and to share data with others, while having 
 searchable or queryable data — has been historically very difficult to
 implement in one system. We can see from this survey that trade-offs are often
