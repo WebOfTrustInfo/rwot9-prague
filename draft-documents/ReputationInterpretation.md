@@ -1,24 +1,3 @@
-<!----- Conversion time: 2.112 seconds.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β17
-* Wed Oct 16 2019 01:18:32 GMT-0700 (PDT)
-* Source doc: https://docs.google.com/a/ganglysister.com/open?id=12eIlaDcJITVdgK3ZvuAfN5uy_2AZn1amQAvRf7XRC90
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server.
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 2.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
 ## **Reputation Interpretation**
 
 Authors: Arthur Brock, Kaliya Hamlin, Grace (Rebecca) Rachmany, Jakub Lanc
@@ -26,22 +5,16 @@ Authors: Arthur Brock, Kaliya Hamlin, Grace (Rebecca) Rachmany, Jakub Lanc
 
 ## **Abstract**
 
-This paper explores how to take a “reputation” trust graph, with multiple characteristics and create actionable output. The paper is not focused on the automation of the process. It can be applied by human processing of information or through a programmed software implementations. It may also apply to business entities and organizations, not just persons.
+This paper explores how to take a “reputation” trust graph with multiple characteristics and create actionable output. It is not focused on the automation of the process, which could be applied by human processing of information or through a programmed software implementations. 
 
-We are looking to categorize the types of reputation people might have into general buckets, such as:
-
-
+We are looking to categorize the types of reputation that people might have into general buckets, such as:
 
 *   Knowledge
 *   Emotional Intelligence
 *   Generalized Skills
 *   Reviews from others
 
-The output that we would produce is specific to each type of community or decision.
-
-For example:
-
-
+The output that we would produce is specific to each type of community or decision. For example:
 
 *   Yes/no
 *   Graph or diagram
@@ -49,10 +22,11 @@ For example:
 *   Derivative reputation assessment. For example, in moving from one sport to another, some skills might be transferable and some not.
 *   Complex adjustment to the terms of engagement. For example, if you are offering a job to someone, the output might be a change in their job description. 
 
+The process may also be applicable to business entities and organizations, not just persons.
 
 ## **Overview**
 
-The fundamental assumption of this paper is that data collection is not the problem in creating a “reputation” for individuals, entities or groups but that the issue comes when interpreting the data. Reputation inputs are constantly collected and understood differently in different contexts. We do not address the question of “what is reputation?” nor do we address “how to create interoperable reputation standards”. Instead, the focus is on how to interpret reputation data. 
+The fundamental assumption of this paper is that data collection is not the problem in creating a “reputation” for individuals, entities, or groups but that the issue comes when interpreting the data. Reputation inputs are constantly collected and understood differently in different contexts. We do not address the question of “what is reputation?” nor do we address “how to create interoperable reputation standards”. Instead, the focus is on how to interpret reputation data. 
 
 
 
@@ -209,7 +183,7 @@ Two types of concerns were identified:
 Bob’s on his own here. Maybe he’ll attend RWoT10 and add this part.
 
 
-## **Conclusions **
+## **Conclusions**
 
 The discussion of how to measure reputation, what reputation is and how to track it becomes and endless rabbithole, because of the huge range of aspects of reputation and measurements that could be discussed. By taking a practical approach, that is, discussing reputation in a specific context, we are able to understand that reputation isn’t a thing unto itself, but a tool that people and organizations use in order to make decisions. By beginning with the end in mind, we are able to make sense of reputation, both from the perspective of understanding what data to gather about a person, and how to process it.
 
