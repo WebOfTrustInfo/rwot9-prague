@@ -865,7 +865,8 @@ work on Encrypted Data Vaults:
 - Choice of change control / conflict resolution strategy
 - Notification / pub-sub mechanisms
 - With respect to the authorization model, does the vault merely enforce authorization rules or act as an authorization server?
-- What are the assumptions of trust the host the vault must provide, enforcement of authorization rules? [[THIS NEEDS CLEANUP/CLARIFICATION]] Potential attack vectors from the host of the vault?
+- How can end users be reassured of the trustworthiness of a vault host?
+- Further analysis of potential attack vectors of malicious servers, and mitigation techniques.
 - What are the opportunities for encrypted searching (Homomorphic encryption, ZKPs), and what are the dangers?
 - Retrieval of the history of an object's updates
 
