@@ -378,7 +378,7 @@ posting to the Permissions interface.
 
 Tahoe-LAFS uses a client-gateway-storage server architecture, whereby a client
 passes data to a gateway server for encryption and chunking. The gateway, in
-turn, stores the individual chunks on a cluster of storage servers. (Several
+turn, stores the individual chunks on a cluster of storage servers. Several
 copies of the data are stored, for greater availability and disaster recovery.)
 Services are identified with [Foolscap](https://foolscap.lothar.com/trac) URIs,
 and the client can be configured to use HTTP or (S)FTP or to listen to a local
