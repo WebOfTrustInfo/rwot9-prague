@@ -28,24 +28,14 @@ The process may also be applicable to business entities and organizations, not j
 
 The fundamental assumption of this paper is that data collection is not the problem in creating a “reputation” for individuals, entities, or groups but that the issue comes when interpreting the data. Reputation inputs are constantly collected and understood differently in different contexts. We do not address the question of “what is reputation?” nor do we address “how to create interoperable reputation standards”. Instead, the focus is on how to interpret reputation data. 
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Reputation-Interpretation0.jpg). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Reputation-Interpretation0.jpg "image_tooltip")
+![alt_text](media/ReputationInterpretation0.jpg "image_tooltip")
 
 
 In the above diagram, we visualize the process we discuss in this paper. Reputation Interpretation, the box in the center, is the focus of this paper. While this paper touches on Inputs and Outputs from the interpretation process, the focus of the paper is on the process an organization would undertake to Interpret the data in a way that makes sense to that organization. In that sense, the context is decisive.
 
 Following is the process the authors identified as the Reputation Interpretation Process. The following description also serves as a mini-glossary to the terminology used in this document. Some of the terminology may be a placeholder as these concepts have not been well-defined previous to the paper. Once running, we imagine the process itself happening in the following chronological sequence. 
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Reputation-Interpretation1.jpg). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Reputation-Interpretation1.jpg "image_tooltip")
+![alt_text](media/ReputationInterpretation1.jpg "image_tooltip")
 
 
 
