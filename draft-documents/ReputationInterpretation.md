@@ -57,10 +57,6 @@ Designing the system would occur in the following order (which is reflected in t
 
 The remainder of the paper goes into more detail on each one of these steps.
 
-## **Diagram of the process**
-
-(diagram with explanations of the process with that cute matrix thing)
-
 ## **Define the Output**
 
 Many discussions of reputation focus on numerical measures of reputation. Generally speaking, in the digital world, reputation is expressed as a kind of number, such as 5-star ratings, reputation points, credit rating, rankings, or accumulated reputation in the form of tokens. Within the digital identity community, credentials or claim are another common form of reputation. Alice may make a claim that she worked for a particular employer or holds a degree, and a yes/no verification of that claim by the institution in question indicates it is valid.
@@ -130,8 +126,6 @@ Once data is collected, the data needs to be normalized to make it understandabl
 The above are top-level concerns for unpacking the data. Furthermore, data may be multidimensional. For example, records from Alice's graduate studies might include grades, peer reviews, student reviews, number of publications, letters of recommendation, awards, etc.
 
 Part of the normalization process is attributing the different characteristics to the appropriate part of the outcome. For example, if Alice worked for a particularly prestigious institution, that would affect the salary offered and that institution's name would be mentioned in the website blurb.
-
-(Diagram of puzzle pieces)_
 
 ## **Concerns**
 
