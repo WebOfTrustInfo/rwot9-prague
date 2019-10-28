@@ -17,7 +17,7 @@ These are all the papers that we're currrently working on for RWOT9
 | Petnames | | 10/7 |
 | P2P Lending | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/P2P-lending-reputation) | IN PROCESS
 | The Real Problem with Centralization | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/the-real-problem-with-centralization.md) |
-| Reputation Interpretation _merged with_ How to Design a Good Reputation System | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/ReputationInterpretation.md) | EDITED |
+| Reputation Interpretation _merged with_ How to Design a Good Reputation System | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/ReputationInterpretation.md) | LAYOUT |
 | A Rubric for Decentralization of DID Methods | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/decentralized-did-rubric.md) |
 | Secure Data Storage | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/encrypted-data-vaults.md) | LAIDOUT
 | Secure User Interfaces | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/secure-user-interfaces.md) |
