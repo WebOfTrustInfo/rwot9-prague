@@ -727,8 +727,6 @@ To enable privacy-preserving querying (where the search index is opaque to the
 server), the client must prepare a list of encrypted index tags (which are stored
 in the Encrypted Resource, alongside the encrypted data contents).
 
-* TODO: add details about the salting + encryption mechanism of the index tags
-
 #### Client: Versioning and Replication (L2)
 
 A server must support _at least one_ versioning/change control mechanism.
