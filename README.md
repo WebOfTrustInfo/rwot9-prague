@@ -10,6 +10,13 @@ greatest impact on the future.
 
 Visit [Eventbrite](http://rwot9.eventbrite.com) for more information and to purchase tickets.
 
+## Final Papers
+
+## [*Encrypted Data Vaults*](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/encrypted-data-vaults.pdf) [(Text)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/encrypted-data-vaults.md)
+#### Amy Guy, David Lamers, Tobias Looker, Manu Sporny, Dmitri Zagidulin
+
+> This paper describes current approaches and architectures, derived requirements, design goals, and dangers that implementers should be aware of when implementing data storage. This paper also explores the base assumptions of these sorts of systems such as providing privacy-respecting mechanisms for storing, indexing, and retrieving encrypted data, as well as data portability.
+
 ## Topics & Advance Readings
 
 In advance of the design workshop, all participants are invited to contribute a
@@ -20,16 +27,6 @@ either:
    * A specific solution related to the web-of-trust that you'd like others to use or contribute to?
 
 Please see the [Topics & Advance Readings directory](topics-and-advance-readings) for all the current papers (and how to upload yours).
-
-## Primers
-
-These primers overview major topics which are likely to be discussed at the design workshop. If you read nothing else, read these. (But really, read as much as you can!)
-
-* [RWOT Primer](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/rwot-primer.md) — How the design workshop works
-* [DID Primer](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-primer.md) — Decentralized Identifiers ([extended version](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/did-primer-extended.md) also available)
-* [Functional Identity Primer](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/functional-identity-primer.md) — A different way to look at identity
-* [Verifiable Credentials Primer](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/verifiable-credentials-primer.md) — the project formerly known as Verifiable Claims
-* [Glossary of Terms](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/glossary-primer.md) — a brief dictionary of technical terms used at RWOT
 
 ## Complete Rebooting the Web of Trust Listing
 
