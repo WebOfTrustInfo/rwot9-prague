@@ -17,6 +17,11 @@ Visit [Eventbrite](http://rwot9.eventbrite.com) for more information and to purc
 
 > This paper describes current approaches and architectures, derived requirements, design goals, and dangers that implementers should be aware of when implementing data storage. This paper also explores the base assumptions of these sorts of systems such as providing privacy-respecting mechanisms for storing, indexing, and retrieving encrypted data, as well as data portability.
 
+## [*Reputation Interpretation*](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/reputation-interpretation.pdf) [(Text)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/reputation-interpretation.md)
+#### Arthur Brock, Kaliya Hamlin, Grace (Rebecca) Rachmany, Jakub Lanc
+
+> This paper explores how to take a "reputation" trust graph with multiple characteristics and create actionable output. It is not focused on the automation of the process, which could be applied by human processing of information or through a programmed software implementations.
+
 ## Topics & Advance Readings
 
 In advance of the design workshop, all participants are invited to contribute a
