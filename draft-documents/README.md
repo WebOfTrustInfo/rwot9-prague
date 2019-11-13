@@ -18,7 +18,7 @@ These are all the papers that we're currrently working on for RWOT9
 | Petnames | | 10/7 |
 | P2P Lending | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/P2P-lending-reputation) | 2020?
 | The Real Problem with Centralization | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/the-real-problem-with-centralization.md) |
-| Reputation Interpretation | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/ReputationInterpretation.md) | [DONE](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/reputation-interpretation.pdf) |
+| Reputation Interpretation | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/ReputationInterpretation.md) | [FINAL](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/reputation-interpretation.pdf) |
 | A Rubric for Decentralization of DID Methods | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/decentralized-did-rubric.md) |
 | Secure User Interfaces | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/secure-user-interfaces.md) |
 | Shamir Secret Sharing BIP | [MediaWiki](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/shamir-secret-sharing.mediawiki) | 10/7
