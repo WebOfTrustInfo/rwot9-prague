@@ -13,7 +13,7 @@ Authors:
 [Juan Caballero Ph.D.](mailto:juan.caballero@spherity.com) (Editor), and
 [Matt G. Condon](mailto:mattgcondon@gmail.com) 
 
-version 1.1, 2019/11/14
+version 1.2, 2019/11/14
 
 github:  https://github.com/SmithSamuelM/rwot9-prague.git
 
@@ -37,7 +37,7 @@ We are no longer in a centralized world.
 
 With a proper meta-platform **counterbalancing** these centralizing tendencies, a "winner takes all" approach is no longer the only, or even, perhaps, the most sustainable model for establishing platforms.  This paper examines one blockchain-enabled technology and market driver for decentralization: an identity meta-platform. It describes how identity can provide the connective pathways (in software terms, the "protocol") that unlocks the potent force of data-flow decentralization and provides the foundation for the creation of a platform-of-platforms (what we will call a "meta-platform") that provides its participants with a new level of control and portability.  By making their participation portable to other platforms structured around the same protocol, these platforms **empower** the individual actor vis-a-vis the platform.
 
-We will first discuss how the network scaling law for meta-platforms differs from the network scaling law traditionally seen on platforms today, and we will examine how the cooperating members of a decentralized identity meta-platform may out-compete traditional, centralized identity platforms (such aslogin in with Google/Facebook through which end-users access other services that outsource identity and verification services to a trusted third party, which over time accrues the lion's share of user data, metadata, and control over that identity)[[1]].
+We will first discuss how the network scaling law for meta-platforms differs from the network scaling law traditionally seen on platforms today, and we will examine how the cooperating members of a decentralized identity meta-platform may out-compete traditional, centralized identity platforms (such as *login in with Google/Facebook* through which end-users access other services but in the process outsource control over their identity, data, metadata, and online relationships)[[1]].
 
 Not only do macro-level advantages emerge for the cooperating platforms themselves, but it is also hard to overstate the micro-level **impact** decentralization of identity infrastructure can have for the **individual consumer**, who increasingly,  is hungry for ways to take back control. 
 
