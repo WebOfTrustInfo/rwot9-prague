@@ -13,7 +13,7 @@ Authors:
 [Juan Caballero Ph.D.](mailto:juan.caballero@spherity.com) (Editor), and
 [Matt G. Condon](mailto:mattgcondon@gmail.com) 
 
-version 1.2, 2019/11/14
+version 1.3, 2019/11/14
 
 github:  https://github.com/SmithSamuelM/rwot9-prague.git
 
@@ -143,7 +143,7 @@ A system-wide **trust mechanism** along these lines can be seen at work in the d
 
 This approach can **slash the “trust tax”** at every level, starting with participants agreeing to implement and follow the existing decentralized identity standards and their future developments. This decentralized approach does not build another aggregator platfom or another proprietary blockchain solution, but rather a participant-controlled decentralized meta-platform. Opinions vary as to what this participant control could or likely would look like, but some proponents of decentralization argue that bottom-up governance is easier to institute in these kinds of meta-networks [[1]].
 
-Because the primary value of a platform is to reduce transactions costs for all parties, a decentralized identity system making the building-blocks of reputation more portable has the potential to **significantly reduce** average, net, and/or aggregrate trust transaction costs in many different marketplaces and other industrial contexts. This may make whole families of transactions viable that were not viable before, or create new kinds of commerce (and perhaps even self-regulating ones). This increases the value of the associated platforms per participant and lowers the critical platform size (see below). This further accelerates network-of-network effects.
+Because the primary value of a platform is to reduce transactions costs for all parties, a decentralized identity system makes the building-blocks of reputation more portable and has the potential to **significantly reduce** average, net, and/or aggregrate trust transaction costs in many different marketplaces and other industrial contexts. This may make whole families of transactions viable that were not viable before, or create new kinds of commerce (and perhaps even self-regulating ones). This increases the value of the associated platforms per participant and lowers the critical platform size (see below). This further accelerates network-of-network effects.
 
 ## Concrete examples of trust savings from different scales and contexts
 
@@ -155,7 +155,7 @@ We could adapt this terminology to today's platform economics by pointing out th
 
 One of the problems with decentralized blockchain technology is that in general it has a ways left to go before it can compete with this simple and convenient **user experience**. In terms of "on-boarding" a user to a new platform or network, many radically peer-to-peer digital networks or blockchain systems  have quite high on-boarding costs. In the case of peer-to-peer technologies, there can be a very steep learning curve and "UX deficit" relative to increasingly convenient and intuitive commercial software.  In the case of blockchain and cryptocurrencies networks, participants have to contend with difficulty in managing keys, increased regulatory friction, and a level of  complexity quite high by contemporary standards. The plethora of competing (and thus, at least to date, largely non-cooperative) blockchain platforms only heightens the confusion. The result is that critical platform size may be significantly increased, with the worrisome effect that many blockchain platforms may never reach their critical size (or even a "break-even point" at which their scale and overhead are practical for their intended use cases).
 
-A decentralized identity meta-platform allows those on-boarding costs to be **amortized** across every platform a participant chooses to join. This potentially lowers the critical platform size (and the break-even point) for the participant on each of the sub-platforms. None of this directly helps to unify user experience, but perhaps the on the whole this "transitive onboarding" can offer some incentives towards cooperation between platforms, in design terms at least. All of this could readily accelerate network-of-network effects and overcome some of the inefficiencies created by competition.
+A decentralized identity meta-platform allows those on-boarding costs to be **amortized** across every platform a participant chooses to join. This potentially lowers the critical platform size (and the break-even point) for the participant on each of the sub-platforms. None of this directly helps to unify user experience, but perhaps on the whole this "transitive onboarding" can offer some incentives towards cooperation between platforms, in design terms at least. All of this could readily accelerate network-of-network effects and overcome some of the inefficiencies created by competition.
   
 ### IoT Combinatorics 
 
