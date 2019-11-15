@@ -97,7 +97,6 @@ which is the same as one larger network of size *(N₁+N₂)*. The two networks 
 
 ![](https://i.imgur.com/HI1uWIk.png)
 
-
 The same analysis can be extended to multiple cooperating networks [[1]]. In the above example, the cooperative effect came from making the networks interoperable. This may (and traditionally does) pose a problem if both network's products are **competitive**. We discuss in detail elsewhere the lifetime value of cooperation for competing network products[[1]], but in broad strokes we could say it is a function of relative network size and degree of market saturation. 
 
 ### Cooperation in the calculus of business strategy
@@ -210,6 +209,7 @@ One illustrative example can be seen in this projection about the mobility ecosy
 It’s important to note how different this model is from current models (for example, the centralized ride-sharing platforms of Uber and Lyft). Autonomous vehicles eliminate the cost of human drivers, while decentralized meta-platforms eliminate the middleman that matches customers with rides, charges a transaction fee and sets terms and conditions.
 
 Corporations will establish successful business models **at the edge** of this kind of meta-platform not by competing on margins or efficiency or proprietary IP, but by instead competing on
+
 - User Experience
 - Algorithms and Analytics
 - Implementation and Services
@@ -363,3 +363,4 @@ https://www.hyperledger.org/projects/aries
 [22]. Ergodic Economics. https://ergodicityeconomics.com/lecture-notes/
 
 [22]: https://ergodicityeconomics.com/lecture-notes/
+
