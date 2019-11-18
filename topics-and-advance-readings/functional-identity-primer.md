@@ -160,7 +160,7 @@ we’ve learned to various interactions, usually elsewhere.
 
 <div style="text-align:center;"><img src="./media/functionalidentity2.png" width=33% height=33%></div>
 
-Acquire** means to gather identity information for use by the system.
+**Acquire** means to gather identity information for use by the system.
 
 **Apply** means to use identity information to affect change outside the
 identity system, typically to moderate an interaction of the subject
