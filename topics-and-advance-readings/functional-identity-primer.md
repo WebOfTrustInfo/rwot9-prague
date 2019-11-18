@@ -98,7 +98,7 @@ It should. Because, in fact, these are **legitimate abuses** of identity
 feared by civil libertarians and freedom-minded people everywhere. When
 we talk about identity systems, we are necessarily talking about how we
 keep track of people and things. Do it badly and we risk accidentally
-building our own Panopticon prison \[1\]. Fortunately, by understanding
+building our own Panopticon prison \[2\]. Fortunately, by understanding
 how identity functions, we can avoid, mitigate, and minimize such
 abuses.
 
