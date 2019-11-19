@@ -13,7 +13,7 @@ Authors:
 [Juan Caballero Ph.D.](mailto:juan.caballero@spherity.com) (Editor), and
 [Matt G. Condon](mailto:mattgcondon@gmail.com) 
 
-version 1.5, 2019/11/14
+version 1.6, 2019/11/19
 
 github:  https://github.com/SmithSamuelM/rwot9-prague.git
 
@@ -97,6 +97,7 @@ which is the same as one larger network of size *(N₁+N₂)*. The two networks 
 
 ![](https://i.imgur.com/HI1uWIk.png)
 
+
 The same analysis can be extended to multiple cooperating networks [[1]]. In the above example, the cooperative effect came from making the networks interoperable. This may (and traditionally does) pose a problem if both network's products are **competitive**. We discuss in detail elsewhere the lifetime value of cooperation for competing network products[[1]], but in broad strokes we could say it is a function of relative network size and degree of market saturation. 
 
 ### Cooperation in the calculus of business strategy
@@ -156,7 +157,7 @@ One of the problems with decentralized blockchain technology is that in general 
 
 A decentralized identity meta-platform allows those on-boarding costs to be **amortized** across every platform a participant chooses to join. This potentially lowers the critical platform size (and the break-even point) for the participant on each of the sub-platforms. None of this directly helps to unify user experience, but perhaps on the whole this "transitive onboarding" can offer some incentives towards cooperation between platforms, in design terms at least. All of this could readily accelerate network-of-network effects and overcome some of the inefficiencies created by competition.
   
-### IoT Combinatorics 
+### IoT Combinatorics and the 4th Industrial Revolution
 
 We have been speaking about a network-of-networks effect in positive terms, but from the perspective of communications, it is also a dizzying escalation of the scale of some technical problems, in particular that of **addressability**. Today, the Internet is probably best described as a network comprised of all interconnected objects, of which the lion's share were traditionally human users and computers. When you add in the so-called Internet of Things (IoT), the number of addressable elements is reaching the tens of billions already, with many analyses predicting a tenfold increase within a decade. 
 
@@ -170,8 +171,9 @@ Human or object identities are stored in multiple centralized or federated syste
 
 Therefore, a trust verification system and associated interoperable meta-platform protocol, built on some kind of **universal addressing system** must be utilized. To be a truly global solution, easy-to-use and still safe from hacking, censorship, and other sovereign interference, such a meta-platform scheme must be independent from any vendor-defined naming API or otherwise centralized namespace, yet they usually need to be one-to-one mappable onto such APIs and namespaces. 
 
-A participant-controlled meta-platform based on decentralized idenitity solves the problem of addressability and trust verification across participants involved in a given value chain transaction. The potential of enabling these devices to interact across a network-of-networks is inconceivably broad in scope.  It may well prove to be many orders of magnitude broader than Facebook as an **aggregator** for human interactions and an **enabler** of new connections and networks.
+A participant-controlled meta-platform based on decentralized identity solves the problem of addressability and trust verification across participants involved in a given value chain transaction. The potential of enabling these devices to interact across a network-of-networks is inconceivably broad in scope.  It may well prove to be many orders of magnitude broader than Facebook as an **aggregator** for human interactions and an **enabler** of new connections and networks.
   
+Such a platform will be of particular value for the **Fourth Industrial Revolution** (4IR), i.e. the fusion of technology bridging the biological, physical and digital spheres across industrial domains and societies. 4IR is moving our world into one big convoluted cyber-physical system in which everything is connected with everything else. In this digital fabric there is ubiquitous network connectivity among IoT devices and digital agents establishing dynamically defined cooperation across interlinked digital value chains. We believe that an identity meta-platform is a prerequisite to establish trust and cyber-physical security for dynamically defined cooperation in the 4IR. 
 
 ### Secure Logistics Systems
 
@@ -209,7 +211,6 @@ One illustrative example can be seen in this projection about the mobility ecosy
 It’s important to note how different this model is from current models (for example, the centralized ride-sharing platforms of Uber and Lyft). Autonomous vehicles eliminate the cost of human drivers, while decentralized meta-platforms eliminate the middleman that matches customers with rides, charges a transaction fee and sets terms and conditions.
 
 Corporations will establish successful business models **at the edge** of this kind of meta-platform not by competing on margins or efficiency or proprietary IP, but by instead competing on
-
 - User Experience
 - Algorithms and Analytics
 - Implementation and Services
@@ -363,4 +364,3 @@ https://www.hyperledger.org/projects/aries
 [22]. Ergodic Economics. https://ergodicityeconomics.com/lecture-notes/
 
 [22]: https://ergodicityeconomics.com/lecture-notes/
-
