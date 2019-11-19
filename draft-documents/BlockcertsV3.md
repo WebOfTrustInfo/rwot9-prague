@@ -4,7 +4,7 @@
 
 ## Abstract
 
-As the standards around verifiable credentials are starting to take form, different flavors of ‘verifiable credentials-like` data structures need to make necessary changes to leverage on the rulesets outlined and constantly reviewed by a knowledgeable community like RWOT and W3C. The purpose of this paper is to identify all of the changes needed for Blockcerts to comply with the Verifiable Credentials (VCs) & Decentralized Identifiers standards, and the additional benefits by using a blockchain in combination with Verifiable Credentials. This paper is to act as an explainer in which a formal spec can be created from. 
+As the standards around verifiable credentials are starting to take form, different flavors of ‘verifiable credentials-like` data structures need to make necessary changes to leverage on the rulesets outlined and constantly reviewed by a knowledgeable community like RWOT and W3C. The purpose of this paper is to identify all of the changes needed for Blockcerts to comply with the Verifiable Credentials (VC's) & Decentralized Identifiers (DID's) standards, and the additional benefits by using a blockchain in combination with Verifiable Credentials. This paper is to act as an explainer in which a formal spec can be created from. 
 
 Throughout this paper, there can be multiple implementation options for several properties. The intention is that we can engage the Blockcerts / Verifiable Credential communities and see what fits best. 
 
@@ -382,7 +382,9 @@ As specified in "BC V2 Schema & Examples" above, `verification` is used to verif
 
 It may seem as though we could get away with putting the `verification` public key in the issuer DID instead, but, depending on the DID method, that could be changed. For Blockcerts issued to a blockchain, we could leave `verification` inside the document to verify the blockchain public key the issuer was wanting to issue the certificate from.
 
-This might be considered a redundant property since the Verifiable Credential will have a proof property that verifies immutability as well, and the "issuer profile" already specifies their keys used for issuing. The VC & DID spec allows for referencing these keys directly already. 
+This might be considered a redundant property since the Verifiable Credential will have a proof property that verifies immutability as well, the "issuer profile" already specifies their keys used for issuing, and the key used for issuing will be known by the merkle root signature.
+
+Unless there's a strong reason to keep this property in Blockcerts as it moves to the VC schema, it should be suggested to remove it in V3.
 
 
 #### Signature / Proof Proposal
@@ -393,139 +395,45 @@ One important property that all `proof` methods do not provide alone with typica
 
 We should continue making a blockchain `signature` required in some capacity so that we can provide the value of life long credentials through this Proof of Verifiable Existence method. 
 
+In order to be Verifiable Credential compliant, we need to use a different signature proof. Currently `MerkleProof2019` is being spec'd out and will be compliant with VC's. TODO link.
 
-**Blockchain proof option 1** - Anchor and then sign
+While mulitple signatures are allowable in a VC, the Blockcerts spec should only specify that a blockchain proof is required. There may be benefits to supplying both an RSA signature (as an example) and a `MerkleProof2019` signature so that there may be better interoptability for verifiers that might not support `MerkleProof2019` yet.
 
-Due to possible interoperable concerns, in the beginning, one proposal is that we write `signature` inside of the certificate, which hashes & anchors the certificate data, and then the issuer signs the cert data & `signature` (anchor proof) with any of their keys listed in their DID/"Issuer Profile" to have a strong claim over the certificate data and the blockchain anchoring.
+Example
 
 ```json
 ...
-[Cert Data]
+[Cert Data Hash]
 ...
-"signature": {
-    "type": [
-      "MerkleProof2017",
-      "Extension"
-    ],
-    "merkleRoot": "b2ceea1d52627b6ed8d919ad1039eca32f6e099ef4a357cbb7f7361c471ea6c8",
-    "targetHash": "552f01d4fab7da1bce4315c134a1d46e9ef5968f49edf6f5de5d3a2776eea4fb", //Cert Data Hash
-    "proof": [
-      {
-        "right": "776aca4dc61d70480fb05e4d95aaedc719fedd752eab7d517e04af2f481f92af"
-      },
-      {
-        "left": "6613ea6c78b0d93a45c725f3fcc9f2312181ffad0a6833299663d6aa1d7806a9"
-      },
-      {
-        "right": "e780cd2fe41df361fa7c047191533fe6252ea20bcd0fc8b226da3656d1133e56"
-      }
-    ],
-    "anchors": [
-      {
-        "sourceId": "2378076e8e140012814e98a2b2cb1af07ec760b239c1d6d93ba54d658a010ecd",
-        "type": "BTCOpReturn",
-        "chain": "bitcoinMainnet"
-      }
-    ]
-  },
   "proof": {
-    "type": "RsaSignature2018",
-    "created": "2017-06-18T21:19:10Z",
-    "proofPurpose": "assertionMethod",
-    "verificationMethod": "did:example:ebfeb1f712ebc6f1c276e12ec21#key1",
-    "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5XsITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUcX16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtjPAYuNzVBAh4vGHSrQyHUdBBPM" // verifies Cert Data + Signature
+      "type": "MerkleProof2019",
+      "creator": "did:example:abcdefghij0123456789",
+      "created": "2017-09-23T20:21:34Z",
+      "domain": "example.org",
+      "nonce": "2bbgh3dgjg2302d-d2b3gi423d42",
+      "proofValue":
+  "z76WGJzY2rXtSiZ8BDwU4VgcLqcMEm2dXdgVVS1QCZQUptZ5P8n5YCcnbuMUASYhVNihae7m8VeYvfViYf2KqTMVEH1B
   }
 ```
 
-Other Verifiable Credential wallets besides Blockcerts would not need to check `signature` for blockchain anchoring to verify the integrity of the certificate. Not checking `signature` would mean that they cannot guarantee proof of existence during a time in which a key was valid (in the case of key revocation by the issuer).
+Note: in the new `MerkleProof2019`, `proofValue` is a CBOR encoding of the JSON that would have been present in `MerkleProof2017`. 
 
-This may provide better interoperability amongst VC wallets in the beginning.
-
-
-**Blockchain proof option 2** Both Anchor and Sign inside `proof`
-
-It may be possible to create a new (or reuse existing `signature` extension) `proof` that supports the structure/purpose defined in `signature` previously as an extension to `ld-proofs`. This would allow us to add multiple proofs (such as RSA signing key AND blockchain anchoring proof) to a Blockcerts VC. `proof` can be an array that allows multiple proofs, but the main reason to have a traditional signing proof and a blockchain proof is so that VC verifiers do not have to support blockchain-based verification in order for a Blockcerts VC to verify. If a recipient has a Blockcerts VC-based credential, they may take the credential to any VC standard wallet, but suggested to use an Open Source Blockcerts verifier to take advantage of the Proof of Verifiable Existance scheme that a traditional VC can not guarentee unless they can understand and check the blockchain proof.  
-
-Therefore, we write both `signature` proof and more common proof (such as `RsaSignature2018`) in the `proof` section of a certificate. This would assume that Verifiable Credential wallets will attempt to check multiple proofs and safely ignore proofs that they do not understand.  
+The above gets decoded to:
 
 ```json
-...
-[Cert Data Hash]
-...
-  "proof": [{
-    "type": "RsaSignature2018",
-    "created": "2017-06-18T21:19:10Z",
-    "proofPurpose": "assertionMethod",
-    "verificationMethod": "did:example:ebfeb1f712ebc6f1c276e12ec21#key1",
-    "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5XsITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUcX16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtjPAYuNzVBAh4vGHSrQyHUdBBPM" // verifies Cert Data
-  },
-  {
-    "type": [
-      "MerkleProof2017",
-      "Extension"
-    ],
-    "merkleRoot": "b2ceea1d52627b6ed8d919ad1039eca32f6e099ef4a357cbb7f7361c471ea6c8",
-    "targetHash": "552f01d4fab7da1bce4315c134a1d46e9ef5968f49edf6f5de5d3a2776eea4fb", // Cert Data Hash
-    "proof": [
-      {
-        "right": "776aca4dc61d70480fb05e4d95aaedc719fedd752eab7d517e04af2f481f92af"
-      },
-      {
-        "left": "6613ea6c78b0d93a45c725f3fcc9f2312181ffad0a6833299663d6aa1d7806a9"
-      },
-      {
-        "right": "e780cd2fe41df361fa7c047191533fe6252ea20bcd0fc8b226da3656d1133e56"
-      }
-    ],
-    "anchors": [
-      {
-        "sourceId": "2378076e8e140012814e98a2b2cb1af07ec760b239c1d6d93ba54d658a010ecd",
-        "type": "BTCOpReturn",
-        "chain": "bitcoinMainnet"
-      }
-    ]
-  }]
-```
-
-There are some papers & proposals already written for going down this path. (https://github.com/WebOfTrustInfo/rwot3-sf/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md) & (https://web-payments.org/specs/source/pop2016/).
-
-**Blockchain proof option 3** Only use blockchain proof
-
-The first two options allow for better interoperability with other verifiable credential verifiers/wallets as they get developed. Alternatively we only specify that a blockchain proof is required and leave it up to implementers to decide whether or not they want to add other proof types. 
-
-The following example is much like option 2, but instead of a RSA proof and a blockchain proof, it is just a blockchain proof. 
-
-```json
-...
-[Cert Data Hash]
-...
-  "proof": 
-  {
-    "type": [
-      "MerkleProof2017",
-      "Extension"
-    ],
-    "merkleRoot": "b2ceea1d52627b6ed8d919ad1039eca32f6e099ef4a357cbb7f7361c471ea6c8",
-    "targetHash": "552f01d4fab7da1bce4315c134a1d46e9ef5968f49edf6f5de5d3a2776eea4fb", // Cert Data Hash
-    "proof": [
-      {
-        "right": "776aca4dc61d70480fb05e4d95aaedc719fedd752eab7d517e04af2f481f92af"
-      },
-      {
-        "left": "6613ea6c78b0d93a45c725f3fcc9f2312181ffad0a6833299663d6aa1d7806a9"
-      },
-      {
-        "right": "e780cd2fe41df361fa7c047191533fe6252ea20bcd0fc8b226da3656d1133e56"
-      }
-    ],
-    "anchors": [
-      {
-        "sourceId": "2378076e8e140012814e98a2b2cb1af07ec760b239c1d6d93ba54d658a010ecd",
-        "type": "BTCOpReturn",
-        "chain": "bitcoinMainnet"
-      }
-    ]
-  }
+{
+    "merkleRoot": "3c9ee831b8705f2fbe09f8b3a92247eed88cdc90418c024924be668fdc92e781",
+    "targetHash": "c65c6184e3d5a945ddb5437e93ea312411fd33aa1def22b0746d6ecd4aa30f20",
+    "path": [{
+      "right": "51b4e22ed024ec7f38dc68b0bf78c87eda525ab0896b75d2064bdb9fc60b2698"
+    }, {
+      "right": "61c56cca660b2e616d0bd62775e728f50275ae44adf12d1bfb9b9c507a14766b"
+    }],
+    "anchors": [{
+      "sourceId": "582733d7cef8035d87cecc9ebbe13b3a2f6cc52583fbcd2b9709f20a6b8b56b3",
+      "type": "BTCOpReturn"
+    }] 
+}
 ```
 
 #### Issuer Key Revocations 
@@ -697,43 +605,19 @@ Credential:
     ],
     "publicKey": "ecdsa-koblitz-pubkey:1AwdUWQzJgfDDjeKtpPzMfYMHejFBrxZfo"
   },
-  "signature": { // could put this in proof section as well
-    "type": [
-      "MerkleProof2017",
-      "Extension"
-    ],
-    "merkleRoot": "b2ceea1d52627b6ed8d919ad1039eca32f6e099ef4a357cbb7f7361c471ea6c8",
-    "targetHash": "552f01d4fab7da1bce4315c134a1d46e9ef5968f49edf6f5de5d3a2776eea4fb",
-    "proof": [
-      {
-        "right": "776aca4dc61d70480fb05e4d95aaedc719fedd752eab7d517e04af2f481f92af"
-      },
-      {
-        "left": "6613ea6c78b0d93a45c725f3fcc9f2312181ffad0a6833299663d6aa1d7806a9"
-      },
-      {
-        "right": "e780cd2fe41df361fa7c047191533fe6252ea20bcd0fc8b226da3656d1133e56"
-      }
-    ],
-    "anchors": [
-      {
-        "sourceId": "2378076e8e140012814e98a2b2cb1af07ec760b239c1d6d93ba54d658a010ecd",
-        "type": "BTCOpReturn",
-        "chain": "bitcoinMainnet"
-      }
-    ]
-  },
   "proof": {
-    "type": "RsaSignature2018",
-    "created": "2017-06-18T21:19:10Z",
-    "proofPurpose": "assertionMethod",
-    "verificationMethod": "did:example:ebfeb1f712ebc6f1c276e12ec21#key1",
-    "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5XsITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUcX16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtjPAYuNzVBAh4vGHSrQyHUdBBPM"
+      "type": "MerkleProof2019",
+      "creator": "did:example:abcdefghij0123456789",
+      "created": "2017-09-23T20:21:34Z",
+      "domain": "example.org",
+      "nonce": "2bbgh3dgjg2302d-d2b3gi423d42",
+      "proofValue":
+  "z76WGJzY2rXtSiZ8BDwU4VgcLqcMEm2dXdgVVS1QCZQUptZ5P8n5YCcnbuMUASYhVNihae7m8VeYvfViYf2KqTMVEH1B
   }
 }
 ```
 
-There were several options outlined above, this specific example used `metadata` as an object, `display` as an object, `holds` & `evidence` for OB-like `credentialSubject` types, and `signature` inside the datamodel with an `RSASignature` signing the credential. This is just an example and not represented of a "recommended" route for Blockcerts V3.  
+There were several options outlined above, this specific example used `metadata` as an object, `display` as an object, `holds` & `evidence` for OB-like `credentialSubject` types, and `MerkleProof2019` as the new `signature`/`proof`. This is just an example and not represented of a "recommended" route for Blockcerts V3.  
 
 ## Issuer Profile
 
@@ -811,7 +695,7 @@ It's possible that we can include `BlockcertsRevocationService` as a field in th
 #### BlockcertsRevocationService
 
 
-**Option 1**
+**Option 1:** Check revocation for a single ID at a time.
 
 ```json
 "service": [{
@@ -826,7 +710,7 @@ If an issuer wants the ability to revoke any of their issued certificates, they 
 This will allow a Blockcerts verifier to check the revocation status of a certificate by making a `GET` call to `https://example.com/revocationEndpoint/{certId}`. 
 
 
-**Option 2**
+**Option 2** Check a revocation list for the ID.
 
 An alternative method of making this `BlockcertsRevocationService` would be to make it a `BlockcertsRevocationListService` instead, similar to how we do `revocationList` today.  
 
@@ -964,7 +848,7 @@ While Blockcerts adopts the Verifiable Credential standard and moves off of the 
 
 ### Issuing Blockcerts V3 that are Open Badge Compliant
 
-As mentioned previously, we can continue making Blockcerts that can be Open Badges. Based on the work by Kim Hamilton Duffy & Nate Otto at a previous Rebooting the Web of Trust, you can consult this document on that: https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md
+As mentioned previously, we can continue making Blockcerts that can be Open Badges. Based on the work by Kim Hamilton Duffy & Nate Otto at a previous Rebooting the Web of Trust: https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md
 
 Blockcerts V3 shall make no requirements that one must issue a BC that is both a Verifiable Credential and an Open Badge. By making this stance, Blockcerts can be better supported throughout the ecosystem of Verifiable Credentials. Any schema and `CredentialSubject` type can be supported. 
 
@@ -991,7 +875,7 @@ There's a few optional changes that may break your existing templates as well. P
 - [display](#display)
 - [metadata](#metadata)
 
-These fields have not been standardized before, but we do have the opportunity to make these improvements while moving to a new major version number. If it interests you, please give any feedback you might have. 
+These fields have not been standardized before, but we do have the opportunity to make these improvements while moving to a new major version number. If it interests you, please give any feedback you might have. It may be advisable to implement this features in the future to minimize the scope of work and breaking changes for V3.
 
 ## Summary
 
