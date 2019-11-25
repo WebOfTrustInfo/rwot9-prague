@@ -397,7 +397,7 @@ One important property that all `proof` methods do not provide alone with typica
 
 In order to be Verifiable Credential compliant, we need to use a different signature proof. Currently [`MerkleProof2019`](https://w3c-dvcg.github.io/lds-merkle-proof-2019/) is being spec'd out and will be compliant with VC's.
 
-While mulitple signatures are allowable in a VC, the Blockcerts spec should only specify that a blockchain proof is required. There may be benefits to supplying both an RSA signature (as an example) and a `MerkleProof2019` signature so that there may be better interoptability for verifiers that might not support `MerkleProof2019` yet.
+While multiple signatures are allowable in a VC, the Blockcerts spec should only specify that a blockchain proof is required. There may be benefits to supplying both an RSA signature (as an example) and a `MerkleProof2019` signature so that there may be better interoptability for verifiers that might not support `MerkleProof2019` yet.
 
 Example
 
