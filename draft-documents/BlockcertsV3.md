@@ -1,6 +1,6 @@
 # Blockcerts V3.0
 
-Anthony Ronning <aronning@learningmachine.com> (Learning Machine), Wong Wai Chung (<waichung@nextid.com>) (NextID)
+Anthony Ronning <aronning@learningmachine.com> (Learning Machine), Wong Wai Chung <waichung@nextid.com> (NextID)
 
 ## Abstract
 
@@ -53,7 +53,7 @@ An example of a minimally viable Verifiable Credential can be seen below:
 
 ### Open Badges
 
-Currently, Blockcerts is an Extension to Open Badges(https://openbadges.org/), which is a specification and open technical standard originally developed by the Mozilla Foundation. Open Badges is widely adopted by Universities and Microcredential platforms as a way to issue achievements and allows recipients to hold and collect them into "backpacks". The benefit of using a blockchain as an extension to Open Badges is to provide immutability and proof of existence.
+Currently, Blockcerts is an Extension to [Open Badges](https://openbadges.org/), which is a specification and open technical standard originally developed by the [Mozilla Foundation](https://foundation.mozilla.org). Open Badges is widely adopted by Universities and Microcredential platforms as a way to issue achievements and allows recipients to hold and collect them into "backpacks". The benefit of using a blockchain as an extension to Open Badges is to provide immutability and proof of existence.
 
 An example standard Open Badge can be seen below:
 
@@ -337,7 +337,7 @@ This is used for a client (ie, Blockcerts Wallet) to do a POST API call to trans
 More information about the exact schema being used for Blockcerts can be found [here](https://www.blockcerts.org/schema/2.0/context.json) & general information [here](https://github.com/blockchain-certificates/cert-schema/blob/master/docs/schema-2.md).
 
 
-This URL-based "Issuer Profile" will be improved by using DID's for issuers. More on this later. 
+This URL-based "Issuer Profile" will be improved by using DID's for issuers. More on this in [Issue Profile](#issuer-profile). 
 
 
 ## Blockcerts as VC Implementation
@@ -364,7 +364,7 @@ can become
 ```json
   "credentialSubject": {
     "id": "ecdsa-koblitz-pubkey:mtr98kany9G1XYNU74pRnfBQmaCg2FZLmc",
-    "name": "Eularia Landroth"
+    "name": "Eularia Landroth",
     "alumniOf": {
       "id": "did:example:c276e12ec21ebfeb1f712ebc6f1",
       "name": [{
@@ -467,7 +467,7 @@ Example:
 "display": {
     "type": "html",
     "data": "<p>hello world</p>"
-    }
+}
 ```
 
 
@@ -495,7 +495,7 @@ Could be similar to `display`, adding `type` & `data`.
 ```json
 "metadata": {
     "type": "json",
-    "data": "{\"test\": true"
+    "data": "{\"test\": true}"
 }
 ```
 
@@ -675,7 +675,7 @@ I'm proposing a service endpoint for BlockcertsIssuer that contains some of this
   "id": "did:example:123456789abcdefghi#BlockcertsIssuer",
   "type": "BlockcertsIssuerService",
   "name": "University of Example,
-  "URL", "https://example.com", 
+  "URL": "https://example.com", 
   "imageURL": "https://example.com/img.png",
   "email": "test@example.com",
   "serviceEndpoint": "https://example.com/introductionURL" 
@@ -749,7 +749,7 @@ Here is an example of what an issuer DID might look like when resolved, picking 
     "id": "did:example:123456789abcdefghi#BlockcertsIssuer",
     "type": "BlockcertsIssuerService",
     "name": "University of Example,
-    "URL", "https://example.com", 
+    "URL": "https://example.com", 
     "imageURL": "https://example.com/img.png",
     "email": "test@example.com",
     "serviceEndpoint": "https://example.com/introductionURL"
@@ -760,8 +760,6 @@ Here is an example of what an issuer DID might look like when resolved, picking 
   }]
 }
 ```
-
-TODO: for example purposes, I've been copying and pasting an RSA key around, need to change that to a blockchain key.
 
 
 ### Issuer Profile as a URL in V3
