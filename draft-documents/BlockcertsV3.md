@@ -1,4 +1,4 @@
-# Blockcerts V3.0
+# Blockcerts V3 Proposal
 
 Anthony Ronning <aronning@learningmachine.com> (Learning Machine), Wong Wai Chung <waichung@nextid.com> (NextID)
 
@@ -663,10 +663,10 @@ However, at minimum, there are a few other things we need to carry over to a DID
 - URL
 - introductionURL
 - revocationList
-- mage
+- image
 - email
 
-I'm proposing a service endpoint for BlockcertsIssuer that contains some of this metadata, as well as a BlockcertsRevocation URL to handle certificate revocations. 
+We are proposing a service endpoint for BlockcertsIssuer that contains some of this metadata, as well as a BlockcertsRevocation URL to handle certificate revocations. 
 
 #### BlockcertsIssuerService
 
@@ -726,7 +726,7 @@ However, option 1 allows the issuer to see, log, monitor (etc.) against a specif
 Since option 2 is pulling an entire list of revocation events, it is not revealed to the issuer who is getting verified, but it does reveal to verifiers every revocation event they have ever made and why. In the case of a large revocation list, the verifier may have to wait for all of the revocations to get processed and retrieved. 
 
 
-There has not been a very good consensus yet on what method of revocation/status lists should be used for Verifiable Credentials, and thus no standards yet. Ideally, there is a generic `RevocationServiceEndpoint` not specific to Blockcerts revocation lists, but to not conflict with other methods that might be created, I'm suggesting we label this as a Blockcerts-specific revocation endpoint. 
+There has not been a very good consensus yet on what method of revocation/status lists should be used for Verifiable Credentials, and thus no standards yet. Ideally, there is a generic `RevocationServiceEndpoint` not specific to Blockcerts revocation lists, but to not conflict with other methods that might be created, we are suggesting we label this as a Blockcerts-specific revocation endpoint. 
 
 Instead of the Blockcerts standard picking one of these two methods, we may support both and allow issuers to decide for themselves which makes better sense for their organization. 
 
@@ -875,3 +875,6 @@ Note: While these changes were identified as needed changes early on, there may 
 ## Summary
 
 The current Blockcerts V2 standard and the Verifiable Credentials standard has a lot of similarities that easily map to each other in many ways. Blockcerts can achieve much of the same functionality and more by utilizing the Verifiable Credential and Decentralized Identifiers standard. There are many options for how to map specific properties, but in the end Blockchain Proofs, Issuer Profiles/Identities, Recipient Ownership, and the aspects of life-long credentials are better supported/standardized, giving options for doing so in a more decentralized way. From here, we incredibly value community feedback and support. Based on the conversations and decisions preferred by the community, we can work on an official specification for Blockcerts V3.
+
+## Contributions
+Matthieu Collé ([@raiseandfall](https://twitter.com/raiseandfall))
