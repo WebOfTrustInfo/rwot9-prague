@@ -480,7 +480,7 @@ Alternatively, we can use [DATA URLs](https://developer.mozilla.org/en-US/docs/W
 ```
 
 
-In the beginning, the official Blockcerts Universal Verifier might only support HTMl officially, but it does allow others to create valid Blockcerts with different display types. The official verifier should fall back to a default display when it does not understand a Data URL like it does today when `displayHtml` is missing.
+In the beginning, the official Blockcerts Universal Verifier might only support HTML officially, but it does allow others to create valid Blockcerts with different display types. The official verifier should fall back to a default display when it does not understand a Data URL like it does today when `displayHtml` is missing.
 
 
 #### `metadata`
