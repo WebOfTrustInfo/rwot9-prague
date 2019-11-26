@@ -638,7 +638,7 @@ Here's an example of a DID when resolved:
 {
   "@context": "https://www.w3.org/2019/did/v1",
   "id": "did:example:123456789abcdefghi",
-  "authentication": [{
+  "publicKeys": [{
     "id": "did:example:123456789abcdefghi#keys-1",
     "type": "RsaVerificationKey2018",
     "controller": "did:example:123456789abcdefghi",
@@ -652,7 +652,7 @@ Here's an example of a DID when resolved:
 }
 ```
 
-One of the main requirements to verify the integrity of a certificate and proof that a certain issuer did indeed issue it is the `#key` field in the `authentication` property of a DID. 
+One of the main requirements to verify the integrity of a certificate and proof that a certain issuer did indeed issue it is by looking at the `#key` field in the `publicKeys` property of a DID. 
 
 One would be able to link a signing key by referencing the DID and property: `did:example:123456789abcdefghi#keys-1`. 
 
@@ -739,7 +739,7 @@ Here is an example of what an issuer DID might look like when resolved, picking 
 {
   "@context": "https://www.w3.org/2019/did/v1",
   "id": "did:example:123456789abcdefghi",
-  "authentication": [{
+  "publicKeys": [{
     "id": "did:example:123456789abcdefghi#keys-1",
     "type": "Ed25519VerificationKey2018",
     "controller": "did:example:123456789abcdefghi",
@@ -789,7 +789,7 @@ Here is an example of an Issuer Profile in Blockcerts v2:
 }
 ```
 
-Comparing that to the example issuer DID above, the only thing needed to change is mapping `publicKeys` to `authentication`. 
+Comparing that to the example issuer DID above, the only thing needed to change is how `publicKey` is handled.
 
 
 ```json
@@ -803,7 +803,7 @@ Comparing that to the example issuer DID above, the only thing needed to change 
   "name": "University of Learning",
   "url": "https://www.issuer.org",
   "introductionURL": "https://www.issuer.org/intro/",
-  "authentication": [{
+  "publicKey": [{
     "id": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json#keys-1",
     "type": "Ed25519VerificationKey2018",
     "controller": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json",
@@ -816,6 +816,25 @@ Comparing that to the example issuer DID above, the only thing needed to change 
 ```
 
 This will allow us to link directly to a specific key used for signing a Verifiable Credential, which is a standard way of finding the key, instead of in the current Blockcerts model of checking the blockchain issuing key against all public keys that an issuer has claimed ownership of.
+
+Unfortunately with the `publicKey` change, since it is the same property name from V2, it will make url-based Issuer Profiles a bit tricky to deal with. Either we make url based Issuer Profiles incapable of handling both V2 & V3 Blockcerts or we allow both V2 & V3 public keys in there. Example: 
+
+```json
+  "publicKey": [
+    {
+      "id": "ecdsa-koblitz-pubkey:msBCHdwaQ7N2ypBYupkp6uNxtr9Pg76imj",
+      "created": "2017-06-29T14:48:03.814936+00:00"
+    },
+    {
+      "id": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json#keys-1",
+      "type": "Ed25519VerificationKey2018",
+      "controller": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json",
+      "publicKeyBase58": "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV"
+    }
+  ]
+```
+
+For V2, we may need to update verification to ignore cases where `id` is a `did:` or `http:`/`https:` URI. For V3, we may need to do the reverse or to ignore cases where `id` does not end with `#` like it should in the VC/DID model. 
 
 
 ## Considerations
@@ -853,7 +872,7 @@ There are a few breaking changes that are necessary as we move to Verifiable Cre
 
 #### Issuer Profile
 
-Existing Issuer Profiles could continue to operate but an additional field needs to be implemented. As mentioned above, `authentication` in place of `publicKeys` to allow for directly linking to a specific key. If one wanted to support both V2 Blockcerts & V3 Blockcerts using the same URL-based Issuer Profile, one could add `authentication` in addition to `publicKeys`. 
+Existing Issuer Profiles could continue to operate but in order to issue V3 credentials, it may require a new Issuer Profile (either URL or DID based). As mentioned above in [Issuer Profile](#issuer-profile-as-a-url-in-v3), the `publicKey` property needs to change in V3. We have two options: support having a mix of V2 & V3 `publicKey` models in a single Issuer Profile, or require that a V3 issuer needs to have a seperate Issuer Profile.
 
 For DID based Issuer Profiles, it's understood that you'd be creating a new issuer profile and will need to continue to maintain your URL based profile for every credential you've issued (unless you reactively issue V3 for every V2 credential you've ever issued). DID issuer profiles will act similar in nature to URL-based Issuer Profiles but under the DID-document schema model. See [issuer profile as a did](#issuer-profile-as-a-did) for a summary of these changes and options.
 
