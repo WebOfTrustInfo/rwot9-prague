@@ -4,13 +4,13 @@ Anthony Ronning <aronning@learningmachine.com> (Learning Machine), Wong Wai Chun
 
 ## Abstract
 
-As the standards around verifiable credentials are starting to take form, different flavors of ‘verifiable credentials-like` data structures need to make necessary changes to leverage on the rulesets outlined and constantly reviewed by a knowledgeable community like RWOT and W3C. The purpose of this paper is to identify all of the changes needed for Blockcerts to comply with the [Verifiable Credentials](https://w3c.github.io/vc-data-model/) (VC's) & [Decentralized Identifiers](https://w3c.github.io/did-core/) (DID's) standards, and the additional benefits by using a blockchain in combination with Verifiable Credentials. This paper is to act as an explainer in which a formal spec can be created.
+As the standards around verifiable credentials are starting to take form, different flavors of "verifiable credentials-like" data structures need to make necessary changes to leverage on the rulesets outlined and constantly reviewed by knowledgeable communities such as the W3C. The purpose of this paper is to identify all of the changes needed for Blockcerts to comply with the [Verifiable Credentials](https://w3c.github.io/vc-data-model/) (VC's) & [Decentralized Identifiers](https://w3c.github.io/did-core/) (DID's) standards, and expanding upon the additional benefits of using a blockchain in combination with Verifiable Credentials. This paper is to act as an explainer in which a formal specification can be created.
 
 Throughout this paper, there can be multiple implementation options for several properties. The intention is that we can engage the Blockcerts / Verifiable Credential communities and see what fits best. 
 
 ## Verifiable Credential Schema
 
-Verifiable Credentials are a data schema that is defined and published as a Proposed Recommendation to W3C. It seeks to represent the same information that a physical credential represents that are also tamper-evident and more trustworthy while also addressing future considerations in our societies that are becoming increasingly digitalized. Some of these concerns include but are not limited to privacy-preserving goals.
+Verifiable Credentials are a data model that is defined and published as a W3C Recommendation. It seeks to represent the same information as a physical credential while also tamper-evident and more trustworthy. Verifiable Credentials address future considerations in our societies that are becoming increasingly digitalized, some of which include but are not limited to privacy-preserving goals.
 
 An example of a minimally viable Verifiable Credential can be seen below: 
 
@@ -296,8 +296,6 @@ One of the last major differences is `Signature` with the MerkleProof2017 extens
 
 In this property, we go through all of the Merkle proofs required to validate a hash against a Merkle root hash on a blockchain. For more information on this procedure, visit the [MerkleProof2017 spec](https://w3c-dvcg.github.io/lds-merkleproof2017/).
 
-
-
 **Issuer** 
 
 Most of the properties in `issuer` come directly from the Open Badges spec, an example of a Blockcerts' "Issuer Profile" can be seen below:
@@ -327,11 +325,9 @@ Most of the properties in `issuer` come directly from the Open Badges spec, an e
 
 When verifying a Blockcert, the Issuer is checked to ensure that its public key anchored the Blockcert to the blockchain. After this check, the `revocationList` is checked to ensure that the issuer has not revoked their credential.
 
-One field added to this is the `IntroductionURL`. 
-
 **IntroductionURL**
 
-This is used for a client (ie, Blockcerts Wallet) to do a POST API call to transmit their public key to the issuer for them to include the key in the `RecipientProfile` of a Blockcerts.
+`IntroductionURL` is one field that was added to Blockcerts that was not present in Open Badge Issuer schema. This is used for a client (ie, Blockcerts Wallet) to do a POST API call to transmit their public key to the issuer for them to include the key in the `RecipientProfile` of a Blockcerts.
 
 
 More information about the exact schema being used for Blockcerts can be found [here](https://www.blockcerts.org/schema/2.0/context.json) & general information [here](https://github.com/blockchain-certificates/cert-schema/blob/master/docs/schema-2.md).
@@ -878,7 +874,7 @@ For DID based Issuer Profiles, it's understood that you'd be creating a new issu
 
 #### Data Model
 
-The data model will change for V3, so if you've previously created a template using the open-source [`cert-tools`](https://github.com/blockchain-certificates/cert-tools) project, you'd need to create a new one that is a valid Verifiable Credential. Please review [blockcerts as VC implementation](#blockcerts-as-vc-implementation) to see how V2 will map to V3 and some of the proposed options that Blockcerts V3 could take. We will more than likely have some sample V3 credentials in the `cert-tools` project as we start implementing V3.
+The data model will change for V3, so if you've previously created a template using the open-source [`cert-tools`](https://github.com/blockchain-certificates/cert-tools) project, you'd need to create a new one that is a valid Verifiable Credential. Please review [blockcerts as VC implementation](#blockcerts-as-vc-implementation) to see how V2 will map to V3 and some of the proposed options that Blockcerts V3 could take. We will more than likely have some sample V3 credentials in the `cert-tools` [project](https://github.com/blockchain-certificates/cert-tools) as we start implementing V3.
 
 If you wish, you could continue issuing a badge-like credential by utilizing `hold` & `evidence` as described [here](#badge-claim) to minimize the data changes required. Otherwise, you're free to create a new Verifiable Credential type. 
 
