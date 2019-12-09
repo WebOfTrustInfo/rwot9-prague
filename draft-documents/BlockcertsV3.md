@@ -814,7 +814,7 @@ While Blockcerts adopts the Verifiable Credential standard and moves off of the 
 
 ### Blockcerts V3 and embedded compliant Open Badges
 
-It will be up to IMS Global and the Open Badges community to support Verifiable Credential-based Open Badges through the schema changes outlined in "Open Badges are Verifiable Credentials" and/or the official Open Badges verifiers. There are several ways to issue Open Badges this through Blockcerts, which may include the introduction of `holds` into the standard or extracting a full badge from a Verifiable Credential. Note, issuing a full badge inside of a Verifiable Credential is not a standard/recommended way to use VC's, though it is technically still a VC. 
+It will be up to IMS Global and the Open Badges community to support Verifiable Credential-based Open Badges through the schema changes outlined in [Open Badges are Verifiable Credentials](https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md) and/or the official Open Badges verifiers. There are several ways to issue Open Badges this through Blockcerts, which may include the introduction of `holds` into the standard or extracting a full badge from a Verifiable Credential. Note, issuing a full badge inside of a Verifiable Credential is not a standard/recommended way to use VC's, though it is technically still a VC. 
 
 ### Breaking Changes Summary
 
