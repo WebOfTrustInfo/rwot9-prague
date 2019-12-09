@@ -507,46 +507,6 @@ Leave as is. It is not a requirement that we change this at all. Going with opti
 Note that leaving `metadataJson` or changing to `metadata` will more than likely be specific to Blockcerts and not understood by the wider VC ecosystem. The recommended approach would be to just pull additional metadata information from `credentialSubject` (option 2).
 
 
-## Badge Claim
-Going off of the paper written from a previous RWoT titled [Open Badges are Verifiable Credentials](https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md), an example badge claim we can create for those that want a similar experience in the VC ecosystem could look like below:
-
-```json
-"credentialSubject": {
-        "id": "https://example.com/profiles/bob",
-        "bc:holds": {
-            "id": "https://example.com/badgeclasses/123",
-            "type": "BadgeClass",
-            "name": "Certificate of Accomplishment",
-            "image": "data:image/png;base64,...",
-            "description": "A badge describing great accomplishments",
-            "criteria": {
-                "narrative": "Perform tasks of valor and wit."
-            },
-            "issuer": {
-                "type": "Profile",
-                "id": "https://example.com/profiles/alice",
-                "name": "Example Issuer",
-                "url": "http://example.com",
-                "email": "test@example.com"
-            }
-        }
-    },
-"bc:evidence": {
-    "id": "https://example.org/portfolios/25",
-    "name": "Bob's Portfolio",
-    "narrative": "Bob worked hard to develop a good portfolio",
-    "genre": "ePortfolio"
-}
-```
-
-`bc:holds` can be used instead of `obi:holds` since Open Badges has not moved to VC or created this type of claim yet. This will allow easier migration to Blockcerts V3.
-
-Alternatively, if & when Open Badges adopts Verifiable Credentials fully and makes this sort of claim standard (issuing, verifying, backpacks, etc.), issuers could switch to using `obi:holds` & `obi:evidence` instead of `bc:holds` & `bc:evidence`.
-
-
-This type of claim is not required as part of the Blockcerts V3 standard. Any type of claim can be made.
-
-
 ## Example Blockcerts V3
 Credential:
 
@@ -617,11 +577,9 @@ There were several options outlined above, this specific example used `metadata`
 
 ## Issuer Profile
 
-By moving to a Verifiable Credential standard that is capable of utilizing Decentralized Identifiers, we are now removing the reliance of URLs inside certificates. 
+As an Open Badge extension (and while VC's &  DIDs were still getting standardized), we had a requirement that Issuer Profiles had to be resolvable via https for information such as public key, revocation lists, and even metadata such as name & image to be gathered when verifying a certificate. By moving to a Verifiable Credential standard that is capable of utilizing Decentralized Identifiers, we no longer have to rely upon URLs inside certificates for this information. 
 
-As an Open Badge extension (and while VC's &  DIDs were still getting standardized), we had a requirement that Issuer Profiles had to be resolvable via https for information such as public key, revocation lists, and even metadata such as name & image to be gathered when verifying a certificate. 
-
-The Verifiable Credential spec does not require that VCs are issued using DIDs, so it's proposed that we do not make this requirement as well. We may want to continue supporting URL based issuer profiles as well, though we might need to make some changes to support specific key links. 
+The Verifiable Credential spec does not require that VCs are issued using DIDs, so it's proposed that we do not make this requirement, simply a new option. We may want to continue supporting URL based issuer profiles as well, though we might need to make some changes to support specific key links. 
 
 
 ### Issuer Profile as a DID
@@ -854,13 +812,9 @@ In cases where the issuer profile is a DID instead of a URL, universal DID resol
 
 While Blockcerts adopts the Verifiable Credential standard and moves off of the Open Badges standard directly, there may be a desire for organizations to continue issuing recognized Open Badges extensions. Blockcerts V2 credential creation and issuing can still be maintained via versioning. Any critical changes necessary can be made and published as a new Python Package under the V2 versioning (ex. `v2.0.33`). This can be done out of good faith by the community but make no guarantees for how long this might be done. We would love to invite anyone wishing to make critical update changes for V2 to make code contributions that we can merge into the official V2 branch that will be created.
 
-### Issuing Blockcerts V3 that is Open Badge Compliant
+### Blockcerts V3 and embedded compliant Open Badges
 
-As mentioned previously, we can continue making Blockcerts that can be Open Badges. Based on the work by Kim Hamilton Duffy & Nate Otto at a previous Rebooting the Web of Trust: [Open Badges are Verifiable Credentials](https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md).
-
-Blockcerts V3 shall make no requirements that one must issue a BC that is both a Verifiable Credential and an Open Badge. By making this stance, Blockcerts can be better supported throughout the ecosystem of Verifiable Credentials. Any schema and `CredentialSubject` type can be supported. 
-
-In the end, it will be up to IMS Global and the Open Badges community to support Verifiable Credential-based Open Badges through the schema changes outlined in "Open Badges are Verifiable Credentials" and/or the official Open Badges verifiers. There are several options of ways to issue Open Badges this way, which may include the introduction of `holds` into the standard or extracting a full badge from a Verifiable Credential. Note, issuing a full badge inside of a Verifiable Credential is not a standard/recommended way to use VC's, though it is technically still a VC. 
+It will be up to IMS Global and the Open Badges community to support Verifiable Credential-based Open Badges through the schema changes outlined in [Open Badges are Verifiable Credentials](https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md) and/or the official Open Badges verifiers. There are several ways to issue Open Badges this through Blockcerts, which may include the introduction of `holds` into the standard or extracting a full badge from a Verifiable Credential. Note, issuing a full badge inside of a Verifiable Credential is not a standard/recommended way to use VC's, though it is technically still a VC. 
 
 ### Breaking Changes Summary
 
@@ -876,7 +830,7 @@ For DID based Issuer Profiles, it's understood that you'd be creating a new issu
 
 The data model will change for V3, so if you've previously created a template using the open-source [`cert-tools`](https://github.com/blockchain-certificates/cert-tools) project, you'd need to create a new one that is a valid Verifiable Credential. Please review [blockcerts as VC implementation](#blockcerts-as-vc-implementation) to see how V2 will map to V3 and some of the proposed options that Blockcerts V3 could take. We will more than likely have some sample V3 credentials in the `cert-tools` [project](https://github.com/blockchain-certificates/cert-tools) as we start implementing V3.
 
-If you wish, you could continue issuing a badge-like credential by utilizing `hold` & `evidence` as described [here](#badge-claim) to minimize the data changes required. Otherwise, you're free to create a new Verifiable Credential type. 
+If you wish, you could continue issuing a badge-like credential by utilizing `hold` & `evidence` as described in [Open Badges are Verifiable Credentials](https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md) to minimize the data changes required. Otherwise, you're free to create a new Verifiable Credential type. 
 
 There are a few optional changes that may break your existing templates as well. Please click the in-page links to jump to the summaries above: 
 
