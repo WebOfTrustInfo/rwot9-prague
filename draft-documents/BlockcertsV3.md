@@ -830,7 +830,7 @@ For DID based Issuer Profiles, it's understood that you'd be creating a new issu
 
 The data model will change for V3, so if you've previously created a template using the open-source [`cert-tools`](https://github.com/blockchain-certificates/cert-tools) project, you'd need to create a new one that is a valid Verifiable Credential. Please review [blockcerts as VC implementation](#blockcerts-as-vc-implementation) to see how V2 will map to V3 and some of the proposed options that Blockcerts V3 could take. We will more than likely have some sample V3 credentials in the `cert-tools` [project](https://github.com/blockchain-certificates/cert-tools) as we start implementing V3.
 
-If you wish, you could continue issuing a badge-like credential by utilizing `hold` & `evidence` as described [here](#badge-claim) to minimize the data changes required. Otherwise, you're free to create a new Verifiable Credential type. 
+If you wish, you could continue issuing a badge-like credential by utilizing `hold` & `evidence` as described in [Open Badges are Verifiable Credentials](https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md) to minimize the data changes required. Otherwise, you're free to create a new Verifiable Credential type. 
 
 There are a few optional changes that may break your existing templates as well. Please click the in-page links to jump to the summaries above: 
 
