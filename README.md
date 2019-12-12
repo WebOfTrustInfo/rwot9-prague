@@ -12,6 +12,24 @@ Visit [Eventbrite](http://rwot9.eventbrite.com) for more information and to purc
 
 ## Final Papers
 
+## [*Decentralized Identity as a Meta-platform: How Cooperation Beats Aggregation*](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/CooperationBeatsAggregation.pdf) [(Text)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/CooperationBeatsAggregation.md)
+#### by Michael Shea, Samuel M. Smith Ph.D., Carsten Stöcker Ph.D.
+
+> A meta-platform is a platform that enables and fosters participant-controlled value transfer across and among
+other platforms and participants; because platforms are a type of network, a meta-platform enables a network
+of network efects. This cooperation among platforms may be advantageous in comparison to centralized power
+(non-cooperation) in some contexts, particularly where a new network scaling law for meta-platforms can be
+argued to apply directly. An open, interoperable, portable, decentralized identity framework is a prime
+candidate for becoming such a meta-platform and for leveraging this aggregate network efect.
+
+> Significant momentum has been developing behind a universal decentralized identity system based on open
+standards, including the W3C-supported decentralized identifer (DID) and verifable credential (VC) standards. Associated industry groups supporting this open standard include the Decentralized Identity Foundation
+(DIF), the Sovrin Foundation, and the HyperLedger Foundation projects Indy, Aries, and Ursa.
+
+> The purpose of this paper is to foster awareness of the economic benefts of cooperation and the crucial role
+decentralized identity may play in unleashing new sources of value creation and transfer among cooperating
+platforms.
+
 ### [*Encrypted Data Vaults*](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/encrypted-data-vaults.pdf) [(Text)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/encrypted-data-vaults.md)
 #### Amy Guy, David Lamers, Tobias Looker, Manu Sporny, Dmitri Zagidulin
 
