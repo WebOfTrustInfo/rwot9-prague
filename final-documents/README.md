@@ -12,7 +12,7 @@ of network efects. This cooperation among platforms may be advantageous in compa
 argued to apply directly. An open, interoperable, portable, decentralized identity framework is a prime
 candidate for becoming such a meta-platform and for leveraging this aggregate network efect.
 
-> Signifcant momentum has been developing behind a universal decentralized identity system based on open
+> Significant momentum has been developing behind a universal decentralized identity system based on open
 standards, including the W3C-supported decentralized identifer (DID) and verifable credential (VC) standards. Associated industry groups supporting this open standard include the Decentralized Identity Foundation
 (DIF), the Sovrin Foundation, and the HyperLedger Foundation projects Indy, Aries, and Ursa.
 
