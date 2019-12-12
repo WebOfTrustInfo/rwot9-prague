@@ -1,16 +1,16 @@
-# Blockcerts V3.0
+# Blockcerts V3 Proposal
 
-[Anthony Ronning](aronning@learningmachine.com) (Learning Machine), [Wong Wai Chung](waichung@nextid.com) (NextID)
+Anthony Ronning <aronning@learningmachine.com> (Learning Machine), Wong Wai Chung <waichung@nextid.com> (NextID)
 
 ## Abstract
 
-As the standards around verifiable credentials are starting to take form, different flavors of ‘verifiable credentials-like` data structures need to make necessary changes to leverage on the rulesets outlined and constantly reviewed by a knowledgeable community like RWOT and W3C. The purpose of this paper is to identify all of the changes needed for Blockcerts to comply with the Verifiable Credentials (VC's) & Decentralized Identifiers (DID's) standards, and the additional benefits by using a blockchain in combination with Verifiable Credentials. This paper is to act as an explainer in which a formal spec can be created from. 
+As the standards around verifiable credentials are starting to take form, different flavors of "verifiable credentials-like" data structures need to make necessary changes to leverage on the rulesets outlined and constantly reviewed by knowledgeable communities such as the W3C. The purpose of this paper is to identify all of the changes needed for Blockcerts to comply with the [Verifiable Credentials](https://w3c.github.io/vc-data-model/) (VC's) & [Decentralized Identifiers](https://w3c.github.io/did-core/) (DID's) standards, and expanding upon the additional benefits of using a blockchain in combination with Verifiable Credentials. This paper is to act as an explainer in which a formal specification can be created.
 
 Throughout this paper, there can be multiple implementation options for several properties. The intention is that we can engage the Blockcerts / Verifiable Credential communities and see what fits best. 
 
 ## Verifiable Credential Schema
 
-Verifiable Credentials are a data schema that is defined and published as a Proposed Recommendation to W3C. It seeks to represent the same information that a physical credential represents that are also tamper-evident and more trustworthy while also addressing future considerations in our societies that are becoming increasingly digitalized. Some of these concerns include but are not limited to privacy-preserving goals.
+Verifiable Credentials are a data model that is defined and published as a W3C Recommendation. It seeks to represent the same information as a physical credential while also tamper-evident and more trustworthy. Verifiable Credentials address future considerations in our societies that are becoming increasingly digitalized, some of which include but are not limited to privacy-preserving goals.
 
 An example of a minimally viable Verifiable Credential can be seen below: 
 
@@ -53,7 +53,7 @@ An example of a minimally viable Verifiable Credential can be seen below:
 
 ### Open Badges
 
-Currently, Blockcerts is an Extension to Open Badges, which is a specification and open technical standard originally developed by the Mozilla Foundation [https://openbadges.org/]. Open Badges is widely adopted by Universities and Microcredential platforms as a way to issue achievements and allows recipients to hold and collect them into "backpacks". The benefit of using a blockchain as an extension to Open Badges is to provide immutability and proof of existence.
+Currently, Blockcerts is an Extension to [Open Badges](https://openbadges.org/), which is a specification and open technical standard originally developed by the [Mozilla Foundation](https://foundation.mozilla.org). Open Badges is widely adopted by Universities and Microcredential platforms as a way to issue achievements and allows recipients to hold and collect them into "backpacks". The benefit of using a blockchain as an extension to Open Badges is to provide immutability and proof of existence.
 
 An example standard Open Badge can be seen below:
 
@@ -231,7 +231,9 @@ An example of a Blockcerts can be seen below:
 
 Besides some of the minor differences in layout/metadata between the example Blockcerts and example Open Badge, the main differences in schema (ie, the Blockcerts extensions), are below.
 
-**RecipientProfile** (https://www.blockcerts.org/schema/2.0/recipientSchema.json)
+**RecipientProfile** 
+
+[Schema link](https://www.blockcerts.org/schema/2.0/recipientSchema.json)
 
 ```json
 "recipientProfile": {
@@ -247,7 +249,9 @@ Besides some of the minor differences in layout/metadata between the example Blo
 This allows for additional recipient information that can be used to make a strong claim of ownership over the credential. In addition to the `name` and `publicKey` properties in this example, there is an `id` field in this schema that is reserved for future uses of DIDs. 
 
 
-**Verification** (https://github.com/IMSGlobal/cert-schema/blob/master/docs/open_badge_v2_extensions.md)
+**Verification** 
+
+[Schema link](https://github.com/IMSGlobal/cert-schema/blob/master/docs/open_badge_v2_extensions.md)
 
 ```json
 "verification": {
@@ -263,7 +267,9 @@ In this case, Verification is an Open Badge `VerificationObject` with a `MerkleP
 
 One of the last major differences is `Signature` with the MerkleProof2017 extension
 
-**Signature** (https://www.blockcerts.org/schema/2.0/merkleProof2017Schema.json)
+**Signature** 
+
+[Schema link](https://www.blockcerts.org/schema/2.0/merkleProof2017Schema.json)
 
 ```json
 "signature": {
@@ -288,9 +294,7 @@ One of the last major differences is `Signature` with the MerkleProof2017 extens
 }
 ```
 
-In this property, we go through all of the Merkle proofs required to validate a hash against a Merkle root hash on a blockchain. For more information on this procedure, visit the spec (https://w3c-dvcg.github.io/lds-merkleproof2017/).
-
-
+In this property, we go through all of the Merkle proofs required to validate a hash against a Merkle root hash on a blockchain. For more information on this procedure, visit the [MerkleProof2017 spec](https://w3c-dvcg.github.io/lds-merkleproof2017/).
 
 **Issuer** 
 
@@ -321,19 +325,16 @@ Most of the properties in `issuer` come directly from the Open Badges spec, an e
 
 When verifying a Blockcert, the Issuer is checked to ensure that its public key anchored the Blockcert to the blockchain. After this check, the `revocationList` is checked to ensure that the issuer has not revoked their credential.
 
-One field added to this is the `IntroductionURL`: 
-
 **IntroductionURL**
 
-This is used for a client (ie, Blockcerts Wallet) to do a POST API call to transmit their public key to the issuer for them to include the key in the `RecipientProfile` of a Blockcerts.
+`IntroductionURL` is one field that was added to Blockcerts that was not present in Open Badge Issuer schema. This is used for a client (ie, Blockcerts Wallet) to do a POST API call to transmit their public key to the issuer for them to include the key in the `RecipientProfile` of a Blockcerts.
 
 
-More information about the exact schema being used for Blockcerts can be found here (https://www.blockcerts.org/schema/2.0/context.json) & general information here (https://github.com/blockchain-certificates/cert-schema/blob/master/docs/schema-2.md).
+More information about the exact schema being used for Blockcerts can be found [here](https://www.blockcerts.org/schema/2.0/context.json) & general information [here](https://github.com/blockchain-certificates/cert-schema/blob/master/docs/schema-2.md).
 
 
-This URL-based "Issuer Profile" will be improved by using DID's for issuers. More on this later. 
+This URL-based "Issuer Profile" will be improved by using DID's for issuers. More on this in [Issue Profile](#issuer-profile). 
 
-TODO there's several other fields that are not standardized in BC. List them here.
 
 ## Blockcerts as VC Implementation
 
@@ -354,13 +355,12 @@ This part could essentially go away and be replaced with `credentialSubject.id` 
   }
 ```
 
-becomes 
+can become 
 
 ```json
   "credentialSubject": {
-    "id": "ecdsa-koblitz-pubkey:mtr98kany9G1XYNU74pRnfBQmaCg2FZLmc", // can use DID
-    "name": "Eularia Landroth"
-    // example claim
+    "id": "ecdsa-koblitz-pubkey:mtr98kany9G1XYNU74pRnfBQmaCg2FZLmc",
+    "name": "Eularia Landroth",
     "alumniOf": {
       "id": "did:example:c276e12ec21ebfeb1f712ebc6f1",
       "name": [{
@@ -374,15 +374,13 @@ becomes
   }
 ```
 
-Blockcerts currently uses a `ecdsa-koblitz-pubkey` for the recipient. Since this is a valid URI, it can be also be used for verifiable credentials. Ideally a DID is used instead to be better supported throughout the VC/DID ecosystem.
+Blockcerts currently uses a `ecdsa-koblitz-pubkey` for the recipient. Since this is a valid URI, it can be also be used for verifiable credentials. Ideally, a DID is used instead to be better supported throughout the VC/DID ecosystem.
 
 ### `verification` 
 
 As specified in "BC V2 Schema & Examples" above, `verification` is used to verify the public key of the issuer matches the public key used to issue the transaction to a blockchain. 
 
-It may seem as though we could get away with putting the `verification` public key in the issuer DID instead, but, depending on the DID method, that could be changed. For Blockcerts issued to a blockchain, we could leave `verification` inside the document to verify the blockchain public key the issuer was wanting to issue the certificate from.
-
-This might be considered a redundant property since the Verifiable Credential will have a proof property that verifies immutability as well, the "issuer profile" already specifies their keys used for issuing, and the key used for issuing will be known by the merkle root signature.
+This might be considered a redundant property since the Verifiable Credential will have a proof property that verifies immutability as well, the "issuer profile" already specifies their keys used for issuing, and the key used for issuing will be known when resolving the blockchain transaction.
 
 Unless there's a strong reason to keep this property in Blockcerts as it moves to the VC schema, it should be suggested to remove it in V3.
 
@@ -393,11 +391,9 @@ Verifiable Credentials require a `proof` property that is used for verifying the
 
 One important property that all `proof` methods do not provide alone with typical signing keys is the aspect of time stamping. A `created` date can be applied to `proof`, but since that can be created with any date, we cannot prove it existed at a certain time. Using a blockchain can be beneficial here, as it proves that the document existed with a high degree of certainty at the time of the transaction (collisions technically can still occur due to hashing, though improvable). 
 
-We should continue making a blockchain `signature` required in some capacity so that we can provide the value of life long credentials through this Proof of Verifiable Existence method. 
+To be Verifiable Credential compliant, we need to use a different signature proof. Currently, [`MerkleProof2019`](https://w3c-dvcg.github.io/lds-merkle-proof-2019/) is being spec'd out and will be compliant with VC's.
 
-In order to be Verifiable Credential compliant, we need to use a different signature proof. Currently `MerkleProof2019` is being spec'd out and will be compliant with VC's. TODO link.
-
-While mulitple signatures are allowable in a VC, the Blockcerts spec should only specify that a blockchain proof is required. There may be benefits to supplying both an RSA signature (as an example) and a `MerkleProof2019` signature so that there may be better interoptability for verifiers that might not support `MerkleProof2019` yet.
+While multiple signatures are allowable in a VC, the Blockcerts spec should only specify that a blockchain proof is required. There may be benefits to supplying both an RSA signature (as an example) and a `MerkleProof2019` signature so that there may be better interoperability for verifiers that might not support `MerkleProof2019` yet.
 
 Example
 
@@ -444,9 +440,9 @@ In most cases, the issuer signing with keys they own should be signing with the 
 
 The college realizes their key was stolen, compromised, or simply they practice good key rotation hygiene. In any of these cases, the true issuer now revokes that key with an expiration date set to a day before the known theft. 
 
-Since credential dates can not be trusted, we can not determine which credentials fall within the `createdDate` & `revocationDate` (TODO or is it called the `expirationDate` still?) range for a given key. Every single credential issued with a key that was stolen NEEDS to fail (or at least warn) for signing key verification problems during the credential verification process. One bad credential issued with a stolen key can affect the status of every single recipient that received a credential from that issuer with that specific signing key. This is not satisfactory when it comes to life-long credentials. 
+Since credential dates can not be trusted, we can not determine which credentials fall within the `createdDate` & `revocationDate` range for a given key. Every single credential issued with a key that was stolen NEEDS to fail (or at least warn) for signing key verification problems during the credential verification process. One bad credential issued with a stolen key can affect the status of every single recipient that received a credential from that issuer with that specific signing key. This is not satisfactory when it comes to life-long credentials. 
 
-Therefore, by utilizing the trusted timestamps of a blockchain, we can calculate the true issuance date and determine that if an issuer revoked/expired a signing key for a specific date, every credential that has an anchor on a blockchain before that date is unaffected by key revocations. Instead of just providing Proof of Existence, we can then coin the term Proof of Verifiable Existence with Blockchain-based VCs. Not only did the document exist, but it existed and will always verify as long as the individual credential does not get revoked, or there is a question as to if the signing key was stolen around the same time as a bad issuance.
+Therefore, by utilizing the trusted timestamps of a blockchain, we can calculate the true issuance date and determine that if an issuer revoked/expired a signing key for a specific date, every credential that has an anchor on a blockchain before that date is unaffected by key revocations. 
 
 ### Additional Fields
 
@@ -467,20 +463,20 @@ Example:
 "display": {
     "type": "html",
     "data": "<p>hello world</p>"
-    }
+}
 ```
 
 
 **Option  2**
 
-Alternatively, we can use DATA URLs (https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) instead. 
+Alternatively, we can use [DATA URLs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) instead. 
 
 ```json
 "display": "data:text/html,%3Ch1%3EHello%2C%20World!%3C%2Fh1%3E"
 ```
 
 
-In the beginning, the official Blockcerts Universal Verifier might only support HTMl officially, but it does allow others to create valid Blockcerts with different display types. The official verifier should fall back to a default display when it does not understand a Data URL like it does today when `displayHtml` is missing.
+In the beginning, the official Blockcerts Universal Verifier might only support HTML officially, but it does allow others to create valid Blockcerts with different display types. The official verifier should fall back to a default display when it does not understand a Data URL like it does today when `displayHtml` is missing.
 
 
 #### `metadata`
@@ -495,7 +491,7 @@ Could be similar to `display`, adding `type` & `data`.
 ```json
 "metadata": {
     "type": "json",
-    "data": "{\"test\": true"
+    "data": "{\"test\": true}"
 }
 ```
 
@@ -505,50 +501,10 @@ Remove completely. Metadata could be grabbed by the `credentialSubject` field. T
 
 **Option 3** 
 
-Leave as is. It is not a requirement that we change this at all. Going with option 2 would remove the need to have some possible duplicate information, but leaving as is would allow issuers to make explicit the metadata information they want displayed to a user and parsed by systems. 
+Leave as is. It is not a requirement that we change this at all. Going with option 2 would remove the need to have some possible duplicate information, but leaving as is would allow issuers to make explicit the metadata information they want to be displayed to a user and parsed by systems. 
 
 
-Note that leaving `metadataJson` or changing to `metadata` will more than likely be specific to blockcerts and not understood by the wider VC ecosystem. The recommended approach would be to just pull additional metadata information from `credentialSubject` (option 2).
-
-
-## Badge Claim
-Going off of the paper written from a previous RWoT over open badges as a VC (https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md), an example badge claim we can create for those that want a similar badge-like experience could look like below. 
-
-```json
-"credentialSubject": {
-        "id": "https://example.com/profiles/bob",
-        "bc:holds": {
-            "id": "https://example.com/badgeclasses/123",
-            "type": "BadgeClass",
-            "name": "Certificate of Accomplishment",
-            "image": "data:image/png;base64,...",
-            "description": "A badge describing great accomplishments",
-            "criteria": {
-                "narrative": "Perform tasks of valor and wit."
-            },
-            "issuer": {
-                "type": "Profile",
-                "id": "https://example.com/profiles/alice",
-                "name": "Example Issuer",
-                "url": "http://example.com",
-                "email": "test@example.com"
-            }
-        }
-    },
-"bc:evidence": {
-    "id": "https://example.org/portfolios/25",
-    "name": "Bob's Portfolio",
-    "narrative": "Bob worked hard to develop a good portfolio",
-    "genre": "ePortfolio"
-}
-```
-
-`bc:holds` can be used instead of `obi:holds` since Open Badges has not moved to VC or created this type of claim yet. This will allow easier migration to Blockcerts V3.
-
-Alternatively, if & when Open Badges adopts Verifiable Credentials fully and makes this sort of claim standard (issuing, verifying, backpacks, etc.), issuers could switch to using `obi:holds` & `obi:evidence` instead of `bc:holds` & `bc:evidence`.
-
-
-This type of claim is not required as part of the Blockcerts V3 standard. Any type of claim can be made.
+Note that leaving `metadataJson` or changing to `metadata` will more than likely be specific to Blockcerts and not understood by the wider VC ecosystem. The recommended approach would be to just pull additional metadata information from `credentialSubject` (option 2).
 
 
 ## Example Blockcerts V3
@@ -617,17 +573,13 @@ Credential:
 }
 ```
 
-There were several options outlined above, this specific example used `metadata` as an object, `display` as an object, `holds` & `evidence` for OB-like `credentialSubject` types, and `MerkleProof2019` as the new `signature`/`proof`. This is just an example and not represented of a "recommended" route for Blockcerts V3.  
+There were several options outlined above, this specific example used `metadata` as an object, `display` as an object, `holds` & `evidence` for OB-like `credentialSubject` types, and `MerkleProof2019` as the new `signature`/`proof`. This is just an example and not necessarily of a "recommended" route for Blockcerts V3.  
 
 ## Issuer Profile
 
-By moving to a Verifiable Credential standard that is capable of utilizing Decentralized Identifiers, we are now removing the reliance of URLs inside certificates. 
+As an Open Badge extension (and while VC's &  DIDs were still getting standardized), we had a requirement that Issuer Profiles had to be resolvable via https for information such as public key, revocation lists, and even metadata such as name & image to be gathered when verifying a certificate. By moving to a Verifiable Credential standard that is capable of utilizing Decentralized Identifiers, we no longer have to rely upon URLs inside certificates for this information. 
 
-As an Open Badge extension (and while VC's &  DIDs were still getting standardized), we had a requirement that Issuer Profiles had to be resolvable via https for information such as public key, revocation lists, and even metadata such as name & image to be gathered when verifying a certificate. 
-
-DIDs give us the capability to do this in a decentralized way (note: some DIDs are not very decentralized or suggested due to having different properties, no VC/DID spec has many requirements around some of these properties, but one can consult the DID rubric for further information [TODO link]). 
-
-The Verifiable Credential spec does not require that VCs are issued using DIDs, so it's proposed that we do not make this requirement as well. We may want to continue supporting URL based issuer profiles as well, though we might need to make some changes to support specific key links. 
+The Verifiable Credential spec does not require that VCs are issued using DIDs, so it's proposed that we do not make this requirement, simply a new option. We may want to continue supporting URL based issuer profiles as well, though we might need to make some changes to support specific key links. 
 
 
 ### Issuer Profile as a DID
@@ -640,15 +592,13 @@ Here's an example of a DID when resolved:
 {
   "@context": "https://www.w3.org/2019/did/v1",
   "id": "did:example:123456789abcdefghi",
-  "authentication": [{
-    // used to authenticate as did:...fghi
+  "publicKeys": [{
     "id": "did:example:123456789abcdefghi#keys-1",
     "type": "RsaVerificationKey2018",
     "controller": "did:example:123456789abcdefghi",
     "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
   }],
   "service": [{
-    // used to retrieve Verifiable Credentials associated with the DID
     "id":"did:example:123456789abcdefghi#vcs",
     "type": "VerifiableCredentialService",
     "serviceEndpoint": "https://example.com/vc/"
@@ -656,22 +606,21 @@ Here's an example of a DID when resolved:
 }
 ```
 
-One of the main requirements to verify the integrity of a certificate and proof that a certain issuer did indeed issue it is the `#key` field in the `authentication` property of a DID. 
+One of the main requirements to verify the integrity of a certificate and proof that a certain issuer did indeed issue it is by looking at the `#key` field in the `publicKeys` property of a DID. 
 
 One would be able to link a signing key by referencing the DID and property: `did:example:123456789abcdefghi#keys-1`. 
 
 
-However, there are a few other things we need to carry over to a DID profile. 
+However, at minimum, there are a few other things we need to carry over to a DID profile. 
 
 - Name
 - URL
 - introductionURL
 - revocationList
-- mage
+- image
 - email
-- TODO there may be more (research Authentication type (for SAML) and maybe standardize analyticsURL)
 
-I'm proposing a service endpoint for BlockcertsIssuer that contains some of this metadata, as well as a BlockcertsRevocation URL to handle certificate revocations. 
+We are proposing a service endpoint for BlockcertsIssuer that contains some of this metadata, as well as a BlockcertsRevocation URL to handle certificate revocations. 
 
 #### BlockcertsIssuerService
 
@@ -680,16 +629,16 @@ I'm proposing a service endpoint for BlockcertsIssuer that contains some of this
   "id": "did:example:123456789abcdefghi#BlockcertsIssuer",
   "type": "BlockcertsIssuerService",
   "name": "University of Example,
-  "URL", "https://example.com", 
-  "imageURL": "https://example.com/img.png", //some DIDs may have size limitations
+  "URL": "https://example.com", 
+  "imageURL": "https://example.com/img.png",
   "email": "test@example.com",
-  "serviceEndpoint": "https://example.com/introductionURL" // in place of introductionURL
+  "serviceEndpoint": "https://example.com/introductionURL" 
 }]
 ```
 
 When resolving the issuer DID `did:example:123456789abcdefghi`, we can then look for types that related to `BlockcertsIssuerService` to check for metadata and allow recipients to post their own DIDs/public keys to the issuer, much like we do today for URL based Issuer Profiles.
 
-It's possible that we can include `BlockcertsRevocationService` as a field in the `BlockcertsIssuerService` instead of a standalone ServiceEndpoint. May need to research best practice amongst ServiceEndpoints. If we were to seperate it out into it's own field, this could look like below.
+It's possible that we can include `BlockcertsRevocationService` as a field in the `BlockcertsIssuerService` instead of a standalone ServiceEndpoint. May need to research best practice amongst ServiceEndpoints. If we were to separate it into its own field, this could look like below.
 
 
 #### BlockcertsRevocationService
@@ -731,7 +680,7 @@ However, option 1 allows the issuer to see, log, monitor (etc.) against a specif
 Since option 2 is pulling an entire list of revocation events, it is not revealed to the issuer who is getting verified, but it does reveal to verifiers every revocation event they have ever made and why. In the case of a large revocation list, the verifier may have to wait for all of the revocations to get processed and retrieved. 
 
 
-There has not been a very good consensus yet on what method of revocation/status lists should be used for Verifiable Credentials, and thus no standards yet. Ideally, there is a generic `RevocationServiceEndpoint` not specific to Blockcerts revocation lists, but to not conflict with other methods that might be created, I'm suggesting we label this as a Blockcerts-specific revocation endpoint. 
+There has not been a very good consensus yet on what method of revocation/status lists should be used for Verifiable Credentials, and thus no standards yet. Ideally, there is a generic `RevocationServiceEndpoint` not specific to Blockcerts revocation lists, but to not conflict with other methods that might be created, we are suggesting we label this as a Blockcerts-specific revocation endpoint. 
 
 Instead of the Blockcerts standard picking one of these two methods, we may support both and allow issuers to decide for themselves which makes better sense for their organization. 
 
@@ -744,17 +693,17 @@ Here is an example of what an issuer DID might look like when resolved, picking 
 {
   "@context": "https://www.w3.org/2019/did/v1",
   "id": "did:example:123456789abcdefghi",
-  "authentication": [{
+  "publicKeys": [{
     "id": "did:example:123456789abcdefghi#keys-1",
-    "type": "RsaVerificationKey2018",
+    "type": "Ed25519VerificationKey2018",
     "controller": "did:example:123456789abcdefghi",
-    "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+    "publicKeyBase58": "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV"
   }],
   "service": [{
     "id": "did:example:123456789abcdefghi#BlockcertsIssuer",
     "type": "BlockcertsIssuerService",
     "name": "University of Example,
-    "URL", "https://example.com", 
+    "URL": "https://example.com", 
     "imageURL": "https://example.com/img.png",
     "email": "test@example.com",
     "serviceEndpoint": "https://example.com/introductionURL"
@@ -765,8 +714,6 @@ Here is an example of what an issuer DID might look like when resolved, picking 
   }]
 }
 ```
-
-TODO: for example purposes, I've been copying and pasting an RSA key around, need to change that to a blockchain key.
 
 
 ### Issuer Profile as a URL in V3
@@ -796,7 +743,7 @@ Here is an example of an Issuer Profile in Blockcerts v2:
 }
 ```
 
-Comparing that to the example issuer DID above, the only thing needed to change is mapping `publicKeys` to `authentication`. 
+Comparing that to the example issuer DID above, the only thing needed to change is how `publicKey` is handled.
 
 
 ```json
@@ -810,11 +757,11 @@ Comparing that to the example issuer DID above, the only thing needed to change 
   "name": "University of Learning",
   "url": "https://www.issuer.org",
   "introductionURL": "https://www.issuer.org/intro/",
-  "authentication": [{
+  "publicKey": [{
     "id": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json#keys-1",
-    "type": "RsaVerificationKey2018",
+    "type": "Ed25519VerificationKey2018",
     "controller": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json",
-    "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+    "publicKeyBase58": "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV"
   }],
   "revocationList": "https://www.blockcerts.org/samples/2.0/revocation-list-testnet.json",
   "image": "data:image/png;base64,iVBORw0KGgo...",
@@ -824,14 +771,33 @@ Comparing that to the example issuer DID above, the only thing needed to change 
 
 This will allow us to link directly to a specific key used for signing a Verifiable Credential, which is a standard way of finding the key, instead of in the current Blockcerts model of checking the blockchain issuing key against all public keys that an issuer has claimed ownership of.
 
+Unfortunately with the `publicKey` change, since it is the same property name from V2, it will make url-based Issuer Profiles a bit tricky to deal with. Either we make url based Issuer Profiles incapable of handling both V2 & V3 Blockcerts or we allow both V2 & V3 public keys in there. Example: 
+
+```json
+  "publicKey": [
+    {
+      "id": "ecdsa-koblitz-pubkey:msBCHdwaQ7N2ypBYupkp6uNxtr9Pg76imj",
+      "created": "2017-06-29T14:48:03.814936+00:00"
+    },
+    {
+      "id": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json#keys-1",
+      "type": "Ed25519VerificationKey2018",
+      "controller": "https://www.blockcerts.org/samples/2.0/issuer-testnet.json",
+      "publicKeyBase58": "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV"
+    }
+  ]
+```
+
+For V2, we may need to update verification to ignore cases where `id` is a `did:` or `http:`/`https:` URI. For V3, we may need to do the reverse or to ignore cases where `id` does not end with `#` like it should in the VC/DID model. 
+
 
 ## Considerations
 
 ### Backwards Compatibility
 
-All aspects of V2 shall continue to operate as it does today, such as accepting an organization as a recipient, displaying metadata and html, verifying a credential, etc. 
+All aspects of V2 shall continue to operate as it does today, such as accepting an organization as a recipient, displaying metadata and HTML, verifying a credential, etc. 
 
-Programmatic decisions as to how to accept an issuer, what information to display and how to display it, etc. shall be made based on the blockcerts version outlined in `@context`: 
+Programmatic decisions as to how to accept an issuer, what information to display and how to display it, etc. shall be made based on the Blockcerts version outlined in `@context`: 
 
 ```json
 "@context": [
@@ -844,39 +810,40 @@ In cases where the issuer profile is a DID instead of a URL, universal DID resol
 
 ### Existing V2 / Open Badges extension support
 
-While Blockcerts adopts the Verifiable Credential standard and moves off of the Open Badges standard directly, there may be desire for organizations to continue issuing recognized Open Badges extensions. Blockcerts V2 credential creation and issuing can still be maintained via versioning. Any critical changes necessary can be made and published as a new Python Package under the V2 versioning (ex. `v2.0.33`). This can be done out of good faith by the community but make no guarantees for how long this might be done for. We would love to invite anyone wishing to make critical update changes for V2 to make code contributions that we can merge in to the official V2 branch that will be created.
+While Blockcerts adopts the Verifiable Credential standard and moves off of the Open Badges standard directly, there may be a desire for organizations to continue issuing recognized Open Badges extensions. Blockcerts V2 credential creation and issuing can still be maintained via versioning. Any critical changes necessary can be made and published as a new Python Package under the V2 versioning (ex. `v2.0.33`). This can be done out of good faith by the community but make no guarantees for how long this might be done. We would love to invite anyone wishing to make critical update changes for V2 to make code contributions that we can merge into the official V2 branch that will be created.
 
-### Issuing Blockcerts V3 that are Open Badge Compliant
+### Blockcerts V3 and embedded compliant Open Badges
 
-As mentioned previously, we can continue making Blockcerts that can be Open Badges. Based on the work by Kim Hamilton Duffy & Nate Otto at a previous Rebooting the Web of Trust: https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md
-
-Blockcerts V3 shall make no requirements that one must issue a BC that is both a Verifiable Credential and an Open Badge. By making this stance, Blockcerts can be better supported throughout the ecosystem of Verifiable Credentials. Any schema and `CredentialSubject` type can be supported. 
-
-In the end, it will be up to IMS Global and the Open Badges community to support Verifiable Credential-based Open Badges through the schema changes outlined in "Open Badges are Verifiable Credentials" and/or the official Open Badges verifiers. There are several options of ways to issue Open Badges this way, which may include the introduction of `holds` into the standard or extracting a full badge from a Verifiable Credential. Note, issuing a full badge inside of a Verifiable Credential is not a stadard/recommended way to use VC's, though it is technically still a VC. 
+It will be up to IMS Global and the Open Badges community to support Verifiable Credential-based Open Badges through the schema changes outlined in [Open Badges are Verifiable Credentials](https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md) and/or the official Open Badges verifiers. There are several ways to issue Open Badges this through Blockcerts, which may include the introduction of `holds` into the standard or extracting a full badge from a Verifiable Credential. Note, issuing a full badge inside of a Verifiable Credential is not a standard/recommended way to use VC's, though it is technically still a VC. 
 
 ### Breaking Changes Summary
 
-There's a few breaking changes that are necessary as we move to Verifiable Credentials, and a number of optional things that may be breaking changes if we wish to implement them. As mentioned, V2 will continue to behave as is, but to issue V3 credentials and to support V2 & V3 url-based issuer profiles, please review the changes below. 
+There are a few breaking changes that are necessary as we move to Verifiable Credentials and several optional things that may be breaking changes if we wish to implement them. As mentioned, V2 will continue to behave as is, but to issue V3 credentials and to support V2 & V3 URL-based issuer profiles, please review the changes below. 
 
 #### Issuer Profile
 
-Existing Issuer Profiles could continue to operate but an additional field needs to be implemented. As mentioned above, `authentication` in place of `publicKeys` to allow for directly linking to a specific key. If one wanted to support both V2 Blockcerts & V3 Blockcerts using the same URL-based Issuer Profile, one could add `authentication` in addition to `publicKeys`. 
+Existing Issuer Profiles could continue to operate but in order to issue V3 credentials, it may require a new Issuer Profile (either URL or DID based). As mentioned above in [Issuer Profile](#issuer-profile-as-a-url-in-v3), the `publicKey` property needs to change in V3. We have two options: support having a mix of V2 & V3 `publicKey` models in a single Issuer Profile, or require that a V3 issuer needs to have a seperate Issuer Profile.
 
-For DID based Issuer Profiles, it's understood that you'd be creating a new issuer profile and will need to continue to maintain your URL based profile for every credential you've issued (unless you reactively issue V3 for every V2 credential you've ever issued). DID issuer profiles will act similar in nature to URL-based Issuer Profiles but under the DID-document schema model. See [#issuer profile as a did](#issuer-profile-as-a-did) for a summary of these changes and options.
+For DID based Issuer Profiles, it's understood that you'd be creating a new issuer profile and will need to continue to maintain your URL based profile for every credential you've issued (unless you reactively issue V3 for every V2 credential you've ever issued). DID issuer profiles will act similar in nature to URL-based Issuer Profiles but under the DID-document schema model. See [issuer profile as a did](#issuer-profile-as-a-did) for a summary of these changes and options.
 
 #### Data Model
 
-The data model will change for V3, so if you've previously created a template using the open source "cert-tools" project, you'd need to create a new one that is a valid Verifiable Credential. Please review [blockcerts as vc implementation](#blockcerts-as-vc-implementation) to see how V2 will map to V3 and some of the proposed options that Blockcerts V3 could take. 
+The data model will change for V3, so if you've previously created a template using the open-source [`cert-tools`](https://github.com/blockchain-certificates/cert-tools) project, you'd need to create a new one that is a valid Verifiable Credential. Please review [blockcerts as VC implementation](#blockcerts-as-vc-implementation) to see how V2 will map to V3 and some of the proposed options that Blockcerts V3 could take. We will more than likely have some sample V3 credentials in the `cert-tools` [project](https://github.com/blockchain-certificates/cert-tools) as we start implementing V3.
 
-If you wish, you could continue issuing a badge-like credential by utilizing `hold` & `evidence` as described [here](#badge-claim) to minimize the data changes required. Otherwise, you're free to create a new Verifiable Credential type. 
+If you wish, you could continue issuing a badge-like credential by utilizing `hold` & `evidence` as described in [Open Badges are Verifiable Credentials](https://github.com/WebOfTrustInfo/rwot6-santabarbara/blob/master/final-documents/open-badges-are-verifiable-credentials.md) to minimize the data changes required. Otherwise, you're free to create a new Verifiable Credential type. 
 
-There's a few optional changes that may break your existing templates as well. Please click the in-page links to jump to the summaries above: 
+There are a few optional changes that may break your existing templates as well. Please click the in-page links to jump to the summaries above: 
 
 - [display](#display)
 - [metadata](#metadata)
 
-These fields have not been standardized before, but we do have the opportunity to make these improvements while moving to a new major version number. If it interests you, please give any feedback you might have. It may be advisable to implement this features in the future to minimize the scope of work and breaking changes for V3.
+These fields have not been standardized before, but we do have the opportunity to make these improvements while moving to a new major version number. If it interests you, please give any feedback you might have. It may be advisable to implement these features in the future to minimize the scope of work and breaking changes for V3.
+
+Note: While these changes were identified as needed changes early on, there may still be other breaking changes that are made known during the development of Blockcerts V3.
 
 ## Summary
 
-The current Blockcerts v2 standard and the Verifiable Credentials standard has a lot of similarities that easily map to each other in many ways. Blockcerts can achieve much of the same functionality and more by utilizing the Verifiable Credential and Decentralized Identifiers standard. There are many options for how to map specific properties, but in the end Blockchain Proofs, Issuer Profiles/Identities, Recipient Ownership, and the aspects of life-long credentials are better supported/standardized, giving options for doing so in a more decentralized way. From here, we incredibly value community feedback and support. Based on the decisions preferred by the community, we can work on an official specification for Blockcerts V3.
+The current Blockcerts V2 standard and the Verifiable Credentials standard has a lot of similarities that easily map to each other in many ways. Blockcerts can achieve much of the same functionality and more by utilizing the Verifiable Credential and Decentralized Identifiers standard. There are many options for how to map specific properties, but in the end Blockchain Proofs, Issuer Profiles/Identities, Recipient Ownership, and the aspects of life-long credentials are better supported/standardized, giving options for doing so in a more decentralized way. From here, we incredibly value community feedback and support. Based on the conversations and decisions preferred by the community, we can work on an official specification for Blockcerts V3.
+
+## Contributions
+Matthieu Collé ([@raiseandfall](https://twitter.com/raiseandfall))
