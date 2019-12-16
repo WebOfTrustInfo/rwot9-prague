@@ -668,13 +668,13 @@ An alternative method for creating this `BlockcertsRevocationService` would be t
 
 There are pros and cons to both options. 
 
-Option 1 allows a verifier to only obtain and see the revocation status of a single certificate. A verifier would not be able to see the revocation status of certificates that do not possess. A standard practice for making UUID-based certificate IDs should prohibit verifiers from guessing another certificate ID. 
+Option 1 allows a verifier to only obtain and see the revocation status of a single certificate. A verifier would not be able to see the revocation status of certificates that they do not possess. A standard practice for making UUID-based certificate IDs should prohibit verifiers from guessing another certificate ID. 
 
 However, option 1 allows the issuer to see, log, monitor (etc.) a specific certificate. They would be able to see what IP address, origin, etc. was trying to verify a specific individual's certificate and then infer certain things. 
 
 Option 2 pulls an entire list of revocation events, which means that it does not reveal to the issuer who is getting verified, but it does reveal to verifiers every revocation event they have ever made and why. In the case of a large revocation list, the verifier may have to wait for all of the revocations to get processed and retrieved. 
 
-There has not been a very good consensus yet on what method of revocation/status lists should be used for Verifiable Credentials, and thus there are no standards yet. Ideally, there is a generic `RevocationServiceEndpoint` not specific to Blockcerts revocation lists, but that does not conflict with other methods that might be created. We suggest that we label this as a Blockcerts-specific revocation endpoint. 
+There has not been a very good consensus yet on what method of revocation/status lists should be used for Verifiable Credentials, and thus there are no standards yet. Ideally, there is a generic RevocationServiceEndpoint for all Verifiable Credential revocations. In the meantime, we suggest that we label this as a Blockcerts-specific revocation endpoint.
 
 Instead of the Blockcerts standard picking one of these two options, we may support both and allow issuers to decide for themselves which makes better sense for their organization. 
 
