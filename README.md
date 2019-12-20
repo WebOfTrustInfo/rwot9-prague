@@ -12,6 +12,13 @@ Visit [Eventbrite](http://rwot9.eventbrite.com) for more information and to purc
 
 ## Final Papers
 
+## [*Blockcerts V3 Proposal*](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/BlockcertsV3.pdf) [(Text)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/BlockcertsV3.md)
+#### by Anthony Ronning & Wong Wai Chung waichung@nextid.com
+
+> As the standards around Verifiable Credentials are starting to take form, different flavors of "verifiable credentials-like" data structures need to make necessary changes to leverage on the rulesets outlined and constantly reviewed by knowledgeable communities such as the W3C. The purpose of this paper is to identify all of the changes needed for Blockcerts to comply with the Verifiable Credentials (VCs) and Decentralized Identifiers (DIDs) standards and to expand upon the additional benefits of using a blockchain in combination with Verifiable Credentials. This paper is meant to act as an explainer in which a formal specification can be created.
+
+> This paper proposes multiple implementation options for several properties. The intention is that we can engage the Blockcerts / Verifiable Credential communities and see what fits best.
+
 ## [*Decentralized Identity as a Meta-platform: How Cooperation Beats Aggregation*](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/CooperationBeatsAggregation.pdf) [(Text)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/CooperationBeatsAggregation.md)
 #### by Michael Shea, Samuel M. Smith Ph.D., Carsten Stöcker Ph.D.
 
