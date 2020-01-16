@@ -29,14 +29,14 @@ To start our scenario, Alice receives a valid prescription for melange from her 
 
 If Alice holds a traditionally signed credential, then when she presents it to the pharmacy, the pharmacy verifies its signature as follows:
 
-Locally compute the hash of the credential as specified in the credential schema (e.g. SHA256)
-Resolve the doctor’s (issuer’s) DID and retrieve the public key
-Calculate the local signature from the local hash and the public key
-Compare the local signature to the credential signature
+  1. Locally compute the hash of the credential as specified in the credential schema (e.g. SHA256)
+  2. Resolve the doctor’s (issuer’s) Decentralized Identifier (DID) and retrieve the public key
+  3. Calculate the local signature from the local hash and the public key
+  4. Compare the local signature to the credential signature
 
 At this point the verification fails because the local hash calculated in Step 1 is different from the hash calculated when the credential was issued due to Alice’s tampering. Thus, the signature comparison does not match, and Alice’s tampered credential is rejected.
 
-#### ZKP-enabled Credential
+#### Zero Knowledge Proof (ZKP)-enabled Credential
 
 If Alice holds a ZKP-enabled credential, then the pharmacy expects a proof that Alice is bound as holder to a credential with a signature by the prover over the unmodified credential’s content. Since Alice changed the proof’s content, the signature no longer matches the content, and her device is unable to produce a valid proof. The invalid proof is rejected by the pharmacy.
 
