@@ -7,7 +7,7 @@ These are all the papers that we're currrently working on for RWOT9
 | Alice Abuses Verifiable Credentials | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/alice-abuses-verifiable-credentials.md) | AWAITING EDIT |
 | Basic Proof Request Proof Response / Presentation Request | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/PresentationRequest.md) |
 | Blockcerts V3.0 | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/BlockcertsV3.md) | [FINAL](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/BlockcertsV3.pdf)
-| Concerns for minorities in a Web of Trust | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/wot-concerns-for-minorities.md) | 11/04 |
+| Concerns for minorities in a Web of Trust | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/wot-concerns-for-minorities.md) | 2/24 |
 | Decentralized Identity as a Meta-platform: How Cooperation Beats Aggregation | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/CooperationBeatsAggregation.md) | [FINAL](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/CooperationBeatsAggregation.pdf)
 | DID Resolution v0.2 | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/did-resolution-v2.md) |[W3C CCG](https://w3c-ccg.github.io/did-resolution/)
 | did:hc method | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/did:hc-method.md) |
