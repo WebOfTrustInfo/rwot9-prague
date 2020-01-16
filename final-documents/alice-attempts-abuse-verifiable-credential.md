@@ -23,7 +23,7 @@ For simplicity it is assumed that the system consists of three categories of par
 
 ### Alice tampers with the credential 
 
-To start our scenario, Alice receives a valid prescription for melange from her doctor’s office, in the form of a verifiable credential. However, she is not happy with the dosage. She decides to tamper with the credential and increase the amount of melange that she can buy. She changes the dosage text value within the credential from 250mg to 500mg and presents the modified credential to the pharmacy.
+To start our scenario, Alice receives a valid prescription for melange from her doctor’s office in the form of a verifiable credential. However, she is not happy with the dosage. She decides to tamper with the credential and increase the amount of melange that she can buy. She changes the dosage text value within the credential from 250mg to 500mg and presents the modified credential to the pharmacy.
 
 #### Traditionally Signed Credential
 
@@ -47,7 +47,7 @@ Alternatively, Alice could try to construct a proof that her credential contains
 
 Next, Alice tries to forge a new prescription credential for melange. However, she already knows that the pharmacy performs signature verification, so having a credential with an invalid or missing signature would not work. This is not stopping Alice, though. She has recently taken a course about DIDs and verifiable credentials, and even knows that the pharmacy is looking up the doctor’s public key on a public blockchain. Thus, she invents a doctor’s office with its own DID and key-pair, and registers that DID on the blockchain. She then issues herself a new prescription credential, using the made-up doctor’s DID as the issuer. Since this credential has a valid signature, will her mischief succeed?
 
-No matter which type of credential Alice is holding, when she presents this credential to the pharmacy, the pharmacy resolves the issuer’s DID and successfully verifies the signature. This foils Alice’s evil plans once again, for the pharmacy’s verification process fails with the error “Credential is not issued by certified doctor’s office.” Verification relies on a trust framework\[[2](#2)\]&mdash;a published behavioral agreement adopted by mutual consent of all stakeholders. In our setting, we assume that there exists a trust framework governing the issuance of health care related credentials, such as prescriptions. In particular, the trust framework specifies which issuers are authorized to issue prescription credentials. Alice’s made-up doctor’s office does not belong to this list of issuers, so her forged credential is rejected.
+No matter which type of credential Alice is holding, when she presents this credential to the pharmacy, the pharmacy resolves the issuer’s DID and successfully verifies the signature. This foils Alice’s evil plans once again, for the pharmacy’s verification process fails with the error “Credential is not issued by certified doctor’s office.” Verification relies on a trust framework\[[2](#2)\]&mdash;a published behavioral agreement adopted by mutual consent of all stakeholders. In our setting, we assume that there exists a trust framework governing the issuance of health care related credentials such as prescriptions. In particular, the trust framework specifies which issuers are authorized to issue prescription credentials. Alice’s made-up doctor’s office does not belong to this list of issuers, so her forged credential is rejected.
 
 
 ### Alice tries to use prescription after expiration
@@ -68,7 +68,7 @@ Alice searches the dark web, looking for buyers of her prescription credential. 
 But Alice has much less success than she expected. It turns out that her credential is mostly worthless on the black market, for one or more of the following reasons:
 
 #### Traditionally-signed Credential
-* The credential is bound to a DID, and credential holders are required to disclose the same DID every time they fill a prescription. The verifier can check to see if a person purporting to be Alice is using the same DID with this prescription as they used last week with a different prescription, and reject the credential if there is a mismatch.
+* The credential is bound to a DID, and credential holders are required to disclose the same DID every time they fill a prescription. The verifier can check to see if a person purporting to be Alice is using the same DID with this prescription as they used last week with a different prescription and reject the credential if there is a mismatch.
 
 #### Either Credential Type
 * The issuer (doctor’s office) has embedded in the prescription credential a biometric (e.g., a photo, voiceprint, fingerprint, hand geometry, or iris scan) that bind it exclusively to Alice. Pharmacies are required to check this biometric to confirm that the person filling a prescription is the same person to whom it was issued. (Traditionally, capturing biometrics from a remote device, not under the control of the verifier, has been problematic. However, a new wave of solutions from academics\[[3](#3)\] and industry groups like the FIDO Alliance is now making this more practical.)
@@ -79,7 +79,7 @@ But Alice has much less success than she expected. It turns out that her credent
  * Credential holders are required to [use the same link secret each time](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md#technique-3-require-link-secret-continuity) they fill a prescription. The verifier can check for link secret continuity, without knowing the link secret itself. This prevents credential transfers.
  
  * Prescription credential holders are required to
-[commit a DID to a link secret](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md#technique-4-commit-a-did-to-a-link-secret). In Alice's society, when someone becomes an adult and is legally able to fill prescriptions for themselves, they must appear in person at a pharmacy and prove their identity with a strong, link-secret-based ID, such as a driver's license. A fragment of this proof is kept on file for each person. Later, when a person fills a prescription, they must demonstrate to the verifier (the pharmacy) that the link secret embedded in the current prescription is the same as the link secret used in the proof on file for the named person, and is also equal to the link secret in a randomly chosen credential that the pharmacy challenges them to prove they possess (a driver's license, a credit card, a passport, etc). Since the fraudster can't predict in advance which credential they will need, even if Alice sells her link secret, she can't just sell one credential on the black market&mdash;she must sell many of them or none. (A similar technique might be used for non-ZKP credentials, except that linking would be DID-based and DID-disclosing, instead of link secret based and secret-hiding.)
+[commit a DID to a link secret](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/topics-and-advance-readings/zkp-safety.md#technique-4-commit-a-did-to-a-link-secret). In Alice's society, when someone becomes an adult and is legally able to fill prescriptions for themselves, they must appear in person at a pharmacy and prove their identity with a strong, link-secret-based ID, such as a driver's license. A fragment of this proof is kept on file for each person. Later, when a person fills a prescription, they must demonstrate to the verifier (the pharmacy) that the link secret embedded in the current prescription is the same as the link secret used in the proof on file for the named person, and that it is also equal to the link secret in a randomly chosen credential that the pharmacy challenges them to prove they possess (a driver's license, a credit card, a passport, etc). Since the fraudster can't predict in advance which credential they will need, even if Alice sells her link secret, she can't just sell one credential on the black market&mdash;she must sell many of them or none. (A similar technique might be used for non-ZKP credentials, except that the linking would be DID-based and DID-disclosing, instead of link secret based and secret-hiding.)
 
 
 ### Alice tries to rent her prescription
@@ -102,7 +102,7 @@ Alice wonders whether she could fulfill her prescription more frequently than th
 
 Alice is stymied by the rules established by the trust framework mentioned earlier. One of the issues the trust framework plans for is attempts to fill a given prescription more than once.
 
-One way the trust framework can make prescriptions one-time use only is by requiring pharmacies to publish information about filled prescriptions (perhaps just a unique prescription ID) to a common database. Another option is to require pharmacies to revoke (or ask issuers to revoke) prescriptions the moment they are used.
+One way the trust framework can make prescriptions one-time use only is by requiring pharmacies to publish information about filled prescriptions (perhaps just a unique prescription ID) to a common database. Another option is to require pharmacies to revoke (or to ask issuers to revoke) prescriptions the moment they are used.
 
 
 ### Alice tries to Hack the Pharmacy
@@ -147,26 +147,26 @@ Photo by [amenclinicsphotos ac, Flickr, CC SA 2.0](https://www.flickr.com/photos
 
 ## Best Practices for Verifiers
 
-In this section, we zoom out from Alice’s story, and more generally describe best practices that verifiers should follow to protect against credential fraud from malicious credential holders. We present the points roughly in the order in which they apply during credential verification.
+In this section, we zoom out from Alice’s story and more generally describe best practices that verifiers should follow to protect against credential fraud from malicious credential holders. We present the points roughly in the order in which they apply during credential verification.
 
 * The verifier should not allow others to determine (parts of) the verification process.
   * Verification done by the holder does not provide any guarantees; the holder could use dishonest software that makes it look like verification was successful.
-  * The verifier must be explicit about acceptable issuers and acceptable credential schemas, and must confirm that evidence in a presentation matches those requirements. A schema that encodes dates with month first must not be confused with a schema that encodes dates with day-of-month first when testing expiration, for example.
+  * The verifier must be explicit about acceptable issuers and acceptable credential schemas and must confirm that the evidence in a presentation matches those requirements. A schema that encodes dates with month first must not be confused with a schema that encodes dates with day-of-month first when testing expiration, for example.
   * Using a third party verifier leaves the verifier vulnerable to anyone who could collude with that verifier, or to vulnerabilities or bugs in that verifier.
 
-* The verifier should treat data provided by a credential holder as untrusted input, and perform proper input validation rather than assume a correct credential format.
+* The verifier should treat data provided by a credential holder as untrusted input and perform proper input validation rather than assume a correct credential format.
   * This is a standard secure coding practice: Any input from untrusted sources must be properly validated to prevent, e.g., code injection or buffer overflow attacks.
   * The code specific to verifiable credential verification should only be executed after successful input validation.
 
 * The verifier must always perform signature verification with respect to the issuer’s public key, or properly verify a presented zero-knowledge proof.
   * In particular, omitting this check should never be an acceptable fallback to keep business running, e.g. in case of connectivity outage. The potential cost incurred by credential fraud is potentially much higher than that incurred by a brief interruption of business activities.
-  * While caching the issuer’s public key for a short time may be acceptable, as a best practice, this cache time should be short to prevent signature verification against an outdated public key (e.g, the issuer may have rotated the key because the old key was compromised).
+  * While caching the issuer’s public key for a short time may be acceptable, as a best practice this cache time should be short to prevent signature verification against an outdated public key (e.g, the issuer may have rotated the key because the old key was compromised).
 
 * The verifier must ensure that the issuer is authorized to issue this type of credential with respect to the underlying trust framework
   * A trust framework must be in place with clearly defined rules about which issuers can validly issue which types of credentials, and these rules must be enforced by the verifier.
 
 * The verifier must have a clearly defined set of acceptance criteria for credentials. This includes, but is not limited to, establishing that the credential belongs to the subject the holder claims it belongs to (often the holder themselves).
-  * Some methods to bind a verifiable credential to a subject were outlined in the “Alice tries to sell/rent her credentials”. Note that this is a complex matter which cannot be fully addressed in one bullet point of this paper.
+  * Some methods to bind a verifiable credential to a subject were outlined in the “Alice tries to sell/rent her credentials”. Note that this is a complex matter that cannot be fully addressed in one bullet point of this paper.
   * If there are checks that must be performed manually, such as comparing a photograph to a person’s face, precise guidelines must be in place to be followed by employees.
   * We described a special type of credential that may only be presented once; other credential types may require different domain-specific checks. The trust framework must clearly define the additional checks a verifier must perform.
 
@@ -176,7 +176,7 @@ In this section, we zoom out from Alice’s story, and more generally describe b
 This list of best practices is not exhaustive. More general-purpose recommendations are undoubtedly appropriate, and specific best practices may be important in particular industries or particular proving contexts.
 
 
-Survivability
+## Survivability
 Most of our discussion has taken a traditional cybersecurity mindset, emphasizing vulnerabilities and their countermeasures. However, military planners take an alternative perspective grounded in the discipline of [mission survivability](https://en.wikipedia.org/wiki/Survivability#Military). In this approach, the question is not "How can we prevent attacks?" &mdash; rather, it is "how can we accomplish our mission in the face of active opposition?" \[[4](#4)\] In our Alice-pharmacy scenario, the pharmacy's mission is to fill prescriptions according to law/regulation, to an acceptable level of assurance&mdash;and this suggests that we ponder three interdependent factors that influence the outcome:
 
 * Susceptibility (likelihood of attack)
