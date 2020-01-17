@@ -23,7 +23,7 @@ For simplicity it is assumed that the system consists of three categories of par
 
 ### Alice tampers with the credential 
 
-To start our scenario, Alice receives a valid prescription for melange from her doctor’s office in the form of a verifiable credential. However, she is not happy with the dosage. She decides to tamper with the credential and increase the amount of melange that she can buy. She changes the dosage text value within the credential from 250mg to 500mg and presents the modified credential to the pharmacy.
+To start our scenario, Alice receives a valid prescription for melange from her doctor’s office, in the form of a verifiable credential. However, she is not happy with the dosage. She decides to tamper with the credential and increase the amount of melange that she can buy. She changes the dosage text value within the credential from 250mg to 500mg and presents the modified credential to the pharmacy.
 
 #### Traditionally Signed Credential
 
@@ -68,7 +68,7 @@ Alice searches the dark web, looking for buyers of her prescription credential. 
 But Alice has much less success than she expected. It turns out that her credential is mostly worthless on the black market, for one or more of the following reasons:
 
 #### Traditionally-signed Credential
-* The credential is bound to a DID, and credential holders are required to disclose the same DID every time they fill a prescription. The verifier can check to see if a person purporting to be Alice is using the same DID with this prescription as they used last week with a different prescription and reject the credential if there is a mismatch.
+* The credential is bound to a DID, and credential holders are required to disclose the same DID every time they fill a prescription. The verifier can check to see if a person purporting to be Alice is using the same DID with this prescription as they used last week with a different prescription and can reject the credential if there is a mismatch.
 
 #### Either Credential Type
 * The issuer (doctor’s office) has embedded in the prescription credential a biometric (e.g., a photo, voiceprint, fingerprint, hand geometry, or iris scan) that bind it exclusively to Alice. Pharmacies are required to check this biometric to confirm that the person filling a prescription is the same person to whom it was issued. (Traditionally, capturing biometrics from a remote device, not under the control of the verifier, has been problematic. However, a new wave of solutions from academics\[[3](#3)\] and industry groups like the FIDO Alliance is now making this more practical.)
