@@ -2,6 +2,13 @@
 
 _This is a listing for the RWOT9 papers to date. [Several more](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/README.md) are in process._
 
+## [*Alice Attempts to Abuse a Verifiable Credential*](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/alice-attempts-abuse-verifiable-credential.pdf) [(Text)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/alice-attempts-abuse-verifiable-credential.md)
+#### by P. Dingle, S. Hammann, D. Hardman, C. Winczewski, S. Smith
+
+> Verifiable credentials (VCs) are an exciting innovation in decentralized identity. By standardizing a data format that allows the holder of a credential to be in control of the receipt and the presentation of digital documents, VCs represent a step forward in data control, while still allowing authoritative information to flow. However, there are reasonable concerns around whether the remote interactions that VCs enable can be secured. A verifiable credential is easy to copy. The cryptographic keys that protect them are easy to share. This makes an old problem from physical credential space more pressing: What mechanisms exist for the system to prevent fraud?
+
+> In this paper, we explore a subset of the fraud problem: vulnerabilities associated with a malicious credential holder. Our frame is a fictional narrative about Alice, a person who receives a prescription as a verifiable credential. Unfortunately, Alice is addicted to the prescribed drug, she is eager to earn quick cash, and she has little respect for legal processes—so she has multiple motives to apply her credential and creativity for mischief.
+
 ## [*Blockcerts V3 Proposal*](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/BlockcertsV3.pdf) [(Text)](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/BlockcertsV3.md)
 #### by Anthony Ronning & Wong Wai Chung waichung@nextid.com
 
