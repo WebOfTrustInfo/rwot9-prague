@@ -14,7 +14,7 @@ These are all the papers that we're currrently working on for RWOT9
 | Encrypted Data Vaults | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/encrypted-data-vaults.md) | [FINAL](https://nbviewer.jupyter.org/github/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/encrypted-data-vaults.pdf)
 | Issuer-Independent Verification | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/Issuer-Independent%20Verification.md) | 12/2 |
 | Minimum Viable Protocol for Decentralization | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/minimun-viable-protocol-for-decentralization.md) | 1/6 |
-| “Not a Sybil!”: Politically Decentralized Proof of Limited Personhood | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/proof_of_personhood.md) |
+| “Not a Sybil!”: Politically Decentralized Proof of Limited Personhood | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/proof_of_personhood.md) | 2/3
 | Petnames | | 10/7 |
 | P2P Lending | [Draft](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/P2P-lending-reputation) | 2020?
 | The Real Problem with Centralization | [Abstract](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/draft-documents/the-real-problem-with-centralization.md) |
