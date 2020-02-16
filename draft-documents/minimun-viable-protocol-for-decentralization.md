@@ -2,7 +2,20 @@
 
 ### Authors
 
-Snorre Lothar von Gohren Edwin, Adrian Gropper, Victor Martinez
+Snorre Lothar von Gohren Edwin, Adrian Gropper, Victor Martinez, Orie Steel
+
+# Concluding words
+After working on this paper the months after rebooting, it was clear to us that this paper was a bit ahead of its time. With many of the needed pieces still being discussed in other papers and was trying be to figured out, this paper set out on a very difficult course for completion. The authors of this paper tried working forward a good discussion paper, but concluded recently that it was to no avail. Therefore, this commit will conclude and leave some breadcrumbs of the different efforst that has been done in other angles that is important to follow along on.
+
+Our working folder can be found here: https://drive.google.com/drive/folders/1fVMSj-hJoZfj0Y-OE0RF4IlwANRwE6pC and the attempt of rewamping the paper is the v2.0. But after that we closed the efforts down.
+
+Some important efforts are
+EDV - https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/encrypted-data-vaults.pdf
+The efforst on DIDComm - https://medium.com/decentralized-identity/dif-starts-didcomm-working-group-9c114d9308dc
+Alice and Bob with many different use cases - https://docs.google.com/document/d/1FBfs4shirUAtqD_d_t6F6oi2NZ0Y7400MDoYSm14Yco/edit
+
+So if you come here, follow these efforst instead :)
+
 
 # Abstract
 
