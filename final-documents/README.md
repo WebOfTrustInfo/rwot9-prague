@@ -43,3 +43,13 @@ platforms.
 #### Arthur Brock, Kaliya Hamlin, Grace (Rebecca) Rachmany, Jakub Lanc
 
 > This paper explores how to take a "reputation" trust graph with multiple characteristics and create actionable output. It is not focused on the automation of the process, which could be applied by human processing of information or through a programmed software implementations.
+
+### [*A Rubric for Decentralization of DID Methods*](https://github.com/WebOfTrustInfo/rwot9-prague/blob/master/final-documents/decentralization-rubric.pdf)
+#### Joe Andrieu (joe@legreq.com), Shannon Appelcline (shannon.appelcine@gmail.com), Amy Guy (amy@rhiaro.co.uk), Joachim Lohkamp (joachim@jolocom.com), Drummond Reed (drummond.reed@evernym.com), Markus Sabadello (markus@danubetech.com), and Oliver Terbu (oliver.terbu@consensys.net)
+
+> The communities behind Decentralized Identifiers (DIDs) bring together a diverse group of contributors
+who have decidedly different notions of exactly what “decentralization” means.
+
+> Rather than attempting to resolve this potentially unresolvable question, we propose a rubric — a
+scoring guide used to evaluate the performance of a product or a project — that teaches how to evaluate
+a given DID Method according to one’s own requirements.
