@@ -157,13 +157,13 @@ Immutable content is represented by the following URI convention:
 
 Here is an example IDSC URI:
 
-: idsc:0p.X74UbU3NoLTA_Nupi8DhaJ_oQpQ95KFukMAkJJotKgo.eekxqfiZIcEnc8cpR-sD_3X3qLaTzQW-KnovArMkGP0
+: idsc:p0.X74UbU3NoLTA_Nupi8DhaJ_oQpQ95KFukMAkJJotKgo.eekxqfiZIcEnc8cpR-sD_3X3qLaTzQW-KnovArMkGP0
 
 The components of such a URI can be broken down as follows:
 
  - *suite-id*: A string of characters representing the "suite" of
    encryption protocols used by this IDSC.
-   In the above example, the value is =0p=, for the prototype 0th
+   In the above example, the value is =p0=, for the prototype 0th
    suite, which uses [[https://en.bitcoinwiki.org/wiki/SHA-256d][sha256d]] hashes (double application of sha256
    to prevent [[https://en.wikipedia.org/wiki/Length_extension_attack][length extension attacks]]) for content and =aes-ctr= for
    encryption.
@@ -256,9 +256,9 @@ The components of MDSC URIs are:
    for read-write-verify.
  - *suite-id*: A string of characters representing the "suite" of
    encryption protocols used by this IDSC.  In the above examples, the
-   value is =0p=, for the prototype 0th suite, which uses a
+   value is =p0=, for the prototype 0th suite, which uses a
    combination of RSA public/private keypairs for the verify/write
-   keys, the =0p= IDSC suite for looking up the verification key, and
+   keys, the =p0= IDSC suite for looking up the verification key, and
    =sha256= to convert a write key to a read key.
  - *keydata-hash* and *keydata-enckey*: Used to look up the
    keydata for this MDSC object, which when retrieved contains
@@ -283,15 +283,15 @@ Some examples of MDSC capability URIs:
 
 #+BEGIN_SRC text
   # verify ocap
-  mdsc:v.0p.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g
+  mdsc:v.p0.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g
   # verify-read ocap
-  mdsc:r.0p.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.wtNehlhYRxooG1un7cLBDMvjs2S-uEz1jLFgfDEH3Cs
+  mdsc:r.p0.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.wtNehlhYRxooG1un7cLBDMvjs2S-uEz1jLFgfDEH3Cs
   # verify-read ocap for revision 1
-  mdsc:r.0p.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.wtNehlhYRxooG1un7cLBDMvjs2S-uEz1jLFgfDEH3Cs/1/
+  mdsc:r.p0.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.wtNehlhYRxooG1un7cLBDMvjs2S-uEz1jLFgfDEH3Cs/1/
   # verify-read ocap for revision 1, specific hash
-  mdsc:r.0p.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.wtNehlhYRxooG1un7cLBDMvjs2S-uEz1jLFgfDEH3Cs/1/bNIYWl3VtH5e3m0Znp80fU5qtH6IvqpGl3GlyXmNoD0
+  mdsc:r.p0.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.wtNehlhYRxooG1un7cLBDMvjs2S-uEz1jLFgfDEH3Cs/1/bNIYWl3VtH5e3m0Znp80fU5qtH6IvqpGl3GlyXmNoD0
   # verify-read-write ocap
-  mdsc:w.0p.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.MeMgmy_j0CI8jwT0EUX01bF7N0UAVSYwHhNQ67h2WAE
+  mdsc:w.p0.gl6qBg6i3dc5dz9cylxPcxIWn4SgLdTxWFzyqtwIljk.6B4Vy69Z6GnqF3VAk8eZkUBZbXgR5tWWoC1C_6Pbe7g.MeMgmy_j0CI8jwT0EUX01bF7N0UAVSYwHhNQ67h2WAE
 #+END_SRC
 
 As stated before, there is no guarantee that multiple conflicting
